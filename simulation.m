@@ -6,7 +6,7 @@ global weight;
 weight = 1;
 q = [0, 0];
 q = q*pi/180;
-a = [4, 3];
+a = [5, 3];
 
 global Xm;
 global Xn;
@@ -80,17 +80,8 @@ function update(value, update_q, update_a)
         a(update_a) = value;
     end
     X0 = [0 0 0 1]';
-    X1 = transformation_matrix(q(1), a(1))*X0;
-    X2 = transformation_matrix(q(1), a(1))*transformation_matrix(q(2), a(2))*X0;
     
-    %%calculate M0
-    Xn = X1;
-    Xm = X2;
-    R = Xm - Xn;
-    Fg = [0; weight * -10; 0; 0];
-    Fgn = inv(transformation_matrix(q(2), a(2)))*inv(transformation_matrix(q(1), a(1)))*Fg;
-    
-    M0 = det([1 1 1; R(1:3)'; Fg(1:3)']);
+    [ Fgn, M0, X, Xn, Xm ] = model(X0, q, a, weight);
     
     global control_Xn;
     global control_Xm;
@@ -101,5 +92,5 @@ function update(value, update_q, update_a)
     control_M0.String = ['Momenty sily: ', mat2str(M0)];
     control_Fg.String = ['Sily: ', mat2str(Fgn)];
             
-    generate_plot([X0 X1 X2]);
+    generate_plot(X);
 end
