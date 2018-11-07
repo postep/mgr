@@ -2,12 +2,19 @@ clf;
 clear variables;
 global q;
 global a;
+global weight;
+weight = 1;
 q = [0, 0];
 q = q*pi/180;
 a = [4, 3];
 
-update(0, 0, 0);
+global Xm;
+global Xn;
+Xm = [0, 0, 0, 1]';
+Xn = [0, 0, 0, 1]';
 
+
+global f;
 f = figure(2);
 clf(f);
 offset = 60;
@@ -40,9 +47,32 @@ for i=1:size(a, 2)
 
     b.Callback = @(es, ed) update(es.Value, -1, i); 
 end
+
+i = 1;
+global control_Xn;
+control_Xn = uicontrol('Parent',f,'Style','text','Position',[50,120 + 60*(size(q, 2)+size(a, 2))+offset*(i-1)/2,500,23],...
+                'String',['Punkt chwytaka: ', mat2str(Xn)],'BackgroundColor',bgcolor);
+i = 2;
+global control_Xm;
+control_Xm = uicontrol('Parent',f,'Style','text','Position',[50,120 + 60*(size(q, 2)+size(a, 2))+offset*(i-1)/2,500,23],...
+                'String',['Punkt masy: ', mat2str(Xm)],'BackgroundColor',bgcolor);
+i = 3;
+global control_M0;
+control_M0 = uicontrol('Parent',f,'Style','text','Position',[50,120 + 60*(size(q, 2)+size(a, 2))+offset*(i-1)/2,500,23],...
+                'String',['Moment sily: ', mat2str([0 0 0])],'BackgroundColor',bgcolor);
+i = 4;
+global control_Fg;
+control_Fg = uicontrol('Parent',f,'Style','text','Position',[50,120 + 60*(size(q, 2)+size(a, 2))+offset*(i-1)/2,500,23],...
+                'String',['Sila czujnika: ', mat2str([0 0 0])],'BackgroundColor',bgcolor);
+update(0, 0, 0);
+
+
+            
 function update(value, update_q, update_a)
     global q;
     global a;
+    global weight;
+    global f;
     if update_q > 0
         q(update_q) = value*pi/180; 
     end
@@ -52,5 +82,24 @@ function update(value, update_q, update_a)
     X0 = [0 0 0 1]';
     X1 = transformation_matrix(q(1), a(1))*X0;
     X2 = transformation_matrix(q(1), a(1))*transformation_matrix(q(2), a(2))*X0;
+    
+    %%calculate M0
+    Xn = X1;
+    Xm = X2;
+    R = Xm - Xn;
+    Fg = [0; weight * -10; 0; 0];
+    Fgn = inv(transformation_matrix(q(2), a(2)))*inv(transformation_matrix(q(1), a(1)))*Fg;
+    
+    M0 = det([1 1 1; R(1:3)'; Fg(1:3)']);
+    
+    global control_Xn;
+    global control_Xm;
+    global control_M0;
+    global control_Fg;
+    control_Xn.String = ['Punkt chwytaka: ', mat2str(Xn)];
+    control_Xm.String = ['Punkt masy: ', mat2str(Xm)];
+    control_M0.String = ['Momenty sily: ', mat2str(M0)];
+    control_Fg.String = ['Sily: ', mat2str(Fgn)];
+            
     generate_plot([X0 X1 X2]);
 end
