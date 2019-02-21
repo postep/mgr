@@ -47,5 +47,6 @@ for i=1:1000
 	if abs(qm_solve - qm) > 1e-4
 		j = j + 1;
 	end;
+    
 end 
 disp(j);
