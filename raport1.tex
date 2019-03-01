@@ -1,0 +1,68 @@
+\documentclass[a4paper]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{geometry}
+\usepackage{float}
+
+
+\title{MGR - Raport 1}
+\author{Jakub Postępski}
+
+\begin{document}
+
+\maketitle
+
+\section{Problem}
+Należy skompensować siłę grawitacji w układzie ze sprężyną.
+
+\section{Obiekt}
+Obiektem jest układ ze sprężyną i amortyzatorem. Na końcu zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Przyjmujemy że dla użytkownika dostępne są pomiary położenia ($x$), prędkości ($\dot{x}$), przyspieszenia ($\ddot{x}$) oraz siły odczytanej przez czujnik.
+
+Model obiektu można opisać układem równań różniczkowych:
+
+\[
+\begin{bmatrix}
+    \dot{x} \\
+    \ddot{x}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    0 & 1 \\
+    \frac{k}{m} & \frac{b}{m}
+\end{bmatrix}
++
+\begin{bmatrix}
+    0 \\
+    -1
+\end{bmatrix}
+g+
+\begin{bmatrix}
+    0\\
+    1
+\end{bmatrix}a
+\]
+
+gdzie:
+\begin{itemize}
+	\item $x$ pozycja zawieszonej masy
+	\item $k$ parametr sztywności
+	\item $b$ parametr amortyzacji
+	\item $m$ masa przedmiotu
+	\item $g$ przyspieszenie ziemskie
+	\item $a$ przyspieszenie które można dodać do układu
+\end{itemize}
+
+Symulację obiektu można wykonać poprzez konwersję do macierzy układu do układu dyskretnego. W pracy przyjęto częstotliwość próbkowania $f = 100 Hz$. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. Do wszystkich wartości dodano szum biały.
+
+\section{Kompensacja masy}
+\subsection{Odczyt z czujnika siły}
+Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji a więc i zawieszoną masę. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana tak składowa stała jest średnią arytmetyczną sygnału. Podsumowując należy
+W celu detekcji masy stosowane są dwie metody, których wynik łączony jest przy pomocy logiki rozmytej. Pierwsza z metod polega na bezpośrednim odczycie
+
+
+
+\end{document}

@@ -31,6 +31,7 @@ for i=1:1000
     if ~isalmost(qm_solve, qm)
 		j = j + 1;
 	end;
+
 end
 disp(j);
 
