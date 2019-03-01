@@ -1,4 +1,4 @@
-function [ Fgn, M0, X, Xn, Xm, theta_n ] = model( X0, q, a, weight )
+function [ Fgn, M0, X, Xn, Xm, theta_n ] = model( X0, q, dq, ddq, a, weight )
     T = eye(4);
     X = X0;
     for i=1:size(q, 2)

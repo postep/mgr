@@ -4,9 +4,9 @@ global q;
 global a;
 global weight;
 weight = 1;
-q = zeros(1, 7);
+q = zeros(1, 2);
 q = q*pi/180;
-a = [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 3];
+a = [0.5, 3];
 
 global Xm;
 global Xn;
@@ -84,8 +84,9 @@ function update(value, update_q, update_a)
         a(update_a) = value;
     end
     X0 = [0 0 0 1]';
-    
-    [ Fgn, M0, X, Xn, Xm, theta_n ] = model(X0, q, a, weight);
+    dq = 0;
+    dqq = 0;
+    [ Fgn, M0, X, Xn, Xm, theta_n ] = model(X0, q, dq, ddq, a, weight);
     
     global control_Xn;
     global control_Xm;
