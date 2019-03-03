@@ -34,16 +34,20 @@ Model obiektu można opisać układem równań różniczkowych:
     0 & 1 \\
     \frac{k}{m} & \frac{b}{m}
 \end{bmatrix}
+\begin{bmatrix}
+	x \\
+    \dot{x}
+\end{bmatrix}
 +
 \begin{bmatrix}
     0 \\
-    -1
+    -g
 \end{bmatrix}
-g+
++
 \begin{bmatrix}
     0\\
-    1
-\end{bmatrix}a
+    \frac{1}{m}
+\end{bmatrix}F
 \]
 
 gdzie:
@@ -56,12 +60,24 @@ gdzie:
 	\item $a$ przyspieszenie które można dodać do układu
 \end{itemize}
 
-Symulację obiektu można wykonać poprzez konwersję do macierzy układu do układu dyskretnego. W pracy przyjęto częstotliwość próbkowania $f = 100 Hz$. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. Do wszystkich wartości dodano szum biały.
+Symulację obiektu (rys. ) można wykonać dyskretyzując model. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W każdym kroku symulacji do odczytywanych wartości dodawany jest szum biały.
 
-\section{Kompensacja masy}
+\section{Estymacja masy}
+Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. ). Następnie zastosowano filtr dolnoprzepustowy w celu odfitrowania zakłóceń.
+  
 \subsection{Odczyt z czujnika siły}
-Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji a więc i zawieszoną masę. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana tak składowa stała jest średnią arytmetyczną sygnału. Podsumowując należy
-W celu detekcji masy stosowane są dwie metody, których wynik łączony jest przy pomocy logiki rozmytej. Pierwsza z metod polega na bezpośrednim odczycie
+\label{fs}
+Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą stosowania tej metody jest możliwość odfiltrowania szumów pomiarowych.
+
+\subsection{Odczyt z pozycji układu}
+\label{pos}
+Masa umieszczona w układzie może być odkryta na podstawie równań modelu. Dla układu zdyskretyzowanych dostajemy równanie:
+\[ m(t) = \frac{kx(t) + b\dot{x}(t)}{\ddot{x}+g-a}\]
+Wyliczanie masy w ten sposób ma sens tylko w przypadku gdy nie kompensujemy siły grawitacji. W momencie kompensacji stała siła grawitacji będzie kompensowana a układ przestanie się poruszać. Spowoduje to wyzerowanie mianownika równania.
+
+\section{Kompensacja grawitacji}
+Kompensacja polega na dodaniu do układu siły która przeciwdziała sile grawitacji masy. Pomijając niedokładności, układ ze skompensowaną siłą grawitacji zachowuje się tak jakby tej masy w układzie nie było. Nie powstają oscylacje, a układ stabilizuje się bardzo szybko w pożądanej pozycji.
+
 
 
 

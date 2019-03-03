@@ -1,8 +1,15 @@
 clear variables;
-T = 1:5*100;
+f = 1;
+T = 1:20*f;
 b = 1;
 k = 3;
 m = 10;
+g = -9.81;
+
+
+a = 5;
+c = 1;
+	
 
 A = [0, 1; -k/m, -b/m];
 B = [0; 1];
@@ -10,45 +17,54 @@ C = [0, 1];
 D = [0];
 
 sys = ss(A, B, C, D);
-sysd = c2d(sys, 100);
-L = acker(sysd.A',sysd.C', [0, 0])';
+sysd = c2d(sys, 1/f);
 
-S = zeros(2, 1);
-Y = zeros(1, 1);
-S_hat = zeros(2, 1);
-Y_hat = zeros(1, 1);
-M_hat = zeros(size(T));
-MFS_hat = zeros(size(T));
+S = zeros(2, 2);
+x = zeros(size(T));
+dx = zeros(size(T));
+ddx = zeros(size(T));
+FS = zeros(size(T));
+M_pos_hat = zeros(size(T));
+M_fs_hat = zeros(size(T));
 M_fuzzy = zeros(size(T));
-M_fuzzy_raw = zeros(size(T));
+M_fuzzy_filter = zeros(size(T));
 W = zeros(size(T));
-gf= 0;
-for t = T(2:end)
-	x = S(1, :);
-	dx = S(2, :);
-	ddx = [0, diff(dx)];
-	FS = ddx*m + 0.4*m*randn(size(ddx)) - m*9.81;
-	FS = movmean(FS,500);
-	MFS_hat(t-1) = -FS(t-1)/9.81;
-	M_hat(t-1) = (-k*x(t-1)-b*dx(t-1))/(ddx(t-1)-(9.81-gf/m));
-    a = 5;
-    c = 1;
-	M_fuzzy_raw(t-1) = dsigmf(ddx(t-1), [a, -c, a, c])*MFS_hat(t-1) + (1-dsigmf(ddx(t-1), [a, -c, a, c]))*M_hat(t-1);
-    W(t-1) = dsigmf(ddx(t-1), [a, -c, a, c]);
-	M_fuzzy(1:t-1) = movmean(M_fuzzy_raw(1:t-1), 10);
-	gf = M_fuzzy(t-1)*9.81;
-	S(:, end+1) = sysd.A*S(:, end) + sysd.B*(9.81-gf/m);
-    Y(t) = C*S(:, t);
-    Y_hat(t) = C * S_hat(:, end);
-end
-x = S(1, :);
-dx = S(2, :);
-ddx = [0, diff(dx)];
+U = zeros(size(T));
+for t = T(3:end)
+	F = 0;
+	U(t) = g+F/m;
+	S(:, t) = sysd.A*S(:, t-1) + sysd.B*U(t);
+	x(t) = S(1, t) + 0.0*m*randn();
+	dx(t) = S(2, t) + 0.0*m*randn();
+	ddx(t) = (S(2, t) - S(2, t-1)) + 0.0*m*randn();
+	FS(t) = ddx(t)*m + 0.02*m*randn() + m*g;
+	FS_mean = movmean(FS(1:t), 10*f);
+	M_fs_hat(t) = FS_mean(t)/g;
+	M_pos_hat(t) = (-(1/f)^2*k*x(t-2) -b*(1/f)*x(t-1) -b*(1/f)*x(t-2))/(x(t)-2*x(t-1)-x(t-2)-(1/f)*U(t)-(1/f)*U(t-1));
+	W(t) = dsigmf(ddx(t), [a, -c, a, c]);
+	M_fuzzy(t) = W(t)*M_fs_hat(t) + (1-W(t))*M_pos_hat(t);
+	M_fuzzy_filter = movmean(M_fuzzy(1:t), 10*f);
+	
+end;
+	
+t = length(T);
+Time = 0:1/f:t/f;
+Time = Time(1:end-1);
 
-x_hat = S_hat(1, :);
-dx_hat = S_hat(2, :);
+f = figure(1);
+plot(Time, [x; dx; ddx; FS], '-');
+legend('x', 'dx', 'ddx', 'FS');
+xlabel('t');
 
-% x = zeros(size(T))
-M_hat = zeros(size(T));
-plot(T, [x; MFS_hat;M_hat;M_fuzzy], '-');
-legend('x', 'MFShat', 'Mhat', 'Mfuzzy');
+
+f = figure(2);
+plot(Time, [M_fs_hat; M_pos_hat; M_fuzzy; W], '-');
+legend('M\_fs\_hat', 'M\_pos\_hat', 'M\_fuzzy', 'W');
+xlabel('t');
+
+f = figure(3);
+w = -10:0.1:10;
+plot(w, dsigmf(w, [a, -c, a, c]), '-');
+xlabel('ddx');
+ylabel('W');
+
