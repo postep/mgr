@@ -7,7 +7,7 @@ m = 3;
 g = -9.81;
 
 
-a = 0.5;
+a = 1;
 c = 7;
 	
 
@@ -36,6 +36,7 @@ M_sys_hat = zeros(size(T));
 M_sys = zeros(size(T));
 for t = T(3:end)
 	F = -M_fuzzy(t-1)*g;
+% 	F=0;
 	noise_level = 0.01;
 	U(t) = g+F/m;
 	S(:, t) = sysd.A*S(:, t-1) + sysd.B*U(t);

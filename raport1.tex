@@ -67,9 +67,9 @@ Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{f
   
 \subsection{Estymacja z czujnika siły}
 \label{fs}
-Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą stosowania tej metody jest możliwość odfiltrowania szumów pomiarowych.
+Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą zastosowania filtru odfiltrowywanie szumów pomiarowych.
 
-\subsection{Estymacja z pozycji układu}
+\subsection{Estymacja z  układu}
 \label{pos}
 Masa umieszczona w układzie może być odkryta na podstawie równań modelu. Dla układu ciągłego dostajemy równanie:
 \[ m(t) = \frac{kx(t) + b\dot{x}(t)}{\ddot{x}+g-a}\]
