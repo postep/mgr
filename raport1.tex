@@ -8,6 +8,7 @@
 \usepackage{geometry}
 \usepackage{float}
 
+\newcommand{\matr}[1]{\mathbf{#1}} % undergraduate algebra version
 
 \title{MGR - Raport 1}
 \author{Jakub Postępski}
@@ -24,31 +25,27 @@ Obiektem jest układ ze sprężyną i amortyzatorem. Na końcu zawieszona jest 
 
 Model obiektu można opisać układem równań różniczkowych:
 
-\[
-\begin{bmatrix}
-    \dot{x} \\
-    \ddot{x}
-\end{bmatrix}
-=
-\begin{bmatrix}
-    0 & 1 \\
-    \frac{k}{m} & \frac{b}{m}
-\end{bmatrix}
-\begin{bmatrix}
-	x \\
-    \dot{x}
-\end{bmatrix}
-+
-\begin{bmatrix}
-    0 \\
-    -g
-\end{bmatrix}
-+
-\begin{bmatrix}
-    0\\
-    \frac{1}{m}
-\end{bmatrix}F
-\]
+\begin{equation}
+	\begin{bmatrix}
+	    \dot{x} \\
+	    \ddot{x}
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	    0 & 1 \\
+	    \frac{k}{m} & \frac{b}{m}
+	\end{bmatrix}
+	\begin{bmatrix}
+		x \\
+	    \dot{x}
+	\end{bmatrix}
+	+
+	\begin{bmatrix}
+	    0 \\
+	    1
+	\end{bmatrix}
+	{-g + u_w}
+\end{equation}
 
 gdzie:
 \begin{itemize}
@@ -57,10 +54,36 @@ gdzie:
 	\item $b$ parametr amortyzacji
 	\item $m$ masa przedmiotu
 	\item $g$ przyspieszenie ziemskie
-	\item $a$ przyspieszenie które można dodać do układu
+	\item $u_w$ przyspieszenie które można zewnętrznie dodać do układu
 \end{itemize}
 
-Symulację obiektu (rys. ) można wykonać dyskretyzując model metodamy ZOH. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W każdym kroku symulacji do odczytywanych wartości dodawany jest szum biały.
+Układ możemy więc zapisać w standardowej postaci
+\begin{equation}
+\dot{x} = \textbf{A}x + \textbf{B}u(t)
+\end{equation}
+gdzie:
+\begin{equation}
+\mathbf{A} = 	\begin{bmatrix}
+	    0 & 1 \\
+	    \frac{k}{m} & \frac{b}{m}
+	\end{bmatrix}
+\end{equation}
+oraz:
+\begin{equation}
+\mathbf{B} = \begin{bmatrix}
+	    0 \\
+	    1
+	\end{bmatrix}
+\end{equation}
+
+Po zdyskretyzowaniu z okresem próbkowania $t$ otrzymujemy układ:
+\begin{equation}
+x(k+1) = \mathbf{A_d}x(k) + \mathbf{B}_du(k)
+\label{eq:dyskretny}
+\end{equation}
+
+
+Symulację obiektu (rys. ) można wykonać korzystając z wersji dyskretnej układu. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W celu symulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
 
 \section{Estymacja masy}
 Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. ). Następnie zastosowano filtr dolnoprzepustowy w celu odfitrowania zakłóceń.
@@ -69,22 +92,47 @@ Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{f
 \label{fs}
 Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą zastosowania filtru odfiltrowywanie szumów pomiarowych.
 
-\subsection{Estymacja z  układu}
-\label{pos}
-Masa umieszczona w układzie może być odkryta na podstawie równań modelu. Dla układu ciągłego dostajemy równanie:
-\[ m(t) = \frac{kx(t) + b\dot{x}(t)}{\ddot{x}+g-a}\]
-
-W celu dyskretyzacji wprowadzamy za odpowiednie pochodne równania różnicowe oparte na metodzie Eulera:
-\[\ddot{x} \approx \frac{x(k)-2x(k-1)+x(k-2)}{T^2}\]
-\[\dot{x} \approx \frac{x(k)-x(k-1)}{T}\]
-gdzie $T$ to czas próbkowania układu.
-
-Estymacja zachowuje się dobrze w układzie bez szumów (rys. ). W układzie z szumami sensowne wyniki można uzyskać tylko przez zastosowanie optymalizacji minimalizującej błąd odczytu kilku ostatnich próbek.
-
 \subsection{Estymacja z macierzy układu}
-Przyjmując układ dyskretny postaci:
-\[x(k+1) = Ax(k) + Bu(k)\]
-ze znanymi stanami układu, sterowaniami oraz znaną macierzą $B$ poprzez zastosowanie pseudoinwersji macierzy możemy wyprowadzić 
+Ponieważ macierz $\mathbf{B}$ ma tylko jeden wyraz różny od zera $\mathbf{B_d}$ jest uzyskiwana w prosty sposób i można przyjąć że:
+\begin{equation}
+\mathbf{B_d} = \mathbf{B}t
+\end{equation} 
+Przekształcając równanie \ref{eq:dyskretny} i stosując pseudoinwersję macierzy otrzymujemy równanie macierzowe:
+\begin{equation}
+	\mathbf{A_d} = (X(k+1) - \mathbf{B}_du(k))(X(k))^{pinv}
+	\label{eq:pinv}
+\end{equation}
+przy założeniu $n$ ostatnich próbek zmiennych stanów ukłądu
+\begin{equation}
+	X(k) = 	\begin{bmatrix}
+		    x(k) & x(k-1)  & ... & x(k-n) 
+		\end{bmatrix}
+	\label{eq:xk}
+\end{equation}
+
+Po obliczeniu estymacji $\mathbf{A_d}$ metodą ZOH wyliczamy estymację macierzy $\mathbf{A}$ otrzymując macierz
+\begin{equation}
+\mathbf{\hat{A}} = 	\begin{bmatrix}
+	    a_{11} & a_{12}\\
+	    a_{21} & a_{22}
+	\end{bmatrix}
+\end{equation} 
+Po przyrównaniu jej do macierzy $\mathbf{A}$ możemy wyliczć masę z równań:
+\begin{equation}
+\hat{m_1} = \frac{-k}{a_{21}}
+\end{equation}
+\begin{equation}
+\hat{m_2} = \frac{-b}{a_{22}}
+\end{equation}
+
+i ostatecznie przyjąć estymację:
+\begin{equation}
+\hat{m} = \frac{\hat{m_1}+\hat{m_2}}{2}
+\end{equation}
+
+
+W trakcie symulacji eksperymentowano z różną ilością próbek stosowanych do estymacji (rys. .. ). Ostatecznie przyjęto $n = 100$ (rys. ).
+
 \section{Kompensacja grawitacji}
 Kompensacja polega na dodaniu do układu siły która przeciwdziała sile grawitacji masy. Pomijając niedokładności, układ ze skompensowaną siłą grawitacji zachowuje się tak jakby tej masy w układzie nie było. Nie powstają oscylacje, a układ stabilizuje się bardzo szybko w pożądanej pozycji.
 
