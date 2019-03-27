@@ -5,7 +5,7 @@ b = 1;
 k = 20;
 m = 3;
 g = -9.81;
-name = 'system'
+name = 'grav_ideal'
 
 a = 0.4;
 c = 2;
@@ -32,12 +32,15 @@ M_fuzzy = zeros(size(T));
 M_fuzzy_filter = zeros(size(T));
 W = zeros(size(T));
 U = zeros(size(T));
-M_sys_hat = zeros(size(T));
 M_sys = zeros(size(T));
+M_sys_hat = zeros(size(T));
+i = 0;
 for t = T(3:end)
 	F = -M_fuzzy(t-1)*g;
-	F = min(t/1000, 1)*F;
- 	F=0;
+% 	if (t < 1000)
+% 		F = -3.1*g;
+% 	end;
+ 	F = -3.1*g + 0.01*randn();
 	noise_level = 0.01;
 	U(t) = g+F/m;
 	S(:, t) = sysd.A*S(:, t-1) + sysd.B*U(t);
@@ -45,12 +48,9 @@ for t = T(3:end)
 	dx(t) = S(2, t) + noise_level*randn();
 	ddx(t) = (S(2, t) - S(2, t-1))*f;
 	FS(t) = ddx(t)*m + 0.02*m*randn() + m*g;
-	FS_mean = movmean(FS(1:t), 10*f);
+	FS_mean = movmean(FS(1:t), 500);
 	M_fs_hat(t) = FS_mean(t)/g;
     Tf = 1/f;
-	M_pos(t) = (-k*(x(t))-b*(x(t)-x(t-1))/Tf)/((x(t)-2*x(t-1)+x(t-2))/Tf/Tf -g);
-    POS_mean = movmean(M_pos(1:t), 10*f);
-    M_pos_hat(t) = POS_mean(t);
 	
 	optim_steps = 100;
 	if(t > optim_steps)
@@ -61,12 +61,14 @@ for t = T(3:end)
 		A_hat = sysc_hat.A;
 		m1 = -k/A_hat(2,1);
 		m2 = -b/A_hat(2, 2);
-		M_sys_hat(t) = (m1 + m2)/2;
+		M_sys(t) = (m1 + m2)/2;
 	end;
+	temp =  movmean(M_sys(1:t), 500);
+	M_sys_hat(t) = temp(end);
 	
 	W(t) = dsigmf(ddx(t), [a, -c, a, c]);
+% 	W(t) = 1;
 	M_fuzzy(t) = W(t)*M_fs_hat(t) + (1-W(t))*M_sys_hat(t);
-	
 end;
 	
 t = length(T);
@@ -83,16 +85,19 @@ xlabel('t');
 subplot(2, 1, 2)
 plot(Time, [FS], '-');
 legend('FS');
-% axis([0 inf, -35 -25])
 xlabel('t');
-orient(fig,'landscape')
+orient(fig,'landscape');
 print(fig,['img/', name, '_sys.pdf'],'-dpdf', '-fillpage');
 
 fig = figure(2);
 plot(Time, [M_fs_hat; M_sys_hat; M_fuzzy; W], '-');
 legend('M\_fs\_hat', 'M\_sys', 'M\_fuzzy', 'W');
+% plot(Time(10:end), [M_sys_hat(10:end)], '-');
+% axis([0 inf, 0 4])
+% legend('M\_sys\_hat');
+
 xlabel('t');
-orient(fig,'landscape')
+orient(fig,'landscape');
 print(fig,['img/', name, '_mass.pdf'],'-dpdf', '-fillpage');
 
 fig = figure(3);
@@ -100,5 +105,5 @@ w = -10:0.1/f:10;
 plot(w, dsigmf(w, [a, -c, a, c]), '-');
 xlabel('ddx');
 ylabel('W');
-orient(fig,'landscape')
+orient(fig,'landscape');
 print(fig,['img/', name, '_w.pdf'],'-dpdf', '-fillpage');
