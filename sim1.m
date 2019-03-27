@@ -5,6 +5,7 @@ b = 1;
 k = 20;
 m = 3;
 g = -9.81;
+name = 'system'
 
 a = 0.4;
 c = 2;
@@ -36,7 +37,7 @@ M_sys = zeros(size(T));
 for t = T(3:end)
 	F = -M_fuzzy(t-1)*g;
 	F = min(t/1000, 1)*F;
- 	%F=0;
+ 	F=0;
 	noise_level = 0.01;
 	U(t) = g+F/m;
 	S(:, t) = sysd.A*S(:, t-1) + sysd.B*U(t);
@@ -72,6 +73,7 @@ t = length(T);
 Time = 0:1/f:t/f;
 Time = Time(1:end-1);
 
+
 fig = figure(1);
 subplot(2, 1, 1)
 plot(Time, [x; dx; ddx], '-');
@@ -81,17 +83,22 @@ xlabel('t');
 subplot(2, 1, 2)
 plot(Time, [FS], '-');
 legend('FS');
-axis([0 inf, -35 -25])
+% axis([0 inf, -35 -25])
 xlabel('t');
+orient(fig,'landscape')
+print(fig,['img/', name, '_sys.pdf'],'-dpdf', '-fillpage');
 
 fig = figure(2);
 plot(Time, [M_fs_hat; M_sys_hat; M_fuzzy; W], '-');
 legend('M\_fs\_hat', 'M\_sys', 'M\_fuzzy', 'W');
 xlabel('t');
+orient(fig,'landscape')
+print(fig,['img/', name, '_mass.pdf'],'-dpdf', '-fillpage');
 
 fig = figure(3);
 w = -10:0.1/f:10;
 plot(w, dsigmf(w, [a, -c, a, c]), '-');
 xlabel('ddx');
 ylabel('W');
-
+orient(fig,'landscape')
+print(fig,['img/', name, '_w.pdf'],'-dpdf', '-fillpage');

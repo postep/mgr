@@ -10,6 +10,8 @@
 
 \newcommand{\matr}[1]{\mathbf{#1}} % undergraduate algebra version
 
+\graphicspath{{./img/}}
+
 \title{MGR - Raport 1}
 \author{Jakub Postępski}
 
@@ -18,7 +20,7 @@
 \maketitle
 
 \section{Problem}
-Należy skompensować siłę grawitacji w układzie ze sprężyną.
+Należy skompensować siłę grawitacji w układzie ze sprężyną. Rozwiązaniem jest określenie masy a następnie dodanie odpowiednich sił do układu w celu kompensacji siły grawitacji.
 
 \section{Obiekt}
 Obiektem jest układ ze sprężyną i amortyzatorem. Na końcu zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Przyjmujemy że dla użytkownika dostępne są pomiary położenia ($x$), prędkości ($\dot{x}$), przyspieszenia ($\ddot{x}$) oraz siły odczytanej przez czujnik.
@@ -83,16 +85,31 @@ x(k+1) = \mathbf{A_d}x(k) + \mathbf{B}_du(k)
 \end{equation}
 
 
-Symulację obiektu (rys. ) można wykonać korzystając z wersji dyskretnej układu. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W celu symulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
+Symulację obiektu (rys. \ref{fig:system}) można wykonać korzystając z wersji dyskretnej układu. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W celu symulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{system_sys}
+	\centering
+	\caption{Symulacja układu z parametrami $T=0.01$, $k = 20$, $b = 1$, $m = 3$.}
+	\label{fig:system}
+\end{figure}
 
 \section{Estymacja masy}
-Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. ). Następnie zastosowano filtr dolnoprzepustowy w celu odfitrowania zakłóceń.
+Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. \ref{fig:system_mass}). Następnie zastosowano filtr dolnoprzepustowy w celu odfitrowania zakłóceń.
   
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{system_mass}
+	\centering
+	\caption{Estymacja masy układu z parametrami $T=0.01$, $k = 20$, $b = 1$, $m = 3$. Linią $W$ oznaczono poziom funkcji przynależności modelu }
+	\label{fig:system_mass}
+\end{figure}
+
 \subsection{Estymacja z czujnika siły}
 \label{fs}
 Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą zastosowania filtru odfiltrowywanie szumów pomiarowych.
 
 \subsection{Estymacja z macierzy układu}
+\label{pos}
 Ponieważ macierz $\mathbf{B}$ ma tylko jeden wyraz różny od zera $\mathbf{B_d}$ jest uzyskiwana w prosty sposób i można przyjąć że:
 \begin{equation}
 \mathbf{B_d} = \mathbf{B}t
