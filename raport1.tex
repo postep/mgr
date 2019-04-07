@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, 10pt]{article}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -8,7 +8,7 @@
 \usepackage{geometry}
 \usepackage{float}
 
-\newcommand{\matr}[1]{\mathbf{#1}} % undergraduate algebra version
+
 
 \graphicspath{{./img/}}
 
@@ -20,54 +20,59 @@
 \maketitle
 
 \section{Problem}
-Należy skompensować siłę grawitacji w układzie ze sprężyną. Rozwiązaniem jest określenie masy a następnie dodanie odpowiednich sił do układu w celu kompensacji siły grawitacji.
+Należy skompensować siłę grawitacji w układzie stawu obrotowego sterowanego impedancyjnie. Rozwiązaniem jest określenie masy a następnie dodanie odpowiednich sił do układu w celu kompensacji siły grawitacji.
 
 \section{Obiekt}
-Obiektem jest układ ze sprężyną i amortyzatorem. Na końcu zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Przyjmujemy że dla użytkownika dostępne są pomiary położenia ($x$), prędkości ($\dot{x}$), przyspieszenia ($\ddot{x}$) oraz siły odczytanej przez czujnik.
+Obiektem jest układ wahadła sterowanego prawem sterowania impedancyjnego (rys. \ref{fig:2d}). Na końcu nieważkiego ramienia $r$ zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Algorytm sterowania symuluje sprężynę oraz amortyzator w osi obrotu wahadła i można do niego dodać moment $u$. W osi obrotu znajduje się czujnik FTS. Przyjmujemy że dla użytkownika dostępne są pomiary położenia $q$, prędkości $\dot{q}$, przyspieszenia $\ddot{q}$ oraz pomiary siły $F$ i momentu siły $\tau$.
+
+Układ z inercją $I$ możemy opisać przy pomocy równania:
+\begin{equation}
+\label{eq:intro}
+\tau = I\ddot{q} = mr^2\ddot{q} = kq + d\dot{q} + mg\cos{(q)} + Iu
+\end{equation}
 
 Model obiektu można opisać układem równań różniczkowych:
-
 \begin{equation}
 	\begin{bmatrix}
-	    \dot{x} \\
-	    \ddot{x}
+	    \dot{q} \\
+	    \ddot{q}
 	\end{bmatrix}
 	=
 	\begin{bmatrix}
 	    0 & 1 \\
-	    \frac{k}{m} & \frac{b}{m}
+	    \frac{k}{I} & \frac{d}{I}
 	\end{bmatrix}
 	\begin{bmatrix}
-		x \\
-	    \dot{x}
+		q \\
+	    \dot{q}
 	\end{bmatrix}
 	+
 	\begin{bmatrix}
 	    0 \\
 	    1
 	\end{bmatrix}
-	{-g + u_w}
+	(\frac{mg\cos{(q)}}{I} + u)
 \end{equation}
 
 gdzie:
 \begin{itemize}
-	\item $x$ pozycja zawieszonej masy
-	\item $k$ parametr sztywności
-	\item $b$ parametr amortyzacji
-	\item $m$ masa przedmiotu
-	\item $g$ przyspieszenie ziemskie
-	\item $u_w$ przyspieszenie które można zewnętrznie dodać do układu
+	\item $q$ - kąt obrotu [$rad$]
+	\item $k$ - sztywność
+	\item $b$ - tłumienie
+	\item $m$ - masa przedmiotu [$kg$]
+	\item $g$ - przyspieszenie ziemskie [$\frac{m}{s^2}$]
+	\item $u$ - moment który można zewnętrznie dodać do układu [$Nm$]
 \end{itemize}
 
 Układ możemy więc zapisać w standardowej postaci
 \begin{equation}
-\dot{x} = \textbf{A}x + \textbf{B}u(t)
+\dot{q} = \textbf{A}q + \textbf{B}u(t)
 \end{equation}
 gdzie:
 \begin{equation}
 \mathbf{A} = 	\begin{bmatrix}
 	    0 & 1 \\
-	    \frac{k}{m} & \frac{b}{m}
+	    \frac{k}{I} & \frac{d}{I}
 	\end{bmatrix}
 \end{equation}
 oraz:
@@ -78,14 +83,128 @@ oraz:
 	\end{bmatrix}
 \end{equation}
 
-Po zdyskretyzowaniu z okresem próbkowania $t$ otrzymujemy układ:
+Siła działająca na układ jest sumą siły grawitacji i siły odśrodkowej układu.
+Siłę grawitacji możemy opisać wzorem:
 \begin{equation}
-x(k+1) = \mathbf{A_d}x(k) + \mathbf{B}_du(k)
-\label{eq:dyskretny}
+F_g = mg
+\end{equation}
+a siłę odśrodkową odpowiednio w osi $X$ oraz $Y$ wzorami:
+\begin{equation}
+F_{ox} =  \cos{m(\dot{q}^2 r)}
+\end{equation}
+\begin{equation}
+F_{oy} =  \sin{m(\dot{q}^2 r)}
 \end{equation}
 
 
-Symulację obiektu (rys. \ref{fig:system}) można wykonać korzystając z wersji dyskretnej układu. Czujnik siły można zasymulować biorąc przyspieszenie układu $\ddot{x}$ i mnożąć przez masę. W celu symulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
+Dlatego odczyty czujnika w dwóch osiach możemy opisać wzorami:
+\begin{equation}
+F_y = F_g + F_{oy} = mg + \sin{m(\dot{q}^2 r)}
+\end{equation}
+\begin{equation}
+F_x = F_{ox} = m\cos{m(\dot{q}^2 r)}
+\end{equation}
+
+\section{Dyskretyzacja układu}
+Po zdyskretyzowaniu metodami ZOH z okresem próbkowania $T$ otrzymujemy układ:
+\begin{equation}
+q(t+1) = \mathbf{A_d}q(t) + \mathbf{B}_du(t)
+\label{eq:dyskretny}
+\end{equation}
+
+Dyskretyzację odczytów FTS można przeprowadzić korzystając z równań zdyskretyzowanych metodą Eulera ($\dot{q} \approx \frac{q(t)-q(t-1)}{T}$). 
+
+\begin{equation}
+F_x(t) = m\cos{((\frac{q(t)-q(t-1)}{T})^2 r)}
+\end{equation}
+\begin{equation}
+\label{eq:fy}
+F_y(t) = mg + m\sin{((\frac{q(t)-q(t-1)}{T})^2 r)}
+\end{equation}
+
+oraz z równania \ref{eq:intro}
+\begin{equation}
+\tau(t) = kq(t) + d\frac{q(t)-q(t-1)}{T} + Iu + mg\cos(q)
+\end{equation}
+
+Podobnie można dyskretyzować inne równania.
+\section{Estymacja masy przy wykorzystaniu FTS i wyliczeniu siły odśrodkowej}
+\label{sec:ftsods}
+Korzystając z równania \ref{eq:fy} Można opisać siły działające na czujnik w osi $Y$ jako:
+\begin{equation}
+F_y  = m(g + \dot{q}^2r\sin{(q)})
+\end{equation}
+i przekształcając otrzymać równanie z dwoma niewiadomymi $m$ oraz $r$:
+\begin{equation}
+\label{eq:ftsods}
+m = \frac{F_y}{g+\dot{q}^2r\sin{(q)}}
+\end{equation}
+Podstawiając dane z dwóch różnych próbek jesteśmy w stanie obliczyć:
+\begin{equation}
+r = \frac{(F_{y1}-F_{y2})g}{F_{y2}\dot{q_1}^2\sin{(q_1)}-F_{y1}\dot{q_2}^2\sin{(q_2)}}
+\end{equation}
+po do aby ponownie podstawić do równania \ref{eq:ftsods} w celu wyliczenia masy.
+
+
+\section{Estymacja masy z FTS, podejście naiwne}
+\label{fts:nai}
+Analizując składowe mierzone w osi $Y$ czujnika siły można wyodrębnić siłę grawitacji i utożsamić ją ze składową stałą sygnału. Kiedy zawieszona masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania składowej stałej (siły grawitacji) możemy zastosować transformatę Fouriera. W praktyce sygnał nie jest poddawany pełnej transformacji a do wyliczania składowej stałej syganłu użyty został filtr średniej kroczącej. Dodatkową zaletą zastosowania filtru jest niwelowanie szumów pomiarowych.
+
+\subsection{Estymacja inercji z macierzy układu}
+\label{sec:pos}
+Ponieważ macierz $\mathbf{B}$ ma tylko jeden wyraz różny od zera $\mathbf{B_d}$ jest uzyskiwana w prosty sposób i można przyjąć że:
+\begin{equation}
+\mathbf{B_d} \approx \mathbf{B}T
+\end{equation}
+Przekształcając równanie \ref{eq:dyskretny} i stosując pseudoinwersję macierzy otrzymujemy równanie macierzowe:
+\begin{equation}
+\mathbf{A_d} = (X(t+1) - \mathbf{B}_du(t))(X(t))^{pinv}
+\label{eq:pinv}
+\end{equation}
+przy założeniu $n$ ostatnich próbek zmiennych stanów układu
+\begin{equation}
+X(t) = 	\begin{bmatrix}
+x(t) & x(t-1)  & ... & x(t-n)
+\end{bmatrix}
+\label{eq:xk}
+\end{equation}
+
+Po obliczeniu estymacji $\mathbf{A_d}$ metodą ZOH wyliczamy estymację macierzy $\mathbf{A}$ otrzymując macierz
+\begin{equation}
+\mathbf{\hat{A}} = 	\begin{bmatrix}
+a_{11} & a_{12}\\
+a_{21} & a_{22}
+\end{bmatrix}
+\end{equation}
+Po przyrównaniu jej do macierzy $\mathbf{A}$ możemy wyliczć inercję z równań:
+\begin{equation}
+\hat{I_1} = \frac{-k}{a_{21}}
+\end{equation}
+\begin{equation}
+\hat{I_2} = \frac{-b}{a_{22}}
+\end{equation}
+
+i ostatecznie przyjąć estymację:
+\begin{equation}
+\hat{I} = \frac{\hat{I_1}+\hat{I_2}}{2}
+\end{equation}
+
+\subsection{Estymacja masy przy wykorzystaniu równań na podstawie inercji}
+Korzystajać z równania \ref{eq:intro} i znając inercję jesteśmy w stanie wyliczyć masę:
+\begin{equation}
+m = \frac{I\ddot{q} - kq - d\dot{q} -Iu}{g\cos{(q)}}
+\end{equation}
+
+Zastosowania równania w układzie z czasem dyskretnym zastosowano emulacje metodą Eulera i uzyskano:
+\begin{equation}
+m(t) \approx \frac{I\frac{q(t)-2q(t-1)+q(t-2)}{T^2}-kq(t)-d\frac{q(t)-q(t-1)}{T}-Iu}{g\cos(q)}
+\end{equation}
+
+Wadą rozwiązania są dwie osobliwości dla $q = \frac{\pi}{2}$ oraz $q = 3\frac{\pi}{2}$
+
+\section{Symulacja układu}
+
+Symulację obiektu (rys. \ref{fig:system}) można wykonać korzystając z wersji dyskretnej układu. W celu symulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
 
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{system_sys}
@@ -94,28 +213,16 @@ Symulację obiektu (rys. \ref{fig:system}) można wykonać korzystając z wersji
 	\label{fig:system}
 \end{figure}
 
-\section{Estymacja masy}
-Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. \ref{fig:system_mass}). Funkcja przynależności (rys. \ref{fig:system_w}) decyduje o większym udziale modelu czujnika siły w momencie gdy na układ nie działają przyspieszenia.
 
 \begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{system_mass}
+	\includegraphics[width=0.99\linewidth]{2d}
 	\centering
-	\caption{Estymacja masy układu z parametrami $T=0.01$, $k = 20$, $b = 1$, $m = 3$. Linią $W$ oznaczono poziom funkcji przynależności modelu }
-	\label{fig:system_mass}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{system_w}
-	\centering
-	\caption{Sigmoidalna funkcja przynależności postaci $f(\ddot{x}; a, c) = \frac{1}{1+e^{\|\ddot{x}\|-c}}$ z parametrami $a~=~0.4$, $c = 2$.}
-	\label{fig:system_w}
+	\caption{Schemat badanego układu. Kolorem niebieskim zaznaczono masę $m$ zawieszoną na ramieniu $r$. Kolorem czerwonym zaznaczono punkt mocowania ramienie i umiejscowienia czujnika FTS. Kolorem czarnym pokazano siły odczytywane z czujnika sił, moment siły $\tau$, pozycję $q$ sprężynę $k$ oraz amortyzator $d$. Kolorem szarym zaznaczono rzeczywiste siły układu.}
+	\label{fig:2d}
 \end{figure}
 
 
-
-\subsection{Estymacja z czujnika siły}
-\label{fs}
-Siła odczytywana z czujnika siły jest sumą sił działających na masę. Kiedy masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania interesującej nas składowej stałej (siła grawitacji) możemy zastosować transformatę Fouriera. Jedną z własności tej transformaty jest fakt że uzyskana składowa stała jest średnią arytmetyczną sygnału. W praktyce w celu uzyskania siły grawitacji stosowana jest średnia krocząca która działa podobnie do filtru dolnoprzepustowego. Dodatkową zaletą zastosowania filtru odfiltrowywanie szumów pomiarowych.
+\section{Symulacje}
 
 W trakcie symulacji eksperymentalnie dobierano ilość próbek branych pod uwagę przez filtr. Dla filtrów z krótkim oknem (rys. \ref{fig:systemfs4_mass}, \ref{fig:systemfs100_mass}) widać, że są w stanie odfiltrować jedynie szumy pomiarowe czujnika. Dla filtrów z długim oknem widać, że potrzeba dużo czasu aby otrzymać estymację masy (rys. \ref{fig:systemfs1000_mass}). Finalnie wybrano okno długości $n = 500$ (rys. \ref{fig:systemfs500_mass}.)
 
@@ -149,47 +256,8 @@ W trakcie symulacji eksperymentalnie dobierano ilość próbek branych pod uwag�
 \end{figure}
 
 
-\subsection{Estymacja z macierzy układu}
-\label{pos}
-Ponieważ macierz $\mathbf{B}$ ma tylko jeden wyraz różny od zera $\mathbf{B_d}$ jest uzyskiwana w prosty sposób i można przyjąć że:
-\begin{equation}
-\mathbf{B_d} = \mathbf{B}T
-\end{equation}
-Przekształcając równanie \ref{eq:dyskretny} i stosując pseudoinwersję macierzy otrzymujemy równanie macierzowe:
-\begin{equation}
-	\mathbf{A_d} = (X(k+1) - \mathbf{B}_du(k))(X(k))^{pinv}
-	\label{eq:pinv}
-\end{equation}
-przy założeniu $n$ ostatnich próbek zmiennych stanów układu
-\begin{equation}
-	X(k) = 	\begin{bmatrix}
-		    x(k) & x(k-1)  & ... & x(k-n)
-		\end{bmatrix}
-	\label{eq:xk}
-\end{equation}
 
-Po obliczeniu estymacji $\mathbf{A_d}$ metodą ZOH wyliczamy estymację macierzy $\mathbf{A}$ otrzymując macierz
-\begin{equation}
-\mathbf{\hat{A}} = 	\begin{bmatrix}
-	    a_{11} & a_{12}\\
-	    a_{21} & a_{22}
-	\end{bmatrix}
-\end{equation}
-Po przyrównaniu jej do macierzy $\mathbf{A}$ możemy wyliczć masę z równań:
-\begin{equation}
-\hat{m_1} = \frac{-k}{a_{21}}
-\end{equation}
-\begin{equation}
-\hat{m_2} = \frac{-b}{a_{22}}
-\end{equation}
-
-i ostatecznie przyjąć estymację:
-\begin{equation}
-\hat{m} = \frac{\hat{m_1}+\hat{m_2}}{2}
-\end{equation}
-
-
-W trakcie symulacji eksperymentowano z różną ilością próbek stosowanych do estymacji (rys. \ref{fig:system4_mass}, \ref{fig:system20_mass}, \ref{fig:system200_mass}). Ostatecznie przyjęto $n = 100$ (rys. \ref{fig:system100_mass}). Szczególnie dla mniejszej ilości próbek używanych do optymalizacji można zauważyć pogorszenie jakości estymacji w momencie gdy przyspieszenie układu jest małe. Dla zwiększonej liczby próbek widać polepszenie jakości estymacji kosztem czasu jej uzyskania. Podczas eksperymentów stwierdzono, że estymacja wykazuje dużą podatność na zakłócenia. Dlatego finalnie zdecydowano się na zastosowanie algorytmu średniej kroczącej w celu odfiltrowania zakłócen (rys. \ref{fig:filter_mass})
+W trakcie symulacji eksperymentowano z różną ilością próbek stosowanych do estymacji (rys. \ref{fig:system4_mass}, \ref{fig:system20_mass}, \ref{fig:system200_mass}). Ostatecznie przyjęto $n = 100$ (rys. \ref{fig:system100_mass}). Szczególnie dla mniejszej ilości próbek używanych do optymalizacji można zauważyć pogorszenie jakości estymacji w momencie gdy przyspieszenie układu jest małe. Dla zwiększonej liczby próbek widać polepszenie jakości estymacji kosztem czasu jej uzyskania. Podczas eksperymentów stwierdzono, że estymacja wykazuje dużą podatność na zakłócenia. Dlatego finalnie zdecydowano się na zastosowanie algorytmu średniej kroczącej w celu odfiltrowania zakłóceń (rys. \ref{fig:filter_mass})
 
 \begin{figure}[H]
 	\includegraphics[width=0.99\linewidth]{system4_mass}
@@ -225,6 +293,27 @@ W trakcie symulacji eksperymentowano z różną ilością próbek stosowanych do
 	\caption{Estymacja masy układu z parametrami $T=0.01$, $k = 20$, $b = 1$, $m = 3$ dla 100 próbek optymalizacji i po zastosowaniu filtru średniej kroczącej.}
 	\label{fig:filter_mass}
 \end{figure}
+
+
+\section{Estymacja masy}
+Estymacja masy działa na podstawie dwóch modeli. Model opisany w sekcji \ref{fs} działa dobrze gdy układ jest ustabilizowany. Model opisany w sekcji \ref{pos} działa dobrze gdy układ jest w ruchu. W celu poprawnej estymacji w dowolnym momencie pracy układu połączono dane z modeli przy wykorzystaniu logiki rozmytej (rys. \ref{fig:system_mass}). Funkcja przynależności (rys. \ref{fig:system_w}) decyduje o większym udziale modelu czujnika siły w momencie gdy na układ nie działają przyspieszenia.
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{system_mass}
+	\centering
+	\caption{Estymacja masy układu z parametrami $T=0.01$, $k = 20$, $b = 1$, $m = 3$. Linią $W$ oznaczono poziom funkcji przynależności modelu }
+	\label{fig:system_mass}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=0.99\linewidth]{system_w}
+	\centering
+	\caption{Sigmoidalna funkcja przynależności postaci $f(\ddot{x}; a, c) = \frac{1}{1+e^{\|\ddot{x}\|-c}}$ z parametrami $a~=~0.4$, $c = 2$.}
+	\label{fig:system_w}
+\end{figure}
+
+
+
 
 
 \section{Kompensacja grawitacji}
