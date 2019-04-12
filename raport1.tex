@@ -134,17 +134,22 @@ Korzystając z równania \ref{eq:fy} Można opisać siły działające na czujni
 \begin{equation}
 F_y  = m(g + \dot{q}^2r\sin{(q)})
 \end{equation}
-i przekształcając otrzymać równanie z dwoma niewiadomymi $m$ oraz $r$:
+Zakładając błędy odczytu $e$ w chwili $i$ dostajemy próbkę postaci:
 \begin{equation}
-\label{eq:ftsods}
-m = \frac{F_y}{g+\dot{q}^2r\sin{(q)}}
+F_{yi}+e  = m(g + \dot{q_i}^2r\sin{(q_i)})
 \end{equation}
-Podstawiając dane z dwóch różnych próbek jesteśmy w stanie obliczyć:
-\begin{equation}
-r = \frac{(F_{y1}-F_{y2})g}{F_{y2}\dot{q_1}^2\sin{(q_1)}-F_{y1}\dot{q_2}^2\sin{(q_2)}}
-\end{equation}
-po do aby ponownie podstawić do równania \ref{eq:ftsods} w celu wyliczenia masy.
 
+Posiadając kilka próbek możemy więc sformuować zadanie optymalizacji nieliniowej z parametrami $m$ oraz $r$ takie że:
+\begin{equation}
+\begin{aligned}
+& \underset{m, r}{\text{min}}
+& & \sum_{i = 1}^{n} || F_y(m, r) + e || \\
+& \text{przy ograniczeniach}
+& & F_{yi}(r, m) = m(g + \dot{q_i}^2r\sin{(q_i)}), \; i = 1, \ldots, n.
+\end{aligned}
+\end{equation}
+
+Zadany problem można rozwiązać algorytmem Levenberga–Marquardta.
 
 \section{Estymacja masy z FTS, podejście naiwne}
 \label{fts:nai}
@@ -215,7 +220,7 @@ Symulację obiektu (rys. \ref{fig:system}) można wykonać korzystając z wersji
 
 
 \begin{figure}[H]
-	\includegraphics[width=0.99\linewidth]{2d}
+%	\includegraphics[width=0.99\linewidth]{2d}
 	\centering
 	\caption{Schemat badanego układu. Kolorem niebieskim zaznaczono masę $m$ zawieszoną na ramieniu $r$. Kolorem czerwonym zaznaczono punkt mocowania ramienie i umiejscowienia czujnika FTS. Kolorem czarnym pokazano siły odczytywane z czujnika sił, moment siły $\tau$, pozycję $q$ sprężynę $k$ oraz amortyzator $d$. Kolorem szarym zaznaczono rzeczywiste siły układu.}
 	\label{fig:2d}

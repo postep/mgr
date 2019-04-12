@@ -73,15 +73,25 @@ for t = T(3:end)
     %algorytm fts ods
     diff = 10;
     if t>diff
-        Fy1 = FS_y(t-diff);
-        Fy2 = FS_y(t);
-        q1 = q(t-diff);
-        q2 = q(t);
-        dq1 = dq(t-diff);
-        dq2 = dq(t);
-        r_ods(t) = (Fy1-Fy2)*g/(Fy2*dq1^2*sin(q1) -Fy1*dq2^2*sin(q2));
-        M_ods(t) = Fy1/(g + dq1^2*r_ods(t)*sin(q1));
-    end
+%         Fy1 = FS_y(t-diff);
+%         Fy2 = FS_y(t);
+%         q1 = q(t-diff);
+%         q2 = q(t);
+%         dq1 = dq(t-diff);
+%         dq2 = dq(t);
+%         r_ods(t) = (Fy1-Fy2)*g/(Fy2*dq1^2*sin(q1) -Fy1*dq2^2*sin(q2));
+%         M_ods(t) = Fy1/(g + dq1^2*r_ods(t)*sin(q1));
+		
+		last_q = q(t-diff:t);
+		last_dq = dq(t-diff:t);
+		last_Fy = FS_y(t-diff:t);
+ 		Fy = @(E) E(1)*(g+(last_dq.^2)*E(2).*sin(last_q)) -last_Fy;
+		e0 = [0, 0];
+		e = lsqnonlin(Fy,e0);
+		
+		r_ods(t) = e(2);
+		M_ods(t) = e(1);
+     end
     
     % algorytm macierzy stanu
     Tf = 1/f;
