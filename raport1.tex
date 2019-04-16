@@ -128,30 +128,19 @@ oraz z równania \ref{eq:intro}
 \end{equation}
 
 Podobnie można dyskretyzować inne równania.
-\section{Estymacja masy przy wykorzystaniu FTS i wyliczeniu siły odśrodkowej}
-\label{sec:ftsods}
-Korzystając z równania \ref{eq:fy} Można opisać siły działające na czujnik w osi $Y$ jako:
-\begin{equation}
-F_y  = m(g + \dot{q}^2r\sin{(q)})
-\end{equation}
-Zakładając błędy odczytu $e$ w chwili $i$ dostajemy próbkę postaci:
-\begin{equation}
-F_{yi}+e  = m(g + \dot{q_i}^2r\sin{(q_i)})
-\end{equation}
+\section{Estymacja nieznanych parametrów}
+W celu skompensowania grawitacji zawieszonej masy należy poznać parametry opisujące tę masę. Uznano że do opisu wystarczą typowe i powszechnie używane zmienne. W opisywanym układzie nie są znane takie wielkości jak inercja, masa oraz środek ciężkości. 
 
-Posiadając kilka próbek możemy więc sformuować zadanie optymalizacji nieliniowej z parametrami $m$ oraz $r$ takie że:
+Przy założeniu, że masa jest punktowa wiemy że inercję tej masy opisuje zależność
 \begin{equation}
-\begin{aligned}
-& \underset{m, r}{\text{min}}
-& & \sum_{i = 1}^{n} || F_y(m, r) + e || \\
-& \text{przy ograniczeniach}
-& & F_{yi}(r, m) = m(g + \dot{q_i}^2r\sin{(q_i)}), \; i = 1, \ldots, n.
-\end{aligned}
+I = mr^2
 \end{equation}
+W trakcie opisu metod estymacji parametrów starano się w miarę możliwości nie korzystać z tej zależności. Dzięki takiemu podejściu w przyszłości będzie można wykorzystać znalezione metody w celu estymacji mas niepunktowych o nierównomiernym rozkładzie. 
 
-Zadany problem można rozwiązać algorytmem Levenberga–Marquardta.
+Posiadając estymację promienia $r$ i wykorzystując pozycję $q$ jesteśmy w wstanie określić pozycję zawieszonej masy a więc i środek ciężkości.
 
-\section{Estymacja masy z FTS, podejście naiwne}
+
+\subsection{Estymacja masy z FTS, podejście naiwne}
 \label{fts:nai}
 Analizując składowe mierzone w osi $Y$ czujnika siły można wyodrębnić siłę grawitacji i utożsamić ją ze składową stałą sygnału. Kiedy zawieszona masa się nie porusza w łatwy sposób można odczytać siłę grawitacji. W momencie ruchu układu z czujnika dostajemy sygnał zmienny. W celu uzyskania składowej stałej (siły grawitacji) możemy zastosować transformatę Fouriera. W praktyce sygnał nie jest poddawany pełnej transformacji a do wyliczania składowej stałej syganłu użyty został filtr średniej kroczącej. Dodatkową zaletą zastosowania filtru jest niwelowanie szumów pomiarowych.
 
@@ -193,6 +182,32 @@ i ostatecznie przyjąć estymację:
 \begin{equation}
 \hat{I} = \frac{\hat{I_1}+\hat{I_2}}{2}
 \end{equation}
+
+
+\subsection{Estymacja masy przy wykorzystaniu FTS i wyliczeniu siły odśrodkowej}
+\label{sec:ftsods}
+Korzystając z równania \ref{eq:fy} można opisać siły działające na czujnik w osi $Y$ w chwili $i$ jako:
+\begin{equation}
+F_{yi}  = m(g + \dot{q_i}^2r\sin{(q_i)})
+\end{equation}
+
+Zakładając błędy odczytu $e$ dostajemy próbkę postaci:
+\begin{equation}
+\hat{F_{yi}}+e_i  = F_{yi}
+\end{equation}
+
+Posiadając $n$ próbek możemy więc sformuować zadanie optymalizacji nieliniowej z parametrami $m$ oraz $r$ takie że:
+\begin{equation}
+\begin{aligned}
+& \underset{m, r}{\text{min}}
+& & \sum_{i = 1}^{n} || e_i || = \sum_{i = 1}^{n} || \hat{F_{yi}} - F_{yi} || \\
+& \text{przy ograniczeniach}
+& & F_{yi} = m(g + \dot{q_i}^2r\sin{(q_i)}), \; i = 1, \ldots, n.
+\end{aligned}
+\end{equation}
+
+Zadany problem optymalizacji nieliniowej można rozwiązać algorytmem Levenberga–Marquardta i ten algorytm jest wykorzystywany w badaniach.
+
 
 \subsection{Estymacja masy przy wykorzystaniu równań na podstawie inercji}
 Korzystajać z równania \ref{eq:intro} i znając inercję jesteśmy w stanie wyliczyć masę:
