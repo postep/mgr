@@ -98,13 +98,15 @@ F_{oy} =  \sin{m(\dot{q}^2 r)}
 
 
 Dlatego odczyty czujnika w dwóch osiach możemy opisać wzorami:
+
 \begin{equation}
-F_y = F_g + F_{oy} = mg + \sin{m(\dot{q}^2 r)}
-\end{equation}
-\begin{equation}
-F_x = F_{ox} = m\cos{m(\dot{q}^2 r)}
+F_x = F_{ox} = \cos{(q)}m\dot{q}^2 r
 \end{equation}
 
+\begin{equation}
+\label{eq:fy}
+F_y = F_g + F_{oy} = mg + \sin{(q)}m\dot{q}^2 r
+\end{equation}
 
 
 \section{Dyskretyzacja układu}
@@ -114,19 +116,18 @@ q(t+1) = \mathbf{A_d}q(t) + \mathbf{B}_du(t)
 \label{eq:dyskretny}
 \end{equation}
 
-Dyskretyzację odczytów FTS można przeprowadzić korzystając z równań zdyskretyzowanych metodą Eulera ($\dot{q} \approx \frac{q(t)-q(t-1)}{T}$). 
+Dyskretyzację odczytów FTS  oraz innych równań można przeprowadzić korzystając z dyskretyzacji metodą Eulera ($\dot{q} \approx \frac{q(t)-q(t-1)}{T}$). 
 
 \begin{equation}
-F_x(t) = m\cos{((\frac{q(t)-q(t-1)}{T})^2 r)}
+F_{dx}(t) = \cos{(q)}m(\frac{q(t)-q(t-1)}{T})^2 r
 \end{equation}
 \begin{equation}
-\label{eq:fy}
-F_y(t) = mg + m\sin{((\frac{q(t)-q(t-1)}{T})^2 r)}
+F_{dy}(t) = mg + \sin{(q)}m(\frac{q(t)-q(t-1)}{T})^2 r
 \end{equation}
 
 oraz z równania \ref{eq:intro}
 \begin{equation}
-\tau(t) = kq(t) + d\frac{q(t)-q(t-1)}{T} + Iu + mg\cos(q)
+\tau(t) = kq(t) + d\frac{q(t)-q(t-1)}{T} + Iu + \cos(q)mg
 \end{equation}
 
 Podobnie można dyskretyzować inne równania i w dalszej części raportu zastosowanie metody nie będzie pokazywane wprost. We wszystkich symulacjach przedstawionych dalej użyto dyskretnych wersji przedstawionych równań.
