@@ -22,7 +22,7 @@
 \section{Wprowadzenie}
 Należy skompensować siłę grawitacji w układzie stawu obrotowego sterowanego impedancyjnie. Rozwiązaniem jest określenie masy a następnie dodanie odpowiednich sił do układu w celu kompensacji siły grawitacji.
 
-Obiektem jest układ wahadła sterowanego prawem sterowania impedancyjnego (rys. \ref{fig:2d}). Na końcu nieważkiego ramienia $r$ zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Algorytm sterowania symuluje sprężynę oraz amortyzator w osi obrotu wahadła i można do niego dodać moment $u$.  Przyjmujemy że dla użytkownika dostępne są pomiary położenia $q$, prędkości $\dot{q}$, przyspieszenia $\ddot{q}$. Dodakowo przyjmujemy, że w osi obrotu znajduje się czujnik FTS odczytujący siłę $F$ i moment siły $\tau$.
+Obiektem jest układ wahadła sterowanego prawem sterowania impedancyjnego (rys. \ref{fig:2d}). Na końcu nieważkiego ramienia $r$ zawieszona jest punktowa masa $m$ której grawitację należy skompensować. Algorytm sterowania symuluje sprężynę oraz amortyzator w osi obrotu wahadła i można do niego dodać moment $u$.  Przyjmujemy że dla użytkownika dostępne są pomiary położenia $q$, prędkości $\dot{q}$, przyspieszenia $\ddot{q}$. Dodatkowo przyjmujemy, że w osi obrotu znajduje się czujnik FTS odczytujący siłę $F$ i moment siły $\tau$.
 
 Układ z inercją $I$ możemy opisać przy pomocy równania:
 \begin{equation}
@@ -177,7 +177,6 @@ Analogicznie można rozwiązać problem estymacji inercji $I$ wykorzystując ró
 \end{aligned}
 \end{equation}
 
-
 \subsection{Estymacja inercji z macierzy układu}
 \label{sec:pos}
 Ponieważ macierz $\mathbf{B}$ ma tylko jeden wyraz różny od zera $\mathbf{B_d}$ jest uzyskiwana w prosty sposób i można przyjąć że:
@@ -204,7 +203,7 @@ a_{11} & a_{12}\\
 a_{21} & a_{22}
 \end{bmatrix}
 \end{equation}
-Po przyrównaniu jej do macierzy $\mathbf{A}$ możemy wyliczć inercję z równań:
+Po przyrównaniu jej do macierzy $\mathbf{A}$ możemy wyliczyć inercję z równań:
 \begin{equation}
 \hat{I_1} = \frac{-k}{a_{21}}
 \end{equation}
@@ -218,7 +217,7 @@ i ostatecznie przyjąć estymację:
 \end{equation}
 
 
-Metoda nie pozwala na uzyskanie wszyskich parametrów lecz w przypadku braku czujnika FTS lub uzyskania z niego zaszumionych odczytów można uzyskać tą metodą zadowalające wyniki.
+Metoda nie pozwala na uzyskanie wszystkich parametrów lecz w przypadku braku czujnika FTS lub uzyskania z niego zaszumionych odczytów można uzyskać tą metodą zadowalające wyniki.
 
 \section{Kompensacja grawitacji}
 Kompensacja polega na dodaniu do układu momentu siły który przeciwdziała sile grawitacji masy. Z równania \ref{eq:intro2} wynika postać sterowania $u$ kompensującego siłę grawitacji. Ponieważ zależy nam na tym aby pozbyć się członu związanego z macierzą $\mathbf{B}$
@@ -246,14 +245,17 @@ u(t) = \min{(\frac{\max{( t - t_p, 0)}}{t_k-t_p}, 1)}u_s(t)
 
 
 
-\section{Symulacja układu}
+
+
+\section{Podsumowanie}
 Wszystkie symulacje układu można wykonać wykorzystując równania dyskretne (np. rys. \ref{fig:system}). W celu emulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
 
-Estymacja parametrów zawieszonej (TODO: CZY TU COS WGL O TYM PISAC?).
+Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja (rys. \ref{fig:kompensacja}) nie uwzględnia energii układu która powstała przed załączeniem kompensacji, lecz człon amortyzatora pozwala na szybkie wytracenie tej energii. 
 
-Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja nie uwzględnia energii układu która powstała przed załączeniem kompensacji. Powoduje to oscylacje widoczne w układzie. O tym jak szybko układ z załączoną kompensacją grawitacji się ustabilizuje decydują wartości zmiennych stanu układu w momencie rozpoczęcia kompensacji.
+Estymacja parametru promienia $r$ z czujnika FTS zaczyna być obarczona błędem jeśli załączony zostaje algorytm kompensacji grawitacji. Z uwagi na ten fakt zdecydowano się na podział działania programu na dwie fazy. W pierwszej poznawane są parametry modelu. W drugiej zapamiętane wcześniej promień służy do wyliczania momentu potrzebnego do kompensacji grawitacji (rys. \ref{fig:mrozenie}). Możemy przyjąć takie założenie, gdyż w rzeczywistości jeśli umieścimy masę w układzie nie będzie ona znacznie zmieniać swojego promienia. Estymacja masy i inercji w obu metodach jest nieczuła na opisany problem. Powoduje to oscylacje widoczne w układzie. O tym jak szybko układ z załączoną kompensacją grawitacji się ustabilizuje decydują wartości zmiennych stanu układu w momencie rozpoczęcia kompensacji.
 
 
+Przedstawiony algorytm pozwala sprawnie kompensować grawitację masy układu.
 
 
 
@@ -359,7 +361,7 @@ Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać 
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{kompensacja_u}
-		\caption{Sterowanie (U). Przerywana linia prezentuje sterowanie potrzebne w celu kompensacji grawitacji.}
+		\caption{Sterowanie (U). Przerywana linia prezentuje sterowanie potrzebne w celu kompensacji grawitacji. Zaprezentowano funkcję aktywacji momentu kompensacji grawitacji.}
 		\label{fig:kompensacja_u}
 	\end{subfigure}
 	
@@ -367,5 +369,42 @@ Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać 
 	\label{fig:kompensacja}
 \end{figure}
 
+\begin{figure}
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{mrozenie_p}
+		\caption{Stan układu. Pozycja (q), prędkość (dq) i przyspieszenie (ddq).}
+		\label{fig:mrozenie_p}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{mrozenie_s}
+		\caption{Odczyty czujnika FTS. Siła odczytana w osi $OX$ (Fx), w osi $OY$ (Fy) oraz moment siły (T).}
+		\label{fig:mrozenie_s}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{mrozenie_c}
+		\caption{Estymacja parametrów z czujnika sił. Masa (M\_hat), promień (R\_hat) i inercja (I\_hat). Przerywane linie pokazują rzeczywiste wartości parametrów.}
+		\label{fig:mrozenie_c}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{mrozenie_r}
+		\caption{Estymacja inercji (I\_hat) z równań stanu. Przerywana linia pokazuje rzeczywiste wartości parametru.}
+		\label{fig:mrozenie_r}
+	\end{subfigure}
+	
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{mrozenie_u}
+		\caption{Sterowanie (U). Przerywana linia prezentuje sterowanie potrzebne w celu kompensacji grawitacji. Zaprezentowano funkcję aktywacji momentu kompensacji grawitacji.}
+		\label{fig:mrozenie_u}
+	\end{subfigure}
+	
+	\caption{Symulacja układu z parametrami $T=0.01$, $m = 2$, $r = 1.5$, $k = 16$, $b = 2$. Załączona kompensacja grawitacji. Po pierwszych 2 sekundach symulacji zamrożono estymację parametru $r$. Parametry potrzebne do estymacji uzyskane z FTS.}
+	\label{fig:mrozenie}
+\end{figure}
 
 \end{document}
