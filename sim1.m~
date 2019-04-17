@@ -2,14 +2,14 @@ clear variables;
 f = 10;
 T = 1:30*f;
 Tp = 2*f;
-Tk = 3*f;
+Tk = 4*f;
 b = 2;
 k = 16;
 m = 2;
 r = 1.5;
 I = m*r*r;
 g = -9.81;
-name = 'test'
+name = 'kompensacja'
 
 a = 0.4;
 c = 2;
@@ -47,12 +47,11 @@ Us_exp = zeros(size(T));
 Akt = zeros(size(T));
 for t = T(3:end)
 	%symulacja urzadzenia
-    Akt(t) = min(max((t-Tp)/(Tk-Tp), 0), 1);
+    Akt(t) = min(max(t-Tp, 0)/(Tk-Tp), 1);
     if abs(I_ods(t-1)) > 0.1
-%         Us(t) = -M_ods(t-1)*g*R_ods(t-1)*cos(q(t-1))/I_ods(t-1);
+        Us(t) = -M_ods(t-1)*g*R_ods(t-1)*cos(q(t-1))/I_ods(t-1);
     end;
-    Us(t) = Us(t)*Akt(t);
-	U(t) = m*g*r*cos(q(t-1))/I + Us(t);
+	U(t) = m*g*r*cos(q(t-1))/I + Akt(t)*Us(t);
     S(:, t) = sysd.A*S(:, t-1) + sysd.B*U(t);
 	q(t) = S(1, t);
     dq(t) = S(2, t);
@@ -83,16 +82,12 @@ for t = T(3:end)
 		
 		R_ods(t) = e(2);
 		M_ods(t) = e(1);
-        
+        R_ods = movmean(R_ods, 10);
         Ifun = @(I) I*last_ddq - last_T;
         I0 = 1;
         ie = lsqnonlin(Ifun, I0);
         I_ods(t) = ie;
-    end
-     
-%     if t > 30
-%         R_ods(t) = R_ods(t-1);
-%     end;
+     end
     
     % algorytm macierzy stanu
     Tf = 1/f;
@@ -117,6 +112,7 @@ fig = figure(1);
 plot(Time, [q; dq; ddq], '-');
 legend('q', 'dq', 'ddq');
 xlabel('t');
+title('Uklad');
 
 orient(fig,'landscape');
 print(fig,['img/', name, '_p.pdf'],'-dpdf', '-fillpage');
@@ -126,6 +122,7 @@ fig = figure(2);
 plot(Time, [FS_x; FS_y; FS_t], '-');
 legend('Fx', 'Fy', 'T');
 xlabel('t');
+title('FTS');
 
 orient(fig,'landscape');
 print(fig,['img/', name, '_s.pdf'],'-dpdf', '-fillpage');
