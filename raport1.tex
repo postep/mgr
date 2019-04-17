@@ -166,8 +166,6 @@ Posiadając $n$ próbek możemy więc sformułować zadanie optymalizacji nielin
 \end{aligned}
 \end{equation}
 
-Zadany problem optymalizacji nieliniowej można rozwiązać algorytmem Levenberga–Marquardta i ten algorytm jest wykorzystywany w badaniach.
-
 Analogicznie można rozwiązać problem estymacji inercji $I$ wykorzystując równanie \ref{eq:intro} i sformułować zadanie optymalizacji:
 \begin{equation}
 \begin{aligned}
@@ -245,18 +243,19 @@ u(t) = \min{(\frac{\max{( t - t_p, 0)}}{t_k-t_p}, 1)}u_s(t)
 \end{equation}
 
 
+\section{Realizacja praktyczna}
+Wszystkie symulacje układu można wykonać wykorzystując równania dyskretne (np. rys. \ref{fig:system}). W celu emulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały. Zadane problemy optymalizacji nieliniowej rozwiązywano algorytmem Levenberga–Marquardta. Algorytm służącym do obliczania pseudoinwersji był algorytm Moora-Penrose'a. 
+
+Estymacja parametru promienia $r$ z czujnika FTS zaczyna być obarczona błędem jeśli załączony zostaje algorytm kompensacji grawitacji. Z uwagi na ten fakt zdecydowano się na podział działania programu na dwie fazy. W pierwszej poznawane są parametry modelu. W drugiej zapamiętane wcześniej promień służy do wyliczania momentu potrzebnego do kompensacji grawitacji (rys. \ref{fig:mrozenie}). Możemy przyjąć takie założenie, gdyż w rzeczywistości jeśli umieścimy masę w układzie nie będzie ona znacznie zmieniać swojego promienia. Estymacja masy i inercji w obu metodach jest nieczuła na opisany problem. Powoduje to oscylacje widoczne w układzie. O tym jak szybko układ z załączoną kompensacją grawitacji się ustabilizuje decydują wartości zmiennych stanu układu w momencie rozpoczęcia kompensacji.\\
 
 
 
 \section{Podsumowanie}
-Wszystkie symulacje układu można wykonać wykorzystując równania dyskretne (np. rys. \ref{fig:system}). W celu emulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały.
-
-Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja (rys. \ref{fig:kompensacja}) nie uwzględnia energii układu która powstała przed załączeniem kompensacji, lecz człon amortyzatora pozwala na szybkie wytracenie tej energii. 
-
-Estymacja parametru promienia $r$ z czujnika FTS zaczyna być obarczona błędem jeśli załączony zostaje algorytm kompensacji grawitacji. Z uwagi na ten fakt zdecydowano się na podział działania programu na dwie fazy. W pierwszej poznawane są parametry modelu. W drugiej zapamiętane wcześniej promień służy do wyliczania momentu potrzebnego do kompensacji grawitacji (rys. \ref{fig:mrozenie}). Możemy przyjąć takie założenie, gdyż w rzeczywistości jeśli umieścimy masę w układzie nie będzie ona znacznie zmieniać swojego promienia. Estymacja masy i inercji w obu metodach jest nieczuła na opisany problem. Powoduje to oscylacje widoczne w układzie. O tym jak szybko układ z załączoną kompensacją grawitacji się ustabilizuje decydują wartości zmiennych stanu układu w momencie rozpoczęcia kompensacji.
-
 
 Przedstawiony algorytm pozwala sprawnie kompensować grawitację masy układu.
+
+Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja (rys. \ref{fig:kompensacja}) nie uwzględnia energii układu która powstała przed załączeniem kompensacji, lecz człon amortyzatora pozwala na szybkie wytracenie tej energii. Zmodyfikowany algorytm dwufazowy pozwala w szybki i skuteczny sposób radzić sobie z przedstawionym problemem jednak jego wadą pozostaje opóźnienie potrzebne na to aby zidentyfikować parametry masy umieszczonej w układzie. 
+
 
 
 
