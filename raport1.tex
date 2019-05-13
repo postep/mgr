@@ -10,7 +10,7 @@
 
 
 
-\graphicspath{{./img/}}
+\graphicspath{{./img/}} 
 
 \title{MGR - Raport 1}
 \author{Jakub Postępski}
@@ -40,7 +40,7 @@ Model obiektu można opisać układem równań różniczkowych:
 	=
 	\begin{bmatrix}
 	    0 & 1 \\
-	    \frac{k}{I} & \frac{d}{I}
+	    \frac{k}{I} & \frac{d}{\tau_u}
 	\end{bmatrix}
 	\begin{bmatrix}
 		q \\
@@ -49,9 +49,9 @@ Model obiektu można opisać układem równań różniczkowych:
 	+
 	\begin{bmatrix}
 	    0 \\
-	    1
+	    \frac{1}{I}
 	\end{bmatrix}
-	(\frac{mgr\cos{(q)}}{I} + u)
+	(mgr\cos{(q)} + \tau_u)
 \end{equation}
 
 gdzie:
@@ -61,7 +61,7 @@ gdzie:
 	\item $b$ - tłumienie
 	\item $m$ - masa przedmiotu [$kg$]
 	\item $g$ - przyspieszenie ziemskie [$\frac{m}{s^2}$]
-	\item $u$ - moment który można zewnętrznie dodać do układu [$Nm$]
+	\item $\tau_u$ - moment dodawany w celu kompensacji grawitacji przedmiotu [$Nm$]
 \end{itemize}
 
 Układ możemy więc zapisać w standardowej postaci

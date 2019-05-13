@@ -34,6 +34,7 @@ ddq = zeros(size(T));
 FS_F = zeros(size(T));
 FS_x = zeros(size(T));
 FS_y = zeros(size(T));
+FS_m = [FS_x; FS_y];
 FS_t = zeros(size(T));
 U = zeros(size(T));
 M_fs_hat = zeros(size(T));
@@ -42,6 +43,7 @@ F_ods = zeros(size(T));
 M_ods = zeros(size(T));
 R_ods = zeros(size(T));
 I_ods = zeros(size(T));
+I_fs = zeros(size(T));
 Us = zeros(size(T));
 Us_exp = zeros(size(T));
 Akt = zeros(size(T));
@@ -63,7 +65,11 @@ for t = T(3:end)
     F_ods(t) = m*r*ddq(t)^2;
 	FS_y(t) = m*g + F_ods(t)*sin(q(t)) + noise_level*2*m*randn();
     FS_x(t) = F_ods(t)*cos(q(t)) + noise_level*2*m*randn();
-    FS_t(t) = I*ddq(t);
+    Fs_m(1,t) = FS_x(t);
+    FS_m(2,t) = FS_y(t);
+    FS_t(t) = I*ddq(t) + noise_level*m*randn();
+    
+    I_fs(t) = FS_t(t)/ddq(t);
 	
     
     %algorytm naiwny
@@ -145,10 +151,10 @@ print(fig,['img/', name, '_c.pdf'],'-dpdf', '-fillpage');
 
 fig = figure(4);
 hold on;
-plot(Time, [I_sys], '-');
+plot(Time, [I_sys; I_fs], '-');
 plot(Time, I*ones(size(Time)), '--');
 hold off;
-legend('I\_hat', 'I');
+legend('I\_hat', 'I\_fs', 'I');
 xlabel('t');
 
 orient(fig,'landscape');

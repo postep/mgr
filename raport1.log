@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  17 APR 2019 03:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  11 MAY 2019 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -682,82 +682,80 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Overfull \hbox (13.44164pt too wide) in paragraph at lines 168--169
-[]\OT4/cmr/m/n/10 Zadany pro-blem opty-ma-li-za-cji nie-li-nio-wej mo»-na roz-w
-i¡-za¢ al-go-ryt-mem Le-ven-ber-ga{Marquardta
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
  []
 
-[3]
-<./img/2d.png, id=26, 234.89708pt x 115.17787pt>
+[4]
+<./img/2d.png, id=30, 234.89708pt x 115.17787pt>
 File: ./img/2d.png Graphic file (type png)
 <use ./img/2d.png>
 Package pdftex.def Info: ./img/2d.png  used on input line 264.
 (pdftex.def)             Requested size: 414.07343pt x 203.0511pt.
- [4]
-<./img/test_p.pdf, id=31, 845.1575pt x 597.23125pt>
+<./img/test_p.pdf, id=32, 845.1575pt x 597.23125pt>
 File: ./img/test_p.pdf Graphic file (type pdf)
 <use ./img/test_p.pdf>
 Package pdftex.def Info: ./img/test_p.pdf  used on input line 275.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/test_s.pdf, id=32, 845.1575pt x 597.23125pt>
+<./img/test_s.pdf, id=33, 845.1575pt x 597.23125pt>
 File: ./img/test_s.pdf Graphic file (type pdf)
 <use ./img/test_s.pdf>
 Package pdftex.def Info: ./img/test_s.pdf  used on input line 281.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <9> on input line 282.
-<./img/test_c.pdf, id=33, 845.1575pt x 597.23125pt>
+<./img/test_c.pdf, id=34, 845.1575pt x 597.23125pt>
 File: ./img/test_c.pdf Graphic file (type pdf)
 <use ./img/test_c.pdf>
 Package pdftex.def Info: ./img/test_c.pdf  used on input line 287.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/test_r.pdf, id=34, 845.1575pt x 597.23125pt>
+<./img/test_r.pdf, id=35, 845.1575pt x 597.23125pt>
 File: ./img/test_r.pdf Graphic file (type pdf)
 <use ./img/test_r.pdf>
 Package pdftex.def Info: ./img/test_r.pdf  used on input line 293.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/test_u.pdf, id=35, 845.1575pt x 597.23125pt>
+<./img/test_u.pdf, id=36, 845.1575pt x 597.23125pt>
 File: ./img/test_u.pdf Graphic file (type pdf)
 <use ./img/test_u.pdf>
 Package pdftex.def Info: ./img/test_u.pdf  used on input line 300.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mala_p.pdf, id=36, 845.1575pt x 597.23125pt>
+<./img/mala_p.pdf, id=37, 845.1575pt x 597.23125pt>
 File: ./img/mala_p.pdf Graphic file (type pdf)
 <use ./img/mala_p.pdf>
 Package pdftex.def Info: ./img/mala_p.pdf  used on input line 314.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mala_s.pdf, id=37, 845.1575pt x 597.23125pt>
+<./img/mala_s.pdf, id=38, 845.1575pt x 597.23125pt>
 File: ./img/mala_s.pdf Graphic file (type pdf)
 <use ./img/mala_s.pdf>
 Package pdftex.def Info: ./img/mala_s.pdf  used on input line 320.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mala_u.pdf, id=38, 845.1575pt x 597.23125pt>
+<./img/mala_u.pdf, id=39, 845.1575pt x 597.23125pt>
 File: ./img/mala_u.pdf Graphic file (type pdf)
 <use ./img/mala_u.pdf>
 Package pdftex.def Info: ./img/mala_u.pdf  used on input line 326.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/kompensacja_p.pdf, id=39, 845.1575pt x 597.23125pt>
+<./img/kompensacja_p.pdf, id=40, 845.1575pt x 597.23125pt>
 File: ./img/kompensacja_p.pdf Graphic file (type pdf)
 <use ./img/kompensacja_p.pdf>
 Package pdftex.def Info: ./img/kompensacja_p.pdf  used on input line 338.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/kompensacja_s.pdf, id=40, 845.1575pt x 597.23125pt>
+<./img/kompensacja_s.pdf, id=41, 845.1575pt x 597.23125pt>
 File: ./img/kompensacja_s.pdf Graphic file (type pdf)
 <use ./img/kompensacja_s.pdf>
 Package pdftex.def Info: ./img/kompensacja_s.pdf  used on input line 344.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/kompensacja_c.pdf, id=41, 845.1575pt x 597.23125pt>
+<./img/kompensacja_c.pdf, id=42, 845.1575pt x 597.23125pt>
 File: ./img/kompensacja_c.pdf Graphic file (type pdf)
 <use ./img/kompensacja_c.pdf>
 Package pdftex.def Info: ./img/kompensacja_c.pdf  used on input line 350.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/kompensacja_r.pdf, id=42, 845.1575pt x 597.23125pt>
+<./img/kompensacja_r.pdf, id=43, 845.1575pt x 597.23125pt>
 File: ./img/kompensacja_r.pdf Graphic file (type pdf)
 <use ./img/kompensacja_r.pdf>
 Package pdftex.def Info: ./img/kompensacja_r.pdf  used on input line 356.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/kompensacja_u.pdf, id=43, 845.1575pt x 597.23125pt>
+<./img/kompensacja_u.pdf, id=44, 845.1575pt x 597.23125pt>
 File: ./img/kompensacja_u.pdf Graphic file (type pdf)
 <use ./img/kompensacja_u.pdf>
 Package pdftex.def Info: ./img/kompensacja_u.pdf  used on input line 363.
@@ -766,27 +764,27 @@ Package pdftex.def Info: ./img/kompensacja_u.pdf  used on input line 363.
 
 LaTeX Warning: Float too large for page by 15.79918pt on input line 370.
 
-<./img/mrozenie_p.pdf, id=44, 845.1575pt x 597.23125pt>
+<./img/mrozenie_p.pdf, id=45, 845.1575pt x 597.23125pt>
 File: ./img/mrozenie_p.pdf Graphic file (type pdf)
 <use ./img/mrozenie_p.pdf>
 Package pdftex.def Info: ./img/mrozenie_p.pdf  used on input line 376.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mrozenie_s.pdf, id=45, 845.1575pt x 597.23125pt>
+<./img/mrozenie_s.pdf, id=46, 845.1575pt x 597.23125pt>
 File: ./img/mrozenie_s.pdf Graphic file (type pdf)
 <use ./img/mrozenie_s.pdf>
 Package pdftex.def Info: ./img/mrozenie_s.pdf  used on input line 382.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mrozenie_c.pdf, id=46, 845.1575pt x 597.23125pt>
+<./img/mrozenie_c.pdf, id=47, 845.1575pt x 597.23125pt>
 File: ./img/mrozenie_c.pdf Graphic file (type pdf)
 <use ./img/mrozenie_c.pdf>
 Package pdftex.def Info: ./img/mrozenie_c.pdf  used on input line 388.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mrozenie_r.pdf, id=47, 845.1575pt x 597.23125pt>
+<./img/mrozenie_r.pdf, id=48, 845.1575pt x 597.23125pt>
 File: ./img/mrozenie_r.pdf Graphic file (type pdf)
 <use ./img/mrozenie_r.pdf>
 Package pdftex.def Info: ./img/mrozenie_r.pdf  used on input line 394.
 (pdftex.def)             Requested size: 209.12683pt x 147.77646pt.
-<./img/mrozenie_u.pdf, id=48, 845.1575pt x 597.23125pt>
+<./img/mrozenie_u.pdf, id=49, 845.1575pt x 597.23125pt>
 File: ./img/mrozenie_u.pdf Graphic file (type pdf)
 <use ./img/mrozenie_u.pdf>
 Package pdftex.def Info: ./img/mrozenie_u.pdf  used on input line 401.
@@ -807,7 +805,7 @@ Here is how much of TeX's memory you used:
  7875 multiletter control sequences out of 15000+600000
  16468 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,39p,868b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,39p,870b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/te
 xmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texlive/texmf-dist/fonts/enc/d
 vips/pl/plrm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/u
@@ -818,18 +816,19 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 </usr/share/texlive/texmf-dist/fonts/type1/public/pl/plbx7.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/pl/plmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi9.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/pl/plr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr9.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/pl/plsy7.pfb>
-Output written on raport1.pdf (9 pages, 574225 bytes).
+lic/pl/plmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plmi9.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/pl/plr9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+pl/plsy7.pfb>
+Output written on raport1.pdf (9 pages, 578377 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
+ 167 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
