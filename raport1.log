@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  11 MAY 2019 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.19)  29 MAY 2019 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -801,7 +801,7 @@ mrozenie_r.pdf> <./img/mrozenie_u.pdf>] (./raport1.aux) )
 Here is how much of TeX's memory you used:
  4413 strings out of 492982
  64732 string characters out of 6134895
- 136889 words of memory out of 5000000
+ 136887 words of memory out of 5000000
  7875 multiletter control sequences out of 15000+600000
  16468 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -825,7 +825,7 @@ ic/pl/plr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr5.pfb><
 e/texmf-dist/fonts/type1/public/pl/plr9.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 pl/plsy7.pfb>
-Output written on raport1.pdf (9 pages, 578377 bytes).
+Output written on raport1.pdf (9 pages, 583433 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  117 compressed objects within 2 object streams
