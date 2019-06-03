@@ -1,0 +1,6 @@
+devel_space: /home/postep/mgr/ws/devel
+install: false
+install_space: /home/postep/mgr/ws/install
+profile: default
+source_space: /home/postep/mgr/ws/src
+workspace: /home/postep/mgr/ws

@@ -38,13 +38,12 @@
 \end{itemize}
 \end{frame}
 
-\section{Środowisko badawcze}
 
 \begin{frame}{Robot usługowy Velma}
 \begin{itemize}
 \item Dwa manipulatory LWR (sterowanie impedancyjne)
 \item Chwytaki Barretta (sztuczna skóra, czujniki siły)
-\item Nadgarstkowe czujniki siły i momentu
+\item Nadgarstkowe czujniki siły i momentu 
 \item Kinect
 \item Stereopara
 \item Komputer sterujący
@@ -77,72 +76,96 @@ Symulator działania z modelem fizyki i symulacją czasu.
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}{Sterowanie ramieniem robota w obliczu chwytania przedmiotów}
-
+\section{Koncepcja rozwiązania problemu}
+\begin{frame}{Przestrzenie operacyjne}
 \begin{itemize}
-	\item Dr inż. Tomasz Winiarski
+	\item Stawów
+	\item Operacyjna
 \end{itemize}
 
-\begin{itemize}
-	\item Sterowanie siłowe
-	\item Odczyty wartości z efektorów i receptorów
-	\item Nieznany model chwytanego obiektu
-\end{itemize}
+Do transformacji współrzędnych służy Jakobian.
 \end{frame}
-
-
 
 \begin{frame}{Sterowanie impedancyjne}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[scale=1.30]{2d}
+		\includegraphics[scale=1.30]{mds}
 	\end{figure}
 
-	\begin{equation}
-	\tau = K(q_d-q) + D(\dot{q}) + \hat{M}(q)\ddot{q_d} + \hat{c}(q, \dot{q}) + \hat{g}(q) + \hat{h}(q, \dot{q})
-	\end{equation}
+\begin{equation}
+F = kx + d\dot{x} + F_{ext}
+\end{equation}
 \end{frame}
 
-\begin{frame}{Model obiektu}
+\begin{frame}{Model robota}
+Dla członu i-tego mamy:
 \begin{itemize}
-	\item Masa $m$
-	\item Promień $R_{3x1}$
-	\item Macierz inercji $I_{3x3}$
+	\item Masa $m_i$
+	\item Tensor bezwładności $I_{3x3}$ (macierz semisymetryczna)
+	\item Macierz inercji $M_{xi 6x6}$
 \end{itemize}
-\end{frame}
-
-\begin{frame}{Symulacja układu}
-	Należy zastosować dyskretyzację równań.
-	
-\end{frame}
-
-\begin{frame}{Parametry modelu}
 \begin{equation}
-F_i = ma_i
-\end{equation}
-\begin{equation}
-\tau_i = M(q_i)\dot{\omega_i} + \omega_i \times M(q_i)\omega_i
+M_{xi}=
+\begin{bmatrix}
+m_i & 0 & 0 & 0 & 0 & 0 \\
+0 & m_i & 0 & 0 & 0 & 0 \\
+0 & 0 & m_i & 0 & 0 & 0 \\
+0 & 0 & 0 & I_{xx} & I_{xy} & I_{xz} \\
+0 & 0 & 0 & I_{yx} & I_{yy} & I_{yz} \\
+0 & 0 & 0 & I_{zx} & I_{zy} & I_{zz} \\
+
+\end{bmatrix}
 \end{equation}
 
+Wniosek: Model chwytanego przedmiotu możemy opisać w ten sam sposób.
 \end{frame}
 
-\begin{frame}{Problem optymalizacji}
+\begin{frame}{Jak przeprowadzić symulację?}
+\begin{equation}
+\tau = K(q_d-q) + D(\dot{q}) + \hat{M}(q)\ddot{q_d} + \hat{c}(q, \dot{q}) + \hat{g}(q) + \hat{h}(q, \dot{q})
+\end{equation}
+
+\begin{equation}
+	\dot{x} = J(q)\dot{q}
+\end{equation}
+
+
+\begin{equation}
+\tau = M(q)\dot{\omega} + \omega \times M(q)\omega
+\end{equation}
+
+\begin{equation}
+M(q) = \sum_{i=0}^{n}J_i^T(q)M_{xi}(q)J_i(q)
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Estymacja parametrów}
 
 Można zastosować optymalizację minimalizującą sumę błędów kolejnych odczytów:
 \begin{equation}
-e_i = \begin{bmatrix}
-F_i - \hat{F_i}\\
-\tau_i - \hat{\tau_i} 
+e_t = \begin{bmatrix}
+F_t - \hat{F_t}\\
+\tau_t - \hat{\tau_t} 
 \end{bmatrix}
 \end{equation}
 
 \begin{equation}
 \begin{aligned}
-& \underset{m, r}{\text{min}}
-& & \sum_{i = 1}^{n} || e_i ||
+& \underset{m, M(q)}{\text{min}}
+& & \sum_{t = 1}^{T} || e_t ||
 \end{aligned}
 \end{equation}
+
+\end{frame}
+
+\section{Eksperymenty}
+\begin{frame}{Symulowany układ}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=1.30]{2d}
+\end{figure}
+
 
 \end{frame}
 
@@ -153,7 +176,12 @@ F_i - \hat{F_i}\\
 %\end{frame}
 \section{Podsumowanie}
 \begin{frame}{Bibliografia}
-Zdjęcia pochodzą ze strony \url{https://robotyka.ia.pw.edu.pl}
+\begin{itemize}
+	\item https://studywolf.wordpress.com/2013/09/07/robot-control-3-accounting-for-mass-and-gravity/
+	\item Zdjęcia pochodzą ze strony \url{https://robotyka.ia.pw.edu.pl}
+	 
+\end{itemize}
+
 \end{frame}
 \begin{frame}{Dziękuję za uwagę}
 \begin{figure}[h]

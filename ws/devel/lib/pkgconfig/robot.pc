@@ -1,0 +1,1 @@
+/home/postep/mgr/ws/devel/.private/robot/lib/pkgconfig/robot.pc

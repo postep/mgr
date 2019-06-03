@@ -1,0 +1,1 @@
+/home/postep/mgr/ws/devel/.private/robot/share/robot/cmake/robotConfig-version.cmake
