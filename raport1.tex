@@ -10,7 +10,7 @@
 
 
 
-\graphicspath{{./img/}} 
+\graphicspath{{./img/}}
 
 \title{MGR - Raport 1}
 \author{Jakub Postępski}
@@ -116,7 +116,7 @@ q(t+1) = \mathbf{A_d}q(t) + \mathbf{B}_du(t)
 \label{eq:dyskretny}
 \end{equation}
 
-Dyskretyzację odczytów FTS  oraz innych równań można przeprowadzić korzystając z dyskretyzacji metodą Eulera ($\dot{q} \approx \frac{q(t)-q(t-1)}{T}$). 
+Dyskretyzację odczytów FTS  oraz innych równań można przeprowadzić korzystając z dyskretyzacji metodą Eulera ($\dot{q} \approx \frac{q(t)-q(t-1)}{T}$).
 
 \begin{equation}
 F_{dx}(t) = \cos{(q)}m(\frac{q(t)-q(t-1)}{T})^2 r
@@ -133,13 +133,13 @@ oraz z równania \ref{eq:intro}
 Podobnie można dyskretyzować inne równania i w dalszej części raportu zastosowanie metody nie będzie pokazywane wprost. We wszystkich symulacjach przedstawionych dalej użyto dyskretnych wersji przedstawionych równań.
 
 \section{Estymacja nieznanych parametrów}
-W celu skompensowania grawitacji zawieszonej masy należy poznać parametry opisujące tę masę. Uznano że do opisu wystarczą typowe i powszechnie używane zmienne. W opisywanym układzie nie są znane takie wielkości jak inercja, masa oraz środek ciężkości. 
+W celu skompensowania grawitacji zawieszonej masy należy poznać parametry opisujące tę masę. Uznano że do opisu wystarczą typowe i powszechnie używane zmienne. W opisywanym układzie nie są znane takie wielkości jak inercja, masa oraz środek ciężkości.
 
 Przy założeniu, że masa jest punktowa wiemy że inercję tej masy opisuje zależność
 \begin{equation}
 I = mr^2
 \end{equation}
-W trakcie opisu metod estymacji parametrów starano się w miarę możliwości nie korzystać z tej zależności. Dzięki takiemu podejściu w przyszłości będzie można wykorzystać znalezione metody w celu estymacji mas niepunktowych o nierównomiernym rozkładzie. 
+W trakcie opisu metod estymacji parametrów starano się w miarę możliwości nie korzystać z tej zależności. Dzięki takiemu podejściu w przyszłości będzie można wykorzystać znalezione metody w celu estymacji mas niepunktowych o nierównomiernym rozkładzie.
 
 Posiadając estymację promienia $r$ i wykorzystując pozycję $q$ jesteśmy w wstanie określić pozycję zawieszonej w układzie masy i jej środek ciężkości.
 
@@ -244,7 +244,7 @@ u(t) = \min{(\frac{\max{( t - t_p, 0)}}{t_k-t_p}, 1)}u_s(t)
 
 
 \section{Realizacja praktyczna}
-Wszystkie symulacje układu można wykonać wykorzystując równania dyskretne (np. rys. \ref{fig:system}). W celu emulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały. Zadane problemy optymalizacji nieliniowej rozwiązywano algorytmem Levenberga–Marquardta. Algorytm służącym do obliczania pseudoinwersji był algorytm Moora-Penrose'a. 
+Wszystkie symulacje układu można wykonać wykorzystując równania dyskretne (np. rys. \ref{fig:system}). W celu emulacji zakłóceń w każdym kroku symulacji zmiennych stanu układu dodawany jest szum biały. Zadane problemy optymalizacji nieliniowej rozwiązywano algorytmem Levenberga–Marquardta. Algorytm służącym do obliczania pseudoinwersji był algorytm Moora-Penrose'a.
 
 Estymacja parametru promienia $r$ z czujnika FTS zaczyna być obarczona błędem jeśli załączony zostaje algorytm kompensacji grawitacji. Z uwagi na ten fakt zdecydowano się na podział działania programu na dwie fazy. W pierwszej poznawane są parametry modelu. W drugiej zapamiętane wcześniej promień służy do wyliczania momentu potrzebnego do kompensacji grawitacji (rys. \ref{fig:mrozenie}). Możemy przyjąć takie założenie, gdyż w rzeczywistości jeśli umieścimy masę w układzie nie będzie ona znacznie zmieniać swojego promienia. Estymacja masy i inercji w obu metodach jest nieczuła na opisany problem. Powoduje to oscylacje widoczne w układzie. O tym jak szybko układ z załączoną kompensacją grawitacji się ustabilizuje decydują wartości zmiennych stanu układu w momencie rozpoczęcia kompensacji.\\
 
@@ -254,7 +254,7 @@ Estymacja parametru promienia $r$ z czujnika FTS zaczyna być obarczona błędem
 
 Przedstawiony algorytm pozwala sprawnie kompensować grawitację masy układu.
 
-Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja (rys. \ref{fig:kompensacja}) nie uwzględnia energii układu która powstała przed załączeniem kompensacji, lecz człon amortyzatora pozwala na szybkie wytracenie tej energii. Zmodyfikowany algorytm dwufazowy pozwala w szybki i skuteczny sposób radzić sobie z przedstawionym problemem jednak jego wadą pozostaje opóźnienie potrzebne na to aby zidentyfikować parametry masy umieszczonej w układzie. 
+Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać tak jakby nie była na nim zawieszona żadna masa (rys. \ref{fig:mala}). Kompensacja (rys. \ref{fig:kompensacja}) nie uwzględnia energii układu która powstała przed załączeniem kompensacji, lecz człon amortyzatora pozwala na szybkie wytracenie tej energii. Zmodyfikowany algorytm dwufazowy pozwala w szybki i skuteczny sposób radzić sobie z przedstawionym problemem jednak jego wadą pozostaje opóźnienie potrzebne na to aby zidentyfikować parametry masy umieszczonej w układzie.
 
 
 
@@ -294,7 +294,7 @@ Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać 
 		\caption{Estymacja inercji (I\_hat) z równań stanu. Przerywana linia pokazuje rzeczywiste wartości parametru.}
 		\label{fig:system_r}
 	\end{subfigure}
-	
+
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{test_u}
@@ -357,14 +357,14 @@ Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać 
 		\caption{Estymacja inercji (I\_hat) z równań stanu. Przerywana linia pokazuje rzeczywiste wartości parametru.}
 		\label{fig:kompensacja_r}
 	\end{subfigure}
-	
+
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{kompensacja_u}
 		\caption{Sterowanie (U). Przerywana linia prezentuje sterowanie potrzebne w celu kompensacji grawitacji. Zaprezentowano funkcję aktywacji momentu kompensacji grawitacji.}
 		\label{fig:kompensacja_u}
 	\end{subfigure}
-	
+
 	\caption{Symulacja układu z parametrami $T=0.01$, $m = 2$, $r = 1.5$, $k = 16$, $b = 2$. Załączona kompensacja grawitacji. Parametry potrzebne do estymacji uzyskane z FTS.}
 	\label{fig:kompensacja}
 \end{figure}
@@ -395,14 +395,14 @@ Od algorytmu kompensacji siły oczekujemy, że układ powinien się zachowywać 
 		\caption{Estymacja inercji (I\_hat) z równań stanu. Przerywana linia pokazuje rzeczywiste wartości parametru.}
 		\label{fig:mrozenie_r}
 	\end{subfigure}
-	
+
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{mrozenie_u}
 		\caption{Sterowanie (U). Przerywana linia prezentuje sterowanie potrzebne w celu kompensacji grawitacji. Zaprezentowano funkcję aktywacji momentu kompensacji grawitacji.}
 		\label{fig:mrozenie_u}
 	\end{subfigure}
-	
+
 	\caption{Symulacja układu z parametrami $T=0.01$, $m = 2$, $r = 1.5$, $k = 16$, $b = 2$. Załączona kompensacja grawitacji. Po pierwszych 2 sekundach symulacji zamrożono estymację parametru $r$. Parametry potrzebne do estymacji uzyskane z FTS.}
 	\label{fig:mrozenie}
 \end{figure}

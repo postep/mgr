@@ -1,5 +1,5 @@
 \babel@toc {polish}{}
 \beamer@sectionintoc {1}{Zarys pracy magisterskiej}{2}{0}{1}
 \beamer@sectionintoc {2}{Koncepcja rozwi\IeC {\k a}zania problemu}{6}{0}{2}
-\beamer@sectionintoc {3}{Eksperymenty}{11}{0}{3}
-\beamer@sectionintoc {4}{Podsumowanie}{12}{0}{4}
+\beamer@sectionintoc {3}{Eksperymenty}{12}{0}{3}
+\beamer@sectionintoc {4}{Podsumowanie}{20}{0}{4}
