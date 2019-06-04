@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.8)  3 JUN 2019 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  4 JUN 2019 21:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **prezentacja.tex
-(/home/jposteps/mgr/sdm/prezentacja.tex
+(./prezentacja.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1128,8 +1128,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box53
 \@float@everytoks=\toks46
 \@floatcapt=\box54
-)
-(/home/jposteps/mgr/sdm/prezentacja.aux)
+) (./prezentacja.aux)
 \openout1 = `prezentacja.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1234,8 +1233,7 @@ LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
 
-(/home/jposteps/mgr/sdm/prezentacja.out)
-(/home/jposteps/mgr/sdm/prezentacja.out)
+(./prezentacja.out) (./prezentacja.out)
 \@outlinefile=\write5
 \openout5 = `prezentacja.out'.
 
@@ -1327,7 +1325,7 @@ Option `squaren' provided!
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-(/home/jposteps/mgr/sdm/prezentacja.nav)
+(./prezentacja.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
 (hyperref)                setting the option has no effect on input line 28.
@@ -1336,132 +1334,141 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 
 ] [2
 
-] [3
-
 ]
-<./images/velma1.jpg, id=222, 3276.24pt x 2457.18pt>
+<./images/velma1.jpg, id=183, 3276.24pt x 2457.18pt>
 File: ./images/velma1.jpg Graphic file (type jpg)
 <use ./images/velma1.jpg>
-Package pdftex.def Info: ./images/velma1.jpg  used on input line 65.
-(pdftex.def)             Requested size: 196.56592pt x 147.42444pt.
+Package pdftex.def Info: ./images/velma1.jpg  used on input line 63.
+(pdftex.def)             Requested size: 229.36023pt x 172.02017pt.
+ [3
 
-Overfull \vbox (22.4716pt too high) detected at line 65
+]
+Overfull \vbox (39.66591pt too high) detected at line 63
  []
 
 [4
 
- <./images/velma1.jpg>] [5
+
+ <./images/velma1.jpg>]
+<./images/system.png, id=290, 468.75125pt x 452.69125pt>
+File: ./images/system.png Graphic file (type png)
+<use ./images/system.png>
+Package pdftex.def Info: ./images/system.png  used on input line 87.
+(pdftex.def)             Requested size: 140.62645pt x 135.80841pt.
+ [5
+
+ <./images/system.png>] [6
+
 
 ]
-<./images/mds.png, id=322, 237.16605pt x 102.02115pt>
+<./images/mds.png, id=398, 237.16605pt x 102.02115pt>
 File: ./images/mds.png Graphic file (type png)
 <use ./images/mds.png>
-Package pdftex.def Info: ./images/mds.png  used on input line 96.
+Package pdftex.def Info: ./images/mds.png  used on input line 116.
 (pdftex.def)             Requested size: 308.31583pt x 132.62744pt.
 
-Overfull \hbox (1.02596pt too wide) in paragraph at lines 96--96
+Overfull \hbox (1.02596pt too wide) in paragraph at lines 116--116
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 96.
+line 116.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[6
+[7
 
- <./images/mds.png>] [7
+ <./images/mds.png>] [8
 
-] [8
 
 ] [9
 
 ] [10
 
-
 ] [11
 
+] [12
+
+] [13
+
+
+] [14
+
 
 ]
-<./images/2d.png, id=634, 234.89708pt x 115.17787pt>
+<./images/2d.png, id=834, 234.89708pt x 115.17787pt>
 File: ./images/2d.png Graphic file (type png)
 <use ./images/2d.png>
-Package pdftex.def Info: ./images/2d.png  used on input line 236.
+Package pdftex.def Info: ./images/2d.png  used on input line 273.
 (pdftex.def)             Requested size: 305.36617pt x 149.7312pt.
- [12
+ [15
 
- <./images/2d.png>] [13
+ <./images/2d.png>]
+[16
 
+
+] [17
+
+] [18
+
+] [19
 
 ]
-[14
-
-] [15
-
-] [16
-
-]
-<./images/test_p.pdf, id=890, 845.1575pt x 597.23125pt>
+<./images/test_p.pdf, id=1105, 845.1575pt x 597.23125pt>
 File: ./images/test_p.pdf Graphic file (type pdf)
 <use ./images/test_p.pdf>
-Package pdftex.def Info: ./images/test_p.pdf  used on input line 332.
+Package pdftex.def Info: ./images/test_p.pdf  used on input line 369.
 (pdftex.def)             Requested size: 153.64493pt x 108.57231pt.
-<./images/test_s.pdf, id=891, 845.1575pt x 597.23125pt>
+<./images/test_s.pdf, id=1106, 845.1575pt x 597.23125pt>
 File: ./images/test_s.pdf Graphic file (type pdf)
 <use ./images/test_s.pdf>
-Package pdftex.def Info: ./images/test_s.pdf  used on input line 332.
+Package pdftex.def Info: ./images/test_s.pdf  used on input line 369.
 (pdftex.def)             Requested size: 153.64493pt x 108.57231pt.
-<./images/mrozenie_p.pdf, id=892, 845.1575pt x 597.23125pt>
+<./images/mrozenie_p.pdf, id=1107, 845.1575pt x 597.23125pt>
 File: ./images/mrozenie_p.pdf Graphic file (type pdf)
 <use ./images/mrozenie_p.pdf>
-Package pdftex.def Info: ./images/mrozenie_p.pdf  used on input line 332.
+Package pdftex.def Info: ./images/mrozenie_p.pdf  used on input line 369.
 (pdftex.def)             Requested size: 153.64493pt x 108.57231pt.
-<./images/mrozenie_c.pdf, id=893, 845.1575pt x 597.23125pt>
+<./images/mrozenie_c.pdf, id=1108, 845.1575pt x 597.23125pt>
 File: ./images/mrozenie_c.pdf Graphic file (type pdf)
 <use ./images/mrozenie_c.pdf>
-Package pdftex.def Info: ./images/mrozenie_c.pdf  used on input line 332.
+Package pdftex.def Info: ./images/mrozenie_c.pdf  used on input line 369.
 (pdftex.def)             Requested size: 153.64493pt x 108.57231pt.
-<./images/mrozenie_u.pdf, id=894, 845.1575pt x 597.23125pt>
+<./images/mrozenie_u.pdf, id=1109, 845.1575pt x 597.23125pt>
 File: ./images/mrozenie_u.pdf Graphic file (type pdf)
 <use ./images/mrozenie_u.pdf>
-Package pdftex.def Info: ./images/mrozenie_u.pdf  used on input line 332.
+Package pdftex.def Info: ./images/mrozenie_u.pdf  used on input line 369.
 (pdftex.def)             Requested size: 153.64493pt x 108.57231pt.
- [17
+ [20
 
- <./images/test_p.pdf> <./images/test_s.pdf>] [18
+ <./images/test_p.pdf> <./images/test_s.pdf>] [21
 
 
- <./images/mrozenie_p.pdf> <./images/mrozenie_c.pdf>] [19
+ <./images/mrozenie_p.pdf> <./images/mrozenie_c.pdf>] [22
 
 
  <./images/mrozenie_u.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 346.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 384.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [20
+) [23
+
+] [24
 
 ]
-<./images/velma3.jpg, id=1118, 200.75pt x 120.45pt>
-File: ./images/velma3.jpg Graphic file (type jpg)
-<use ./images/velma3.jpg>
-Package pdftex.def Info: ./images/velma3.jpg  used on input line 352.
-(pdftex.def)             Requested size: 281.04807pt x 168.62883pt.
- [21
-
- <./images/velma3.jpg>]
 \tf@nav=\write6
 \openout6 = `prezentacja.nav'.
 
@@ -1471,19 +1478,20 @@ Package pdftex.def Info: ./images/velma3.jpg  used on input line 352.
 \tf@snm=\write8
 \openout8 = `prezentacja.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 353.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 353.
- (/home/jposteps/mgr/sdm/prezentacja.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 353.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 353.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 391.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 391.
+
+(./prezentacja.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 391.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 391.
 Package rerunfilecheck Info: File `prezentacja.out' has not changed.
 (rerunfilecheck)             Checksum: C762FA1987B30B64BC23A4465C6B45FC;219.
  ) 
 Here is how much of TeX's memory you used:
- 20054 strings out of 492982
- 369879 string characters out of 6134897
- 464303 words of memory out of 5000000
- 23080 multiletter control sequences out of 15000+600000
+ 20065 strings out of 492982
+ 369651 string characters out of 6134895
+ 466303 words of memory out of 5000000
+ 23086 multiletter control sequences out of 15000+600000
  27187 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,19n,56p,795b,814s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1495,19 +1503,17 @@ type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/tex
-mf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on /home/jposteps/mgr/sdm/prezentacja.pdf (21 pages, 1976113 byt
-es).
+/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+ss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfs
+x1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on prezentacja.pdf (24 pages, 1937320 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 1146 compressed objects within 12 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 1466 PDF objects out of 1728 (max. 8388607)
+ 1363 compressed objects within 14 object streams
+ 60 named destinations out of 1000 (max. 500000)
  120 words of extra memory for PDF output out of 10000 (max. 10000000)
 
