@@ -43,7 +43,7 @@ for t = t_steps(2:end)
     %wylicznie sterowania
     UT(:,t) = zeros(3, 1);
 	%symulacja urzadzenia
-    ST(:, t) = sysdT.A*(S(:, t-1)-q0) + sysdT.B*(U(:,t) + [0;M*g*R*cos(ST(2,t-1));0]);
+    ST(:, t) = sysdT.A*(ST(:, t-1)-q0) + sysdT.B*(UT(:,t) + [0;M*g*R*cos(ST(2,t-1));0]);
     ddq(:, t) = (ST(4:6,t)-ST(4:6,t-1))*f;
     %symulacja FTS
     SF(:, t) = M*R*(ddq(:,t).^2) + [0;M*g;0];
