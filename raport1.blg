@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: raport1.aux
+The style file: unsrt.bst
+Database file #1: bibliography.bib
+Too many commas in name 1 of "Christian Ott, Alin Albu-Schaffer, Andreas Kugi, Gerd Hirzinger" for entry impedance
+while executing---line 944 of file unsrt.bst
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            468 strings with 4456 characters,
+and the built_in function-call counts, 990 in all, are:
+= -- 87
+> -- 28
+< -- 1
++ -- 12
+- -- 7
+* -- 36
+:= -- 136
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 43
+empty$ -- 120
+format.name$ -- 7
+if$ -- 240
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 1
+newline$ -- 29
+num.names$ -- 4
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 54
+swap$ -- 17
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 6
+width$ -- 6
+write$ -- 52
+(There was 1 error message)

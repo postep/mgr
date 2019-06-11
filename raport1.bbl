@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{velma}
+{Documentation of control system of WUT Velma Robot}.
+\newblock \url{https://rcprg-ros-pkg.github.io/velma_docs/}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
+\bibitem{lwr}
+Antoine Laurens, Mahdi Khoramshahi, and Aude Billard.
+\newblock Adaptive human-robot interaction: From human intention to motion
+  adaptation using parameterized dynamical systems, 01 2018.
+
+\bibitem{impedance}
+Andreas Kugi Gerd~Hirzinger Christian~Ott, Alin Albu-Schaffer.
+\newblock {On the Passivity Based Impedance Control of Flexible Joint Robots}.
+\newblock \url{https://ieeexplore.ieee.org/document/4451347}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
+\bibitem{gravity1}
+N.~Ulrich and V.~Kumar.
+\newblock Passive mechanical gravity compensation for robot manipulators.
+\newblock In {\em Proceedings. 1991 IEEE International Conference on Robotics
+  and Automation}, pages 1536--1541 vol.2, April 1991.
+
+\bibitem{gravity2}
+Loredana~Zollo Alessandro De~Luca, BrunoSiciliano.
+\newblock {PD control with on-line gravity compensation for robots with elastic
+  joints: Theory and experiments}.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S000510980500186X?via%3Dihub}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
+\end{thebibliography}
