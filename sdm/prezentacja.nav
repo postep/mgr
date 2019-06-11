@@ -1,8 +1,8 @@
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
+\headcommand {\sectionentry {1}{Zarys pracy magisterskiej}{2}{Zarys pracy magisterskiej}{0}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{Zarys pracy magisterskiej}{2}{Zarys pracy magisterskiej}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
@@ -13,9 +13,9 @@
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\slideentry {1}{0}{3}{5/6}{}{0}}
 \headcommand {\beamer@framepages {5}{6}}
+\headcommand {\sectionentry {2}{Koncepcja rozwi\IeC {\k a}zania problemu}{7}{Koncepcja rozwi\IeC {\k a}zania problemu}{0}}
 \headcommand {\beamer@sectionpages {2}{6}}
 \headcommand {\beamer@subsectionpages {2}{6}}
-\headcommand {\sectionentry {2}{Koncepcja rozwi\IeC {\k a}zania problemu}{7}{Koncepcja rozwi\IeC {\k a}zania problemu}{0}}
 \headcommand {\slideentry {2}{0}{1}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
 \headcommand {\slideentry {2}{0}{1}{7/8}{}{0}}
@@ -32,9 +32,9 @@
 \headcommand {\beamer@framepages {12}{13}}
 \headcommand {\slideentry {2}{0}{5}{12/14}{}{0}}
 \headcommand {\beamer@framepages {12}{14}}
+\headcommand {\sectionentry {3}{Eksperymenty}{15}{Eksperymenty}{0}}
 \headcommand {\beamer@sectionpages {7}{14}}
 \headcommand {\beamer@subsectionpages {7}{14}}
-\headcommand {\sectionentry {3}{Eksperymenty}{15}{Eksperymenty}{0}}
 \headcommand {\slideentry {3}{0}{1}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\slideentry {3}{0}{1}{15/16}{}{0}}
@@ -51,9 +51,9 @@
 \headcommand {\beamer@framepages {20}{21}}
 \headcommand {\slideentry {3}{0}{5}{20/22}{}{0}}
 \headcommand {\beamer@framepages {20}{22}}
+\headcommand {\sectionentry {4}{Podsumowanie}{23}{Podsumowanie}{0}}
 \headcommand {\beamer@sectionpages {15}{22}}
 \headcommand {\beamer@subsectionpages {15}{22}}
-\headcommand {\sectionentry {4}{Podsumowanie}{23}{Podsumowanie}{0}}
 \headcommand {\slideentry {4}{0}{1}{23/23}{}{0}}
 \headcommand {\beamer@framepages {23}{23}}
 \headcommand {\slideentry {4}{0}{2}{24/24}{}{0}}
@@ -62,4 +62,4 @@
 \headcommand {\beamer@subsectionpages {23}{24}}
 \headcommand {\beamer@sectionpages {23}{24}}
 \headcommand {\beamer@documentpages {24}}
-\headcommand {\gdef \inserttotalframenumber {24}}
+\headcommand {\def \inserttotalframenumber {24}}
