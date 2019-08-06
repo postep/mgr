@@ -45,8 +45,8 @@ from velma_common import *
 from rcprg_planner import *
 from rcprg_ros_utils import exitError
 
-gcomp = 10
-gcompd = 1.1
+gcomp = 0.000001
+gcompd = 0.000001
 
 
 if __name__ == "__main__":
@@ -222,6 +222,7 @@ if __name__ == "__main__":
     open_gripper()
 
 
+    imp_list = [makeWrench(15,15,15,15,15,15)]
 
     T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.45 , -0.4 , 1.10  ))
     print "Set impedance to (1000,1000,125,150,150,150) in tool frame."
@@ -238,7 +239,7 @@ if __name__ == "__main__":
 
 
 
-
+    exit(1)
 
 
     T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.55 , -0.4 , 1.10  ))
@@ -272,7 +273,6 @@ if __name__ == "__main__":
     # if not isHandConfigurationClose( velma.getHandRightCurrentConfiguration(), dest_q):
     #     exitError(9)
 
-    imp_list = [makeWrench(15,15,15,15,15,15)]
 
     t = 0
     a = 0.3

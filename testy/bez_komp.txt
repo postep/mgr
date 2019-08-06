@@ -1,0 +1,376 @@
+... logging to /home/jposteps/.ros/log/5c061348-9e45-11e9-83a4-e0d55e6aac2c/roslaunch-taurus.robotyka.ia.pw.edu.pl-16822.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/workspace/RCPRG_rosinstall/build/ws_velma_os/install/share/velma_common/launch/velma_system.launch
+[1mstarted roslaunch server http://taurus.robotyka.ia.pw.edu.pl:42511/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo/LWRlSim/init_joint_names: ['left_arm_0_join...
+ * /gazebo/LWRlSim/init_joint_positions: [0.3, 1.8, -1.25,...
+ * /gazebo/LWRlSim/name: left
+ * /gazebo/LWRlSim/tool/com/x: -0.15272
+ * /gazebo/LWRlSim/tool/com/y: 0.0111521
+ * /gazebo/LWRlSim/tool/com/z: -0.0687842
+ * /gazebo/LWRlSim/tool/ixx: 0.00838618
+ * /gazebo/LWRlSim/tool/ixy: 0.000596738
+ * /gazebo/LWRlSim/tool/ixz: -0.0011774
+ * /gazebo/LWRlSim/tool/iyy: 0.00702498
+ * /gazebo/LWRlSim/tool/iyz: 0.000105634
+ * /gazebo/LWRlSim/tool/izz: 0.012516
+ * /gazebo/LWRlSim/tool/m: 1.53858
+ * /gazebo/LWRrSim/init_joint_names: ['right_arm_0_joi...
+ * /gazebo/LWRrSim/init_joint_positions: [-0.3, -1.8, 1.25...
+ * /gazebo/LWRrSim/name: right
+ * /gazebo/LWRrSim/tool/com/x: 0.152207
+ * /gazebo/LWRrSim/tool/com/y: 0.0108986
+ * /gazebo/LWRrSim/tool/com/z: -0.0694205
+ * /gazebo/LWRrSim/tool/ixx: 0.00818233
+ * /gazebo/LWRrSim/tool/ixy: -0.000581708
+ * /gazebo/LWRrSim/tool/ixz: 0.00126671
+ * /gazebo/LWRrSim/tool/iyy: 0.00703382
+ * /gazebo/LWRrSim/tool/iyz: 0.000167246
+ * /gazebo/LWRrSim/tool/izz: 0.012285
+ * /gazebo/LWRrSim/tool/m: 1.52832
+ * /gazebo/LeftFtSensor/joint_name: leftFtSensorJoint
+ * /gazebo/LeftFtSensor/transform_rpy: [0, 0, 0]
+ * /gazebo/LeftFtSensor/transform_xyz: [0, 0, 0]
+ * /gazebo/LeftHand/can_id_base: 11
+ * /gazebo/LeftHand/disable_component: False
+ * /gazebo/LeftHand/prefix: left
+ * /gazebo/LeftHandOptoforce/device_name: gazebo_leftHand
+ * /gazebo/LeftHandOptoforce/frame_id_vec: ['left_HandFinger...
+ * /gazebo/LeftHandOptoforce/n_sensors: 3
+ * /gazebo/RightFtSensor/joint_name: rightFtSensorJoint
+ * /gazebo/RightFtSensor/transform_rpy: [0, 0, 0]
+ * /gazebo/RightFtSensor/transform_xyz: [0, 0, 0]
+ * /gazebo/RightHand/can_id_base: 11
+ * /gazebo/RightHand/disable_component: False
+ * /gazebo/RightHand/prefix: right
+ * /gazebo/RightHandTactile/prefix: right
+ * /gazebo/can_queue_tx_l/invert_rx_tx: True
+ * /gazebo/can_queue_tx_r/invert_rx_tx: True
+ * /rob_st_pub/use_tf_static: False
+ * /robot_description: <?xml version="1....
+ * /robot_semantic_description: <?xml version="1....
+ * /rosdistro: melodic
+ * /rosversion: 1.14.3
+ * /unpause_on_init/state_snapshot: /opt/workspace/RC...
+ * /use_sim_time: True
+ * /velma_core_cs/ColDet/activation_dist: 0.04
+ * /velma_core_cs/ColDet/articulated_joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDet/joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDetRep/Fmax: 2
+ * /velma_core_cs/ColDetRep/activation_dist: 0.15
+ * /velma_core_cs/ColDetRep/articulated_joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDetRep/calculate_forces: True
+ * /velma_core_cs/ColDetRep/damping_factors: [15, 10, 10, 5, 5...
+ * /velma_core_cs/ColDetRep/joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDetRepJntImp/Fmax: 2
+ * /velma_core_cs/ColDetRepJntImp/activation_dist: 0.15
+ * /velma_core_cs/ColDetRepJntImp/articulated_joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDetRepJntImp/calculate_forces: True
+ * /velma_core_cs/ColDetRepJntImp/damping_factors: [15, 10, 10, 5, 5...
+ * /velma_core_cs/ColDetRepJntImp/joint_names: ['torso_0_joint',...
+ * /velma_core_cs/ColDetWrL/constraint_polygon: [0.397855401039, ...
+ * /velma_core_cs/ColDetWrL/joint0_idx: 13
+ * /velma_core_cs/ColDetWrL/joint1_idx: 14
+ * /velma_core_cs/ColDetWrR/constraint_polygon: [-0.397855401039,...
+ * /velma_core_cs/ColDetWrR/joint0_idx: 6
+ * /velma_core_cs/ColDetWrR/joint1_idx: 7
+ * /velma_core_cs/HeadIK/h_cam: 0.0
+ * /velma_core_cs/HeadIK/v_cam: 0.225
+ * /velma_core_cs/HeadIK/v_head: 0.392
+ * /velma_core_cs/HeadIK/v_lean: 0.375
+ * /velma_core_cs/HeadIK/v_rot: 0.8
+ * /velma_core_cs/INT_tool_l/activate_pose_init: True
+ * /velma_core_cs/INT_tool_l/check_tolerances: False
+ * /velma_core_cs/INT_tool_l/init_setpoint/orientation/w: 1.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/orientation/x: 0.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/orientation/y: 0.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/orientation/z: 0.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/position/x: 0.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/position/y: 0.0
+ * /velma_core_cs/INT_tool_l/init_setpoint/position/z: 0.0
+ * /velma_core_cs/INT_tool_r/activate_pose_init: True
+ * /velma_core_cs/INT_tool_r/check_tolerances: False
+ * /velma_core_cs/INT_tool_r/init_setpoint/orientation/w: 1.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/orientation/x: 0.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/orientation/y: 0.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/orientation/z: 0.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/position/x: 0.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/position/y: 0.0
+ * /velma_core_cs/INT_tool_r/init_setpoint/position/z: 0.0
+ * /velma_core_cs/JntImp/damping: 0.5
+ * /velma_core_cs/JntImp/initial_stiffness: [1200.01, 200.01,...
+ * /velma_core_cs/JntImpSafe/damping: 1.9
+ * /velma_core_cs/JntImpSafe/initial_stiffness: [5.0, 5.0, 5.0, 5...
+ * /velma_core_cs/JntLimit/limit_range: [0.26, 0.26, 0.26...
+ * /velma_core_cs/JntLimit/limits_0: [-1.56, 1.56]
+ * /velma_core_cs/JntLimit/limits_10: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_11: [-2.09, -0.2, 0.2...
+ * /velma_core_cs/JntLimit/limits_12: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_13: [-2.09, -0.2, 0.2...
+ * /velma_core_cs/JntLimit/limits_14: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_1: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_2: [-2.09, -0.2, 0.2...
+ * /velma_core_cs/JntLimit/limits_3: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_4: [-2.095, -0.2, 0....
+ * /velma_core_cs/JntLimit/limits_5: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_6: [-2.09, -0.2, 0.2...
+ * /velma_core_cs/JntLimit/limits_7: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_8: [-2.96, 2.96]
+ * /velma_core_cs/JntLimit/limits_9: [-2.09, -0.2, 0.2...
+ * /velma_core_cs/JntLimit/max_trq: [10.0, 10.0, 10.0...
+ * /velma_core_cs/LeftForceTransformation/gravity_arm_in_wrist/x: 0.0
+ * /velma_core_cs/LeftForceTransformation/gravity_arm_in_wrist/y: 0.0
+ * /velma_core_cs/LeftForceTransformation/gravity_arm_in_wrist/z: 0.08
+ * /velma_core_cs/LeftForceTransformation/is_right_turn_frame: True
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/orientation/w: 1.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/orientation/x: 0.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/orientation/y: 0.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/orientation/z: 0.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/position/x: 0.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/position/y: 0.0
+ * /velma_core_cs/LeftForceTransformation/sensor_frame/position/z: 0.0
+ * /velma_core_cs/LeftForceTransformation/tool_weight: 12.391
+ * /velma_core_cs/RightForceTransformation/gravity_arm_in_wrist/x: 0.0
+ * /velma_core_cs/RightForceTransformation/gravity_arm_in_wrist/y: 0.0
+ * /velma_core_cs/RightForceTransformation/gravity_arm_in_wrist/z: 0.08
+ * /velma_core_cs/RightForceTransformation/is_right_turn_frame: True
+ * /velma_core_cs/RightForceTransformation/sensor_frame/orientation/w: 1.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/orientation/x: 0.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/orientation/y: 0.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/orientation/z: 0.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/position/x: 0.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/position/y: 0.0
+ * /velma_core_cs/RightForceTransformation/sensor_frame/position/z: 0.0
+ * /velma_core_cs/RightForceTransformation/tool_weight: 12.391
+ * /velma_core_cs/VL_hp/max_vel: 50.0
+ * /velma_core_cs/VL_ht/max_vel: 50.0
+ * /velma_core_cs/wcc_l/constraint_polygon: [0.397855401039, ...
+ * /velma_core_cs/wcc_l/d0: 0.25
+ * /velma_core_cs/wcc_l/joint0_idx: 13
+ * /velma_core_cs/wcc_l/joint1_idx: 14
+ * /velma_core_cs/wcc_r/constraint_polygon: [-0.397855401039,...
+ * /velma_core_cs/wcc_r/d0: 0.25
+ * /velma_core_cs/wcc_r/joint0_idx: 6
+ * /velma_core_cs/wcc_r/joint1_idx: 7
+ * /velma_core_ve_body/FtSensorLeft/scaling_factor: 1e-06
+ * /velma_core_ve_body/FtSensorRight/scaling_factor: 1e-06
+ * /velma_core_ve_body/HeadPanTransmision/enable_position: True
+ * /velma_core_ve_body/HeadPanTransmision/enable_velocity: True
+ * /velma_core_ve_body/HeadPanTransmision/encoder_res: 8000.0
+ * /velma_core_ve_body/HeadPanTransmision/gear: -100.0
+ * /velma_core_ve_body/HeadPanTransmision/joint_offset: 0.0
+ * /velma_core_ve_body/HeadPanTransmision/motor_offset: 0.0
+ * /velma_core_ve_body/HeadPanTransmisionInv/enable_position: True
+ * /velma_core_ve_body/HeadPanTransmisionInv/encoder_res: 8000.0
+ * /velma_core_ve_body/HeadPanTransmisionInv/gear: -100.0
+ * /velma_core_ve_body/HeadPanTransmisionInv/joint_offset: 0.0
+ * /velma_core_ve_body/HeadPanTransmisionInv/motor_constant: 0.0
+ * /velma_core_ve_body/HeadPanTransmisionInv/motor_offset: 0.0
+ * /velma_core_ve_body/HeadTiltTransmision/enable_position: True
+ * /velma_core_ve_body/HeadTiltTransmision/enable_velocity: True
+ * /velma_core_ve_body/HeadTiltTransmision/encoder_res: 8000.0
+ * /velma_core_ve_body/HeadTiltTransmision/gear: 100.0
+ * /velma_core_ve_body/HeadTiltTransmision/joint_offset: 0.0
+ * /velma_core_ve_body/HeadTiltTransmision/motor_offset: 0.0
+ * /velma_core_ve_body/HeadTiltTransmisionInv/enable_position: True
+ * /velma_core_ve_body/HeadTiltTransmisionInv/encoder_res: 8000.0
+ * /velma_core_ve_body/HeadTiltTransmisionInv/gear: 100.0
+ * /velma_core_ve_body/HeadTiltTransmisionInv/joint_offset: 0.0
+ * /velma_core_ve_body/HeadTiltTransmisionInv/motor_constant: 0.0
+ * /velma_core_ve_body/HeadTiltTransmisionInv/motor_offset: 0.0
+ * /velma_core_ve_body/TorsoPanTransmision/enable_position: True
+ * /velma_core_ve_body/TorsoPanTransmision/enable_velocity: True
+ * /velma_core_ve_body/TorsoPanTransmision/encoder_res: 131072.0
+ * /velma_core_ve_body/TorsoPanTransmision/gear: 158.0
+ * /velma_core_ve_body/TorsoPanTransmision/joint_offset: 0.0
+ * /velma_core_ve_body/TorsoPanTransmision/motor_offset: 270119630
+ * /velma_core_ve_body/TorsoPanTransmisionInv/enable_torque: True
+ * /velma_core_ve_body/TorsoPanTransmisionInv/encoder_res: 131072.0
+ * /velma_core_ve_body/TorsoPanTransmisionInv/gear: 158.0
+ * /velma_core_ve_body/TorsoPanTransmisionInv/joint_offset: 0.0
+ * /velma_core_ve_body/TorsoPanTransmisionInv/motor_constant: 0.00105
+ * /velma_core_ve_body/TorsoPanTransmisionInv/motor_offset: 270119630
+ * /velma_core_ve_body/driver_hp/control_mode: position
+ * /velma_core_ve_body/driver_hp/homing_done: False
+ * /velma_core_ve_body/driver_ht/control_mode: position
+ * /velma_core_ve_body/driver_ht/homing_done: False
+ * /velma_core_ve_body/driver_t/control_mode: torque
+ * /velma_core_ve_body/driver_t/homing_done: True
+ * /velma_core_ve_body/lHand/can_id_base: 11
+ * /velma_core_ve_body/lHand/device_name: TODO
+ * /velma_core_ve_body/lHand/prefix: left
+ * /velma_core_ve_body/rHand/can_id_base: 11
+ * /velma_core_ve_body/rHand/device_name: TODO
+ * /velma_core_ve_body/rHand/prefix: right
+ * /velma_core_ve_body/safe/arm_dq_limits: [2, 2, 2, 2, 2, 2...
+ * /velma_core_ve_body/safe/arm_q_limits_hi: [2.96, 2.09, 2.96...
+ * /velma_core_ve_body/safe/arm_q_limits_lo: [-2.96, -2.09, -2...
+ * /velma_core_ve_body/safe/arm_t_limits: [100.0, 100.0, 10...
+ * /velma_core_ve_body/safe/l_arm_damping_factors: [10, 10, 5, 5, 2,...
+ * /velma_core_ve_body/safe/r_arm_damping_factors: [10, 10, 5, 5, 2,...
+ * /velma_core_ve_body/safe/torso_damping_factor: 20
+ * /velma_core_ve_body/safe_hp/control_mode: position
+ * /velma_core_ve_body/safe_ht/control_mode: position
+ * /velma_core_ve_body/safe_lwr_l/damping_factors: [10, 10, 5, 5, 2,...
+ * /velma_core_ve_body/safe_lwr_r/damping_factors: [10, 10, 5, 5, 2,...
+ * /velma_core_ve_body/safe_t/control_mode: torque
+ * /velma_core_ve_body/safe_t/damping_factor: 20
+ * /velma_core_ve_body/safe_t/encoder_resolution: 131072.0
+ * /velma_core_ve_body/safe_t/gear: 1[0m[ INFO] [1562235637.777520697]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[ INFO] [1562235637.779243295]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[1;32m[Msg] [0m[1;32mWaiting for master.[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mConnected to gazebo master @ [0m[1;32mhttp://127.0.0.1:11345[0m[1;32m
+[0m[1;32m[0m[1;32m[Msg] [0m[1;32mPublicized address: [0m[1;32m192.168.18.105[0m[1;32m
+[0m[1;32m[0m[1;36m[Dbg] [DARTModel.cc:72] [0m[1;36mInitializing DART model [0m[1;36mground_plane[0m[1;36m
+[0m[1;36m[Dbg] [DARTModel.cc:128] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mlink[0m[1;36m' with a free joint.
+[0m[1;36m[Dbg] [DARTModel.cc:72] [0m[1;36mInitializing DART model [0m[1;36mvelma[0m[1;36m
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mtorso_base[0m[1;36m' and joint '[0m[1;36mtorso_base_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mtorso_link0[0m[1;36m' and joint '[0m[1;36mtorso_0_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mhead_pan_link[0m[1;36m' and joint '[0m[1;36mhead_pan_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_1_link[0m[1;36m' and joint '[0m[1;36mleft_arm_0_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_1_link[0m[1;36m' and joint '[0m[1;36mright_arm_0_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mhead_tilt_link[0m[1;36m' and joint '[0m[1;36mhead_tilt_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_2_link[0m[1;36m' and joint '[0m[1;36mleft_arm_1_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_2_link[0m[1;36m' and joint '[0m[1;36mright_arm_1_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_3_link[0m[1;36m' and joint '[0m[1;36mleft_arm_2_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_3_link[0m[1;36m' and joint '[0m[1;36mright_arm_2_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_4_link[0m[1;36m' and joint '[0m[1;36mleft_arm_3_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_4_link[0m[1;36m' and joint '[0m[1;36mright_arm_3_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_5_link[0m[1;36m' and joint '[0m[1;36mleft_arm_4_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_5_link[0m[1;36m' and joint '[0m[1;36mright_arm_4_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_6_link[0m[1;36m' and joint '[0m[1;36mleft_arm_5_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_6_link[0m[1;36m' and joint '[0m[1;36mright_arm_5_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_arm_7_link[0m[1;36m' and joint '[0m[1;36mleft_arm_6_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_arm_7_link[0m[1;36m' and joint '[0m[1;36mright_arm_6_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_FtSensorLink[0m[1;36m' and joint '[0m[1;36mleftFtSensorJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_FtSensorLink[0m[1;36m' and joint '[0m[1;36mrightFtSensorJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerOneKnuckleOneLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerOneKnuckleOneJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerThreeKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerThreeKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerTwoKnuckleOneLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerTwoKnuckleOneJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerOneKnuckleOneLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerOneKnuckleOneJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerThreeKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerThreeKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerTwoKnuckleOneLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerTwoKnuckleOneJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerOneKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerOneKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerThreeKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerThreeKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerTwoKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerTwoKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerOneKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerOneKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerThreeKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerThreeKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerTwoKnuckleTwoLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerTwoKnuckleTwoJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerOneKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerOneKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerThreeKnuckleThreeOptoforceSensor[0m[1;36m' and joint '[0m[1;36mleft_HandFingerThreeKnuckleThreeOptoforceJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerTwoKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mleft_HandFingerTwoKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerOneKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerOneKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_HandFingerTwoKnuckleThreeLink[0m[1;36m' and joint '[0m[1;36mright_HandFingerTwoKnuckleThreeJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerOneKnuckleThreeOptoforceSensor[0m[1;36m' and joint '[0m[1;36mleft_HandFingerOneKnuckleThreeOptoforceJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_HandFingerTwoKnuckleThreeOptoforceSensor[0m[1;36m' and joint '[0m[1;36mleft_HandFingerTwoKnuckleThreeOptoforceJoint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:72] [0m[1;36mInitializing DART model [0m[1;36mcabinet_door[0m[1;36m
+[0m[1;36m[Dbg] [DARTModel.cc:128] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mcabinet[0m[1;36m' with a free joint.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mright_door[0m[1;36m' and joint '[0m[1;36mright_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:166] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mleft_door[0m[1;36m' and joint '[0m[1;36mleft_joint[0m[1;36m'.
+[0m[1;36m[Dbg] [DARTModel.cc:72] [0m[1;36mInitializing DART model [0m[1;36mbeer[0m[1;36m
+[0m[1;36m[Dbg] [DARTModel.cc:128] [0m[1;36mBuilding DART BodyNode for link '[0m[1;36mlink[0m[1;36m' with a free joint.
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:411] [0m[1;36mDARTLink::SetLinearVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;36m[Dbg] [DARTLink.cc:482] [0m[INFO] [1562235638.253625, 0.000000]: Loading model XML from ros parameter robot_description
+[INFO] [1562235638.305860, 0.000000]: Waiting for service gazebo/spawn_urdf_model
+[INFO] [1562235638.911645, 0.000000]: Calling service gazebo/spawn_urdf_model
+[INFO] [1562235638.928747, 0.000000]: Spawn status: SpawnModel: Failure - entity already exists.
+[1;36mDARTLink::SetAngularVel() doesn't make sense if the parent joint [0m[1;36mis not free joint (6-dof).
+[0m[1;32m[Msg] [0m[1;32mSetting physics profile to [[0m[1;32mdart_2ms[0m[1;32m].[0m[1;32m
+[0m[1;32m[0m[0m[ INFO] [1562235638.999195689]: Camera Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[ INFO] [1562235639.003198008]: Camera Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+Waiting for service /gazebo/enable_sim
+Waiting for service /velma_sim_gazebo/getSubsystemInfo
+Waiting for subsystem initialization
+Restoring configuration saved in file "/opt/workspace/RCPRG_rosinstall/build/ws_velma_os/install/share/velma_sim_gazebo/config/initial_state.txt"
+Set configuration for model "velma":
+  success: "True", status message: "SetModelConfiguration: success"
+unpaused gazebo
+[0m[ INFO] [1562235646.494552235, 4424.294000000]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[ INFO] [1562235646.549978796, 4424.348000000]: Physics dynamic reconfigure ready.[0m
