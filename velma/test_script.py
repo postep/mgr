@@ -45,8 +45,11 @@ from velma_common import *
 from rcprg_planner import *
 from rcprg_ros_utils import exitError
 
-gcomp = 0.000001
-gcompd = 0.000001
+gcomp = 10.0
+gcompd = 1.1
+
+# gcomp = 0.0
+# gcompd = 0.0
 
 
 if __name__ == "__main__":
@@ -222,29 +225,23 @@ if __name__ == "__main__":
     open_gripper()
 
 
-    imp_list = [makeWrench(15,15,15,15,15,15)]
 
+    # imp_list = [makeWrench(15,15,15,15,15,15)]
+    imp_list = [makeWrench(150,150,150,150,150,150)]
     T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.45 , -0.4 , 1.10  ))
     print "Set impedance to (1000,1000,125,150,150,150) in tool frame."
-    imp_list = [makeWrench(100,100,100,15,15,15),
-                makeWrench(100,100,50,15,15,15),
-                makeWrench(100,100,25,15,15,15),
-                makeWrench(100,100,12,15,15,15)]
-    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.5,1.0,1.5,2.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
+    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
         exitError(16)
     if velma.waitForEffectorRight() != 0:
         exitError(17)
 
     rospy.sleep(2.0)
 
-
-
     exit(1)
-
 
     T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.55 , -0.4 , 1.10  ))
     print "Set impedance to (1000,1000,125,150,150,150) in tool frame."
-    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.5,1.0,1.5,2.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
+    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
         exitError(16)
     if velma.waitForEffectorRight() != 0:
         exitError(17)
@@ -261,7 +258,7 @@ if __name__ == "__main__":
 
     T_B_Trd = PyKDL.Frame(PyKDL.Rotation.Quaternion( 0.0 , 0.0 , 0.0 , 1.0 ), PyKDL.Vector( 0.55 , -0.4 , 1.35  ))
     print "Set impedance to (1000,1000,125,150,150,150) in tool frame."
-    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.5,1.0,1.5,2.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
+    if not velma.moveCartImpRight([T_B_Trd], [5.0], None, None, imp_list, [0.0], PyKDL.Wrench(PyKDL.Vector(5,5,5), PyKDL.Vector(5,5,5)), start_time=0.5, path_tol=tol, gravity_compensation_i=gcomp, gravity_compensation_d=gcompd):
         exitError(16)
     if velma.waitForEffectorRight() != 0:
         exitError(17)

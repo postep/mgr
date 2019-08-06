@@ -321,6 +321,9 @@ INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /home/jposteps/mgr/sdm/./images/velma1.jpg
 INPUT ./images/velma1.jpg
 INPUT ./images/velma1.jpg
+INPUT /home/jposteps/mgr/sdm/./images/system.png
+INPUT ./images/system.png
+INPUT ./images/system.png
 INPUT /home/jposteps/mgr/sdm/./images/mds.png
 INPUT ./images/mds.png
 INPUT ./images/mds.png
@@ -401,9 +404,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi1095.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
-INPUT /home/jposteps/mgr/sdm/./images/velma3.jpg
-INPUT ./images/velma3.jpg
-INPUT ./images/velma3.jpg
 OUTPUT /home/jposteps/mgr/sdm/prezentacja.nav
 OUTPUT /home/jposteps/mgr/sdm/prezentacja.toc
 OUTPUT /home/jposteps/mgr/sdm/prezentacja.snm
@@ -419,7 +419,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1095.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb

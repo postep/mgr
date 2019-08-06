@@ -1,4 +1,4 @@
-\select@language {polish}
+\babel@toc {polish}{}
 \beamer@sectionintoc {1}{Zarys pracy magisterskiej}{2}{0}{1}
 \beamer@sectionintoc {2}{Koncepcja rozwi\IeC {\k a}zania problemu}{7}{0}{2}
 \beamer@sectionintoc {3}{Eksperymenty}{15}{0}{3}
