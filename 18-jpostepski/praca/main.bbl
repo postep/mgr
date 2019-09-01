@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+
+\bibitem{bib:ROS}
+Oficjalna strona systemu {ROS}.
+\newblock \url{http://www.ros.org/}.
+
+\bibitem{Seredynski-fabric-romoco-2019-twiki}
+Dawid Seredyński, Tomasz Winiarski, Cezary Zieliński.
+\newblock {FABRIC: Framework for Agent-Based Robot Control Systems}.
+\newblock K.~Kozłowski, redaktor, {\em 12th International Workshop on Robot
+  Motion and Control (RoMoCo)}, strony 215--222. IEEE, 2019.
+
+\end{thebibliography}

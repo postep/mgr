@@ -1,0 +1,19 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Środowisko badawcze\label{chap:srodowisko}}
+	\section{Budowa ogólna}
+	Środowiskiem badawczym jest robot usługowy Velma.  Został zaprojektowany i wykonany przez Zespół Rrogramowania Robotów i Systemów Rozpoznających. Do obrotowego korpusu przytwierdzono dwa ramiona robotyczne Kuka LWR-4. Ramiona posiadają wbudowaną kompensację grawitacji własnej masy. Na ich końcach znajdują się chwytaki Barretta oraz nadgarstkowe czujniki FTS. Głowa robota umieszczona jest na specjalnej konstrukcji która za pomocą dwóch silników elektrycznych pozwala na zginianie i obrót głowy. Robot wyposażony jest w czujnik wizyjny Microsoft Kinect oraz dwie kamery połączone w stereoparę. Do głowy zamocowano też mikrofon. Ramiona robota są połączone z komputerem przy pomocy magistral FRI. Wszystkie urządzenia robota z wyłączeniem ramion LWR-4 są podłączone do komputera sterującego przy pomocy magistrali EtherCAT. 
+	
+	System sterowania o twardych ograniczeniach czasowych pracuje z częstotliwością 500 Hz. Struktura oprogramowania została stworzona w oparciu o teorię agentową. Oprogramowanie robota pisane jest przy wykorzystaniu struktury ramowej FABRIC. Programy nadzoruje system Linux z nakładką Linux-RT. Dostępny jest symulator robota stworzony w przy wykorzystaniu Gazebo i silnika fizyki DART. 
+	
+	Agent \textit{velma\_core} jest odpowiedzialny za kontrolę zadań związanych z manipulacją w przestrzeni operacyjnej i konfiguracyjnej robota. Podsystem \textit{velma\_core\_cs} agenta wylicza prawa sterowanie oraz zajmuje się interpolacją trajektorii. Podsytem \textit{velma\_core\_ve\_body} kontroluje bazowe zachowania bezpieczeństwa. Są to ograniczenia prądowe, wykrywanie krańcowych położeń stawów oraz wykrywanie kolizji. Podsystem przekazuje też sterowanie do efektorów. Podsystemy w najniższej warstwie abstrakcji mogą być stosowane wymiennie. Do pracy w rzeczywistym świecie uruchamiane są podsystemy oraz \textit{velma\_core\_re\_lwr\_r} i \textit{velma\_core\_re\_lwr\_r} oraz podsystem \textit{velma\_ec\_driver}. Służą odpowiednio do kontroli prawego i lewego ramienia LWR-4 oraz pozostałego sprzętu połączonego magistralą EtherCAT. Do pracy w trybie symulacji podsystemy w najniższej warstwie abstrakcji są wymieniane na podsystem \textit{velma\_sim\_gazebo} w którym uruchamiany jest symulator świata. Podsystem symuluje pracę wszystkich trzech podsystemów odpowiedzialnych za komunikację ze sprzętem. Drugi z agentów \textit{velma\_task\_cs\_ros\_interface} jest interfejsem pomiędzy programami użytkownika a agentem \textit{velma\_core}.
+	
+	
+	\section{ROS}
+	Struktura ramowa ROS (Robot Operating System)\cite{bib:ROS} zapewnia biblioteki usprawniające pisanie programów dla robotyki w C++ i Pythonie. Pozwala na komunikację pomiędzy programami na zasadzie tematów oraz na zasadzie usług. Posiada gotowe funkcje liczące kinematykę i wizualizujące pracę robota. Daje możliwość akwizycji danych 
+	\section{FABRIC}
+	Framework for Agent–Based Robot Control Systems - FABRIC\cite{Seredynski-fabric-romoco-2019-twiki} wykorzystuje Orocosa oraz strukturę ramową ROS zapewniając interfejs programistyczny pozwalający na tworzenie komponentów zgodnych z założeniami teorii agentowej. Ma zaimplementowane algorytmy komunikacji pomiędzy poszczególnymi podsystemami. Posiada też narzędzie wizualizujące połączenia pomiędzy komponentami \textit{rqt\_agent}. 
+	\section{Gazebo}
+	Gazebo symuluje rzeczywisty świat. Uwzględnia w symulacji zdefiniowanego robota wskazane przez użytkownika przedmioty. Posiada gotowe modele wielu receptorów i efektorów i daje możliwość tworzenia własnych. Pozwala na wywarcie siły bądz momentu na dowolny przedmiot będący w symulacji. Symuluje czas jeśli symulacja nie jest przeprowadzana w czasie rzeczywistym. Korzysta z różnych algorytmów symulujących fizykę. Ma możliwość prowadzenia obliczeń równoległych.

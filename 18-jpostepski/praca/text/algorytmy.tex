@@ -1,0 +1,48 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Specyfikacja systemu \label{chap:specyfikacja_systemu}}
+Sterowanie impedancyjne w przestrzeni operacyjnej zastosowane w robocie Velma kompensuje jedynie masę członów własnych. Gdy manipulator chwyci narzędzie powstaje znaczny uchyb, który nie jest kompensowany. W przypadku chwycenia przedmiotu o dużej masie ramię robota jest wręcz unieruchomione. Należy skonstruować i zaimplementować algorytm kompensacji siły grawitacji narzędzia o nieznanych parametrach. 
+
+\section{Wymagania}
+Wymagania są narzucone przez system środowiska badawczego.
+\begin{itemize}
+	\item Do działania systemu wymagane jest ramię robotyczne sterowane prawem sterowania impedancyjnego w przestrzeni kartezjańskiej
+	\item System dostarcza gotowe komponenty potrzebne do pracy ramienia, w szczególności: generatora trajektorii, interpolatora oraz wyznaczania kinematyki prostej 
+	\item System pozyskuje dane o otoczeniu na podstawie odczytów z czujników położenia stawów.
+	\item System samodzielnie kompensuje siłę grawitacji związaną z masą wszystkich członów robota
+	\item Parametry chwytanego obiektu związane z masą i inercją nie są znane i mogą być zmienne w czasie
+\end{itemize}
+
+\section{Założenia}
+Algorytm kompensacji grawitacji musi wyliczać dodatkowy moment w stawach robota. Do momentów obrotowych wyliczanych na postawie  prawa sterowania impendancyjnego w przestrzeni operacyjnej robota należy dodać te związane z kompensacją masy narzędzia.
+\begin{itemize}
+	\item Wyliczone przez prawo sterowania momenty zadawane w stawach zostaną zmodyfikowane przez algorytm kompensacji grawitacji
+	\item Algorytm kompensacji ma minimalizować uchyb statyczny wynikający z chwycenia przedmiotu o nieznanej masie i inercji.
+	\item  Trajektoria końcówki ramienia powinna być zbliżona do trajektorii analogicznego ruchu bez uchwyconego przedmiotu.
+	\item Algorytm kompensacji nie może zaburzać cech sterowania imedancyjnego pozwalających na uginanie się robota w momencie kolizji
+\end{itemize}
+
+
+\section{Przypadki użycia}
+Algorytm kompensujący ma działać przez cały czas pracy robota gdy pracuje z narzędziem. Przypadki użycia algorytmu (rys. ) są zbieżne z przypadkami użycia robota kiedy pracuje w trybie sterowania impedancyjnego.
+
+Aktorami korzystającymi z systemu są:
+\begin{itemize}
+	\item \textbf{Robot} - robot wykonujący zadanie chwycenia obiektu
+	\item \textbf{Użytkownik} - system zewnętrzny wydający polecenia
+\end{itemize}
+
+
+Można wyszczególnić następujące przypadki użycia:
+\begin{itemize}
+	\item \textbf{PU1 Manipulacja bez narzędzia} - Konfiguracja ramienia robota może się zmieniać lecz robot nie trzyma żadnego narzędzia. Algorytm kompensacji grawitacji nie powinien zmieniać prawa sterowania. 
+	\item \textbf{PU2 Chwytanie narzędzia} - Robot zaciska chwytak na narzędziu o nieznanych parametrach a następnie je podnosi.  
+	\item \textbf{PU3 Manipulacja z narzędziem} - Konfiguracja ramienia może się zmieniać a algorytm kompensacji grawitacji powinien przeciwdziałać sile grawitacji chwyconego narzędzia.
+	\item \textbf{PU4 Odkładanie narzędzia} - Robot odkłada narzędzie a następnie rozwiera chwytak.  
+	\item \textbf{PU5 Kompensacja grawitacji} - Robot kompensuje siłę grawitacji chwyconego narzędzia
+\end{itemize}
+
+
+

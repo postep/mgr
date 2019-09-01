@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{chapter.1}{Wstep}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Podstawy teoretyczne}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Sterowanie impedancyjne}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Przypadek prosty}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Prawo sterowania}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{Sterowanie w przestrzeni konfiguracyjnej}{section.2.1}% 6
+\BOOKMARK [1][-]{section.2.2}{Sterowanie PID}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Przypadek prosty}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Przypadek wielowymiarowy}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Estymacja si\233y uog\363lnionej w konc\363wce}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Ocena jakosci algorytm\363w sterowania}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Jakosc sterowania}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{Jakosc kontaktu z otoczeniem }{section.2.4}% 13
+\BOOKMARK [1][-]{section.2.5}{Teoria agenta upostaciowionego}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Srodowisko badawcze}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Budowa og\363lna}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Pakiety oprogramowania}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{ROS}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Orocos}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.3}{FABRIC}{section.3.2}% 20
+\BOOKMARK [1][-]{section.3.3}{Symulator robota}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Agenty}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Specyfikacja systemu }{}% 23
+\BOOKMARK [1][-]{section.4.1}{Wymagania}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Za\233ozenia}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{Przypadki uzycia}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Implementacja systemu}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Modyfikacja kodu}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.2}{Kompensowanie wp\233ywu grawitacji narzedzia}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Dzia\233anie systemu}{}% 30
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 31
+\BOOKMARK [1][-]{section.7.1}{Wnioski}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.2}{Perspektywy rozwoju}{chapter.7}% 33

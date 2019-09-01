@@ -1,0 +1,84 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Specyfikacja systemu}{21}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{chap:specyfikacja_systemu}{{4}{21}{Specyfikacja systemu}{chapter.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Za\IeC {\l }o\IeC {\.z}enia i~wymagania}{21}{section.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Za\IeC {\l }o\IeC {\.z}enia dotycz\IeC {\k a}ce systemu}{21}{subsection.4.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}\IeC {\'S}rodowisko pracy systemu}{21}{subsection.4.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Przypadki u\IeC {\.z}ycia systemu}{21}{subsection.4.1.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Przypadki u\IeC {\.z}ycia systemu\relax }}{22}{figure.caption.2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:przypadki_uzycia}{{4.1}{22}{Przypadki użycia systemu\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Struktura agentowa systemu}{23}{section.4.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Komunikacja mi\IeC {\k e}dzyagentowa\relax }}{23}{table.caption.4}}
+\newlabel{fig:komunikacja_miedzyagentowa}{{4.1}{23}{Komunikacja międzyagentowa\relax }{table.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Struktura agentowa systemu\relax }}{24}{figure.caption.3}}
+\newlabel{fig:struktura_systemu}{{4.2}{24}{Struktura agentowa systemu\relax }{figure.caption.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.2}{\ignorespaces Bufory wyj\IeC {\'s}ciowe i~wej\IeC {\'s}ciowe podsystem\IeC {\'o}w agenta $a_{robot}$\relax }}{24}{table.caption.5}}
+\newlabel{fig:komunikacja_podsystemowa}{{4.2}{24}{Bufory wyjściowe i~wejściowe podsystemów agenta $a_{robot}$\relax }{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Podsystem sterowania $c_{task}$}{25}{subsection.4.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Zachowania podsystemu sterowania $c_{task}$\relax }}{25}{figure.caption.6}}
+\newlabel{fig:c-task_zachowania}{{4.3}{25}{Zachowania podsystemu sterowania $c_{task}$\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Bezczynno\IeC {\'s}\IeC {\'c} (zachowanie ${^{c}{\EuScript  {B}}_{task,0}}$)}{25}{section*.7}}
+\@writefile{toc}{\contentsline {subsubsection}{Wyb\IeC {\'o}r obiektu (zachowanie ${^{c}{\EuScript  {B}}_{task,1}}$)}{25}{section*.8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Funkcja przej\IeC {\'s}cia ${^cf^\prime _{task, 1}}$\relax }}{26}{figure.caption.9}}
+\newlabel{fig:wybor_obiektu_funkcja_przejscia}{{4.4}{26}{Funkcja przejścia ${^cf^\prime _{task, 1}}$\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Chwyt (zachowanie ${^{c}{\EuScript  {B}}_{task,2}}$)}{26}{section*.10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Funkcja przej\IeC {\'s}cia ${^cf^\prime _{task, 2}}$\relax }}{27}{figure.caption.11}}
+\newlabel{fig:chwyt_obiektu_funkcja_przej\IeC {\'s}cia}{{4.5}{27}{Funkcja przejścia ${^cf^\prime _{task, 2}}$\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Graf automatu sko\IeC {\'n}czonego realizuj\IeC {\k a}cego chwytanie obiektu\relax }}{27}{figure.caption.12}}
+\newlabel{fig:chwyt_zachowania}{{4.6}{27}{Graf automatu skończonego realizującego chwytanie obiektu\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Podsystem sterowania $c_{robot}$}{27}{subsection.4.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Zachowania podsystemu sterowania $c_{robot}$\relax }}{28}{figure.caption.13}}
+\newlabel{fig:c-robot_zachowania}{{4.7}{28}{Zachowania podsystemu sterowania $c_{robot}$\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Bezczynno\IeC {\'s}\IeC {\'c} (zachowanie ${^{c}{\EuScript  {B}}_{robot,0}}$)}{28}{section*.14}}
+\@writefile{toc}{\contentsline {subsubsection}{Obserwacja (zachowanie ${^{c}{\EuScript  {B}}_{robot,1}}$)}{28}{section*.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Funkcja przej\IeC {\'s}cia $^cf^\prime _{robot, 1}$\relax }}{29}{figure.caption.16}}
+\newlabel{fig:obserwacja_funkcja_przejscia}{{4.8}{29}{Funkcja przejścia $^cf^\prime _{robot, 1}$\relax }{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Ruch (zachowanie ${^{c}{\EuScript  {B}}_{robot,2}}$)}{29}{section*.17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Rzeczywisty efektor $E_{robot}$}{29}{subsection.4.2.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Funkcja przej\IeC {\'s}cia $^cf^\prime _{robot, 2}$\relax }}{30}{figure.caption.18}}
+\newlabel{fig:ruch_funkcja_przejscia}{{4.9}{30}{Funkcja przejścia $^cf^\prime _{robot, 2}$\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Wirtualny efektor $e_{robot}$}{30}{subsection.4.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Rzeczywisty receptor $R_{robot,cam}$}{30}{subsection.4.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Wirtualny receptor $r_{robot,cam}$}{30}{subsection.4.2.6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Zachowania wirtualnego receptora $r_{robot,cam}$\relax }}{31}{figure.caption.19}}
+\newlabel{fig:podsystem_wizyjny_zachowania}{{4.10}{31}{Zachowania wirtualnego receptora $r_{robot,cam}$\relax }{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Funkcja przej\IeC {\'s}cia $^rf^\prime _{robot,cam, 0}$\relax }}{32}{figure.caption.20}}
+\newlabel{fig:przetwarzanie_obrazu}{{4.11}{32}{Funkcja przejścia $^rf^\prime _{robot,cam, 0}$\relax }{figure.caption.20}{}}
+\@setckpt{text/algorytmy}{
+\setcounter{page}{33}
+\setcounter{equation}{0}
+\setcounter{enumi}{0}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{chapter}{4}
+\setcounter{section}{2}
+\setcounter{subsection}{6}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{11}
+\setcounter{table}{2}
+\setcounter{parentequation}{0}
+\setcounter{ContinuedFloat}{0}
+\setcounter{float@type}{8}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{27}
+\setcounter{lstnumber}{1}
+\setcounter{AM@survey}{0}
+\setcounter{subfigure}{0}
+\setcounter{lofdepth}{1}
+\setcounter{subtable}{0}
+\setcounter{lotdepth}{1}
+\setcounter{r@tfl@t}{0}
+\setcounter{section@level}{2}
+\setcounter{lstlisting}{0}
+}

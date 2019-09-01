@@ -1,0 +1,56 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english,polish]{babel}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{polski}
+\usepackage{url}
+\usepackage{float}
+\usepackage[nottoc]{tocbibind}
+
+
+\graphicspath{ {./img/} }
+
+
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{{$\hookrightarrow$}},
+}
+
+
+\begin{document}
+	\title{Streszczenie pracy \\ Sterowanie ramieniem robota w obliczu chwytania przedmiotów}
+	\author{Jakub Postępski, kierunek AiR, 257947 \\ opiekun pracy: dr inż. Tomasz Winiarski}
+	\maketitle
+
+
+
+	Celem pracy magisterskiej jest rozwiązanie problemu kompensacji grawitacji w ramieniu robota sterowanym impedancyjnie. Zakłada się nieznany model chwytanego obiektu, znany model ramienia robota oraz nieważkość ramienia robota. Zakładamy dostępność pomiarów z nadgarstkowego czujnika siły i momentu. W trakcie wspomnianej kompensacji grawitacji robot nie powinien tracić swoich zalet związanych z tym typem sterowania. Dodatkowo ramię robota zakończone jest chwytakiem który pozwala na chwytanie przedmiotów.
+
+	Środowiskiem badawczym jest robot usługowy Velma. Ma on dwa ramiona LWR sterowane impedancyjnie. Posiadają wbudowaną kompensację grawitacji własnej masy. Na ich końcach znajdują się chwytaki Barretta oraz nadgarstkowe czujniki FTS.
+
+	System sterowania o twardych ograniczeniach czasowych pracuje z częstotliwością 500 Hz. Struktura oprogramowania została stworzona w oparciu o teorię agentową. Jeden z agentów jest odpowiedzialny za kontrolę zadań związanych z manipulacją w przestrzeni operacyjnej i konfiguracyjnej robota. Drugi z nich służy do zadawania zadań i kontroli pierwszego z agentów. Oprogramowanie robota pisane jest przy wykorzystaniu struktury ramowej ROS i Orocos. Dostępny jest symulator robota pisany w przy wykorzystaniu Gazebo.
+
+	W pracy zostanie przedstawiona dyskusja na temat dostępnych rozwiązań zarysowanego problemu oraz ich zalet i wad. Przedstawione zostanie podejście polegające na opisie modelu łańcucha kinematycznego i dynamicznego z nieznanymi parametrami chwytanego obiektu. W celu estymacji tych parametrów zaprezentowany zostanie algorytm bazujący na optymalizacji parametrów ze względu na minimalizację funkcji błędu odczytów receptorów robota. Kiedy algorytm dostatecznie dobrze pozna nieznane parametry należy ponownie wyliczyć prawo sterowania impedancyjnego z uwzględnieniem dodatkowej siły kompensującej grawitację. W drugim podejściu zostanie zaprezentowana metoda która na bierząco minimalizuje uchyb pomiędzy porządaną a rzeczywistą pozycją końcówki. Metoda będzie realizowana przy pomocy algorytmu PID odpowiednio zmodyfikowanego w celu zachowania postulatów sterowania impedancyjnego.
+
+	W kolejnej części zostanie zaprezentowana realizacja praktyczna algorytmu kompensacji grawitacji wraz z oceną jakości algorytmu. Zostanie opisany sposób implementacji w środowisku zbudowanym zgodnie z teorią agentową. Przestawiony zostanie aspekt implementacji w środowisku czasu rzeczywistego.
+
+	W podsumowaniu zostanie wskazany dalszy kierunek badań. W skróconej formie zostaną opisane wykonane prace wraz z oceną rezultatów. Przedstawione zostaną praktyczne zastosowania algorytmów opisanych w pracy.
+
+
+\end{document}
+
+

@@ -1,0 +1,13 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Wprowadzenie}{1}{section.1}
+\contentsline {section}{\numberline {2}Prace badawcze}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Artyku\IeC {\l }y}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Sformalizowanie problemu}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Dyskretyzacja uk\IeC {\l }adu}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Estymacja nieznanych parametr\IeC {\'o}w}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Estymacja masy przy wykorzystaniu FTS}{5}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Estymacja inercji z macierzy uk\IeC {\l }adu}{5}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Kompensacja grawitacji}{6}{subsection.2.7}
+\contentsline {section}{\numberline {3}Modyfikacja oprogramowania robota}{6}{section.3}
+\contentsline {section}{\numberline {4}Podsumowanie}{7}{section.4}
+\contentsline {section}{Bibliografia}{7}{section*.2}

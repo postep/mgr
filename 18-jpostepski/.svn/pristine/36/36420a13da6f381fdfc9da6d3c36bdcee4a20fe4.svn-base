@@ -1,0 +1,19 @@
+\select@language {polish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Przypadki u\IeC {\.z}ycia systemu\relax }}{22}{figure.caption.2}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Struktura agentowa systemu\relax }}{24}{figure.caption.3}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zachowania podsystemu sterowania $c_{task}$\relax }}{25}{figure.caption.6}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Funkcja przej\IeC {\'s}cia ${^cf^\prime _{task, 1}}$\relax }}{26}{figure.caption.9}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Funkcja przej\IeC {\'s}cia ${^cf^\prime _{task, 2}}$\relax }}{27}{figure.caption.11}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Graf automatu sko\IeC {\'n}czonego realizuj\IeC {\k a}cego chwytanie obiektu\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Zachowania podsystemu sterowania $c_{robot}$\relax }}{28}{figure.caption.13}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Funkcja przej\IeC {\'s}cia $^cf^\prime _{robot, 1}$\relax }}{29}{figure.caption.16}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Funkcja przej\IeC {\'s}cia $^cf^\prime _{robot, 2}$\relax }}{30}{figure.caption.18}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Zachowania wirtualnego receptora $r_{robot,cam}$\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Funkcja przej\IeC {\'s}cia $^rf^\prime _{robot,cam, 0}$\relax }}{32}{figure.caption.20}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

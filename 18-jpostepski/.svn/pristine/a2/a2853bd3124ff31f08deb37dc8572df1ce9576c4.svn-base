@@ -1,0 +1,110 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+
+\documentclass[12pt,a4paper,titlepage]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english,polish]{babel}
+\usepackage{cite}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{polski}
+
+
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{{$\hookrightarrow$}},
+}
+
+\begin{document}
+	\title{ Raport mgr - arnoldzik }
+	\maketitle
+	\section{Założenia}
+	Kontroler KUKA w momencie startu pobiera parametry masy chwytaka. Na tej podstawie w momencie zadania przez użytkownika pozycji stawów wyliczana jest siła kompensacji grawitacji dla sterowania impedancyjnego. Jednak gdy masa chwytaka się zmieni nie ma możliwości wprowadzenia zmian modelu w KUKA.
+	
+	Należy zdiagnozować realną masę chwytaka w trakcie działania systemu i dodać dodatkową siłę do ramienia robota kompensujący wpływ dodatkowego obciążenia masą.
+	\subsection{Uzystkanie masy chwytaka}
+	Są dwie metody:
+	\begin{itemize}
+		\item Patrzenie na różnice między zadanym sterowaniem a realnymi uzyskanymi pozycjami w stawach. Podejście trudne matematycznie i pasujące bardziej do sterowania pozycyjnego.
+		\item Użycie czujnika siły wbudowanego w nadgarstek chwytaka. Może być problem, z poznaniem wszyskich własności masy oraz parametrów dynamicznych masy. Na ten moment wybieram to podejście.
+	\end{itemize}
+	\subsection{Metoda kompensacji}
+	\begin{itemize}
+		\item Wyliczenie wszystkich sił, kinematyki i kompensacji itp od zera.
+		\item Dodanie siły na podstawie modelu masy, który uzyskujemy z pomiarów. Wybieram to podejście jako znacząco prostsze.
+	\end{itemize}
+	Do wybranego podejścia może być istotna taka uwaga, że żeby skompensować siłę grawitacji narzędzia nie są potrzebne wszystkie dane. Możliwe że dałoby się kompensować zmienioną masę chwytaka bez wszystkich parametrów typowych opisujących masę (np środek ciężkości w osi z). To jest do przemyślenia i nie jestem tego pewien na tym etapie.
+	\section {Kompensacja grawitacji  przedmiotu bez uwzględnienia inercji}
+	
+	Kompensacja polega na dodaniu odpowieniego momentu siły do każdego ze stawów $M_c$ niezależnie od pozostałych sił oddziałujących na stawy. Całkowity moment dla każdego ze stawów to $M_i = M_{d,i} + M_{c,i}$. Interesująca jest kompensacja w osi Z.
+	
+	Dzięki odczytom z czujnika siły znamy siłę $\vec{F}$ oraz moment $\vec{M}$. Posiadamy zadane pozycje stawów $q_i$ oraz długości ramion $r_i$ dla $n$ stawów.
+	
+	Wydaje się, że identyfikacja przedmiotu poprzez jego obracanie nie jest wymagana.
+	
+	Mamy $M = \vec{r} \times \vec{F}$, więc moment narzędzia (wywierany na każdy staw) to $M_t = r_i F \sin{q_i}$
+	
+	\subsection{Kompensacja ostatniego stawu}
+	Tylko w ostatnim stawie chcemy skompensować moment który rejestrujemy w czujniku oraz siłę ciążenia narzędzia. Dla ostatniego stawu (rys. ) mamy:
+	\[M_{c,n} = (r_n + r_t)F\]
+	\[M_{c,n} = -(r_nF + M)\]
+	
+	\subsection{Kompensacja dla pozostałych stawów}
+	Na każdy staw działa siła $\vec{F}$ i chcemy ją skompensować $\vec{F_c} = -\vec{F}$. Dodatkowo na nasze ramię stawu oddziałuje moment ze stawu następnego. \[M_{c,i} = -(r_iF\sin{q_i} + M_{c, i+1}\sin{q_{i+1}})\].
+	
+	\subsection{Podsumowanie}
+	Nawet bez uwzględnienia dynamiki układu pojawia się problem. Co prawda siła $\vec{F}$ jest stała, lecz w trakcie dokonywania kompensacji moment $\vec{M}$ będzie się zmieniać.
+	
+	Intuicja podpowiada mi, że 
+	
+	\section{Eksperymenty}
+	\subsection{Zmiana masy chwytaka}
+	\subsubsection{W kontrolerze KUKA}
+	Dzięki temu KUKA uważa, że należy wprowadzić inną siłę dla każdego ze stawów w celu kompensacji grawitacji. Dla symulacji modyfikacja w pliku:
+	\begin{lstlisting}
+	/home/jposteps/ws_fabric/ws_velma/src/sim_gazebo/launch/velma_gazebo_re.launch
+	\end{lstlisting}
+	Po zwiększeniu masy chwytak poszybował do góry.
+	\subsubsection{Zmiana masy modelu chwytaka}
+	Dzieki temu naprawdę zmienia się masa chwytaka w symulacji. Edycja w pliku: 
+	\begin{lstlisting}
+	/ws_velma/src/barrett_hand_robot/barrett_hand_defs/defs/barret_hand.urdf.xacro
+	\end{lstlisting}
+	Po zwiększeniu masy chwytak opadł w dół.
+	Można zmieniać parametry części HandPalmLink, bo jest blisko środka ciężkości.
+	\subsection{Zmiana sztywności}
+	Możliwa jest zmiana w trzech miejscach, w zależności od sposobu uruchamiania systemu.
+	\begin{lstlisting}
+	/ws_velma/src/velma_system/velma_core_cs/launch/velma_core_cs.launch
+	\end{lstlisting}
+	\begin{lstlisting}
+	/ws_velma/src/velma_controllers/launch/velma_common_params.launch
+	\end{lstlisting}
+	\begin{lstlisting}
+	/ws_velma/src/lwr_robot/lwr_simulation/launch/lwr_controller.launch
+	\end{lstlisting}
+	Muszę się dowiedzieć, czym dokładnie się różnią. Na razie używałem pierwszego pliku do zmiany sztywności. W stanie równowagi nie widać różnicy. Po zadaniu siły na stawy widać że uginają się odpowiednio w inny sposób.
+	\subsection{Odczyt z czujnika nadgarstkowego w symulacji}
+	Dane poprawne do odczytania na temacie
+	\begin{lstlisting}
+	rostopic echo /velma_core_cs/b_st/rFt
+	\end{lstlisting}
+	
+	\section{Metody odczytywania masy}
+	\begin{itemize}
+	\item Z odwróconego modelu. Problem z osobliwościami. Problem z szumami.
+	\item FFT i wyciągnięcie składowej stałej. Średnia krocząca daje ten sam efekt.
+	\item Filtr dolnoprzepustowy.
+	\end{itemize}
+	
+	Najlepsze wyniki dają obliczenia z modelu. W momencie osobliwości ciężko odczytać z któregokolwiek.
+\end{document}

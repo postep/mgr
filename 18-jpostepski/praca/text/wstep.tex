@@ -1,0 +1,13 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Wstęp\label{chap:wstep}}
+
+	Współczesne roboty z powodzeniem zastępują człowieka przy wielu żmudnych i niewdzięcznych czynnościach.  W zakładach produkcyjnych sprawują się znakomicie. Mimo tego podchodzi się niezwykle ostrożnie do współpracy robotów z ludzmi. Podyktowane to jest nie tylko wysokimi kosztami ale także obawami związanymi z ochroną otoczenia w którym robot ma operować.
+	
+	Zakres zastosowań robotyki można znacznie poszerzyć projektując roboty bezpieczne zarówno dla otaczającego je środowiska jak i samych robotów. Jednym z fundamentów takiego bezpieczeństwa może być algorytm sterowania impedancyjnego, który znacznie ogranicza ryzyko zniszczeń. 
+	
+	Prawo sterowania algorytmu jest skonstruowane tak by silniki ramienia działały w sposób symulujący układ ze sprężyną i amortyzatorem. Robot sterowany w taki sposób nie minimalizuje uchybu pozycji za wszelką cenę. W momencie kontaktu z otoczeniem robot pozostaje elastyczny i ugina się. Opisana zaleta może przerodzić się w wadę. Algorytm korzysta ze zdefiniowanego modelu który nie uwzględnia chwytanych przez robota przedmiotów. Z punktu widzenia algorytmu sterowania chwycony przedmiot jest traktowany tak samo jak reszta środowiska. Zamiast skompensować siłę grawitacji chwyconego przedmiotu ramię robota ugina się pod ciężarem. 
+
+	Celem pracy jest znalezienie metody kompensacji siły grawitacji przedmiotu o nieznanej masie i inercji w opisanym środowisku. W niniejszej pracy zostanie przeprowadzona dyskusja na temat możliwych sposobów radzenia sobie ze wspomnianymi wadami algorytmu sterowania impedancyjnego. Zostanie zaprezentowana praktyczna realizacja jednego z nich wraz z testami.

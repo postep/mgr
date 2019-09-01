@@ -1,0 +1,178 @@
+@inproceedings{Seredynski-fabric-romoco-2019-twiki,
+  author = {Seredyński, Dawid and Winiarski, Tomasz and Zieliński, Cezary},
+  title = {{FABRIC: Framework for Agent-Based Robot Control Systems}},
+  booktitle = {12th International Workshop on Robot Motion and Control (RoMoCo)},
+  year = {2019},
+  editor = {K.~Kozłowski},
+  pages = {215--222},
+  organization = {IEEE},
+  conference = {romoco12},
+  doi = {10.1109/RoMoCo.2019.8787370},
+  grant = {aal-incare},
+  twiki = {article},
+  url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2019/fabric.pdf}
+}
+
+@inproceedings{bib:seredynski2015grasp-twiki,
+	author = {Seredyński, Dawid and Winiarski, Tomasz and Banachowicz, Konrad and Zieliński, Cezary},
+	booktitle = {10th International Workshop on Robot Motion and Control (RoMoCo)},
+	title = {Grasp planning taking into account the external wrenches acting on the grasped object},
+	year = {2015},
+	editor = {K.~Kozłowski},
+	pages = {40--45},
+	organization = {IEEE},
+	doi = {10.1109/RoMoCo.2015.7219711},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2015/grasping-romoco-2015.pdf},
+	conference = {romoco15},
+	grant = {GrantRobREx},
+	twiki = {article},
+	zadanie = {pw11},
+	video = {https://vimeo.com/125795676}
+}
+
+@article{bib:szynkiewicz-15-robot-grasp-twiki,
+	author = {Szynkiewicz, Wojciech},
+	title = {Robot grasp synthesis under object pose uncertainty},
+	journal = {Journal of Automation Mobile Robotics and Intelligent Systems},
+	year = {2015},
+	volume = {9},
+	number = {1},
+	pages = {53--61},
+	doi = {10.14313/JAMRIS_1-2015/7},
+	grant = {GrantRobREx},
+	twiki = {article},
+	zadanie = {pw11}
+}
+
+@article{bib:Zie:10BulPAN-twiki,
+	author = {Zieliński, Cezary and Winiarski, Tomasz},
+	title = {General specification of multi-robot control system structures},
+	journal = {Bulletin of the Polish Academy of Sciences -- Technical Sciences},
+	year = {2010},
+	volume = {58},
+	number = {1},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2010/BiuletynPAN2010.pdf},
+	doi = {10.2478/v10175-010-0002-x},
+	grant = {GrantMNiSWN514128733},
+	lang = {en},
+	owner = {yoyek},
+	timestamp = {2012.04.12},
+	twiki = {jcr}
+}
+
+
+
+@article{bib:PAR2011_ChwytakWielopalczasty_Planowanie-eng-twiki,
+	author = {Szynkiewicz, Wojciech and Czajkowski, K. and Zieliński, Cezary and Winiarski, Tomasz and Mianowski, K. and Banachowicz, Konrad},
+	title = {Chwytak wielopalczasty dla robota usługowego -- planowanie chwytów},
+	journal = {Pomiary Automatyka Robotyka},
+	year = {2011},
+	number = {7--8},
+	pages = {75--81},
+	note = {Multi-fingered gripper for a~service robot - grasp planning {(In Polish)}},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2011/11-chwytak-wielopaczalsty-planowanie-chwytow.pdf},
+	grant = {GrantMNiSWN514128733},
+	owner = {cz},
+	timestamp = {2012.04.12},
+	twiki = {journal}
+}a
+
+@inproceedings{bib:winiarskimmar2015-twiki,
+	author = {Winiarski, Tomasz and Banachowicz, Konrad},
+	booktitle = {20th IEEE International Conference on Methods and Models in Automation and Robotics, MMAR'2015},
+	title = {Automated generation of component system for the calibration of the service robot kinematic parameters},
+	year = {2015},
+	pages = {1098--1103},
+	publisher = {IEEE},
+	doi = {10.1109/MMAR.2015.7284032},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2015/velma-calibration-2015.pdf},
+	grant = {GrantNCNSonata3},
+	twiki = {article}
+}
+
+@inproceedings{bib:Kornuta:2016_automation_perception-twiki,
+	author = {Kornuta, Tomasz and Laszkowski, Michał},
+	booktitle = {Recent Advances in Automation, Robotics and Measuring Techniques},
+	title = {{Perception subsystem for object recognition and pose estimation in RGB-D images}},
+	year = {2016},
+	editor = {Szewczyk, Roman and Zieliński, Cezary and Kaliczyńska, Małgorzata},
+	volume = {440},
+	series = {Advances in Intelligent Systems and Computing (AISC)},
+	pages = {597-607},
+	publisher = {Springer},
+	doi = {10.1007/978-3-319-29357-8_52},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2016/rgbd-grasping.pdf},
+	grant = {GrantNCNSonata3},
+	owner = {tkornut},
+	timestamp = {2015.10.30},
+	twiki = {article}
+}
+
+
+@inproceedings{bib:Zielinski:2014_kkr_relacje-twiki,
+	author = {Zieliński, Cezary and Kornuta, Tomasz},
+	booktitle = {XIII Krajowa Konferencja Robotyki -- Postępy robotyki},
+	title = {{Ontologia na potrzeby sterowania robotem usługowym}},
+	year = {2014},
+	editor = {Tchoń, K. and Zieliński, Cezary},
+	volume = {194},
+	number = {1},
+	pages = {493-502},
+	note = {{Ontology for the purpose of control of a service robot (in Polish)}},
+	url = {https://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2014/2014_kkr_obiekty-relacje.pdf},
+	conference = {kkr13},
+	grant = {GrantRobREx},
+	lang = {pl},
+	owner = {tkornuta},
+	timestamp = {2014.02.11},
+	twiki = {inbook},
+	zadanie = {pw11}
+}
+
+
+%%%%%%%%%%%% AGENT
+
+@article{bib:zielinski12ir-swarm-twiki,
+	author = {Zieliński, Cezary and Kasprzak, Włodzimierz and Kornuta, Tomasz and Szynkiewicz, Wojciech and Trojanek, Piotr and Walęcki, Michał and Winiarski, Tomasz and Zielińska, T.},
+	title = {Control and Programming of a~Multi-Robot-Based Reconfigurable Fixture},
+	journal = {Industrial Robot: An International Journal},
+	year = {2013},
+	volume = {40},
+	number = {4},
+	pages = {329--336},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2013/13-ir-swarm.pdf},
+	doi = {10.1108/01439911311320831},
+	grant = {fp7swarm},
+	twiki = {jcr}
+}
+
+@article{bib:PAR2011_Scout1-eng-twiki,
+	author = {Zieliński, Cezary and Kornuta, Tomasz and Trojanek, Piotr and Winiarski, Tomasz},
+	title = {{Metoda projektowania układów sterowania autonomicznych robotów mobilnych. Część~1. Wprowadzenie teoretyczne}},
+	journal = {Pomiary Automatyka Robotyka},
+	year = {2011},
+	number = {9},
+	pages = {84--87},
+	note = {{(Method of Designing Autonomous Mobile Robot Control Systems. Part 1: Theoretical Introduction (In~Polish))}},
+	url = {http://robotyka.ia.pw.edu.pl/svn/rcprg_pubs/2011/11-par-scout1.pdf},
+	grant = {piap2009},
+	twiki = {journal}
+}
+
+
+@misc{bib:ROS,
+	title={Oficjalna strona systemu {ROS}},
+	note={\url{http://www.ros.org/}}
+}
+
+@misc{bib:Gazebo,
+	title={Oficjalna strona Gazebo},
+	note={\url{http://www.gazebosim.org/}}
+}
+
+
+@misc{bib:robotyka,
+	title={{O}ficjalna strona {Z}akładu {P}rogramowania {R}obotów i {S}ystemów {R}ozpoznających},
+	note={\url{https://www.robotyka.ia.pw.edu.pl/}}
+}
+

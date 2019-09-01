@@ -1,0 +1,327 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Specyfikacja systemu\label{chap:specyfikacja_systemu}}
+
+W~poniższym rozdziale przedstawiono koncepcję systemu pozwalającego na chwyt obiektu przez manipulator -- opisano założenia i~wymagania oraz specyfikację systemu w~notacji agentowej zaprezentowanej w~rozdziale \ref{sec:agent_upostaciowiony}.
+
+\section{Założenia i~wymagania}
+
+\subsection{Założenia dotyczące systemu}
+
+\subsection{Środowisko pracy systemu}
+\begin{itemize}
+	\item Dopuszczalne są różne warunki oświetleniowe, zarówno naturalne światło dzienne, jak i~oświetlenie sztuczne.
+	\item Na robota nie działają żadne siły zewnętrze, w~szczególności nie jest wywierany nacisk na  chwytak (np. przez wiatr).
+	\item W~scenie znajduje się dokładnie jeden obiekt zainteresowania.
+	\item Obiekt zainteresowania pozostaje nieruchomy w~czasie określania jego lokalizacji i~podczas chwytu.
+	\item W~otoczeniu obiektu mogą znajdować się inne przedmioty pod warunkiem, że nie przysłaniają całego obiektu (częściowe przysłonięcie jest dozwolone).
+\end{itemize}
+
+
+\subsection{Przypadki użycia systemu}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/przypadki_uzycia.pdf}
+	\caption{Przypadki użycia systemu}
+	\label{fig:przypadki_uzycia}
+\end{figure}
+
+Rysunek \ref{fig:przypadki_uzycia} przedstawia diagram przypadków użycia systemu. Aktorami korzystającymi z~systemu są:
+\begin{itemize}
+	\item \textbf{Robot} -- robot wykonujący zadanie chwytania obiektu,
+	\item \textbf{Użytkownik} -- użytkownik systemu, którym może być dowolny system zewnętrzny np. konsola operatorska.
+\end{itemize}
+Wyróżniono następujące przypadki użycia:
+\begin{itemize}
+	\item \textbf{PU1 Wybór obiektu} -- Wybór obiektu do chwycenia przez robota. Robot dostarcza informacje na temat swojego otoczenia, natomiast użytkownik wybiera obiekt.
+	\item \textbf{PU2 Chwycenie obiektu} -- Chwycenie obiektu przez robota. Akcję chwytania inicjuje użytkownik, natomiast robot ją wykonuje.
+	\item \textbf{PU3 Obserwacja otoczenia} -- Robot obserwuje otoczenie, w~którym się znajduje. Dane uzyskane z~kamery robota mogą posłużyć do lokalizacji obiektu (rozszerzenie przez przypadek PU4).
+	\item \textbf{PU4 Lokalizacja obiektu} -- Lokalizacja obiektu, wymaga wcześniejszego rozpoznania obiektu przez w~obrazie kamery (przypadek PU5).
+	\item \textbf{PU5 Rozpoznanie obiektu} -- Dane sensoryczne wskazują na obecność obiektu w~otoczeniu.
+\end{itemize}
+
+\section{Struktura agentowa systemu}
+System składa się z~dwóch agentów. Jednym z~nich jest agent upostaciowiony $a_{robot}$, który jest odpowiedzialny za sterowanie manipulatorem i~kamerą oraz obsługę danych sensorycznych. Agent $a_{robot}$ z~założenia nie podejmuje samodzielnie akcji, natomiast wykonuje polecenia jakie zleci mu drugi agent -- $a_{task}$. Agent $a_{task}$ realizuje główne zadanie systemu m.in. inicjuje chwyt, jednak może też wykonywać inne działania. Innymi słowy agent $a_{robot}$ wykonuje podstawowe akcje jakie może wykonać robot jak np. przemieszczenie ramienia manipulatora do określonej pozycji, czy analiza obrazu kamery, natomiast agent $a_{task}$ jest odpowiedzialny za wykonanie złożonych zadań jak np. chwyt.
+
+Agent $a_{robot}$ posiada następujące rzeczywiste efektory i~receptory:
+\begin{itemize}
+	\item $R_{robot,cam}$ -- kamera robota,
+	\item $E_{robot}$ -- chwytak robota.
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth,trim=0cm 0cm 0cm 0cm]{images/specyfikacja_systemu/struktura_systemu.pdf}
+	\caption{Struktura agentowa systemu}
+	\label{fig:struktura_systemu}
+\end{figure}
+Oprogramowanie agenta składa się z~jednego podsystemu sterowania oraz receptorów i~efektorów wirtualnych odpowiadających receptorom i~efektorom rzeczywistym. Zatem agent $a_{robot}$ składa się z~następujących podsystemów:
+\begin{itemize}
+	\item $c_{robot}$ -- podsystem sterowania,
+	\item $r_{robot,cam}$ -- wirtualny receptor obsługujący receptor rzeczywisty $R_{robot,cam}$,
+	\item $e_{robot}$ -- wirtualny efektor obsługujący efektor rzeczywisty $E_{robot}$.
+\end{itemize}
+Agent $a_{task}$ nie ma wyspecyfikowanych receptorów i~efektorów -- ich obecność i~dobór są tematem specyfikacji systemu korzystającego z~projektowanych komponentów. Jedynym wymaganym elementem agenta $a_{task}$ jest obecność podsystemu sterowania $c_{task}$, który uczestniczy w~komunikacji międzyagentowej. Struktura całego systemu została zaprezentowana na rysunku \ref{fig:struktura_systemu}.
+
+Agenty oraz ich podsystemy przesyłają dane za pośrednictwem buforów wejściowych i~wyjściowych. Tabele \ref{fig:komunikacja_miedzyagentowa} i~\ref{fig:komunikacja_podsystemowa} prezentują szczegóły komunikacji odpowiednio międzyagentowej oraz wewnętrznej agenta $a_{robot}$.
+
+\begin{table}[H]
+	\caption{Komunikacja międzyagentowa}
+	\label{fig:komunikacja_miedzyagentowa}
+	\centering
+	\bgroup
+	\def\arraystretch{1.5}
+	\begin{tabular}{|p{2cm}|p{2cm}|p{10cm}|}
+		\hline
+		\textbf{Bufor \newline wyjściowy} & \textbf{Bufor \newline wejściowy} & \textbf{Przesyłane dane} \\ \hline \hline
+		
+		${^{T}_{y}{c}_{task}}$ & ${^{T}_{x}{c}_{robot}}$ & polecenia -- sterowanie manipulatorem i~kamerą \\ \hline
+		
+		${^{c}_{y}{c}_{robot}}$ & ${^{T}_{x}{c}_{task}}$ & 
+		stan robota -- pozycja manipulatora i~kamery, \newline dane rozpoznanego obiektu \\ \hline
+	\end{tabular}
+	\egroup
+\end{table}
+
+%Rzeczywisty efektor $E_{irp}$ komunikuje się z~systemem poprzez efektor wirtualny $e_{irp}$, a~rzeczywisty receptor $R_{irp,cam}$ z~wirtualnym receptorem $r_{irp,cam}$. Wszystkie dane z~wirtualnego efektora i~receptora są zbierane przez podsystem sterowania $c_{irp}$, który analizuje otrzymane dane oraz wyznacza akcje, które robot powinien wykonać. Wyniki obliczeń wysyła do odpowiednich podsystemów. Szczegóły komunikacji między podsystemami zostały opisane w~tabeli \ref{fig:komunikacja}.
+
+\begin{table}[H]
+	\caption{Bufory wyjściowe i~wejściowe podsystemów agenta $a_{robot}$}
+	\label{fig:komunikacja_podsystemowa}
+	\centering
+	\bgroup
+	\def\arraystretch{1.5}
+	\begin{tabular}{|p{2cm}|p{2cm}|p{10cm}|}
+		\hline
+		\textbf{Bufor \newline wyjściowy} & \textbf{Bufor \newline wejściowy} & \textbf{Przesyłane dane} \\ \hline \hline
+		
+		${^{e}_{y}{E}_{robot}}$ & ${^{E}_{x}{e}_{robot}}$ & odczyty z~enkoderów silników \\ \hline
+		
+		${^{E}_{y}{e}_{robot}}$ & ${^{e}_{x}{E}_{robot}}$ & sygnał sterujący \\ \hline
+		
+		${^{c}_{y}{e}_{robot}}$ & ${^{e}_{x}{c}_{robot}}$ & położenia członów ramienia we współrzędnych kartezjańskich/motorycznych \\ \hline
+		
+		${^{e}_{y}{c}_{robot}}$ & ${^{c}_{x}{e}_{robot}}$ & konfiguracja efektora lub sterowanie, w~skład którego wchodzi zadana pozycja ramienia oraz czas w~jakim sterowanie powinno zostać wykonane \\ \hline
+		
+		${^{r}_{y}{R}_{robot,cam}}$ & ${^{R}_{x}{r}_{robot,cam}}$ & obraz kamery \\ \hline
+		
+		${^{c}_{y}{r}_{robot,cam}}$ & ${^{r}_{x}{c}_{robot}}$ & dane rozpoznanego obiektu: jego identyfikator oraz pozycja wraz z~poziomem pewności \\ \hline
+		
+		${^{r}_{y}{c}_{robot}}$ & ${^{c}_{x}{r}_{robot,cam}}$ & aktualna estymacja pozycji obiektu \\ \hline
+	\end{tabular}
+	\egroup
+\end{table}
+
+%\begin{table}[H]
+%	\caption{Bufory wewnętrzne podsystemów}
+%	\label{fig:pamiec_wewenetrzna}
+%	\centering
+%	\bgroup
+%	\def\arraystretch{1.5}
+%	\begin{tabular}{|p{2.5cm}|p{12cm}|}
+%		\hline
+%		\textbf{Bufor \newline wewnętrzny} & \textbf{Przechowywane dane} \\ \hline \hline
+%		
+%		${^{c}{c}_{irp}}$ & model obiektu oraz aktualna estymacja położenia obiektu \\ \hline
+%		
+%		${^{e}{e}_{irp}}$ & \textbf{// TODO: nie wiem... może to usunąć?} \\ \hline
+%		
+%		${^{r}{r}_{irp,cam}}$ & model obiektu \\ \hline
+%		
+%	\end{tabular}
+%	\egroup
+%\end{table}
+
+\subsection{Podsystem sterowania $c_{task}$}
+
+Podsystem sterowania $c_{task}$ jest odpowiedzialny za wykonanie zadań agenta $a_{task}$. W~podsystemie wyróżniono następujące zachowania:
+\begin{itemize}
+	\item ${^{c}{\mathcal{B}}_{task,0}}$ -- bezczynność,
+	\item ${^{c}{\mathcal{B}}_{task,1}}$ -- wybór obiektu,
+	\item ${^{c}{\mathcal{B}}_{task,2}}$ -- chwyt.
+\end{itemize}
+Zachowania podsystemu przedstawia rysunek \ref{fig:c-task_zachowania}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/c-task_zachowania.pdf}
+	\caption{Zachowania podsystemu sterowania $c_{task}$}
+	\label{fig:c-task_zachowania}
+\end{figure}
+
+\subsubsection{Bezczynność (zachowanie ${^{c}{\mathcal{B}}_{task,0}}$)}
+
+Jest to zachowanie podczas, którego system nie wykonuje żadnych akcji. Charakterystyka zachowania:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{task, 0}$: $True$
+	\item warunek końcowy $^cf^\tau_{task, 0}$: $True$
+	\item funkcja przejścia $^cf^\prime_{task, 0}$: brak
+\end{itemize}
+
+\subsubsection{Wybór obiektu (zachowanie ${^{c}{\mathcal{B}}_{task,1}}$)}
+
+Zachowanie ${^{c}{\mathcal{B}}_{task,1}}$ polega na wyborze obiektu do chwycenia na podstawie informacji o~rozpoznanym otoczeniu robota. Zgodnie z~założeniami dostępny będzie zawsze jeden obiekt, wybór więc polega na decyzji, czy system ma rzeczywiście ten obiekt wybrać -- decyzja ta może zostać podjęta na podstawie różnych czynników np. pewności pomiaru lokalizacji obiektu. Funkcja przejścia polega na pobieraniu danych obiektu z~bufora transmisyjnego ${^{T}_{x}{c}_{task}}$ i~zapisaniu decyzji do pamięci wewnętrznej ${^{c}{c}_{task}}$ (rysunek \ref{fig:wybor_obiektu_funkcja_przejscia}). Charakterystyka zachowania:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{task, 0}$: bufor ${^{T}_{x}{c}_{task}}$ zawiera dane wykrytego obiektu
+	\item warunek końcowy $^cf^\tau_{task, 0}$: $True$
+	\item generator następnego stanu $i+1$ (funkcja przejścia): $${^{c}{c}_{task}^{i+1}} = {^cf^\prime_{task, 1}}({^{T}_{x}{c}_{task}^i})$$
+\end{itemize}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/wybor_obiektu_funkcja_przejscia.pdf}
+	\caption{Funkcja przejścia ${^cf^\prime_{task, 1}}$}
+	\label{fig:wybor_obiektu_funkcja_przejscia}
+\end{figure}
+
+\subsubsection{Chwyt (zachowanie ${^{c}{\mathcal{B}}_{task,2}}$)}
+
+Celem działania zachowania ${^{c}{\mathcal{B}}_{task,2}}$ jest chwyt wybranego obiektu przez robota. W~tym celu odczytywana jest pozycja obiektu oraz manipulatora z~bufora wejściowego ${^{T}_{x}{c}_{task}}$. Na podstawie uzyskanych informacji obliczane jest sterowanie i~wysyłane do bufora wyjściowego ${^{T}_{y}{c}_{task}}$. Proces został zaprezentowany na rysunku \ref{fig:chwyt_obiektu_funkcja_przejścia}. Charakterystyka zachowania:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{task, 2}$: w~buforze ${^{c}{c}_{task}}$ znajduje się informacja o~wybranym obiekcie
+	\item warunek końcowy $^cf^\tau_{task, 0}$: chwytak zaciśnięty na obiekcie
+	\item generator następnego stanu $i+1$ (funkcja przejścia): $${^{T}_{y}{c}_{task}^{i+1}} = {^cf^\prime_{task, 2}}({^{T}_{x}{c}_{task}^i}, {^{c}{c}_{task}^i})$$
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/chwyt_obiektu_funkcja_przejscia.pdf}
+	\caption{Funkcja przejścia ${^cf^\prime_{task, 2}}$}
+	\label{fig:chwyt_obiektu_funkcja_przejścia}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{images/specyfikacja_systemu/chwyt_zachowania.pdf}
+	\caption{Graf automatu skończonego realizującego chwytanie obiektu}
+	\label{fig:chwyt_zachowania}
+\end{figure}
+
+Chwyt obiektu jest zadaniem składającym się z~kilku faz. Na początek, jeśli obiekt znajduje się poza zasięgiem chwytaka należy odpowiednio ustawić ramię oraz otworzyć chwytak. Następnie, jak obiekt będzie się znajdował między palcami należy zamknąć chwytak. Kolejne fazy chwytu obiektu oraz przejścia między nimi realizowane przez system robotyczny będący tematem pracy zostały pokazane na rysunku \ref{fig:chwyt_zachowania} w~postaci diagramu stanów.
+
+\subsection{Podsystem sterowania $c_{robot}$}
+
+Podsystem sterowania $c_{robot}$ wykonuje polecenia przesłane przez agenta $a_{task}$ oraz steruje efektorem robota i~kamerą. Wykonuje następujące zachowania:
+\begin{itemize}
+	\item ${^{c}{\mathcal{B}}_{robot,0}}$ -- bezczynność,
+	\item ${^{c}{\mathcal{B}}_{task,1}}$ -- obserwacja,
+	\item ${^{c}{\mathcal{B}}_{task,2}}$ -- ruch.
+\end{itemize}
+Zachowania podsystemu przedstawia rysunek \ref{fig:c-robot_zachowania}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/c-robot_zachowania.pdf}
+	\caption{Zachowania podsystemu sterowania $c_{robot}$}
+	\label{fig:c-robot_zachowania}
+\end{figure}
+
+%Podsystem sterowania $c_{robot}$ został zdekomponowany na dwie części. Jedna z~nich steruje wykonaniem głównego zadania systemu (inicjuje kroki niezbędne do chwycenia obiektu) oraz wyznacza sterowanie ramieniem. Druga część jest odpowiedzialna za wyznaczanie położenia obiektu zainteresowania w~układzie robota poprzez interpretację danych zwróconych przez receptor i~efektor. Struktura podsystemu sterowania oraz schemat komunikacji przedstawia rysunek \ref{fig:podsystem_sterowania}.
+
+\subsubsection{Bezczynność (zachowanie ${^{c}{\mathcal{B}}_{robot,0}}$)}
+
+Podczas realizacji zachowania ${^{c}{\mathcal{B}}_{robot,0}}$ podsystem sterowania nie wykonuje żadnych akcji. Charakterystyka zachowania:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{robot, 0}$: $True$
+	\item warunek końcowy $^cf^\tau_{robot, 0}$: $True$
+	\item funkcja przejścia $^cf^\prime_{robot, 0}$: brak
+\end{itemize}
+
+\subsubsection{Obserwacja (zachowanie ${^{c}{\mathcal{B}}_{robot,1}}$)}
+
+Zachowanie polega na pozyskiwaniu informacji o~otoczeniu poprzez analizę danych z~kamery -- jest to moment, w~którym możliwe jest zlokalizowanie obiektu do chwycenia. W~celu określenia pozycji obiektu pobierana jest informacja o~wykrytym obiekcie w~obrazie kamery przez bufor wejściowy ${^{r}_{x}{c}_{robot}}$, pozycji sensora przez bufor ${^{e}_{x}{c}_{robot}}$ oraz dotychczas uzyskane dane obiektu z~pamięci wewnętrznej ${^{c}{c}_{robot}}$. Na podstawie pobranych danych wyliczana jest nowa estymacja pozycji obiektu, która następnie zapisywana jest do pamięci wewnętrznej $^{c}{c}_{robot}$ oraz bufora wyjściowego ${^{r}_{y}{c}_{robot}}$. Algorytm działania funkcji przejścia tego zachowania został pokazany na rysunku \ref{fig:obserwacja_funkcja_przejscia}. Dla uproszczenia realizacji zachowania, przyjęto założenie, że podczas obserwacji kamera pozostaje nieruchoma. Podsumowując, charakterystyka zachowania wygląda następująco:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{robot, 1}$: kamera nie porusza się oraz do bufora $^T_xc_{robot}$ przesłano polecenie obserwacji otoczenia
+	\item warunek końcowy $^cf^\tau_{robot, 1}$: przesłano do bufora $^T_xc_{robot}$ polecenie ruchu kamerą lub zakończenia obserwacji otoczenia
+	\item generator następnego stanu $i+1$ (funkcja przejścia $^cf^\prime_{robot, 1}$): $$({^{T}_{y}{c}_{robot}^{i+1}}, {^c{c}_{robot}^{i+1}}, { ^{r}_{y}{c}_{robot}^{i+1}}) = {^cf^\prime_{robot, 1}}({^{r}_{x}{c}_{robot}^i}, {^{e}_{x}{c}_{robot}^i}, {^{c}{c}_{robot}^i})$$
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/obserwacja_funkcja_przejscia.pdf}
+	\caption{Funkcja przejścia $^cf^\prime_{robot, 1}$}
+	\label{fig:obserwacja_funkcja_przejscia}
+\end{figure}
+
+\subsubsection{Ruch (zachowanie ${^{c}{\mathcal{B}}_{robot,2}}$)}
+
+Zachowanie polega na przekazaniu sterowania przesłanego przez bufor transmisyjny ${^{T}_{x}{c}_{robot}}$ do wirtualnego efektora (bufora ${^{e}_{y}{c}_{robot}}$). Algorytm zachowania został pokazany na rysunku \ref{fig:ruch_funkcja_przejscia}. Charakterystyka zachowania:
+\begin{itemize}
+	\item warunek początkowy $^cf^\sigma_{robot, 2}$: nowe sterowanie ${^{T}_{x}{c}_{robot}}$
+	\item warunek końcowy $^cf^\tau_{robot, 2}$: robot lub kamera znajdują się w~zadanej pozycji (${^{e}_{x}{c}_{robot}} = {^{T}_{x}{c}_{robot}}$)
+	\item generator następnego stanu $i+1$ (funkcja przejścia): $${^{e}_{y}{c}_{robot}^{i+1}} = {^cf^\prime_{robot, 2}}({^{T}_{x}{c}_{robot}^i})$$
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/ruch_funkcja_przejscia.pdf}
+	\caption{Funkcja przejścia $^cf^\prime_{robot, 2}$}
+	\label{fig:ruch_funkcja_przejscia}
+\end{figure}
+
+\subsection{Rzeczywisty efektor $E_{robot}$}
+
+Rzeczywistym efektorem $E_{robot}$ jest manipulator posiadający chwytak umożliwiający chwytanie obiektów oraz układ sterujący ruchem kamery 2D. Możliwy jest odczyt stanu efektora np. jego pozycji lub wywieranych na niego sił.
+
+\subsection{Wirtualny efektor $e_{robot}$}
+
+Wirtualny efektor $e_{robot}$ to sterownik robota. Udostępnia on takie funkcje jak:
+\begin{itemize}
+	\item zmiana położenia i~orientacji chwytaka i~kamery,
+	\item odczyt położenia i~orientacji chwytaka i~kamery,
+	\item otwarcie/zamknięcie chwytaka.
+\end{itemize}
+Projekt i~implementacja wirtualnego efektora nie wchodzą w~zakres niniejszej pracy -- jest to gotowe oprogramowanie dostarczone wraz z~robotem.
+
+\subsection{Rzeczywisty receptor $R_{robot,cam}$}
+
+Rzeczywisty receptor $R_{robot,cam}$ jest kamerą zamontowaną na manipulatorze z~zestawem sterowników pozwalających na akwizycję obrazu 2D. Znane są parametry wewnętrzne kamery. W~trakcie działania systemu kamera może się przemieszczać i~obracać zgodnie ze sterowaniem przesłanym do wirtualnego efektora.
+
+\subsection{Wirtualny receptor $r_{robot,cam}$}
+
+Zadaniem wirtualnego receptora $r_{robot,cam}$ jest akwizycja obrazu z~kamery oraz rozpoznanie i~lokalizacja obiektu na postawie otrzymanego obrazu. Podsystem wizyjny posiada jedno możliwe zachowanie $^rB_{robot, 0}$, które realizuje główne zadanie podsystemu wizyjnego (rysunek \ref{fig:podsystem_wizyjny_zachowania}). W~ramach zachowania obliczana jest pozycja obiektu na postawie obrazu kamery (bufor $^R_xr_{robot,cam}$), modelu obiektu (bufor $^rr_{robot,cam}$) oraz aktualnej estymacji pozycji obiektu (bufor $^c_xr_{robot,cam}$). Wyniki są wysyłane do podsystemu sterowania (bufor $^c_yr_{robot,cam}$). Charakterystykę zachowania można przedstawić następująco:
+\begin{itemize}
+	\item warunek początkowy: $^rf^\sigma_{robot, 0} = True$
+	\item warunek końcowy: $^rf^\tau_{robot, 0} = False$
+	\item generator następnego stanu $i+1$ (funkcja przejścia): $${^c_yr_{robot,cam}^{i+1}} = {^rf^\prime_{irp, 0}}({^R_xr_{robot,cam}^i}, {^rr_{robot,cam}^i}, {^c_xr_{robot,cam}^i})$$
+\end{itemize}
+
+%W związku z~tym warunek początkowy zachowania jest zawsze spełniony, a~końcowy nigdy. Funkcja przejścia oblicza pozycję obiektu wykorzystując obraz kamery (bufor $^R_xr_{irp,cam}$), model obiektu (bufor $^rr_{irp,cam}$) oraz aktualną estymację pozycji obiektu przekazywaną przez podsystem sterowania $c_{irp}$ (bufor $^c_xr_{irp,cam}$). Wyniki wysyła do podsystemu sterowania (bufor $^c_yr_{irp,cam}$).
+
+%Automat skończony zachowań wraz z~opisem prezentuje rysunek TODO i~tabela TODO.
+
+%\begin{minipage}{\textwidth}
+%	\begin{minipage}[b]{0.4\textwidth}
+%		\centering
+%		\includegraphics[width=5cm]{images/implementacja_systemu/podsystem_wizyjny_zachowania.pdf}
+%		\captionof{figure}{Automat zachowań podsystemu wizyjnego}
+%	\end{minipage}
+%	\hfill
+%	\begin{minipage}[b]{0.49\textwidth}
+%		\centering
+%		\begin{tabular}{|c|c|}\hline
+%			Zachowanie & Warunki początkowe i~końcowe, generator następnego stanu \\ \hline \hline
+%			\multirow{3}{*}{$^rB_{irp, 0}$} & \multicolumn{1}{l|}{$^rf^\sigma_{irp, 0} = True$} \\
+%			                                & \multicolumn{1}{l|}{$^rf^\tau_{irp, 0} = False$} \\
+%			                                & \multicolumn{1}{l|}{${^c_yr_{irp,cam}^{i+1}} = ^rf^\prime_{irp, 0}({^R_xr_{irp,cam}^i}, {^rr_{irp,cam}^i}, {^c_xr_{irp,cam}^i})$} \\ \hline
+%		\end{tabular}
+%		\captionof{table}{Szczegóły zachowań podsystemu wizynego}
+%	\end{minipage}
+%\end{minipage}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{images/specyfikacja_systemu/podsystem_wizyjny_zachowania.pdf}
+	\caption{Zachowania wirtualnego receptora $r_{robot,cam}$}
+	\label{fig:podsystem_wizyjny_zachowania}
+\end{figure}
+
+Algorytm funkcji przejścia $^rf^\prime_{robot,cam, 0}$ przedstawia rysunek \ref{fig:przetwarzanie_obrazu}. Na początku pobierany jest obraz kamery z~receptora rzeczywistego poprzez bufor $^R_xr_{robot,cam}$. Następnie, z~obrazu zostają usunięte zniekształcenia geometryczne, gdyż ich obecność może negatywnie wpływać na jakość rozpoznania i~lokalizacji obiektu. Następnym etapem jest ekstrakcja cech obrazu i~dopasowanie ich do cech modelu, które są zapisane w~pamięci wewnętrznej $^rr_{robot,cam}$. Znalezione dopasowania tzn. pary punktów 2D obrazu i~3D modelu, wraz parametrami kamery i~obecną estymacją pozycji obiektu pobraną z~bufora $^c_xr_{robot,cam}$ są wykorzystywane do określenia pozycji obiektu. Na koniec obliczana jest pewność otrzymanych wyników, która wraz z~danymi wykrytego obiektu jest wysyłana do podsystemu sterowania.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=14cm]{images/specyfikacja_systemu/podsystem_wizyjny.pdf}
+	\caption{Funkcja przejścia $^rf^\prime_{robot,cam, 0}$}
+	\label{fig:przetwarzanie_obrazu}
+\end{figure}

@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+A level-1 auxiliary file: text/streszczenie.aux
+A level-1 auxiliary file: text/wstep.aux
+A level-1 auxiliary file: text/przeglad_literatury.aux
+A level-1 auxiliary file: text/opis_narzedzi.aux
+A level-1 auxiliary file: text/algorytmy.aux
+A level-1 auxiliary file: text/implementacja_systemu.aux
+A level-1 auxiliary file: text/dzialanie_systemu.aux
+A level-1 auxiliary file: text/podsumowanie.aux
+I couldn't open style file plplain.bst
+---line 32 of file main.aux
+ : \bibstyle{plplain
+ :                  }
+I'm skipping whatever remains of this command
+I found no style file---while reading file main.aux
+(There were 2 error messages)

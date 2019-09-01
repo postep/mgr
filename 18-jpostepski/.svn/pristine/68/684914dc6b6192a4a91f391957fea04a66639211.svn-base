@@ -1,0 +1,99 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Podstawy teoretyczne zagadnień związanych z~pracą\label{chap:przeglad_literatury}}
+Dyskutowane w pracy algorytmy w literaturze występują w wielu różnych odmianach. W pracy zaprezentowano używane w trakcie dalszych badań. 
+
+Do dalszych rozważań możemy zdefiniować uchyb jako:
+\begin{equation}
+	\boldsymbol{e_x} = \boldsymbol{x_d} - \boldsymbol{x}
+\end{equation}
+gdzie:
+\begin{itemize}
+\item $\boldsymbol{x_d}$ to wektor zadanych pozycji uogólnionych
+\item $\boldsymbol{x}$ to wektor pozycji uogólnionych
+\end{itemize}
+
+\section{Sterowanie impedancyjne}
+Prawo sterowania impedancyjnego sprawia, że stawy robota zachowują się jak układ ze sprężyną i amortyzatorem. Pojawienie się nieprzewidzianych sił zewnętrznych powoduje, że uchyb pozycji nie jest minimalizowany za wszelką cenę. W momencie kolizji robot w pewnym stopniu ugina się przed otaczającym go środowiskiem. 
+
+\subsection{Przypadek prosty}
+W najprostszym przypadku możemy więc opisać takie prawo jako układ: 
+
+	\begin{equation}
+	F = kx + d\dot{x} + F_{ext}
+	\end{equation}
+
+gdzie:
+\begin{itemize}
+\item $F$ to siła wynikowa
+\item $k$ to parametr sztywności
+\item $d$ to parametr tłumienia
+\item $F_{ext}$ to siły zewnętrzne działające na układ
+\end{itemize} 
+
+\subsection{Prawo sterowania}
+\label{sec:impedancyjne}
+
+Można sformuować prawo sterowania jako wektor siły uogólnionej:
+\begin{equation}
+\boldsymbol{\mathcal{F}} = \boldsymbol{K_x}\boldsymbol{e_x} + \boldsymbol{D_x}\dot{\boldsymbol{e_x}}
+\end{equation}
+
+gdzie:
+\begin{itemize}
+\item $\boldsymbol{K_x}$ to diagonalna macierz sprężystości
+\item $\boldsymbol{D_x}$ to diagonalna macierz tłumienia
+\end{itemize}
+
+\subsection{Sterowanie w przestrzeni konfiguracyjnej}
+W rzeczywistym raminiu robotycznym zadajemy momenty na poszczególne stawy robota. Opisane w podrozdziale \ref{sec:impedancyjne} prawo sterowania opisuje przestrzeń operacyjną $\boldsymbol{\mathcal{F}}$. W celu uzyskania wartości wektora momentów $ \boldsymbol{\tau}$ które zadajemy silnikom w stawach stawie wyliczamy z jakobianu $\boldsymbol{J}$:
+
+\begin{equation}
+\boldsymbol{\tau} = \boldsymbol{J}^T(\boldsymbol{q})\boldsymbol{\mathcal{F}}
+\end{equation}
+
+\subsection{Siły własności mechanicznych}
+Dla ramienia robotycznego możemy opisać siły występujące w samym ramieniu zgodnie ze wzorem:
+\begin{equation}
+\boldsymbol{\mathcal{F}_m}(\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{q}, \dot{\boldsymbol{q}}) = \boldsymbol{\Lambda}(\boldsymbol{q})\boldsymbol{\ddot{x}} + \boldsymbol{\mu}(\boldsymbol{x}, \boldsymbol{\dot{x}}) + \boldsymbol{\gamma}(\boldsymbol{q}) + \boldsymbol{\eta}(\boldsymbol{q}, \boldsymbol{\dot{q}}) + \boldsymbol{\mathcal{F}_{ext}}
+\label{eq:ramie}
+\end{equation}
+
+gdzie:
+\begin{itemize}
+\item $\boldsymbol{\mathcal{F}}$ to wektor sił wynikowych
+\item $\boldsymbol{\Lambda}$ to dodatnio określona macierz inercji w przestrzeni zadań
+\item $\boldsymbol{\mu}$ to macierz sił Coriolisa i sił odśrodkowych	
+\item $\boldsymbol{\gamma}$ to wektor sił grawitacji
+\item $\boldsymbol{\eta}$ to macierz sił tarcia oraz nieuwzglęnionych sił
+\item $\boldsymbol{q}$ to wektor położeń stawów w przestrzeni konfiguracyjnej
+\item $\boldsymbol{x}$ to wektor położeń końcówki w przestrzeni zadań
+\item $ \boldsymbol{\mathcal{F}_{ext}}$ to wektor sił zewnętrznych działających na układ
+\end{itemize} 
+
+\subsection{Estymacja siły uogólnionej w końcówce}
+Przy wyliczaniu rzeczywistych sił należy pamiętać, że poza prawem sterowania uwzględnia się fizyczne własności ramienia. Wzór estymujący rzeczywistą wartość siły uogólnionej w końcówce można zapisać jako: 
+\begin{equation}
+\boldsymbol{\mathcal{\hat{F}}} = \boldsymbol{K_x}\boldsymbol{e_x} + \boldsymbol{D_x}\dot{\boldsymbol{e_x}} + \boldsymbol{\hat{\mathcal{F}_m}}(\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{q}, \dot{\boldsymbol{q}}) 
+\end{equation}
+
+gdzie $\boldsymbol{\hat{\mathcal{F}_m}}(\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{q}, \dot{\boldsymbol{q}})$ to wektor sił modelujących fizyczne własności ramienia robotycznego zgodnych ze wzorem \ref{eq:ramie}.
+
+
+\section{Sterowanie PID}
+PID jest bardzo popularnym algorytmem sterowania automatycznego. Podstawowym celem algorytmu jest minimalizacja uchybu. Uchyb statyczny jest minimalizowany za wszelką cenę nawet jeśli miałoby to spowodować uszkodzenia. Uchyby dynamiczne nie są już tak dobrze kompensowane. W jednowymiarowym przypadku prawo sterowania jest postaci:
+
+TODO: zapytac sie kogos madrzejszego
+\begin{equation}
+\boldsymbol{\mathcal{F}} = \boldsymbol{P}\boldsymbol{e(t)} + \boldsymbol{I}\int_{0}^{t} \boldsymbol{e}(t') dt + \boldsymbol{D}\frac{d\boldsymbol{e}(t)}{t}
+\end{equation}
+
+\section{Sposoby kompensowania wpływu grawitacji narzędzia}
+W pracy omawiane są sposoby kompensacji polegające na już skompensowanej sile grawitacji członów ramienia oraz chwytaka. Zajmujemy się jedynie kompensacją chwyconego narzędzia. 
+
+Kiedy chwytak robota chwyci narzędzie zmienia się łańcuch kinematyczny. W pracy zajmujemy się przypadkiem w którym po uchwyceniu narzędzie zostaje nieruchome w stosunku do chwytaka. Można przyjąć, że zmieniają parametry ostatniego członu związane z masą i inercją.
+
+\subsection{Estymacja parametrów}
+\label{sec:estymacja}

@@ -1,0 +1,39 @@
+\select@language {polish}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{13}{chapter.1}
+\contentsline {chapter}{\numberline {2}Podstawy teoretyczne zagadnie\IeC {\'n} zwi\IeC {\k a}zanych z~prac\IeC {\k a}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Sterowanie impedancyjne}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Przypadek prosty}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Prawo sterowania}{16}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Sterowanie w przestrzeni konfiguracyjnej}{16}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Si\IeC {\l }y w\IeC {\l }asno\IeC {\'s}ci mechanicznych}{16}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Estymacja si\IeC {\l }y uog\IeC {\'o}lnionej w ko\IeC {\'n}c\IeC {\'o}wce}{17}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Sterowanie PID}{17}{section.2.2}
+\contentsline {section}{\numberline {2.3}Sposoby kompensowania wp\IeC {\l }ywu grawitacji narz\IeC {\k e}dzia}{17}{section.2.3}
+\contentsline {chapter}{\numberline {3}\IeC {\'S}rodowisko badawcze}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Budowa og\IeC {\'o}lna}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}ROS}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}FABRIC}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Gazebo}{20}{section.3.4}
+\contentsline {chapter}{\numberline {4}Specyfikacja systemu}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Za\IeC {\l }o\IeC {\.z}enia i~wymagania}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Za\IeC {\l }o\IeC {\.z}enia dotycz\IeC {\k a}ce systemu}{21}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}\IeC {\'S}rodowisko pracy systemu}{21}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Przypadki u\IeC {\.z}ycia systemu}{21}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Struktura agentowa systemu}{23}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Podsystem sterowania $c_{task}$}{25}{subsection.4.2.1}
+\contentsline {subsubsection}{Bezczynno\IeC {\'s}\IeC {\'c} (zachowanie ${^{c}{\EuScript {B}}_{task,0}}$)}{25}{section*.7}
+\contentsline {subsubsection}{Wyb\IeC {\'o}r obiektu (zachowanie ${^{c}{\EuScript {B}}_{task,1}}$)}{25}{section*.8}
+\contentsline {subsubsection}{Chwyt (zachowanie ${^{c}{\EuScript {B}}_{task,2}}$)}{26}{section*.10}
+\contentsline {subsection}{\numberline {4.2.2}Podsystem sterowania $c_{robot}$}{27}{subsection.4.2.2}
+\contentsline {subsubsection}{Bezczynno\IeC {\'s}\IeC {\'c} (zachowanie ${^{c}{\EuScript {B}}_{robot,0}}$)}{28}{section*.14}
+\contentsline {subsubsection}{Obserwacja (zachowanie ${^{c}{\EuScript {B}}_{robot,1}}$)}{28}{section*.15}
+\contentsline {subsubsection}{Ruch (zachowanie ${^{c}{\EuScript {B}}_{robot,2}}$)}{29}{section*.17}
+\contentsline {subsection}{\numberline {4.2.3}Rzeczywisty efektor $E_{robot}$}{29}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Wirtualny efektor $e_{robot}$}{30}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Rzeczywisty receptor $R_{robot,cam}$}{30}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Wirtualny receptor $r_{robot,cam}$}{30}{subsection.4.2.6}
+\contentsline {chapter}{\numberline {5}Implementacja systemu}{33}{chapter.5}
+\contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{35}{chapter.6}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{37}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wnioski}{37}{section.7.1}
+\contentsline {section}{\numberline {7.2}Perspektywy rozwoju}{37}{section.7.2}

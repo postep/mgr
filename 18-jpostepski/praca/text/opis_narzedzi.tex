@@ -1,0 +1,62 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Środowisko badawcze\label{chap:srodowisko}}
+	\section{Budowa ogólna}
+	Środowiskiem badawczym jest robot usługowy Velma. Został zaprojektowany i wykonany przez Zespół Rrogramowania Robotów i Systemów Rozpoznających. Do obrotowego korpusu przytwierdzono dwa ramiona robotyczne Kuka LWR-4+. Mają siedem stopni swobody i udzwig 7 kg. Na ich końcach znajdują się chwytaki Barretta oraz nadgarstkowe czujniki FTS. Głowa robota umieszczona jest na dedykowanej konstrukcji która za pomocą dwóch silników elektrycznych pozwala na zginianie i obrót głowy. Robot wyposażony jest w czujnik wizyjny Microsoft Kinect oraz dwie kamery połączone w stereoparę. Do głowy zamocowano mikrofon. Ramiona robota są połączone z komputerem sterującym przy pomocy magistral FRI a pozostałe przy pomocy magistrali EtherCAT. 
+	
+	System sterowania o twardych ograniczeniach czasowych pracuje z częstotliwością 500 Hz. Struktura oprogramowania została stworzona w oparciu o teorię agentową. Oprogramowanie robota pisane jest przy wykorzystaniu struktury ramowej FABRIC. Programy nadzoruje system Linux z nakładką Linux-RT. Dostępny jest symulator robota stworzony w przy wykorzystaniu Gazebo i silnika fizyki DART. 
+	
+
+	\section{Pakiety oprogramowania}
+	\subsection{ROS}
+	Struktura ramowa ROS (Robot Operating System)\cite{bib:ROS} zapewnia biblioteki usprawniające pisanie programów dla robotyki w C++ i Pythonie. Pozwala na komunikację pomiędzy programami na zasadzie tematów oraz na zasadzie usług. Posiada gotowe funkcje liczące kinematykę i wizualizujące pracę robota. Daje możliwość akwizycji danych. Podstawowymi narzędziami w pakiecie są:
+	\begin{itemize}
+		\item \textbf{Węzły} - Programy pisane w C++ lub Pythonie spełniające zdefiniowaną w sytemie funkcję.
+		\item \textbf{Serwisy} - Usługi udostępniane przez węzły pozwalające na komunikację w architekturze zapytanie odpowiedź. Każdy program może udostępniać wiele serwisów. Służą do wywoływania zdalnych procedur.
+		\item \textbf{Akcje} - Usługi podobne do serwisów lecz nieblokujące wykonywania węzła będącego serwerem.
+		\item \textbf{Tematy} - Usługi udostępniane przez węzły pozwalające na asynchroniczną komunikację. Każdy program może udostępniać i pobierać wiele tematów. Służą do aktualizowania bierzącego stanu całego systemu.
+		\item \textbf{Zarządca} - odpowiada za komunikację i nadzoruje pracę innych narzędzi pakietu.
+	\end{itemize}
+	\subsection{Orocos}
+	Orocos jest wolnym oprogramowaniem napisanym w C++ służącym do pisania aplikacji zgodnych z wymaganiami czasu rzeczywistego. Pozwala na tworzenie komponentów odwzorowujących modele stworzone przy pomocy teorii agentowej. Zestaw bibliotek składa się między innymi z:
+	\begin{itemize}
+		\item \textbf{RTL (ang. Real-Time Toolkit)} - Biblioteki służące do  tworzenia komponentów w aplikacjach czasu rzeczywistego.
+		\item \textbf{OCL (ang. Orocos Component Library)} - Biblioteki pomocne w trakcie uruchamiania komponentów.
+		\item \textbf{OroGen} oraz \textbf{TypeGen} - Narzędzia do automatycznego generowania komponetów i typów danych.
+		\item \textbf{Deployer} - Uruchamia komponenty zgodnie z opisem zawartym w pliku XML oraz pozwala na nadzór tych komponentów trakcie pracy.
+	\end{itemize}
+
+	\subsection{FABRIC}
+	Framework for Agent–Based Robot Control Systems - FABRIC\cite{Seredynski-fabric-romoco-2019-twiki} wykorzystuje Orocosa oraz strukturę ramową ROS zapewniając interfejs programistyczny pozwalający na tworzenie komponentów zgodnych z założeniami teorii agentowej. Ma zaimplementowane algorytmy komunikacji pomiędzy poszczególnymi podsystemami poprzez zdefiniowane wiadomości. Posiada narzędzie wizualizujące stan predykatów, zachowań i podsystemów \textit{rqt\_agent}. Pokazuje też przepływ danych między komponentami.
+
+	
+	\section{Symulator robota}
+	Symulator robota Velma jest wytworzony w oprogramowaniu Gazebo które symuluje obiekty i zachowania między nimi zgodnie z prawami fizyki. Użytkownik ma możliwość zdefiniowania całego środowiska wraz z robotem. Posiada gotowe modele wielu receptorów i efektorów oraz daje możliwość tworzenia własnych. Daje możliwość emulowania sterowników sprzętu. Pozwala na wywarcie siły bądź momentu na dowolny przedmiot będący w symulacji. Emuluje czas jeśli symulacja nie jest przeprowadzana w czasie rzeczywistym.
+
+	Orginalny kod Gazebo został zmodyfikowany przez Zespół programowania Robotów i Systemów Rozpoznających aby można było korzystać z pakietu oprogramowania DART (ang. Dynamic Animation and Robotics Toolkit) symulującego fizykę zdefiniowanego świata. Pakiet DART został wybrany przez Zespół programowania Robotów i Systemów Rozpoznających ponieważ po jego zastosowaniu został wyeliminowany problem narastających oscylacji członów robota w trakcie symulacji. W przeciwieństwie do wielu symulatorów fizyki daje dostęp do wielu przydatnych informacji takich jak jakobian bądź macierz inercji przemiotów. Zastosowanow w nim algorytm LPC (ang. Linear complementarity problem) który sprowadza model fizyczny świata do zestawu równań kwadratowych. DART symuluje działanie wielu sił w tym Coriolisa i tarcia dynamicznego. Dzięki temu możliwe jest zaawansowane wykrywanie kolizji. 
+	
+	\section{Agenty}
+	System sterowania zbudowany jest z dwóch agentów. Agent \textit{velma\_core} jest odpowiedzialny za kontrolę zadań związanych z manipulacją w przestrzeni operacyjnej i konfiguracyjnej robota. Drugi z agentów \textit{velma\_task\_cs\_ros\_interface} jest interfejsem pomiędzy programami użytkownika pisanymi w ROS oraz agentem \textit{velma\_core}. Zawiera tylko jeden podsystem o tej samej nazwie.
+
+	Podsystem \textit{velma\_core\_cs} agenta \textit{velma\_core} wylicza prawa sterowanie oraz zajmuje się interpolacją trajektorii. Podsytem \textit{velma\_core\_ve\_body} kontroluje bazowe zachowania bezpieczeństwa. Są to ograniczenia prądowe, wykrywanie krańcowych położeń stawów oraz wykrywanie kolizji. Podsystem przekazuje też sterowanie do efektorów. Podsystemy w najniższej warstwie abstrakcji mogą być stosowane wymiennie. Do pracy w rzeczywistym świecie uruchamiane są podsystemy \textit{velma\_core\_re\_lwr\_r} i \textit{velma\_core\_re\_lwr\_l} oraz podsystem \textit{velma\_ec\_driver}. Służą odpowiednio do kontroli prawego i lewego ramienia LWR-4 oraz pozostałego sprzętu połączonego magistralą EtherCAT. Do pracy w trybie symulacji podsystemy w najniższej warstwie abstrakcji są wymieniane na podsystem \textit{velma\_sim\_gazebo} w którym uruchamiany jest symulator świata Gazebo. Podsystem symuluje pracę wszystkich trzech podsystemów odpowiedzialnych za komunikację ze sterownikami sprzętu. 
+
+
+	\begin{itemize}
+	\item \textbf{Interfejs akcji ROS} - 
+	Komponent \textit{CartImpActionRight} znajduje się w podsytemie \textit{velma\_task\_cs\_ros\_interface} i odbiera rozkazy wysłane przez użytkownika przez mechanizm akcji ROS oraz przesyła je do innych podsytemów. Zwraca też status wykonania operacji. Komponent służy do obsługi prawego ramienia i istnieje analogiczny komponent \textit{CartImpActionLeft} służący do obsługi lewego ramienia.
+	\item \textbf{Publikacja wektorów pozycji} - 
+	Komponent \textit{TfPublisher} wysyła do użytkownika za pomocą ROSa położenie i obrót istotnych dla działania systemu miejsc robota takich jak chwytaki czy środek cięzkości korpusu. 
+	\item \textbf{Pozycje stawów} - 
+	Odczyt pozycji stawów jest zależny od trybu pracy oprogramowania. Jeśli używamy trybu obsługi rzeczywistego sprzętu to za odczyt pozycji są odpowiedzialne podsystemy \textit{velma\_core\_re\_lwr\_r} i \textit{velma\_core\_re\_lwr\_l} oraz podsystem \textit{velma\_ec\_driver} które posiadają pojedyncze komponenty służące do komunikacji z fizycznymi sterownikami magistral. W trybie symulatora emulacją tych trzech podsystemów zajmuje się podsytem \textit{velma\_sim\_gazebo} który jako symulator nie jest podzielony na konkretne podsystemy.
+	\item \textbf{Zadawanie momentów} - 
+	Zadawanie momentów obrotowych w stawach następuje w analogiczny do odczytywania pozycji sposób.
+	\item \textbf{Kinematyka prosta} - 
+	Komponent \textit{FK} pobiera dane o pozycjach stawów i wylicza pozycję chwytaka oraz innych części robota.
+	\item \textbf{Interpolator trajektorii} - 
+	Komponent \textit{INT\_tool\_r} z podsystemu \textit{velma\_core\_cs} odpowiada za interpolacje trajektorii zadanej prawemu ramieniu. Interpolator służy temu by jedno polecenie przesunięcia ramienia zamienić na wiele mniejszych i rozłożonych w czasie. W konsekwencji algorytm sterowania nie jest narażony na duże uchyby a ruch ramienia jest wykonywany płynnie. Do działania komponent potrzebuje aktualnych i zadanych pozycji. Komponent służy do obsługi prawego ramienia. Analogicznie do obsługi lewego ramienia służy komponent \textit{INT\_tool\_l}.
+
+	\item \textbf{Prawo sterowania impedancyjnego} - 
+	Komponent \textit{cart\_imp} z podsytemu \textit{velma\_core\_cs} służy do wyliczania momentów zadawanych na stawy zgodnie z algorytmem prawa sterowania impedancyjnego w przestrzeni kartezjańskiej. Pobiera zadaną pozycję z interpolatora trajektorii.
+	\end{itemize}

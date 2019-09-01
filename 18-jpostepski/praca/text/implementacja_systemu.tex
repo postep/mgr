@@ -1,0 +1,27 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+\chapter{Implementacja systemu\label{chap:implementacja_systemu}}
+W ramach pracy zmodyfikowano istniejący system robotyczny opisany w rozdziale \ref{chap:srodowisko}. Dzięki temu możliwe było spełnienie założeń i wymagań z rozdziału \ref{chap:specyfikacja_systemu}. 
+
+
+\section{Kompensowanie wpływu grawitacji narzędzia}
+Kiedy chwytak robota chwyci narzędzie zmienia się łańcuch kinematyczny. W pracy zajmujemy się przypadkiem w którym po uchwyceniu narzędzie zostaje nieruchome w stosunku do chwytaka. Można przyjąć, że zmieniają się wtedy parametry ostatniego członu związane z masą i inercją.
+
+Głównym problemem w trakcie manipulacji z nieskompensowaną grawitacją jest znaczny uchyb statyczny. Aby wyeliminować ten efekt można do istniejącego algorytmu sterowania impedancyjnego dodać algorytm PID. 
+
+Należy mieć na uwadze, że niektóre człony są takie same w zaprezentowanych prawach sterowania. W impedancyjnym prawie sterwowania nie ma członu całkującego i został on skopiowany z algorytmu PID. W rezultacie nowe prawo sterowania jest postaci:
+
+\begin{equation}
+\boldsymbol{\mathcal{F}} = \boldsymbol{K_x}\boldsymbol{e_x} + \boldsymbol{D_x}\dot{\boldsymbol{e_x}} + \int_{0}^{t}  \boldsymbol{I}\boldsymbol{e_x}dt
+\end{equation}
+
+gdzie:
+\begin{itemize}
+    \item $\boldsymbol{\mathcal{F}}$ to wektor sił wynikowych
+    \item $\boldsymbol{K_x}$ to diagonalna macierz sprężystości
+    \item $\boldsymbol{D_x}$ to diagonalna macierz sztywności
+    \item $\boldsymbol{I}$ to diagonalna macierz członu całkującego
+    \item $\boldsymbol{e_x}$ to wektor uchybu
+\end{itemize}

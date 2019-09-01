@@ -1,0 +1,62 @@
+% encoding: utf8
+% !TEX encoding = utf8
+% !TeX spellcheck = pl_PL
+
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english,polish]{babel}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{polski}
+\usepackage{url}
+\usepackage{float}
+\usepackage[nottoc]{tocbibind}
+
+
+\graphicspath{ {./img/} }
+
+
+\lstset{
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{{$\hookrightarrow$}},
+}
+
+
+\begin{document}
+	\title{Sterowanie ramieniem robota w obliczu chwytania przedmiotów}
+	\author{Jakub Postępski, kierunek AiR, 257947 \\ opiekun pracy: dr inż. Tomasz Winiarski}
+	\maketitle
+
+	\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\pagenumbering{gobble}
+	\newpage
+
+	\section{Wstęp}
+	\section{Robot usługowy Velma}
+	\section{Algorytmy kompensacji grawitacji}
+	\subsection{Algorytm estymacji parametrów}
+	\subsection{Algorytm kompensacji uchybu}
+	\section{Realizacja praktyczna algorytmu kompensacji grawitacji}
+	\subsection{Wybór algorytmu}
+	\subsection{Implementacja algorytmu}
+	\section{Testy}
+	\subsection{Przypadek testowy}
+	\subsection{Uruchomienie bez algorytmu kompensacji grawitacji}
+	\subsection{Uruchomienie z załączonym algorytmem kompensacji grawitacji}
+	\subsection{Porównanie wyników}
+	\section{Podsumowanie}
+
+
+\end{document}
+
+
