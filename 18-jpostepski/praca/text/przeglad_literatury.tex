@@ -115,6 +115,7 @@ QUESTION: czy rozwijac ta mysl skoro teog nie implementuje?
 
 \section{Ocena jakości algorytmów sterowania}
 \subsection{Jakość sterowania}
+\label{chap:ape}
 Prostym sposobem oceny jakości algorytmu sterowania jest konfrontacja rzeczywistych pozycji ramienia robota z zadanymi. W pracy przyjęto metrykę APE (ang. Absolute Trajectory Error). Metryka jest popularnym wskaźnikiem testowania algorytmów SLAM (ang. Simultaneous Localization and Mapping) ale może być też użyta do porównania trajektorii zadanej przez interpolator i rzeczywistej. 
 
 Dwie trajektorie są opisane w postaci list wektorów sił uogólnionych $\boldsymbol{P}_{1..n}$ oraz $\boldsymbol{Q}_{1..n}$ gdzie $n$ to ilość próbek. Dla każdej chwili czasowej $i$ jest wyliczany błąd postaci:
@@ -128,7 +129,8 @@ Błąd całkowity jest wyliczany jako błąd średniokwadratowy:
 RMSE(\boldsymbol{E}_{1..n}) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}||\boldsymbol{E}_i||^2}
 \end{equation}.
 
-\subsection{Jakość kontaktu z otoczeniem }
+\subsection{Jakość kontaktu z otoczeniem \label{chap:ocenakonaktu}}
+
 Największą zaletą sterowania impendancyjnego jest ugięcie ramienia robota w momencie kolizji ze środowiskiem. Ocena jakości tej cechy może być opisana jako odchylenie pozycji stawów $\boldsymbol{q}_i$ w stosunku do ustalonej pozycji sprzed kolizji $\boldsymbol{q}$ w chwili $i$.
 
 

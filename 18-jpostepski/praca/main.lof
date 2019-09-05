@@ -1,8 +1,128 @@
-\babel@toc {polish}{}
+\select@language {polish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Ruch osemkowy. Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{34}{figure.caption.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{34}{figure.caption.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{34}{figure.caption.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{34}{figure.caption.2}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Ruch osemkowy. Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{35}{figure.caption.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{35}{figure.caption.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{35}{figure.caption.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{35}{figure.caption.3}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Porownanie trajektorii chwytaka w osiach $Y$ i $Z$\relax }}{36}{figure.caption.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{36}{figure.caption.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{36}{figure.caption.4}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Porownanie trajektorii chwytaka w osiach $Y$ i $Z$\relax }}{36}{figure.caption.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{36}{figure.caption.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{36}{figure.caption.5}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{36}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{36}{figure.caption.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{36}{figure.caption.6}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{37}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{37}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{37}{figure.caption.7}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Porowanie wszystkich trajektorii bez zaznaczonego bledu.\relax }}{37}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{37}{figure.caption.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rzut z boku}}}{37}{figure.caption.8}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Ruch do gory. Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{38}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{38}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{38}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{38}{figure.caption.9}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ruch do gory. Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{39}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{39}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{39}{figure.caption.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{39}{figure.caption.10}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Porownanie trajektorii chwytaka w osiach $Y$ i $Z$\relax }}{40}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{40}{figure.caption.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{40}{figure.caption.11}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Porownanie trajektorii chwytaka w osiach $Y$ i $Z$\relax }}{40}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{40}{figure.caption.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{40}{figure.caption.12}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Porowanie wszystkich trajektorii.\relax }}{40}{figure.caption.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{40}{figure.caption.13}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Ruch do gory. Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{41}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{41}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{41}{figure.caption.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{41}{figure.caption.14}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Ruch do gory. Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{42}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{42}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{42}{figure.caption.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{42}{figure.caption.15}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{42}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{42}{figure.caption.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{42}{figure.caption.16}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{43}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{43}{figure.caption.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{43}{figure.caption.17}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Porowanie wszystkich trajektorii.\relax }}{43}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{43}{figure.caption.18}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Ruch do dolu. Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{44}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{44}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{44}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{44}{figure.caption.19}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Ruch do dolu. Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{45}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{45}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{45}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{45}{figure.caption.20}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{45}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{45}{figure.caption.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{45}{figure.caption.21}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{46}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{46}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{46}{figure.caption.22}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Porowanie wszystkich trajektorii.\relax }}{46}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{46}{figure.caption.23}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Ruch do przodu. Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{47}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{47}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{47}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{47}{figure.caption.24}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Ruch do przodu. Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{48}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{48}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{48}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{48}{figure.caption.25}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Ruch do przodu. Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{48}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{48}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{48}{figure.caption.26}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Ruch do przodu. Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{49}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{49}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{49}{figure.caption.27}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Y$\relax }}{49}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{49}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{49}{figure.caption.28}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Y$\relax }}{49}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{49}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{49}{figure.caption.29}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Porowanie wszystkich trajektorii bez zaznaczonego bledu.\relax }}{50}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{50}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rzut z gory}}}{50}{figure.caption.30}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Porownanie trajektorii pozycji w zaleznosci od czasu.\relax }}{50}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Os $X$}}}{50}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Os $Y$}}}{50}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Os $Z$}}}{50}{figure.caption.31}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Porownanie trajektorii katow w notacji Eulera w zaleznosci od czasu.\relax }}{51}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kat osi $X$}}}{51}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kat osi $Y$}}}{51}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kat osi $Z$}}}{51}{figure.caption.32}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{51}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{51}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{51}{figure.caption.33}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Z$\relax }}{52}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{52}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{52}{figure.caption.34}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Y$\relax }}{52}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{52}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Zalaczony algorytm kompnesacji}}}{52}{figure.caption.35}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Y$\relax }}{52}{figure.caption.36}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{52}{figure.caption.36}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{52}{figure.caption.36}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Porowanie wszystkich trajektorii bez zaznaczonego bledu.\relax }}{53}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Rzut na wprost}}}{53}{figure.caption.37}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Rzut z gory}}}{53}{figure.caption.37}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Porownanie trajektorii chwytaka w osiach $X$ i $Y$\relax }}{53}{figure.caption.38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z chwycona puszka}}}{53}{figure.caption.38}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z chwycona wiertarka}}}{53}{figure.caption.38}
 \addvspace {10\p@ }

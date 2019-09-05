@@ -43,6 +43,27 @@ import sys
 import numpy
 import argparse
 import associate
+import math
+
+
+def quaternion_to_euler(x, y, z, w):
+
+    t0 = +2.0 * (w * x + y * z)
+    t1 = +1.0 - 2.0 * (x * x + y * y)
+    X = math.degrees(math.atan2(t0, t1))
+
+    t2 = +2.0 * (w * y - z * x)
+    t2 = +1.0 if t2 > +1.0 else t2
+    t2 = -1.0 if t2 < -1.0 else t2
+    Y = math.degrees(math.asin(t2))
+
+    t3 = +2.0 * (w * z + x * y)
+    t4 = +1.0 - 2.0 * (y * y + z * z)
+    Z = math.degrees(math.atan2(t3, t4))
+
+    return X, Y, Z
+
+
 
 def align(model,data):
     """Align two trajectories using the method of Horn (closed-form).
@@ -78,7 +99,7 @@ def align(model,data):
         
     return rot,trans,trans_error
 
-def plot_traj(ax,stamps,traj,style,color,label):
+def plot_traj(ax,stamps,traj,style,color,label,mode):
     """
     Plot a trajectory using matplotlib. 
     
@@ -98,8 +119,16 @@ def plot_traj(ax,stamps,traj,style,color,label):
     last = stamps[0]
     for i in range(len(stamps)):
         if stamps[i]-last < 2*interval:
-            x.append(traj[i][0])
-            y.append(traj[i][1])
+            if mode == 'xy':
+                x.append(traj[i][0])
+                y.append(traj[i][1])
+            if mode == 'xz':
+                x.append(traj[i][0])
+                y.append(traj[i][2])
+            if mode == 'yz':
+                x.append(traj[i][1])
+                y.append(traj[i][2])
+                
         elif len(x)>0:
             ax.plot(x,y,style,color=color,label=label)
             label=""
@@ -110,18 +139,31 @@ def plot_traj(ax,stamps,traj,style,color,label):
         ax.plot(x,y,style,color=color,label=label)
             
 
-class Struct:
-    def __init__(self, **entries):
-        self.__dict__.update(entries)
+if __name__=="__main__":
+    # parse command line
+    parser = argparse.ArgumentParser(description='''
+    This script computes the absolute trajectory error from the ground truth trajectory and the estimated trajectory. 
+    ''')
+    parser.add_argument('--first_file', help='ground truth trajectory (format: timestamp tx ty tz qx qy qz qw)')
+    parser.add_argument('--second_file', help='estimated trajectory (format: timestamp tx ty tz qx qy qz qw)')
+    parser.add_argument('--offset', help='time offset added to the timestamps of the second file (default: 0.0)',default=0.0)
+    parser.add_argument('--scale', help='scaling factor for the second trajectory (default: 1.0)',default=1.0)
+    parser.add_argument('--max_difference', help='maximally allowed time difference for matching entries (default: 0.02)',default=0.02)
+    parser.add_argument('--save', help='save aligned second trajectory to disk (format: stamp2 x2 y2 z2)')
+    parser.add_argument('--save_associations', help='save associated first and aligned second trajectory to disk (format: stamp1 x1 y1 z1 stamp2 x2 y2 z2)')
+    parser.add_argument('--plot', help='plot the first and the aligned second trajectory to an image (format: png)')
+    parser.add_argument('--verbose', help='print all evaluation data (otherwise, only the RMSE absolute translational error in meters after alignment will be printed)', action='store_true')
+    parser.add_argument('--mode', help='defines mode (xy, yz, xz)', default='xy') 
+    args = parser.parse_args()
+    if not args.mode in ['xy', 'yz', 'xz']:
+        exit(1)
 
-def run(args):
     first_list = associate.read_file_list(args.first_file)
     second_list = associate.read_file_list(args.second_file)
 
     matches = associate.associate(first_list, second_list,float(args.offset),float(args.max_difference))    
     if len(matches)<2:
         sys.exit("Couldn't find matching timestamp pairs between groundtruth and estimated trajectory! Did you choose the correct sequence?")
-
 
     first_xyz = numpy.matrix([[float(value) for value in first_list[a][0:3]] for a,b in matches]).transpose()
     second_xyz = numpy.matrix([[float(value)*float(args.scale) for value in second_list[b][0:3]] for a,b in matches]).transpose()
@@ -168,54 +210,31 @@ def run(args):
         from matplotlib.patches import Ellipse
         fig = plt.figure()
         ax = fig.add_subplot(111)
-        plot_traj(ax,first_stamps,first_xyz_full.transpose().A,'-',"black","ground truth")
-        plot_traj(ax,second_stamps,second_xyz_full_aligned.transpose().A,'-',"blue","estimated")
+        plot_traj(ax,first_stamps,first_xyz_full.transpose().A,'-',"black","trajektoria_zadana", args.mode)
+        plot_traj(ax,second_stamps,second_xyz_full_aligned.transpose().A,'-',"blue","trajektoria_otrzymana", args.mode)
 
-        label="difference"
+        label="blad"
         for (a,b),(x1,y1,z1),(x2,y2,z2) in zip(matches,first_xyz.transpose().A,second_xyz_aligned.transpose().A):
-            ax.plot([x1,x2],[y1,y2],'-',color="red",label=label)
+            if args.mode == 'xy' or args.mode=="rotxy":
+                ax.plot([x1,x2],[y1,y2],'-',color="red", alpha=0.5, label=label)
+            if args.mode == 'xz' or args.mode=="rotxz":
+                ax.plot([x1,x2],[z1,z2],'-',color="red", alpha=0.5, label=label)
+            if args.mode == 'yz' or args.mode=="rotyz":
+                ax.plot([y1,y2],[z1,z2],'-',color="red", alpha=0.5, label=label)
             label=""
             
-        ax.legend()
-            
-        ax.set_xlabel('x [m]')
-        ax.set_ylabel('y [m]')
-        plt.savefig(args.plot,dpi=90)
-        
-if __name__=="__main__":
 
-    import glob, os
-    os.chdir("../przerobione_testy")
-    for file_cmd in glob.glob("cmd*.txt"):
-        file_tool = file_cmd.replace('cmd', 'tool')
-        file_plot = file_cmd.replace('cmd', 'plot').replace('txt', 'png')
-        print(file_cmd, file_tool)
-        args = dict()
-        args['first_file'] = file_cmd
-        args['second_file'] = file_tool
-        args['verbose'] = True
-        args['plot'] = file_plot
-        args['save'] = file_cmd.replace('cmd', 'save')
-        args['fixed_delta'] = 1
-        args['save_associations'] = file_cmd.replace('cmd', 'save_associations')
-        args['offset'] = 0.0
-        args['scale'] = 1.0
-        args['max_difference'] = 0.1
-        s = Struct(**args)
-        run(s)
-    exit()
-    # parse command line
-    parser = argparse.ArgumentParser(description='''
-    This script computes the absolute trajectory error from the ground truth trajectory and the estimated trajectory. 
-    ''')
-    parser.add_argument('--first_file', help='ground truth trajectory (format: timestamp tx ty tz qx qy qz qw)')
-    parser.add_argument('--second_file', help='estimated trajectory (format: timestamp tx ty tz qx qy qz qw)')
-    parser.add_argument('--offset', help='time offset added to the timestamps of the second file (default: 0.0)',default=0.0)
-    parser.add_argument('--scale', help='scaling factor for the second trajectory (default: 1.0)',default=1.0)
-    parser.add_argument('--max_difference', help='maximally allowed time difference for matching entries (default: 0.02)',default=0.02)
-    parser.add_argument('--save', help='save aligned second trajectory to disk (format: stamp2 x2 y2 z2)')
-    parser.add_argument('--save_associations', help='save associated first and aligned second trajectory to disk (format: stamp1 x1 y1 z1 stamp2 x2 y2 z2)')
-    parser.add_argument('--plot', help='plot the first and the aligned second trajectory to an image (format: png)')
-    parser.add_argument('--verbose', help='print all evaluation data (otherwise, only the RMSE absolute translational error in meters after alignment will be printed)', action='store_true')
-    args = parser.parse_args()
-    run(args)
+        ax.legend(loc='lower right', fancybox=True, framealpha=0.5)  
+
+        if args.mode == 'xy':
+            ax.set_xlabel('x [m]')
+            ax.set_ylabel('y [m]')
+        if args.mode == 'xz':
+            ax.set_xlabel('x [m]')
+            ax.set_ylabel('z [m]')
+        if args.mode == 'yz':
+            ax.set_xlabel('y [m]')
+            ax.set_ylabel('z [m]')
+
+        plt.savefig(args.plot,dpi=900)
+        
