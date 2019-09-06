@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.15)  6 SEP 2019 22:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.15)  6 SEP 2019 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,14 +899,14 @@ Underfull \hbox (badness 5403) in paragraph at lines 30--34
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
 
 [4] [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 50--54
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
 
@@ -916,32 +916,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
 <pdf/oswiadczenie.pdf, id=214, 597.31157pt x 844.83629pt>
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf>
-Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 60.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf>
-Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 60.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 <pdf/oswiadczenie.pdf, id=217, page=1, 597.31157pt x 844.83629pt>
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
  [8 <./pdf/oswiadczenie.pdf>] [9
 
@@ -1116,447 +1116,450 @@ Rozdzia\l  5.
 ]
 Rozdzia\l  6.
 [33]
-<../../velma/przerobione_testy/out/podn/common_ax.png, id=817, 462.528pt x 346.
+<../../velma/przerobione_testy/out/podn/common_ax.png, id=814, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_ax.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/podn/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_ax.png  
-used on input line 25.
+used on input line 37.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_ay.png, id=818, 462.528pt x 346.
+<../../velma/przerobione_testy/out/podn/common_ay.png, id=815, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_ay.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/podn/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_ay.png  
-used on input line 30.
+used on input line 42.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_az.png, id=819, 462.528pt x 346.
+<../../velma/przerobione_testy/out/podn/common_az.png, id=816, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_az.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/podn/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_az.png  
-used on input line 35.
+used on input line 47.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=820, 462.528pt x 346.896pt>
+.png, id=817, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez_
 brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
-noszenie_miekki_bez_brak.png  used on input line 46.
+noszenie_miekki_bez_brak.png  used on input line 58.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=821, 462.528pt x 346.896pt>
+k.png, id=818, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
 _brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
-noszenie_miekki_komp_brak.png  used on input line 50.
+noszenie_miekki_komp_brak.png  used on input line 62.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_rotx.png, id=822, 462.528pt x 34
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <../../velma/przerobione_testy/out/podn/common_ax.png> <../../velma/przero
+bione_testy/out/podn/common_ay.png> <../../velma/przerobione_testy/out/podn/com
+mon_az.png>]
+<../../velma/przerobione_testy/out/podn/common_rotx.png, id=835, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_rotx.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/podn/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_rotx.png
-  used on input line 60.
+  used on input line 72.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_roty.png, id=823, 462.528pt x 34
+<../../velma/przerobione_testy/out/podn/common_roty.png, id=836, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_roty.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/podn/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_roty.png
-  used on input line 65.
+  used on input line 77.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_rotz.png, id=824, 462.528pt x 34
+<../../velma/przerobione_testy/out/podn/common_rotz.png, id=837, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_rotz.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/podn/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_rotz.png
-  used on input line 71.
+  used on input line 83.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [34 <../../velma/przerobione_testy/out/podn/common_ax.png> <../../velma/przero
-bione_testy/out/podn/common_ay.png> <../../velma/przerobione_testy/out/podn/com
-mon_az.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_mie
-kki_bez_brak.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszen
-ie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=843, 462.528pt x 346.896pt>
+o.png, id=838, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
 _piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
-noszenie_miekki_komp_piwo.png  used on input line 84.
+noszenie_miekki_komp_piwo.png  used on input line 96.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=844, 462.528pt x 346.896pt>
+rtarka.png, id=839, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
 _wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
-noszenie_miekki_komp_wiertarka.png  used on input line 88.
+noszenie_miekki_komp_wiertarka.png  used on input line 100.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=845, 462.528pt x 346.896pt>
+.png, id=840, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez_
 brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
-noszenie_miekki_bez_brak.png  used on input line 98.
+noszenie_miekki_bez_brak.png  used on input line 110.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=846, 462.528pt x 346.896pt>
+k.png, id=841, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
 _brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
-noszenie_miekki_komp_brak.png  used on input line 102.
+noszenie_miekki_komp_brak.png  used on input line 114.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
-p_piwo.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_mie
-kki_komp_wiertarka.png> <../../velma/przerobione_testy/out/podn/common_rotx.png
-> <../../velma/przerobione_testy/out/podn/common_roty.png> <../../velma/przerob
-ione_testy/out/podn/common_rotz.png>]
+ [35 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez
+_brak.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miek
+ki_komp_brak.png> <../../velma/przerobione_testy/out/podn/common_rotx.png> <../
+../velma/przerobione_testy/out/podn/common_roty.png> <../../velma/przerobione_t
+esty/out/podn/common_rotz.png>]
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=861, 462.528pt x 346.896pt>
+o.png, id=856, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
 _piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
-noszenie_miekki_komp_piwo.png  used on input line 111.
+noszenie_miekki_komp_piwo.png  used on input line 123.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=862, 462.528pt x 346.896pt>
+rtarka.png, id=857, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
 _wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
-noszenie_miekki_komp_wiertarka.png  used on input line 115.
+noszenie_miekki_komp_wiertarka.png  used on input line 127.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_ax.png, id=869, 462.528pt x 34
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [36 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
+p_piwo.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_mie
+kki_komp_wiertarka.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
+noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/podn/xz_ate_pl
+ot_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out/podn/xz
+_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/
+podn/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+<../../velma/przerobione_testy/out/osemka/common_ax.png, id=880, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_ax.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/osemka/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_ax.png
-  used on input line 157.
+  used on input line 169.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_ay.png, id=870, 462.528pt x 34
+<../../velma/przerobione_testy/out/osemka/common_ay.png, id=881, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_ay.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/osemka/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_ay.png
-  used on input line 162.
+  used on input line 174.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_az.png, id=871, 462.528pt x 34
+<../../velma/przerobione_testy/out/osemka/common_az.png, id=882, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_az.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/osemka/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_az.png
-  used on input line 168.
+  used on input line 180.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [36 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez
-_brak.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miek
-ki_komp_brak.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszen
-ie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_po
-dnoszenie_miekki_komp_wiertarka.png>]
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_b
 ez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_be
 z_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_bez_brak.png  used on input line 179.
+odnoszenie_miekki_bez_brak.png  used on input line 191.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_b
-rak.png, id=887, 462.528pt x 346.896pt>
+rak.png, id=883, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
 mp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_komp_brak.png  used on input line 183.
+odnoszenie_miekki_komp_brak.png  used on input line 195.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_rotx.png, id=888, 462.528pt x 
+
+Underfull \vbox (badness 1817) has occurred while \output is active []
+
+ [37 <../../velma/przerobione_testy/out/osemka/common_ax.png> <../../velma/prze
+robione_testy/out/osemka/common_ay.png> <../../velma/przerobione_testy/out/osem
+ka/common_az.png>]
+<../../velma/przerobione_testy/out/osemka/common_rotx.png, id=903, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_rotx.png Graphic file (ty
 pe png)
 <use ../../velma/przerobione_testy/out/osemka/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_rotx.p
-ng  used on input line 194.
+ng  used on input line 206.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_roty.png, id=889, 462.528pt x 
+<../../velma/przerobione_testy/out/osemka/common_roty.png, id=904, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_roty.png Graphic file (ty
 pe png)
 <use ../../velma/przerobione_testy/out/osemka/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_roty.p
-ng  used on input line 199.
+ng  used on input line 211.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_rotz.png, id=890, 462.528pt x 
+<../../velma/przerobione_testy/out/osemka/common_rotz.png, id=905, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_rotz.png Graphic file (ty
 pe png)
 <use ../../velma/przerobione_testy/out/osemka/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_rotz.p
-ng  used on input line 205.
+ng  used on input line 217.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-
-Underfull \vbox (badness 5374) has occurred while \output is active []
-
- [37 <../../velma/przerobione_testy/out/osemka/common_ax.png> <../../velma/prze
-robione_testy/out/osemka/common_ay.png> <../../velma/przerobione_testy/out/osem
-ka/common_az.png> <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnosz
-enie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_p
-iwo.png, id=910, 462.528pt x 346.896pt>
+iwo.png, id=906, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
 mp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_komp_piwo.png  used on input line 217.
+odnoszenie_miekki_komp_piwo.png  used on input line 229.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_w
-iertarka.png, id=911, 462.528pt x 346.896pt>
+iertarka.png, id=907, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
 mp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_komp_wiertarka.png  used on input line 221.
+odnoszenie_miekki_komp_wiertarka.png  used on input line 233.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
+omp_brak.png> <../../velma/przerobione_testy/out/osemka/common_rotx.png> <../..
+/velma/przerobione_testy/out/osemka/common_roty.png> <../../velma/przerobione_t
+esty/out/osemka/common_rotz.png>]
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_bez_br
-ak.png, id=912, 462.528pt x 346.896pt>
+ak.png, id=921, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_b
 ez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_be
 z_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
-odnoszenie_miekki_bez_brak.png  used on input line 231.
+odnoszenie_miekki_bez_brak.png  used on input line 243.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_b
-rak.png, id=913, 462.528pt x 346.896pt>
+rak.png, id=922, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
 mp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
-odnoszenie_miekki_komp_brak.png  used on input line 235.
+odnoszenie_miekki_komp_brak.png  used on input line 247.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38 <../../velma/przerobione_testy/out/osemka/common_rotx.png> <../../velma/pr
-zerobione_testy/out/osemka/common_roty.png> <../../velma/przerobione_testy/out/
-osemka/common_rotz.png> <../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/osemka/yz_a
-te_plot_podnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_p
-iwo.png, id=928, 462.528pt x 346.896pt>
+iwo.png, id=923, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
 mp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
-odnoszenie_miekki_komp_piwo.png  used on input line 244.
+odnoszenie_miekki_komp_piwo.png  used on input line 256.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_w
-iertarka.png, id=929, 462.528pt x 346.896pt>
+iertarka.png, id=924, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
 mp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
-odnoszenie_miekki_komp_wiertarka.png  used on input line 248.
+odnoszenie_miekki_komp_wiertarka.png  used on input line 260.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png, id=932, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png, id=927, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png Graphic file
  (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-ax.png  used on input line 277.
+ax.png  used on input line 289.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png, id=933, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png, id=928, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png Graphic file
  (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-ay.png  used on input line 282.
+ay.png  used on input line 294.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_az.png, id=934, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_az.png, id=929, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_az.png Graphic file
  (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-az.png  used on input line 288.
+az.png  used on input line 300.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4792) has occurred while \output is active []
 
- [39 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_b
-ez_brak.png> <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_
-miekki_komp_brak.png> <../../velma/przerobione_testy/out/osemka/xz_ate_plot_pod
-noszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/osemka/xz_ate
-_plot_podnoszenie_miekki_komp_wiertarka.png>]
+ [39 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
+omp_piwo.png> <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie
+_miekki_komp_wiertarka.png> <../../velma/przerobione_testy/out/osemka/xz_ate_pl
+ot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/osemka/x
+z_ate_plot_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out
+/osemka/xz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_
+testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-bez_brak.png, id=949, 462.528pt x 346.896pt>
+bez_brak.png, id=946, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
 kki_bez_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
-plot_podnoszenie_miekki_bez_brak.png  used on input line 299.
+plot_podnoszenie_miekki_bez_brak.png  used on input line 311.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_brak.png, id=950, 462.528pt x 346.896pt>
+komp_brak.png, id=947, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
 kki_komp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
-plot_podnoszenie_miekki_komp_brak.png  used on input line 303.
+plot_podnoszenie_miekki_komp_brak.png  used on input line 315.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png, id=951, 462.52
+<../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png, id=948, 462.52
 8pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-rotx.png  used on input line 314.
+rotx.png  used on input line 326.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png, id=952, 462.52
+<../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png, id=949, 462.52
 8pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-roty.png  used on input line 319.
+roty.png  used on input line 331.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png, id=953, 462.52
+<../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png, id=950, 462.52
 8pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
-rotz.png  used on input line 324.
+rotz.png  used on input line 336.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [40 <../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png> <../../velm
 a/przerobione_testy/out/w_bok_miekki/common_ay.png> <../../velma/przerobione_te
 sty/out/w_bok_miekki/common_az.png> <../../velma/przerobione_testy/out/w_bok_mi
 ekki/yz_ate_plot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_test
 y/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_piwo.png, id=969, 462.528pt x 346.896pt>
+komp_piwo.png, id=968, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
 kki_komp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
-plot_podnoszenie_miekki_komp_piwo.png  used on input line 337.
+plot_podnoszenie_miekki_komp_piwo.png  used on input line 349.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_wiertarka.png, id=970, 462.528pt x 346.896pt>
+komp_wiertarka.png, id=969, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
 kki_komp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
-plot_podnoszenie_miekki_komp_wiertarka.png  used on input line 341.
+plot_podnoszenie_miekki_komp_wiertarka.png  used on input line 353.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
  [41 <../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png> <../../ve
 lma/przerobione_testy/out/w_bok_miekki/common_roty.png> <../../velma/przerobion
 e_testy/out/w_bok_miekki/common_rotz.png> <../../velma/przerobione_testy/out/w_
 bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobio
 ne_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/do_gory/common_ax.png, id=992, 462.528pt x 3
+<../../velma/przerobione_testy/out/do_gory/common_ax.png, id=991, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_ax.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_ax.pn
-g  used on input line 398.
+g  used on input line 410.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_ay.png, id=993, 462.528pt x 3
+<../../velma/przerobione_testy/out/do_gory/common_ay.png, id=992, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_ay.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_ay.pn
-g  used on input line 403.
+g  used on input line 415.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_az.png, id=994, 462.528pt x 3
+<../../velma/przerobione_testy/out/do_gory/common_az.png, id=993, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_az.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_az.pn
-g  used on input line 408.
+g  used on input line 420.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_bez_b
-rak.png, id=995, 462.528pt x 346.896pt>
+rak.png, id=994, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_b
 ez_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
-podnoszenie_miekki_bez_brak.png  used on input line 418.
+podnoszenie_miekki_bez_brak.png  used on input line 430.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-brak.png, id=996, 462.528pt x 346.896pt>
+brak.png, id=995, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
 omp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
-podnoszenie_miekki_komp_brak.png  used on input line 422.
+podnoszenie_miekki_komp_brak.png  used on input line 434.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_rotx.png, id=997, 462.528pt x
+<../../velma/przerobione_testy/out/do_gory/common_rotx.png, id=996, 462.528pt x
  346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_rotx.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_gory/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_rotx.
-png  used on input line 433.
+png  used on input line 445.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_roty.png, id=998, 462.528pt x
+<../../velma/przerobione_testy/out/do_gory/common_roty.png, id=997, 462.528pt x
  346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_roty.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_gory/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_roty.
-png  used on input line 438.
+png  used on input line 450.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_rotz.png, id=999, 462.528pt x
+<../../velma/przerobione_testy/out/do_gory/common_rotz.png, id=998, 462.528pt x
  346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_rotz.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_gory/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_rotz.
-png  used on input line 443.
+png  used on input line 455.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 1178) has occurred while \output is active []
@@ -1567,93 +1570,93 @@ _gory/common_az.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_pod
 noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_gory/xz_ate
 _plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-piwo.png, id=1016, 462.528pt x 346.896pt>
+piwo.png, id=1015, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
-podnoszenie_miekki_komp_piwo.png  used on input line 456.
+podnoszenie_miekki_komp_piwo.png  used on input line 468.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-wiertarka.png, id=1017, 462.528pt x 346.896pt>
+wiertarka.png, id=1016, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
-podnoszenie_miekki_komp_wiertarka.png  used on input line 460.
+podnoszenie_miekki_komp_wiertarka.png  used on input line 472.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
  [43 <../../velma/przerobione_testy/out/do_gory/common_rotx.png> <../../velma/p
 rzerobione_testy/out/do_gory/common_roty.png> <../../velma/przerobione_testy/ou
 t/do_gory/common_rotz.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_pl
 ot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_gory
 /xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/do_dolu/common_ax.png, id=1039, 462.528pt x 
+<../../velma/przerobione_testy/out/do_dolu/common_ax.png, id=1038, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_ax.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_ax.pn
-g  used on input line 517.
+g  used on input line 529.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_ay.png, id=1040, 462.528pt x 
+<../../velma/przerobione_testy/out/do_dolu/common_ay.png, id=1039, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_ay.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_ay.pn
-g  used on input line 522.
+g  used on input line 534.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_az.png, id=1041, 462.528pt x 
+<../../velma/przerobione_testy/out/do_dolu/common_az.png, id=1040, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_az.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_az.pn
-g  used on input line 527.
+g  used on input line 539.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_bez_b
-rak.png, id=1042, 462.528pt x 346.896pt>
+rak.png, id=1041, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_b
 ez_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
-podnoszenie_miekki_bez_brak.png  used on input line 538.
+podnoszenie_miekki_bez_brak.png  used on input line 550.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-brak.png, id=1043, 462.528pt x 346.896pt>
+brak.png, id=1042, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
 omp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
-podnoszenie_miekki_komp_brak.png  used on input line 542.
+podnoszenie_miekki_komp_brak.png  used on input line 554.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_rotx.png, id=1044, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_rotx.png, id=1043, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_rotx.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_rotx.
-png  used on input line 552.
+png  used on input line 564.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_roty.png, id=1045, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_roty.png, id=1044, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_roty.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_roty.
-png  used on input line 557.
+png  used on input line 569.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_rotz.png, id=1046, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_rotz.png, id=1045, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_rotz.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_dolu/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_rotz.
-png  used on input line 562.
+png  used on input line 574.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1664,46 +1667,46 @@ _dolu/common_az.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_pod
 noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate
 _plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-piwo.png, id=1063, 462.528pt x 346.896pt>
+piwo.png, id=1062, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
-podnoszenie_miekki_komp_piwo.png  used on input line 575.
+podnoszenie_miekki_komp_piwo.png  used on input line 587.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-wiertarka.png, id=1064, 462.528pt x 346.896pt>
+wiertarka.png, id=1063, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
-podnoszenie_miekki_komp_wiertarka.png  used on input line 579.
+podnoszenie_miekki_komp_wiertarka.png  used on input line 591.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_ax.png, id=1069, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_ax.png, id=1068, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_ax.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_ax.
-png  used on input line 636.
+png  used on input line 648.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_ay.png, id=1070, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_ay.png, id=1069, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_ay.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_ay.
-png  used on input line 641.
+png  used on input line 653.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_az.png, id=1071, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_az.png, id=1070, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_az.png Graphic file (t
 ype png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_az.
-png  used on input line 646.
+png  used on input line 658.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
  [45 <../../velma/przerobione_testy/out/do_dolu/common_rotx.png> <../../velma/p
 rzerobione_testy/out/do_dolu/common_roty.png> <../../velma/przerobione_testy/ou
@@ -1711,46 +1714,46 @@ t/do_dolu/common_rotz.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_pl
 ot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_dolu
 /xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_bez
-_brak.png, id=1089, 462.528pt x 346.896pt>
+_brak.png, id=1088, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
 _bez_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
-t_podnoszenie_miekki_bez_brak.png  used on input line 656.
+t_podnoszenie_miekki_bez_brak.png  used on input line 668.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_brak.png, id=1090, 462.528pt x 346.896pt>
+p_brak.png, id=1089, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
 _komp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
-t_podnoszenie_miekki_komp_brak.png  used on input line 660.
+t_podnoszenie_miekki_komp_brak.png  used on input line 672.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_rotx.png, id=1091, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_rotx.png, id=1090, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_rotx.png Graphic file 
 (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_rot
-x.png  used on input line 671.
+x.png  used on input line 683.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_roty.png, id=1092, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_roty.png, id=1091, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_roty.png Graphic file 
 (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_rot
-y.png  used on input line 676.
+y.png  used on input line 688.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_rotz.png, id=1093, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_rotz.png, id=1092, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_rotz.png Graphic file 
 (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_rot
-z.png  used on input line 681.
+z.png  used on input line 693.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1761,93 +1764,93 @@ t/do_przodu/common_az.png> <../../velma/przerobione_testy/out/do_przodu/xz_ate_
 plot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_prz
 odu/xz_ate_plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_piwo.png, id=1110, 462.528pt x 346.896pt>
+p_piwo.png, id=1109, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
 _komp_piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
-t_podnoszenie_miekki_komp_piwo.png  used on input line 694.
+t_podnoszenie_miekki_komp_piwo.png  used on input line 706.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_wiertarka.png, id=1111, 462.528pt x 346.896pt>
+p_wiertarka.png, id=1110, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
 _komp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
-t_podnoszenie_miekki_komp_wiertarka.png  used on input line 698.
+t_podnoszenie_miekki_komp_wiertarka.png  used on input line 710.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
  [47 <../../velma/przerobione_testy/out/do_przodu/common_rotx.png> <../../velma
 /przerobione_testy/out/do_przodu/common_roty.png> <../../velma/przerobione_test
 y/out/do_przodu/common_rotz.png> <../../velma/przerobione_testy/out/do_przodu/x
 z_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out
 /do_przodu/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/obrt/common_ax.png, id=1132, 462.528pt x 346
+<../../velma/przerobione_testy/out/obrt/common_ax.png, id=1131, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_ax.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/obrt/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_ax.png  
-used on input line 755.
+used on input line 767.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_ay.png, id=1133, 462.528pt x 346
+<../../velma/przerobione_testy/out/obrt/common_ay.png, id=1132, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_ay.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/obrt/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_ay.png  
-used on input line 760.
+used on input line 772.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_az.png, id=1134, 462.528pt x 346
+<../../velma/przerobione_testy/out/obrt/common_az.png, id=1133, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_az.png Graphic file (type p
 ng)
 <use ../../velma/przerobione_testy/out/obrt/common_az.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_az.png  
-used on input line 766.
+used on input line 778.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=1135, 462.528pt x 346.896pt>
+.png, id=1134, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez_
 brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
-noszenie_miekki_bez_brak.png  used on input line 777.
+noszenie_miekki_bez_brak.png  used on input line 789.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=1136, 462.528pt x 346.896pt>
+k.png, id=1135, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
 _brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
-noszenie_miekki_komp_brak.png  used on input line 781.
+noszenie_miekki_komp_brak.png  used on input line 793.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_rotx.png, id=1137, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_rotx.png, id=1136, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_rotx.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/obrt/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_rotx.png
-  used on input line 791.
+  used on input line 803.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_roty.png, id=1138, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_roty.png, id=1137, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_roty.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/obrt/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_roty.png
-  used on input line 796.
+  used on input line 808.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_rotz.png, id=1139, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_rotz.png, id=1138, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_rotz.png Graphic file (type
  png)
 <use ../../velma/przerobione_testy/out/obrt/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_rotz.png
-  used on input line 802.
+  used on input line 814.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 1178) has occurred while \output is active []
@@ -1858,40 +1861,40 @@ mon_az.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_mie
 kki_bez_brak.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszen
 ie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=1160, 462.528pt x 346.896pt>
+o.png, id=1159, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
 _piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
-noszenie_miekki_komp_piwo.png  used on input line 816.
+noszenie_miekki_komp_piwo.png  used on input line 828.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=1161, 462.528pt x 346.896pt>
+rtarka.png, id=1160, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
 _wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
-noszenie_miekki_komp_wiertarka.png  used on input line 820.
+noszenie_miekki_komp_wiertarka.png  used on input line 832.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=1162, 462.528pt x 346.896pt>
+.png, id=1161, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez_
 brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_bez_brak.png  used on input line 830.
+noszenie_miekki_bez_brak.png  used on input line 842.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=1163, 462.528pt x 346.896pt>
+k.png, id=1162, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
 _brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_komp_brak.png  used on input line 834.
+noszenie_miekki_komp_brak.png  used on input line 846.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1902,36 +1905,36 @@ robione_testy/out/obrt/common_roty.png> <../../velma/przerobione_testy/out/obrt
 ie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_po
 dnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=1179, 462.528pt x 346.896pt>
+o.png, id=1178, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
 _piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_komp_piwo.png  used on input line 843.
+noszenie_miekki_komp_piwo.png  used on input line 855.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=1180, 462.528pt x 346.896pt>
+rtarka.png, id=1179, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
 _wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_komp_wiertarka.png  used on input line 847.
+noszenie_miekki_komp_wiertarka.png  used on input line 859.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
 _piwo.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_komp_piwo.png  used on input line 871.
+noszenie_miekki_komp_piwo.png  used on input line 883.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
 _wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
-noszenie_miekki_komp_wiertarka.png  used on input line 875.
+noszenie_miekki_komp_wiertarka.png  used on input line 887.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 
 Underfull \vbox (badness 4792) has occurred while \output is active []
@@ -1941,7 +1944,7 @@ _brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miek
 ki_komp_brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszen
 ie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_po
 dnoszenie_miekki_komp_wiertarka.png>]
-Overfull \hbox (3.64734pt too wide) in paragraph at lines 889--907
+Overfull \hbox (3.64734pt too wide) in paragraph at lines 901--919
 [][] 
  []
 
@@ -2027,10 +2030,10 @@ xmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
 -super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200
 .pfb>
-Output written on main.pdf (59 pages, 17881426 bytes).
+Output written on main.pdf (59 pages, 17880781 bytes).
 PDF statistics:
- 1444 PDF objects out of 1728 (max. 8388607)
- 1069 compressed objects within 11 object streams
+ 1443 PDF objects out of 1728 (max. 8388607)
+ 1068 compressed objects within 11 object streams
  264 named destinations out of 1000 (max. 500000)
  766 words of extra memory for PDF output out of 10000 (max. 10000000)
 

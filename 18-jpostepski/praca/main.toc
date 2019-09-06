@@ -25,9 +25,9 @@
 \contentsline {section}{\numberline {4.3}Przypadki u\IeC {\.z}ycia}{28}{section.4.3}% 
 \contentsline {chapter}{\numberline {5}Implementacja systemu}{31}{chapter.5}% 
 \contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{33}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{33}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{36}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}Ruch w bok}{39}{section.6.3}% 
+\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{34}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{37}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Ruch w bok}{40}{section.6.3}% 
 \contentsline {section}{\numberline {6.4}Ruch do g\IeC {\'o}ry}{41}{section.6.4}% 
 \contentsline {section}{\numberline {6.5}Ruch do do\IeC {\l }u}{43}{section.6.5}% 
 \contentsline {section}{\numberline {6.6}Ruch do przodu}{45}{section.6.6}% 
