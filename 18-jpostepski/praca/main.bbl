@@ -1,13 +1,128 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bib:barrett}
+{Barrett Hand}.
+\newblock \url{https://robots.ros.org/barrett-hand/}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
+\bibitem{bib:velma2}
+{Documentation of control system of WUT Velma Robot}.
+\newblock \url{https://rcprg-ros-pkg.github.io/velma_docs/}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
+\bibitem{bib:kukaPage}
+Kuka lwr4+ datasheet.
+\newblock
+  \url{https://www.kukakore.com/wp-content/uploads/2012/07/KUKA_LBR4plus_ENLISCH.pdf}.
+
+\bibitem{bib:Gazebo}
+Oficjalna strona gazebo.
+\newblock \url{http://www.gazebosim.org/}.
+
+\bibitem{bib:dart}
+Oficjalna strona projektu dart.
+\newblock \url{https://dartsim.github.io/}.
+
+\bibitem{bib:Orocos}
+Oficjalna strona systemu orocos.
+\newblock \url{http://orocos.org/}.
 
 \bibitem{bib:ROS}
 Oficjalna strona systemu {ROS}.
 \newblock \url{http://www.ros.org/}.
 
-\bibitem{Seredynski-fabric-romoco-2019-twiki}
+\bibitem{bib:robotyka}
+{O}ficjalna strona {Z}akładu {P}rogramowania {R}obotów i {S}ystemów
+  {R}ozpoznających.
+\newblock \url{https://www.robotyka.ia.pw.edu.pl/}.
+
+\bibitem{bib:kuka}
+Rainer Bischoff1, Johannes Kurth, Günter Schreiber, Ralf Koeppe, Alin
+  AlbuSchäffer, Alexander Beyer, Oliver Eiberger, Sami Haddadin, Andreas
+  Stemmer, Gerhard Grunwald, Gerhard Hirzinger.
+\newblock {The KUKA-DLR Lightweight Robot arm – a new reference platform for
+  robotics research and manufacturing}.
+\newblock IEEE.
+
+\bibitem{bib:horn}
+Berthold Horn, Hugh Hilden, Shahriar Negahdaripour.
+\newblock {Closed-Form Solution of Absolute Orientation Using Orthonormal
+  Matrices.}
+
+\bibitem{bib:pidTito}
+Tavakoli Saeed, Griffin Ian, Peter J.Fleming.
+\newblock Tuning of decentralised pi (pid) controllers for tito processes.
+\newblock {\em Control Engineering Practice}, strony 1069--1080. IEEE, 2006.
+
+\bibitem{bib:fabric}
 Dawid Seredyński, Tomasz Winiarski, Cezary Zieliński.
 \newblock {FABRIC: Framework for Agent-Based Robot Control Systems}.
 \newblock K.~Kozłowski, redaktor, {\em 12th International Workshop on Robot
   Motion and Control (RoMoCo)}, strony 215--222. IEEE, 2019.
+
+\bibitem{bib:impedance}
+P.~{Song}, Y.~{Yu}, X.~{Zhang}.
+\newblock Impedance control of robots: An overview.
+\newblock {\em 2017 2nd International Conference on Cybernetics, Robotics and
+  Control (CRC)}, strony 51--55, July 2017.
+
+\bibitem{bib:velmaLeb}
+Maciej Stefańczyk, Michał Walęcki, Konrad Banachowicz, Tomasz Winiarski.
+\newblock {Robot usługowy Velma -- projekt i konstrukcja głowy}.
+\newblock {\em XIII Krajowa Konferencja Robotyki -- Postępy robotyki},
+  wolumen~2, strony 451--460, 2014.
+
+\bibitem{bib:ape}
+J.~{Sturm}, N.~{Engelhard}, F.~{Endres}, W.~{Burgard}, D.~{Cremers}.
+\newblock A benchmark for the evaluation of rgb-d slam systems.
+\newblock {\em 2012 IEEE/RSJ International Conference on Intelligent Robots and
+  Systems}, strony 573--580, Oct 2012.
+
+\bibitem{bib:lpcBase}
+Jie Tan, Kristin Siu, Karen Liu.
+\newblock {Contact Handling for Articulated Rigid Bodies Using LCP}.
+
+\bibitem{bib:pidMimo}
+Nie~ZY. Wang~QG.
+\newblock {PID Control for MIMO Processes}.
+\newblock Visioli~A. Vilanova~R., redaktor, {\em PID Control in the Third
+  Millennium. Advances in Industrial Control.}, strony 177--204. IEEE, 2012.
+
+\bibitem{wiki:Impedance_control}
+Wikipedia.
+\newblock {Impedance control} --- {W}ikipedia{,} the free encyclopedia.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Impedance\%20control&oldid=904943924},
+  2019.
+\newblock [Online; accessed 05-September-2019].
+
+\bibitem{bib:velmaKorp}
+Tomasz Winiarski,  Konrad Banachowicz.
+\newblock {Sterowanie redundantnym systemem dwuramiennym z aktywnym korpusem}.
+\newblock {\em XIII Krajowa Konferencja Robotyki -- Postępy robotyki},
+  wolumen~2, strony 433--442, 2014.
+
+\bibitem{bib:rqtAgent}
+Tomasz Winiarski,  Dawid Seredyński.
+\newblock {Wizualizacja sterowników robotów bazujących na teorii agenta
+  upostaciowionego}.
+\newblock {\em XV Krajowa Konferencja Robotyki -- Postępy robotyki},
+  wolumen~1, strony 417--426, 2018.
+
+\bibitem{bib:agent2}
+Cezary Zieliński.
+\newblock Architektury systemów robotycznych tworzone z agentów
+  upostaciowionych.
+\newblock 196:379--394, 2018.
+\newblock Robotic System Architectures Based on Embodied Agents (in Polish) -
+  Zielinski.
+
+\bibitem{bib:agent1}
+Cezary Zieliński.
+\newblock Zastosowanie agentów upostaciowionych do projektowania systemów
+  robotycznych.
+\newblock J.~Kacprzyk P.~Kulczycki, J.~Korbicz, redaktor, {\em Automatyka,
+  robotyka i przetwarzanie informacji}. Wydawnictwo Naukowe PWN, 2019.
+\newblock Zielinski.
 
 \end{thebibliography}

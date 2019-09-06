@@ -98,10 +98,10 @@ def plot_traj(ax,traj,style,color,label,mode, timestep = None):
             y.append(rotX)
         if mode == 'roty':
             x.append(i)
-            y.append(rotZ)
+            y.append(rotY)
         if mode == 'rotz':
             x.append(i)
-            y.append(rotY)
+            y.append(rotZ)
 
         if mode == 'ax':
             x.append(i)
@@ -232,7 +232,7 @@ if __name__=="__main__":
 
         plot_name = f'out/{str(sys.argv[3])}/common_{mode}.png'
         print(plot_name)
-        plt.savefig(plot_name,dpi=900)
+        plt.savefig(plot_name,dpi=300)
         
 
     import sys, os, subprocess

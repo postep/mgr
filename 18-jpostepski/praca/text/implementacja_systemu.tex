@@ -3,11 +3,8 @@
 % !TeX spellcheck = pl_PL
 
 \chapter{Implementacja systemu\label{chap:implementacja_systemu}}
-W ramach pracy zmodyfikowano istniejący system robotyczny opisany w rozdziale \ref{chap:srodowisko}. Dzięki temu możliwe było spełnienie założeń i wymagań z rozdziału \ref{chap:specyfikacja_systemu}. 
+W ramach pracy zmodyfikowano istniejący system robotyczny opisany w rozdziale \ref{chap:srodowisko}. Dzięki temu możliwe było spełnienie założeń i wymagań z rozdziału \ref{chap:specyfikacja_systemu}.  Najważniejszą częścią pracy jest modyfikacja istniejącego oprogramowania w celu wyeliminowania opisywanego w pracy problemu. Najważniejsze zmiany wykonano w komponencie \textit{cart\_imp} odpowiedzialnym za realizację prawa sterowania impedancyjnego w przestrzeni operacyjnej.
 
-
-\section{Kompensowanie wpływu grawitacji narzędzia}
-Kiedy chwytak robota chwyci narzędzie zmienia się łańcuch kinematyczny. W pracy zajmujemy się przypadkiem w którym po uchwyceniu narzędzie zostaje nieruchome w stosunku do chwytaka. Można przyjąć, że zmieniają się wtedy parametry ostatniego członu związane z masą i inercją.
 
 Głównym problemem w trakcie manipulacji z nieskompensowaną grawitacją jest znaczny uchyb statyczny. Aby wyeliminować ten efekt można do istniejącego algorytmu sterowania impedancyjnego dodać algorytm PID. 
 

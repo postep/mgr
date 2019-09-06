@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 # Software License Agreement (BSD License)
 #
 # Copyright (c) 2013, Juergen Sturm, TUM
@@ -236,5 +236,5 @@ if __name__=="__main__":
             ax.set_xlabel('y [m]')
             ax.set_ylabel('z [m]')
 
-        plt.savefig(args.plot,dpi=900)
+        plt.savefig(args.plot,dpi=300)
         

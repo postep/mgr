@@ -26,7 +26,15 @@ Algorytm kompensacji grawitacji musi wyliczać dodatkowy moment w stawach robota
 
 
 \section{Przypadki użycia}
-Algorytm kompensujący ma działać przez cały czas pracy robota gdy pracuje z narzędziem. Przypadki użycia algorytmu (rys. ) są zbieżne z przypadkami użycia robota kiedy pracuje w trybie sterowania impedancyjnego.
+Przypadki użycia (rys. \ref{fig:usecase}) odzwierciedlają pracę systemu po modyfikacji. Algorytm kompensujący ma działać przez cały czas pracy robota gdy pracuje z narzędziem. Przypadki użycia są zbieżne z przypadkami użycia robota kiedy pracuje w trybie sterowania impedancyjnego.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\textwidth]{images/usecase.png}
+	\caption{Diagram przypadków użycia robota z uwzględnieniem algorytmu kompensacji grawitacji}
+	\label{fig:usecase}
+\end{figure}
+
 
 Aktorami korzystającymi z systemu są:
 \begin{itemize}
@@ -40,8 +48,7 @@ Można wyszczególnić następujące przypadki użycia:
 	\item \textbf{PU1 Manipulacja bez narzędzia} - Konfiguracja ramienia robota może się zmieniać lecz robot nie trzyma żadnego narzędzia. Algorytm kompensacji grawitacji nie powinien zmieniać prawa sterowania. 
 	\item \textbf{PU2 Chwytanie narzędzia} - Robot zaciska chwytak na narzędziu o nieznanych parametrach a następnie je podnosi.  
 	\item \textbf{PU3 Manipulacja z narzędziem} - Konfiguracja ramienia może się zmieniać a algorytm kompensacji grawitacji powinien przeciwdziałać sile grawitacji chwyconego narzędzia.
-	\item \textbf{PU4 Odkładanie narzędzia} - Robot odkłada narzędzie a następnie rozwiera chwytak.  
-	\item \textbf{PU5 Kompensacja grawitacji} - Robot kompensuje siłę grawitacji chwyconego narzędzia
+	\item \textbf{PU4 Kompensacja grawitacji} - Robot kompensuje siłę grawitacji chwyconego narzędzia
 \end{itemize}
 
 

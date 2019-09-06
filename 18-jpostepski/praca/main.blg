@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2019/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: text/streszczenie.aux
 A level-1 auxiliary file: text/wstep.aux
@@ -11,46 +11,66 @@ A level-1 auxiliary file: text/dzialanie_systemu.aux
 A level-1 auxiliary file: text/podsumowanie.aux
 The style file: plplain.bst
 Database file #1: bibliography.bib
+Repeated entry---line 265 of file bibliography.bib
+ : @misc{bib:impedance
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "bib:Zielinski:2014_kkr_relacje-twiki"
+Warning--I didn't find a database entry for "bib:velma"
+Warning--to sort, need author or key in bib:robotyka
+Warning--to sort, need author or key in bib:kukaPage
+Warning--to sort, need author or key in bib:barrett
+Warning--to sort, need author or key in bib:velma2
 Warning--to sort, need author or key in bib:ROS
-You've used 2 entries,
+Warning--to sort, need author or key in bib:Orocos
+Warning--to sort, need author or key in bib:Gazebo
+Warning--to sort, need author or key in bib:dart
+Warning--empty booktitle in bib:kuka
+Warning--empty year in bib:kuka
+Warning--empty booktitle in bib:horn
+Warning--empty year in bib:horn
+Warning--empty booktitle in bib:lpcBase
+Warning--empty year in bib:lpcBase
+Warning--empty journal in bib:agent2
+You've used 22 entries,
             2129 wiz_defined-function locations,
-            535 strings with 4662 characters,
-and the built_in function-call counts, 703 in all, are:
-= -- 70
-> -- 23
-< -- 1
-+ -- 9
-- -- 7
-* -- 40
-:= -- 102
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 9
+            641 strings with 8099 characters,
+and the built_in function-call counts, 7218 in all, are:
+= -- 706
+> -- 273
+< -- 11
++ -- 112
+- -- 89
+* -- 416
+:= -- 1028
+add.period$ -- 65
+call.type$ -- 22
+change.case$ -- 109
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 30
-empty$ -- 66
-format.name$ -- 7
-if$ -- 161
+cite$ -- 37
+duplicate$ -- 311
+empty$ -- 670
+format.name$ -- 89
+if$ -- 1647
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 1
-newline$ -- 12
-num.names$ -- 4
-pop$ -- 20
+int.to.str$ -- 22
+missing$ -- 13
+newline$ -- 108
+num.names$ -- 34
+pop$ -- 218
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 87
 quote$ -- 0
-skip$ -- 26
+skip$ -- 267
 stack$ -- 0
-substring$ -- 42
-swap$ -- 12
-text.length$ -- 1
+substring$ -- 372
+swap$ -- 105
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 1
-while$ -- 6
-width$ -- 3
-write$ -- 21
-(There was 1 warning)
+type$ -- 88
+warning$ -- 15
+while$ -- 52
+width$ -- 24
+write$ -- 216
+(There was 1 error message)
