@@ -36,6 +36,14 @@ Oficjalna strona systemu {ROS}.
   {R}ozpoznających.
 \newblock \url{https://www.robotyka.ia.pw.edu.pl/}.
 
+\bibitem{bib:gravity2}
+Loredana~Zollo Alessandro De~Luca, BrunoSiciliano.
+\newblock {PD control with on-line gravity compensation for robots with elastic
+  joints: Theory and experiments}.
+\newblock
+  \url{https://www.sciencedirect.com/science/article/pii/S000510980500186X?via%3Dihub}.
+\newblock [Dostęp: 21 stycznia 2019 r.].
+
 \bibitem{bib:kuka}
 Rainer Bischoff1, Johannes Kurth, Günter Schreiber, Ralf Koeppe, Alin
   AlbuSchäffer, Alexander Beyer, Oliver Eiberger, Sami Haddadin, Andreas
@@ -101,6 +109,14 @@ Tomasz Winiarski,  Konrad Banachowicz.
 \newblock {Sterowanie redundantnym systemem dwuramiennym z aktywnym korpusem}.
 \newblock {\em XIII Krajowa Konferencja Robotyki -- Postępy robotyki},
   wolumen~2, strony 433--442, 2014.
+
+\bibitem{velma}
+Tomasz Winiarski, Konrad Banachowicz, Dawid Seredyński.
+\newblock {Two mode impedance control of Velma service robot redundant arm}.
+\newblock Roman Szewczyk, Cezary Zieliński, Małgorzata Kaliczyńska,
+  redaktorzy, {\em Progress in Automation, Robotics and Measuring Techniques.
+  Vol. 2 Robotics.}, wolumen 351 serii {\em Advances in Intelligent Systems and
+  Computing (AISC)}, strony 319--328. Springer, 2015.
 
 \bibitem{bib:rqtAgent}
 Tomasz Winiarski,  Dawid Seredyński.

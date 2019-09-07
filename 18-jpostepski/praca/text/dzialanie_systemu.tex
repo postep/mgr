@@ -10,7 +10,7 @@ W symulacji uruchomiono testowy program  nakazujący robotowi manipulowanie chwy
 
 W pracy zamieszczono wyniki eksperymentów o tych samych trajektoriach zadanych w czterech wersjach:
 \begin{itemize}
-	\item bez algorymtu kompensacji, bez narzędzia
+	\item bez algorytmu kompensacji, bez narzędzia
 	\item z algorytmem kompensacji, bez narzędzia
 	\item z algorytmem kompensacji, z chwyconą puszką o kształcie walca, masie około 1 kg i jednolitym rozkładzie mas
 	\item z algorytmem kompensacji, z chwyconą wiertarką o nierównomiernym kształcie i masie ok 1,5 kg
@@ -893,14 +893,19 @@ Eksperyment ma przetestować zachowanie algorytmu kompensacji przy obrocie końc
 \section{Wnioski}
 
 Metryka APE jest dobrym narzędziem do oceny jakości trajektorii końcówki. Ruchy tego samego typu maja zbliżony do siebie współczynnik RMSE (tab. \ref{tab:}). 
-Zaimplementowane prawo sterowania pozwoliło na skuteczną kompensacje siły grawitacji chwyconego przedmiotu. Osiągane błędy średniokwadratowe trajektorii wykonywanych trajektorii są maksymalnie około dwa razy większe niż w przypadku braku algorytmu kompensacji (tab. \ref{tab:}). W żadnym eksperymencie nie zaobserwowano większego niż parę centymetrów błędu średniokwadratoweog. W trakcie wszystkich eksperymentów widać, że prawo sterowania osiąga mniejsze błędy dla prostszego obiektu jakim jest puszka z jednorodnym rozkładem mas. Algorytm kompensacji wprowadza oscylacje zarówno położenia jak i rotacji. Zjawisko jest najbardziej widoczne gdy prędkośc w końcówce jest wytracana. Przez właściwości zaimplementowanego prawa sterowania podnoszenie przedmiotów trwa długo. Empiryczne eksperymenty w trakcie pracy symulatora wykazały, że wprowadzone modyfikacje nie miały dużego wpływu na uginanie się robota w trakcie kolizji z przedmiotami chyba że kolizja trwa bardzo długo. Wytłumaczeniem tego pozytywnego zjawiska może być fakt powolnej kompensacji po chwyceniu przedmiotu. Robot potrzebuje ok 15 s aby dodać do końcówki chwytaka siłę o wartości odpowiadającej sile ciężkości jednego kilograma. 
+Zaimplementowane prawo sterowania pozwoliło na skuteczną kompensacje siły grawitacji chwyconego przedmiotu. Osiągane błędy średnio-kwadratowe trajektorii wykonywanych trajektorii są maksymalnie około dwa razy większe niż w przypadku braku algorytmu kompensacji (tab. \ref{tab:}). W żadnym eksperymencie nie zaobserwowano większego niż parę centymetrów błędu średnio-kwadratowego. W trakcie wszystkich eksperymentów widać, że prawo sterowania osiąga mniejsze błędy dla prostszego obiektu jakim jest puszka z jednorodnym rozkładem mas. Algorytm kompensacji wprowadza oscylacje zarówno położenia jak i rotacji. Zjawisko jest najbardziej widoczne gdy prędkość w końcówce jest wytracana. Przez właściwości zaimplementowanego prawa sterowania podnoszenie przedmiotów trwa długo. Empiryczne eksperymenty w trakcie pracy symulatora wykazały, że wprowadzone modyfikacje nie miały dużego wpływu na uginanie się robota w trakcie kolizji z przedmiotami chyba że kolizja trwa bardzo długo. Wytłumaczeniem tego pozytywnego zjawiska może być fakt powolnej kompensacji po chwyceniu przedmiotu. Robot potrzebuje ok 15 s aby dodać do końcówki chwytaka siłę o wartości odpowiadającej sile ciężkości jednego kilograma. 
 
 {\small
-\begin{table}[H]
-	\begin{tabular}{||c | c c c c ||}
-		\hline
-		Opis ruchu --  Błąd [m]  &  Bez alg. komp. & Bez narzędzia & Z puszką  & Z wiertarką  \\ [0.5ex]
-		\hline\hline
+\begin{table}[H]
+
+	\begin{tabular}{||c | c c c c ||}
+
+		\hline
+
+		Opis ruchu --  Błąd [m]  &  Bez alg. komp. & Bez narzędzia & Z puszką  & Z wiertarką  \\ [0.5ex]
+
+		\hline\hline
+
 		Podnoszenie & 0.032490 & 0.053853 & 0.090244 & 0.104056 \\
 		Ruch ósemkowy &0.102113  & 0.092006 & 0.089532 & 0.095919 \\
 		Ruch w bok & 0.030680 & 0.040400 & 0.041024 &  0.047411\\
@@ -908,9 +913,13 @@ Zaimplementowane prawo sterowania pozwoliło na skuteczną kompensacje siły gra
 		Ruch do dołu & 0.038727 & 0.055311 & 0.055371 & 0.057347 \\
 		Ruch do przodu & 0.035068 & 0.060216 & 0.058322 & 0.056084 \\
 		Obrót końcówki & 0.005984 & 0.007722 & 0.038998 & 0.140615\\
-		\hline
-	\end{tabular}
-	\caption{Porówanie błędu średniokwadratowego RMSE w metryce APE dla poszczególnych ruchów.}
-	\label{tab:}
+		\hline
+
+	\end{tabular}
+
+	\caption{Porównanie błędu średnio-kwadratowego RMSE w metryce APE dla poszczególnych ruchów.}
+
+	\label{tab:}
+
 \end{table}
 }

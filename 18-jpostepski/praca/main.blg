@@ -32,45 +32,45 @@ Warning--empty year in bib:horn
 Warning--empty booktitle in bib:lpcBase
 Warning--empty year in bib:lpcBase
 Warning--empty journal in bib:agent2
-You've used 22 entries,
+You've used 24 entries,
             2129 wiz_defined-function locations,
-            641 strings with 8099 characters,
-and the built_in function-call counts, 7218 in all, are:
-= -- 706
-> -- 273
-< -- 11
-+ -- 112
-- -- 89
-* -- 416
-:= -- 1028
-add.period$ -- 65
-call.type$ -- 22
-change.case$ -- 109
+            655 strings with 8698 characters,
+and the built_in function-call counts, 8012 in all, are:
+= -- 787
+> -- 309
+< -- 13
++ -- 125
+- -- 100
+* -- 466
+:= -- 1148
+add.period$ -- 73
+call.type$ -- 24
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 311
-empty$ -- 670
-format.name$ -- 89
-if$ -- 1647
+cite$ -- 39
+duplicate$ -- 342
+empty$ -- 735
+format.name$ -- 100
+if$ -- 1826
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 13
-newline$ -- 108
-num.names$ -- 34
-pop$ -- 218
+int.to.str$ -- 24
+missing$ -- 14
+newline$ -- 119
+num.names$ -- 40
+pop$ -- 235
 preamble$ -- 1
-purify$ -- 87
+purify$ -- 95
 quote$ -- 0
-skip$ -- 267
+skip$ -- 295
 stack$ -- 0
-substring$ -- 372
-swap$ -- 105
-text.length$ -- 11
+substring$ -- 414
+swap$ -- 119
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 96
 warning$ -- 15
-while$ -- 52
-width$ -- 24
-write$ -- 216
+while$ -- 60
+width$ -- 26
+write$ -- 240
 (There was 1 error message)
