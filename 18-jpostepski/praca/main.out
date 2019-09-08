@@ -12,12 +12,12 @@
 \BOOKMARK [1][-]{section.2.5}{Teoria agenta upostaciowionego}{chapter.2}% 12
 \BOOKMARK [0][-]{chapter.3}{Srodowisko badawcze}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Budowa og\363lna}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.2}{Pakiety oprogramowania}{chapter.3}% 15
-\BOOKMARK [2][-]{subsection.3.2.1}{ROS}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.2}{Orocos}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.3}{FABRIC}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Symulator robota}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Agenty}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.2}{Agenty}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Pakiety oprogramowania}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{ROS}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.2}{Orocos}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.3}{FABRIC}{section.3.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Symulator robota}{chapter.3}% 20
 \BOOKMARK [0][-]{chapter.4}{Specyfikacja systemu }{}% 21
 \BOOKMARK [1][-]{section.4.1}{Wymagania}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.2}{Za\233ozenia}{chapter.4}% 23

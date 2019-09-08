@@ -3,12 +3,11 @@
 % !TeX spellcheck = pl_PL
 
 \chapter{Implementacja systemu\label{chap:implementacja_systemu}}
-W ramach pracy zmodyfikowano istniejący system robotyczny opisany w rozdziale \ref{chap:srodowisko}. Dzięki temu możliwe było spełnienie założeń i wymagań z rozdziału \ref{chap:specyfikacja_systemu}.  Najważniejszą częścią pracy jest modyfikacja istniejącego oprogramowania komponentu odpowiedzialnego za wyliczanie prawa sterowania impedancyjnego w celu wyeliminowania opisywanego w pracy problemu.
+W ramach pracy zmodyfikowano istniejący system robotyczny opisany w~rozdziale \ref{chap:srodowisko}. Dzięki temu możliwe było spełnienie założeń i~wymagań z~rozdziału \ref{chap:specyfikacja_systemu}.  Najważniejszą częścią pracy jest modyfikacja istniejącego prawa sterowania impedancyjnego, w~celu wyeliminowania opisywanego w~pracy zagadnienia.
 
+Głównym problemem w~trakcie manipulacji z~nieskompensowaną grawitacją jest znaczny uchyb statyczny. Aby wyeliminować ten efekt można do istniejącego algorytmu sterowania impedancyjnego dodać algorytm PID \cite{bib:gravity2}. 
 
-Głównym problemem w trakcie manipulacji z nieskompensowaną grawitacją jest znaczny uchyb statyczny. Aby wyeliminować ten efekt można do istniejącego algorytmu sterowania impedancyjnego dodać algorytm PID \cite{bib:gravity2}. 
-
-Należy mieć na uwadze, że niektóre człony są takie same w zaprezentowanych prawach sterowania. W impedancyjnym prawie sterwowania nie ma członu całkującego i został on skopiowany z algorytmu PID. W rezultacie nowe prawo sterowania jest postaci:
+Należy mieć na uwadze, że niektóre człony są takie same w~zaprezentowanych prawach sterowania. W~impedancyjnym prawie sterwowania nie ma członu całkującego i~został on skopiowany z~algorytmu PID. W~rezultacie nowe prawo sterowania jest postaci:
 
 \begin{equation}
 \boldsymbol{\mathcal{F}} = \boldsymbol{K_x}\boldsymbol{e_x} + \boldsymbol{D_x}\dot{\boldsymbol{e_x}} + \int_{0}^{t}  \boldsymbol{I}\boldsymbol{e_x}dt
