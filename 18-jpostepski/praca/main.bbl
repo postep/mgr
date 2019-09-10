@@ -57,6 +57,20 @@ Berthold Horn, Hugh Hilden, Shahriar Negahdaripour.
 \newblock {Closed-Form Solution of Absolute Orientation Using Orthonormal
   Matrices.}
 
+\bibitem{bib:rozw_opt2}
+SJ~Huang,  G~Lallement.
+\newblock Direct estimation of rigid body properties from harmonic forced
+  responses.
+\newblock {\em PROCEEDINGS-SPIE THE INTERNATIONAL SOCIETY FOR OPTICAL
+  ENGINEERING}, strony 175--180. SPIE INTERNATIONAL SOCIETY FOR OPTICAL, 1997.
+
+\bibitem{bib:rozw_opt1}
+K.~{Parsa}, J.~{Angeles}, A.~K. {Misra}.
+\newblock Pose-and-twist estimation of a rigid body using accelerometers.
+\newblock {\em Proceedings 2001 ICRA. IEEE International Conference on Robotics
+  and Automation (Cat. No.01CH37164)}, wolumen~3, strony 2873--2878 vol.3, May
+  2001.
+
 \bibitem{bib:pidTito}
 Tavakoli Saeed, Griffin Ian, Peter J.Fleming.
 \newblock Tuning of decentralised pi (pid) controllers for tito processes.
@@ -89,6 +103,12 @@ J.~{Sturm}, N.~{Engelhard}, F.~{Endres}, W.~{Burgard}, D.~{Cremers}.
 \bibitem{bib:lpcBase}
 Jie Tan, Kristin Siu, Karen Liu.
 \newblock {Contact Handling for Articulated Rigid Bodies Using LCP}.
+
+\bibitem{bib:rozw_pid1}
+N~Uyama,  T~Narumi.
+\newblock Hybrid impedance/position control of a free-flying space robot for
+  detumbling a noncooperative satellite.
+\newblock {\em IFAC-PapersOnLine}, 49(17):230--235, 2016.
 
 \bibitem{bib:pidMimo}
 Nie~ZY. Wang~QG.

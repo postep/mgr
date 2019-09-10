@@ -149,10 +149,10 @@
       <x>960</x>
       <y>410</y>
       <w>160</w>
-      <h>140</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes/>
-    <additional_attributes>10.0;120.0;140.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;140.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>

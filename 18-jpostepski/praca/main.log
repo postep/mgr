@@ -1,78 +1,79 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.7.15)  8 SEP 2019 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  10 SEP 2019 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2018-12-01>
-(/usr/share/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@chapter=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
-\c@figure=\count87
-\c@table=\count88
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf-dist/tex/latex/tools/afterpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks14
-\AP@partial=\box27
-\AP@footins=\box28
+\AP@partial=\box26
+\AP@footins=\box27
 )
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2018/12/01 v2.17b AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen103
 ))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count90
-\leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count92
-\DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box29
-\strutbox@=\box30
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count94
-\c@MaxMatrixCols=\count95
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count96
-\dspbrk@lvl=\count97
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks16
-\row@=\count98
-\column@=\count99
-\maxfields@=\count100
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -84,41 +85,41 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2019/04/03 3.29 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
 
-(/usr/share/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2019/04/03 3.29 Babel switching mechanism
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
-(/usr/share/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 
-(/usr/share/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2019/04/03 3.29 Babel common definitions
-\babel@savecnt=\count101
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count100
 \U@D=\dimen112
 
-(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count102
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count101
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 )
-(/usr/share/texmf-dist/tex/generic/babel-polish/polish.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-polish/polish.ldf
 Language: polish 2005/03/31 v1.2l Polish support from the babel system
 Package babel Info: Making " an active character on input line 83.
 \pl@left=\dimen113
@@ -126,18 +127,18 @@ Package babel Info: Making " an active character on input line 83.
 \pl@right=\dimen115
 \pl@temp=\dimen116
 ))
-(/usr/share/texmf-dist/tex/latex/bera/beramono.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks20
 ))
-(/usr/share/texmf-dist/tex/latex/multirow/bigstrut.sty
-Package: bigstrut 2019/01/01 v2.4 Provide larger struts in tabulars
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/bigstrut.sty
+Package: bigstrut 2016/11/25 v2.2 Provide larger struts in tabulars
 \bigstrutjot=\dimen117
 )
-(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen118
 \lightrulewidth=\dimen119
@@ -149,20 +150,20 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen125
 \cmidrulekern=\dimen126
 \defaultaddspace=\dimen127
-\@cmidla=\count103
-\@cmidlb=\count104
+\@cmidla=\count102
+\@cmidlb=\count103
 \@aboverulesep=\dimen128
 \@belowrulesep=\dimen129
-\@thisruleclass=\count105
-\@lastruleclass=\count106
+\@thisruleclass=\count104
+\@lastruleclass=\count105
 \@thisrulewidth=\dimen130
 )
-(/usr/share/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 64.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen131
 \captionmargin@=\dimen132
 \captionwidth=\dimen133
@@ -171,71 +172,74 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen136
 \caption@hangindent=\dimen137
 )
-\c@caption@flags=\count107
-\c@ContinuedFloat=\count108
+\c@ContinuedFloat=\count106
 )
-(/usr/share/texmf-dist/tex/latex/cite/cite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
 )
-(/usr/share/texmf-dist/tex/latex/graphics/color.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/02/04 v3.8 Customized lists
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip46
 \enit@outerparindent=\dimen138
 \enit@toks=\toks21
-\enit@inbox=\box31
-\enit@count@id=\count109
-\enitdp@description=\count110
+\enit@inbox=\box30
+\enitdp@description=\count107
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-))))
-(/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -245,8 +249,8 @@ Package pdftexcmds Info: \pdfdraftmode found.
 
 Package epstopdf Warning: No graphics package `graphic{s,x}' loaded.
 
-)) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip47
 \f@nch@O@elh=\skip48
@@ -258,38 +262,38 @@ s
 \f@nch@O@olf=\skip54
 \f@nch@O@orf=\skip55
 )
-(/usr/share/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count111
+\c@float@type=\count108
 \float@exts=\toks22
-\float@box=\box32
+\float@box=\box31
 \@float@everytoks=\toks23
-\@floatcapt=\box33
+\@floatcapt=\box32
 )
-(/usr/share/texmf-dist/tex/latex/bigfoot/perpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count112
+\c@abspage=\count109
 )
-(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-(/usr/share/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count113
-\Gm@cntv=\count114
-\c@Gm@tempcnt=\count115
+\Gm@cnth=\count110
+\Gm@cntv=\count111
+\c@Gm@tempcnt=\count112
 \Gm@bindingoffset=\dimen139
 \Gm@wd@mp=\dimen140
 \Gm@odd@mp=\dimen141
@@ -300,19 +304,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks24
 )
-(/usr/share/texmf-dist/tex/latex/was/gensymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
@@ -320,14 +324,14 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen147
 \Gin@req@width=\dimen148
 )
-(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -356,155 +360,468 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen149
-\Hy@linkcounter=\count116
-\Hy@pagecounter=\count117
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
 
-(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count118
+\Hy@SavedSpaceFactor=\count115
 
-(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count119
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count116
 
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5125.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen150
-\Fld@menulength=\count120
+\Fld@menulength=\count117
 \Field@Width=\dimen151
 \Fld@charsize=\dimen152
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count121
-\c@Item=\count122
-\c@Hfootnote=\count123
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count124
-\c@bookmark@seq@number=\count125
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
 
-(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip56
 )
-(/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks25
 \inpenc@posthook=\toks26
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
-(/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count126
-\lst@gtempboxa=\box34
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count123
+\lst@gtempboxa=\box33
 \lst@token=\toks27
-\lst@length=\count127
+\lst@length=\count124
 \lst@currlwidth=\dimen153
-\lst@column=\count128
-\lst@pos=\count129
+\lst@column=\count125
+\lst@pos=\count126
 \lst@lostspace=\dimen154
 \lst@width=\dimen155
-\lst@newlines=\count130
-\lst@lineno=\count131
+\lst@newlines=\count127
+\lst@lineno=\count128
 \lst@maxwidth=\dimen156
 
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count132
-\lst@skipnumbers=\count133
-\lst@framebox=\box35
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count129
+\lst@skipnumbers=\count130
+\lst@framebox=\box34
 )
-(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2019/02/27 1.8b listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package: listings 2019/02/27 1.8b (Carsten Heinz)
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/share/texmf-dist/tex/latex/leftidx/leftidx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/leftidx/leftidx.sty
 Package: leftidx 2003/09/24 v1.03 Left indices
 )
-(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip57
-\multirow@cntb=\count134
+\multirow@cntb=\count131
 \multirow@dima=\skip58
 )
-(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count135
-\calc@Bcount=\count136
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count132
+\calc@Bcount=\count133
 \calc@Adimen=\dimen157
 \calc@Bdimen=\dimen158
 \calc@Askip=\skip59
 \calc@Bskip=\skip60
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count137
+\calc@Ccount=\count134
 \calc@Cskip=\skip61
 )
-(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
 \AM@pagewidth=\dimen159
 \AM@pageheight=\dimen160
 
-(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box36
+\AM@pagebox=\box35
 \AM@global@opts=\toks28
 \AM@toc@title=\toks29
-\c@AM@survey=\count138
-\AM@templatesizebox=\box37
+\c@AM@survey=\count135
+\AM@templatesizebox=\box36
 )
-(/usr/share/texmf-dist/tex/latex/polski/polski.sty
+(/usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
 Package: polski 2017/05/04 v1.3.4 Polish language package
 
    Inputenc package detected. Catcodes not changed.
-) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip62
 \subfigcapskip=\skip63
@@ -512,20 +829,20 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigbottomskip=\skip64
 \subfigcapmargin=\dimen162
 \subfiglabelskip=\skip65
-\c@subfigure=\count139
-\c@lofdepth=\count140
-\c@subtable=\count141
-\c@lotdepth=\count142
+\c@subfigure=\count136
+\c@lofdepth=\count137
+\c@subtable=\count138
+\c@lotdepth=\count139
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip66
 \subfig@bottom=\skip67
 )
-(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -539,13 +856,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(/usr/share/texmf-dist/tex/latex/base/ts1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
-File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -615,7 +932,6 @@ File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
 Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
@@ -681,31 +997,394 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-(/usr/share/texmf-dist/tex/latex/amsfonts/euscript.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/euscript.sty
 Package: euscript 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
 )
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks30
-\verbatim@line=\toks31
-\verbatim@in@stream=\read1
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen163
+\pgfutil@tempdimb=\dimen164
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box37
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen165
+\pgf@y=\dimen166
+\pgf@xa=\dimen167
+\pgf@ya=\dimen168
+\pgf@xb=\dimen169
+\pgf@yb=\dimen170
+\pgf@xc=\dimen171
+\pgf@yc=\dimen172
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count140
+\c@pgf@countb=\count141
+\c@pgf@countc=\count142
+\c@pgf@countd=\count143
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-(/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count144
+\pgfsyssoftpath@bigbuffer@items=\count145
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen173
+\pgfmath@count=\count146
+\pgfmath@box=\box38
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count147
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen174
+\pgf@picmaxx=\dimen175
+\pgf@picminy=\dimen176
+\pgf@picmaxy=\dimen177
+\pgf@pathminx=\dimen178
+\pgf@pathmaxx=\dimen179
+\pgf@pathminy=\dimen180
+\pgf@pathmaxy=\dimen181
+\pgf@xx=\dimen182
+\pgf@xy=\dimen183
+\pgf@yx=\dimen184
+\pgf@yy=\dimen185
+\pgf@zx=\dimen186
+\pgf@zy=\dimen187
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen188
+\pgf@path@lasty=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen190
+\pgf@shorten@start@additional=\dimen191
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box39
+\pgf@hbox=\box40
+\pgf@layerbox@main=\box41
+\pgf@picture@serial@count=\count148
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen192
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen193
+\pgf@pt@y=\dimen194
+\pgf@pt@temp=\dimen195
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen196
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen197
+\pgf@sys@shading@range@num=\count149
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box42
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box43
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen198
+\pgf@nodesepend=\dimen199
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count150
+\pgfplotmarksize=\dimen258
+)
+\tikz@lastx=\dimen259
+\tikz@lasty=\dimen260
+\tikz@lastxsaved=\dimen261
+\tikz@lastysaved=\dimen262
+\tikzleveldistance=\dimen263
+\tikzsiblingdistance=\dimen264
+\tikz@figbox=\box44
+\tikz@figbox@bg=\box45
+\tikz@tempbox=\box46
+\tikz@tempbox@bg=\box47
+\tikztreelevel=\count151
+\tikznumberofchildren=\count152
+\tikznumberofcurrentchild=\count153
+\tikz@fig@count=\count154
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count155
+\pgfmatrixcurrentcolumn=\count156
+\pgf@matrix@numberofcolumns=\count157
+)
+\tikz@expandcount=\count158
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box48
+\pgfnodeparttwobox=\box49
+\pgfnodepartthreebox=\box50
+\pgfnodepartfourbox=\box51
+\pgfnodeparttwentybox=\box52
+\pgfnodepartnineteenbox=\box53
+\pgfnodeparteighteenbox=\box54
+\pgfnodepartseventeenbox=\box55
+\pgfnodepartsixteenbox=\box56
+\pgfnodepartfifteenbox=\box57
+\pgfnodepartfourteenbox=\box58
+\pgfnodepartthirteenbox=\box59
+\pgfnodeparttwelvebox=\box60
+\pgfnodepartelevenbox=\box61
+\pgfnodeparttenbox=\box62
+\pgfnodepartninebox=\box63
+\pgfnodeparteightbox=\box64
+\pgfnodepartsevenbox=\box65
+\pgfnodepartsixbox=\box66
+\pgfnodepartfivebox=\box67
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen265
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks42
+\verbatim@line=\toks43
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count143
+\c@r@tfl@t=\count159
 \rotFPtop=\skip68
 \rotFPbot=\skip69
-\rot@float@box=\box38
-\rot@mess@toks=\toks32
+\rot@float@box=\box68
+\rot@mess@toks=\toks44
 )
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2019/02/27 1.8b listings language file
-) (./main.aux
-(./text/streszczenie.aux) (./text/wstep.aux) (./text/przeglad_literatury.aux)
-(./text/opis_narzedzi.aux) (./text/algorytmy.aux)
-(./text/implementacja_systemu.aux) (./text/dzialanie_systemu.aux
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+
+LaTeX Warning: Unused global option(s):
+    [tikz].
+
+(./main.aux (./text/streszczenie.aux) (./text/wstep.aux)
+(./text/przeglad_literatury.aux) (./text/opis_narzedzi.aux)
+(./text/implementacja_systemu.aux) (./text/algorytmy.aux)
+(./text/dzialanie_systemu.aux
 
 LaTeX Warning: Label `fig:do_gory_roty' multiply defined.
 
@@ -724,27 +1403,28 @@ LaTeX Warning: Label `fig:obrt_porow_przedm_bok' multiply defined.
 ) (./text/podsumowanie.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 126.
 
- (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    ... okay on input line 126.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -753,19 +1433,19 @@ Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count144
-\scratchdimen=\dimen163
-\scratchbox=\box39
-\nofMPsegments=\count145
-\nofMParguments=\count146
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count147
-\MPscratchDim=\dimen164
-\MPnumerator=\count148
-\makeMPintoPDFobject=\count149
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count160
+\scratchdimen=\dimen266
+\scratchbox=\box69
+\nofMPsegments=\count161
+\nofMParguments=\count162
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count163
+\MPscratchDim=\dimen267
+\MPnumerator=\count164
+\makeMPintoPDFobject=\count165
+\everyMPtoPDFconversion=\toks46
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -807,43 +1487,44 @@ Package geometry Warning: The marginal notes overrun the paper.
 
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 121.
-Package gensymb Info: Math companion symbols declared on input line 121.
-LaTeX Info: Redefining \degree on input line 121.
-LaTeX Info: Redefining \celsius on input line 121.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 126.
+Package gensymb Info: Math companion symbols declared on input line 126.
+LaTeX Info: Redefining \degree on input line 126.
+LaTeX Info: Redefining \celsius on input line 126.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 121.
-LaTeX Info: Redefining \ohm on input line 121.
-Package gensymb Info: Using \textohm for \ohm on input line 121.
-Package gensymb Info: Using \textmu for \micro on input line 121.
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 121.
-(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+erthousand on input line 126.
+LaTeX Info: Redefining \ohm on input line 126.
+Package gensymb Info: Using \textohm for \ohm on input line 126.
+Package gensymb Info: Using \textmu for \micro on input line 126.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring OFF on input line 126.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count150
+\c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
- (./main.out)
-(./main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+LaTeX Info: Redefining \ref on input line 126.
+LaTeX Info: Redefining \pageref on input line 126.
+LaTeX Info: Redefining \nameref on input line 126.
 
-\c@lstlisting=\count151
- (/usr/share/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+\c@lstlisting=\count167
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+ABD: EveryShipout initializing macros
 \openout2 = `text/streszczenie.aux'.
 
-
-(./text/streszczenie.tex
-<pdf/strona_tytulowa.pdf, id=144, 597.23125pt x 845.1575pt>
+ (./text/streszczenie.tex
+<pdf/strona_tytulowa.pdf, id=155, 597.23125pt x 845.1575pt>
 File: pdf/strona_tytulowa.pdf Graphic file (type pdf)
 <use pdf/strona_tytulowa.pdf>
 Package pdftex.def Info: pdf/strona_tytulowa.pdf  used on input line 7.
@@ -852,7 +1533,7 @@ File: pdf/strona_tytulowa.pdf Graphic file (type pdf)
 <use pdf/strona_tytulowa.pdf>
 Package pdftex.def Info: pdf/strona_tytulowa.pdf  used on input line 7.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<pdf/strona_tytulowa.pdf, id=147, page=1, 597.23125pt x 845.1575pt>
+<pdf/strona_tytulowa.pdf, id=158, page=1, 597.23125pt x 845.1575pt>
 File: pdf/strona_tytulowa.pdf Graphic file (type pdf)
 <use pdf/strona_tytulowa.pdf, page 1>
 Package pdftex.def Info: pdf/strona_tytulowa.pdf , page1 used on input line 7.
@@ -881,9 +1562,9 @@ Package pdftex.def Info: pdf/strona_tytulowa.pdf , page1 used on input line 7.
 ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.49998pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [3
 
@@ -903,124 +1584,239 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
 
-[4] [5
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
 
-[6] [7
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7
 
 ]
-<pdf/oswiadczenie.pdf, id=214, 597.31157pt x 844.83629pt>
+<pdf/oswiadczenie.pdf, id=225, 597.31157pt x 844.83629pt>
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf>
-Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 62.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf>
-Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf  used on input line 62.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
-<pdf/oswiadczenie.pdf, id=217, page=1, 597.31157pt x 844.83629pt>
+<pdf/oswiadczenie.pdf, id=228, page=1, 597.31157pt x 844.83629pt>
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: pdf/oswiadczenie.pdf Graphic file (type pdf)
 <use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
-File: pdf/oswiadczenie.pdf Graphic file (type pdf)
-<use pdf/oswiadczenie.pdf, page 1>
-Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 60.
-(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
- [8 <./pdf/oswiadczenie.pdf>] [9
 
-]) [10
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+File: pdf/oswiadczenie.pdf Graphic file (type pdf)
+<use pdf/oswiadczenie.pdf, page 1>
+Package pdftex.def Info: pdf/oswiadczenie.pdf , page1 used on input line 62.
+(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
+[8 <./pdf/oswiadczenie.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10
 
 
 
 ] (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [11])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+)
 
- [12]
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
 \openout2 = `text/wstep.aux'.
 
  (./text/wstep.tex
 Rozdzia\l  1.
-) [13
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13
 
 
 ]
 \openout2 = `text/przeglad_literatury.aux'.
 
- (./text/przeglad_literatury.tex [14
+ (./text/przeglad_literatury.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14
 
 
 
 ]
 Rozdzia\l  2.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [15]
 LaTeX Font Info:    Try loading font information for U+eus on input line 41.
- (/usr/share/texmf-dist/tex/latex/amsfonts/ueus.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
-) [16] [17]
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_bez_br
-ak.png, id=332, 462.528pt x 346.896pt>
+ak.png, id=345, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_b
 ez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_be
 z_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
-odnoszenie_miekki_bez_brak.png  used on input line 135.
+odnoszenie_miekki_bez_brak.png  used on input line 138.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [18] [19 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_mie
-kki_bez_brak.png>]
-<images/agent_structure.pdf, id=358, 240.9pt x 265.99374pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_be
+z_brak.png>]
+<images/agent_structure.pdf, id=371, 240.9pt x 265.99374pt>
 File: images/agent_structure.pdf Graphic file (type pdf)
 <use images/agent_structure.pdf>
-Package pdftex.def Info: images/agent_structure.pdf  used on input line 167.
+Package pdftex.def Info: images/agent_structure.pdf  used on input line 170.
 (pdftex.def)             Requested size: 256.07741pt x 282.78pt.
 
 
 LaTeX Warning: Citation `bib:Zielinski:2014_kkr_relacje-twiki' on page 20 undef
-ined on input line 168.
+ined on input line 171.
 
 
 LaTeX Warning: Citation `bib:Zielinski:2014_kkr_relacje-twiki' on page 20 undef
-ined on input line 168.
+ined on input line 171.
 
-) [20 <./images/agent_structure.pdf>]
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20 <./images/agent_structure.pdf>]
 \openout2 = `text/opis_narzedzi.aux'.
 
  (./text/opis_narzedzi.tex
 Rozdzia\l  3.
-<images/velma1.jpg, id=704, 2457.18pt x 3276.24pt>
+<images/velma1.jpg, id=717, 2457.18pt x 3276.24pt>
 File: images/velma1.jpg Graphic file (type jpg)
 <use images/velma1.jpg>
 Package pdftex.def Info: images/velma1.jpg  used on input line 16.
 (pdftex.def)             Requested size: 170.71393pt x 227.61053pt.
-<images/velmajoints.png, id=705, 1016.79875pt x 863.225pt>
+<images/velmajoints.png, id=718, 1016.79875pt x 863.225pt>
 File: images/velmajoints.png Graphic file (type png)
 <use images/velmajoints.png>
 Package pdftex.def Info: images/velmajoints.png  used on input line 21.
@@ -1038,28 +1834,41 @@ ota. Drugi z agen-tów
  []
 
 
-Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
-Make it at least 14.61598pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [21
 
 
 
 ]
-<images/system_hw.png, id=724, 727.71875pt x 452.69125pt>
+<images/system_hw.png, id=737, 727.71875pt x 452.69125pt>
 File: images/system_hw.png Graphic file (type png)
 <use images/system_hw.png>
 Package pdftex.def Info: images/system_hw.png  used on input line 38.
 (pdftex.def)             Requested size: 307.29028pt x 191.15823pt.
-<images/system.png, id=725, 468.75125pt x 452.69125pt>
+<images/system.png, id=738, 468.75125pt x 452.69125pt>
 File: images/system.png Graphic file (type png)
 <use images/system.png>
 Package pdftex.def Info: images/system.png  used on input line 43.
 (pdftex.def)             Requested size: 192.0548pt x 185.47336pt.
- [22 <./images/velma1.jpg> <./images/velmajoints.png>] [23 <./images/system_hw.
-png> <./images/system.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22 <./images/velma1.jpg> <./images/velmajoints.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23 <./images/system_hw.png> <./images/system.png>]
 Underfull \hbox (badness 1062) in paragraph at lines 56--58
 \T1/cmr/m/n/12 opro-gra-mo-wa-nia. Je-±li u»y-wamy trybu ob-sªugi rze-czy-wi-st
 ego sprz¦tu to
@@ -1077,48 +1886,161 @@ Underfull \hbox (badness 6125) in paragraph at lines 62--64
 cmr/m/it/12 INT_tool_r \T1/cmr/m/n/12 z pod-sys-temu
  []
 
-[24] [25]
-<images/gazebo.png, id=765, 1079.53313pt x 596.98032pt>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+<images/gazebo.png, id=778, 1079.53313pt x 596.98032pt>
 File: images/gazebo.png Graphic file (type png)
 <use images/gazebo.png>
 Package pdftex.def Info: images/gazebo.png  used on input line 97.
 (pdftex.def)             Requested size: 256.07741pt x 141.61122pt.
-) [26 <./images/gazebo.png (PNG copy)>]
-\openout2 = `text/algorytmy.aux'.
+)
 
- (./text/algorytmy.tex
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.61598pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26 <./images/gazebo.png (PNG copy)>]
+\openout2 = `text/implementacja_systemu.aux'.
+
+ (./text/implementacja_systemu.tex
 Rozdzia\l  4.
+<images/kompensacja.png, id=791, 1686.3pt x 311.1625pt>
+File: images/kompensacja.png Graphic file (type png)
+<use images/kompensacja.png>
+Package pdftex.def Info: images/kompensacja.png  used on input line 14.
+(pdftex.def)             Requested size: 422.52577pt x 77.9661pt.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [27
 
 
 
 ]
-<images/usecase.png, id=781, 913.4125pt x 321.2pt>
-File: images/usecase.png Graphic file (type png)
-<use images/usecase.png>
-Package pdftex.def Info: images/usecase.png  used on input line 33.
-(pdftex.def)             Requested size: 384.1096pt x 135.06972pt.
- [28 <./images/usecase.png (PNG copy)>]) [29]
-\openout2 = `text/implementacja_systemu.aux'.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28 <./images/kompensacja.png (PNG copy)>]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (28.85265pt too wide) in paragraph at lines 74--75
+ [][] 
+ []
 
 
-(./text/implementacja_systemu.tex [30
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+<images/komp_model.png, id=823, 1686.3pt x 311.1625pt>
+File: images/komp_model.png Graphic file (type png)
+<use images/komp_model.png>
+Package pdftex.def Info: images/komp_model.png  used on input line 119.
+(pdftex.def)             Requested size: 422.52577pt x 77.9661pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31 <./images/komp_model.png (PNG copy)>]
+\openout2 = `text/algorytmy.aux'.
+
+ (./text/algorytmy.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
 
 
 
 ]
 Rozdzia\l  5.
-) [31]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+<images/usecase.png, id=847, 913.4125pt x 321.2pt>
+File: images/usecase.png Graphic file (type png)
+<use images/usecase.png>
+Package pdftex.def Info: images/usecase.png  used on input line 37.
+(pdftex.def)             Requested size: 384.1096pt x 135.06972pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35 <./images/usecase.png (PNG copy)>]
 \openout2 = `text/dzialanie_systemu.aux'.
 
- (./text/dzialanie_systemu.tex [32
+ (./text/dzialanie_systemu.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
 
 
 
 ]
 Rozdzia\l  6.
-[33]
-<../../velma/przerobione_testy/out/podn/common_ax.png, id=820, 462.528pt x 346.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37]
+<../../velma/przerobione_testy/out/podn/common_ax.png, id=873, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_ax.png Graphic file (type p
 ng)
@@ -1126,7 +2048,7 @@ ng)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_ax.png  
 used on input line 36.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_ay.png, id=821, 462.528pt x 346.
+<../../velma/przerobione_testy/out/podn/common_ay.png, id=874, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_ay.png Graphic file (type p
 ng)
@@ -1134,7 +2056,7 @@ ng)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_ay.png  
 used on input line 41.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_az.png, id=822, 462.528pt x 346.
+<../../velma/przerobione_testy/out/podn/common_az.png, id=875, 462.528pt x 346.
 896pt>
 File: ../../velma/przerobione_testy/out/podn/common_az.png Graphic file (type p
 ng)
@@ -1143,7 +2065,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_az.png
 used on input line 46.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=823, 462.528pt x 346.896pt>
+.png, id=876, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez_
@@ -1152,7 +2074,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
 noszenie_miekki_bez_brak.png  used on input line 57.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=824, 462.528pt x 346.896pt>
+k.png, id=877, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
@@ -1163,10 +2085,17 @@ noszenie_miekki_komp_brak.png  used on input line 61.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34 <../../velma/przerobione_testy/out/podn/common_ax.png> <../../velma/przero
-bione_testy/out/podn/common_ay.png> <../../velma/przerobione_testy/out/podn/com
-mon_az.png>]
-<../../velma/przerobione_testy/out/podn/common_rotx.png, id=841, 462.528pt x 34
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[38 <../../velma/przerobione_testy/out/podn/common_ax.png> <../../velma/przerob
+ione_testy/out/podn/common_ay.png> <../../velma/przerobione_testy/out/podn/comm
+on_az.png>]
+<../../velma/przerobione_testy/out/podn/common_rotx.png, id=895, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_rotx.png Graphic file (type
  png)
@@ -1174,7 +2103,7 @@ File: ../../velma/przerobione_testy/out/podn/common_rotx.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_rotx.png
   used on input line 71.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_roty.png, id=842, 462.528pt x 34
+<../../velma/przerobione_testy/out/podn/common_roty.png, id=896, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_roty.png Graphic file (type
  png)
@@ -1182,7 +2111,7 @@ File: ../../velma/przerobione_testy/out/podn/common_roty.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_roty.png
   used on input line 76.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/podn/common_rotz.png, id=843, 462.528pt x 34
+<../../velma/przerobione_testy/out/podn/common_rotz.png, id=897, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/podn/common_rotz.png Graphic file (type
  png)
@@ -1191,7 +2120,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/common_rotz.png
   used on input line 82.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=844, 462.528pt x 346.896pt>
+o.png, id=898, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
@@ -1200,7 +2129,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
 noszenie_miekki_komp_piwo.png  used on input line 95.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=845, 462.528pt x 346.896pt>
+rtarka.png, id=899, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
@@ -1209,7 +2138,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/yz_ate_plot_pod
 noszenie_miekki_komp_wiertarka.png  used on input line 99.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=846, 462.528pt x 346.896pt>
+.png, id=900, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_bez_
@@ -1218,7 +2147,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
 noszenie_miekki_bez_brak.png  used on input line 109.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=847, 462.528pt x 346.896pt>
+k.png, id=901, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
@@ -1229,13 +2158,20 @@ noszenie_miekki_komp_brak.png  used on input line 113.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez
-_brak.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miek
-ki_komp_brak.png> <../../velma/przerobione_testy/out/podn/common_rotx.png> <../
-../velma/przerobione_testy/out/podn/common_roty.png> <../../velma/przerobione_t
-esty/out/podn/common_rotz.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_bez_
+brak.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekk
+i_komp_brak.png> <../../velma/przerobione_testy/out/podn/common_rotx.png> <../.
+./velma/przerobione_testy/out/podn/common_roty.png> <../../velma/przerobione_te
+sty/out/podn/common_rotz.png>]
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=862, 462.528pt x 346.896pt>
+o.png, id=916, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
@@ -1244,7 +2180,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
 noszenie_miekki_komp_piwo.png  used on input line 122.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=863, 462.528pt x 346.896pt>
+rtarka.png, id=917, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/podn/xz_ate_plot_podnoszenie_miekki_komp
@@ -1255,14 +2191,21 @@ noszenie_miekki_komp_wiertarka.png  used on input line 126.
 
 Underfull \vbox (badness 1320) has occurred while \output is active []
 
- [36 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_kom
-p_piwo.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_mie
-kki_komp_wiertarka.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_pod
-noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/podn/xz_ate_pl
-ot_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out/podn/xz
-_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/
-podn/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/osemka/common_ax.png, id=886, 462.528pt x 34
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[40 <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miekki_komp
+_piwo.png> <../../velma/przerobione_testy/out/podn/yz_ate_plot_podnoszenie_miek
+ki_komp_wiertarka.png> <../../velma/przerobione_testy/out/podn/xz_ate_plot_podn
+oszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/podn/xz_ate_plo
+t_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out/podn/xz_
+ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/p
+odn/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+<../../velma/przerobione_testy/out/osemka/common_ax.png, id=940, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_ax.png Graphic file (type
  png)
@@ -1270,7 +2213,7 @@ File: ../../velma/przerobione_testy/out/osemka/common_ax.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_ax.png
   used on input line 168.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_ay.png, id=887, 462.528pt x 34
+<../../velma/przerobione_testy/out/osemka/common_ay.png, id=941, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_ay.png Graphic file (type
  png)
@@ -1278,7 +2221,7 @@ File: ../../velma/przerobione_testy/out/osemka/common_ay.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_ay.png
   used on input line 173.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_az.png, id=888, 462.528pt x 34
+<../../velma/przerobione_testy/out/osemka/common_az.png, id=942, 462.528pt x 34
 6.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_az.png Graphic file (type
  png)
@@ -1294,7 +2237,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
 odnoszenie_miekki_bez_brak.png  used on input line 190.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_b
-rak.png, id=889, 462.528pt x 346.896pt>
+rak.png, id=943, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
@@ -1305,10 +2248,17 @@ odnoszenie_miekki_komp_brak.png  used on input line 194.
 
 Underfull \vbox (badness 1817) has occurred while \output is active []
 
- [37 <../../velma/przerobione_testy/out/osemka/common_ax.png> <../../velma/prze
-robione_testy/out/osemka/common_ay.png> <../../velma/przerobione_testy/out/osem
-ka/common_az.png>]
-<../../velma/przerobione_testy/out/osemka/common_rotx.png, id=909, 462.528pt x 
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[41 <../../velma/przerobione_testy/out/osemka/common_ax.png> <../../velma/przer
+obione_testy/out/osemka/common_ay.png> <../../velma/przerobione_testy/out/osemk
+a/common_az.png>]
+<../../velma/przerobione_testy/out/osemka/common_rotx.png, id=961, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_rotx.png Graphic file (ty
 pe png)
@@ -1316,7 +2266,7 @@ pe png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_rotx.p
 ng  used on input line 205.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_roty.png, id=910, 462.528pt x 
+<../../velma/przerobione_testy/out/osemka/common_roty.png, id=962, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_roty.png Graphic file (ty
 pe png)
@@ -1324,7 +2274,7 @@ pe png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_roty.p
 ng  used on input line 210.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/osemka/common_rotz.png, id=911, 462.528pt x 
+<../../velma/przerobione_testy/out/osemka/common_rotz.png, id=963, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/common_rotz.png Graphic file (ty
 pe png)
@@ -1333,7 +2283,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/common_rotz.p
 ng  used on input line 216.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_p
-iwo.png, id=912, 462.528pt x 346.896pt>
+iwo.png, id=964, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
@@ -1342,7 +2292,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_p
 odnoszenie_miekki_komp_piwo.png  used on input line 228.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_komp_w
-iertarka.png, id=913, 462.528pt x 346.896pt>
+iertarka.png, id=965, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
@@ -1353,12 +2303,19 @@ odnoszenie_miekki_komp_wiertarka.png  used on input line 232.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
-omp_brak.png> <../../velma/przerobione_testy/out/osemka/common_rotx.png> <../..
-/velma/przerobione_testy/out/osemka/common_roty.png> <../../velma/przerobione_t
-esty/out/osemka/common_rotz.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[42 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
+mp_brak.png> <../../velma/przerobione_testy/out/osemka/common_rotx.png> <../../
+velma/przerobione_testy/out/osemka/common_roty.png> <../../velma/przerobione_te
+sty/out/osemka/common_rotz.png>]
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_bez_br
-ak.png, id=927, 462.528pt x 346.896pt>
+ak.png, id=979, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_b
 ez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_be
@@ -1367,7 +2324,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
 odnoszenie_miekki_bez_brak.png  used on input line 242.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_b
-rak.png, id=928, 462.528pt x 346.896pt>
+rak.png, id=980, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
@@ -1376,7 +2333,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
 odnoszenie_miekki_komp_brak.png  used on input line 246.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_p
-iwo.png, id=929, 462.528pt x 346.896pt>
+iwo.png, id=981, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
@@ -1385,7 +2342,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
 odnoszenie_miekki_komp_piwo.png  used on input line 255.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_w
-iertarka.png, id=930, 462.528pt x 346.896pt>
+iertarka.png, id=982, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_k
 omp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/osemka/xz_ate_plot_podnoszenie_miekki_ko
@@ -1393,7 +2350,7 @@ mp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/osemka/xz_ate_plot_p
 odnoszenie_miekki_komp_wiertarka.png  used on input line 259.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png, id=933, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png, id=985, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png Graphic file
  (type png)
@@ -1401,7 +2358,7 @@ File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png Graphic file
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
 ax.png  used on input line 288.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png, id=934, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png, id=986, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png Graphic file
  (type png)
@@ -1409,7 +2366,7 @@ File: ../../velma/przerobione_testy/out/w_bok_miekki/common_ay.png Graphic file
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
 ay.png  used on input line 293.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_az.png, id=935, 462.528p
+<../../velma/przerobione_testy/out/w_bok_miekki/common_az.png, id=987, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_az.png Graphic file
  (type png)
@@ -1420,15 +2377,22 @@ az.png  used on input line 299.
 
 Underfull \vbox (badness 4792) has occurred while \output is active []
 
- [39 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_k
-omp_piwo.png> <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie
-_miekki_komp_wiertarka.png> <../../velma/przerobione_testy/out/osemka/xz_ate_pl
-ot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/osemka/x
-z_ate_plot_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out
-/osemka/xz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_
-testy/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[43 <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_ko
+mp_piwo.png> <../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_
+miekki_komp_wiertarka.png> <../../velma/przerobione_testy/out/osemka/xz_ate_plo
+t_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/osemka/xz
+_ate_plot_podnoszenie_miekki_komp_brak.png> <../../velma/przerobione_testy/out/
+osemka/xz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_t
+esty/out/osemka/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-bez_brak.png, id=952, 462.528pt x 346.896pt>
+bez_brak.png, id=1005, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
@@ -1437,7 +2401,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
 plot_podnoszenie_miekki_bez_brak.png  used on input line 310.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_brak.png, id=953, 462.528pt x 346.896pt>
+komp_brak.png, id=1006, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
@@ -1445,37 +2409,44 @@ kki_komp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
 plot_podnoszenie_miekki_komp_brak.png  used on input line 314.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png, id=954, 462.52
-8pt x 346.896pt>
+<../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png, id=1007, 462.5
+28pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
 rotx.png  used on input line 325.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png, id=955, 462.52
-8pt x 346.896pt>
+<../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png, id=1008, 462.5
+28pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_roty.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
 roty.png  used on input line 330.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png, id=956, 462.52
-8pt x 346.896pt>
+<../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png, id=1009, 462.5
+28pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png Graphic fi
 le (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/common_rotz.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/common_
 rotz.png  used on input line 335.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [40 <../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png> <../../velm
-a/przerobione_testy/out/w_bok_miekki/common_ay.png> <../../velma/przerobione_te
-sty/out/w_bok_miekki/common_az.png> <../../velma/przerobione_testy/out/w_bok_mi
-ekki/yz_ate_plot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_test
-y/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_brak.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[44 <../../velma/przerobione_testy/out/w_bok_miekki/common_ax.png> <../../velma
+/przerobione_testy/out/w_bok_miekki/common_ay.png> <../../velma/przerobione_tes
+ty/out/w_bok_miekki/common_az.png> <../../velma/przerobione_testy/out/w_bok_mie
+kki/yz_ate_plot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy
+/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_piwo.png, id=974, 462.528pt x 346.896pt>
+komp_piwo.png, id=1027, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
@@ -1484,7 +2455,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
 plot_podnoszenie_miekki_komp_piwo.png  used on input line 348.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_
-komp_wiertarka.png, id=975, 462.528pt x 346.896pt>
+komp_wiertarka.png, id=1028, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mi
 ekki_komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_mie
@@ -1492,29 +2463,36 @@ kki_komp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/w_bok_miekki/yz_ate_
 plot_podnoszenie_miekki_komp_wiertarka.png  used on input line 352.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [41 <../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png> <../../ve
-lma/przerobione_testy/out/w_bok_miekki/common_roty.png> <../../velma/przerobion
-e_testy/out/w_bok_miekki/common_rotz.png> <../../velma/przerobione_testy/out/w_
-bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobio
-ne_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/do_gory/common_ax.png, id=997, 462.528pt x 3
-46.896pt>
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[45 <../../velma/przerobione_testy/out/w_bok_miekki/common_rotx.png> <../../vel
+ma/przerobione_testy/out/w_bok_miekki/common_roty.png> <../../velma/przerobione
+_testy/out/w_bok_miekki/common_rotz.png> <../../velma/przerobione_testy/out/w_b
+ok_miekki/yz_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobion
+e_testy/out/w_bok_miekki/yz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+<../../velma/przerobione_testy/out/do_gory/common_ax.png, id=1050, 462.528pt x 
+346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_ax.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_ax.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_ax.pn
 g  used on input line 409.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_ay.png, id=998, 462.528pt x 3
-46.896pt>
+<../../velma/przerobione_testy/out/do_gory/common_ay.png, id=1051, 462.528pt x 
+346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_ay.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_ay.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_ay.pn
 g  used on input line 414.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_az.png, id=999, 462.528pt x 3
-46.896pt>
+<../../velma/przerobione_testy/out/do_gory/common_az.png, id=1052, 462.528pt x 
+346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_az.png Graphic file (typ
 e png)
 <use ../../velma/przerobione_testy/out/do_gory/common_az.png>
@@ -1522,7 +2500,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_az.pn
 g  used on input line 419.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_bez_b
-rak.png, id=1000, 462.528pt x 346.896pt>
+rak.png, id=1053, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_b
@@ -1531,7 +2509,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
 podnoszenie_miekki_bez_brak.png  used on input line 429.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-brak.png, id=1001, 462.528pt x 346.896pt>
+brak.png, id=1054, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
@@ -1539,7 +2517,7 @@ omp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
 podnoszenie_miekki_komp_brak.png  used on input line 433.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_rotx.png, id=1002, 462.528pt 
+<../../velma/przerobione_testy/out/do_gory/common_rotx.png, id=1055, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_rotx.png Graphic file (t
 ype png)
@@ -1547,7 +2525,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_rotx.
 png  used on input line 444.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_roty.png, id=1003, 462.528pt 
+<../../velma/przerobione_testy/out/do_gory/common_roty.png, id=1056, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_roty.png Graphic file (t
 ype png)
@@ -1555,7 +2533,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/common_roty.
 png  used on input line 449.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_gory/common_rotz.png, id=1004, 462.528pt 
+<../../velma/przerobione_testy/out/do_gory/common_rotz.png, id=1057, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/common_rotz.png Graphic file (t
 ype png)
@@ -1566,13 +2544,20 @@ png  used on input line 454.
 
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
- [42 <../../velma/przerobione_testy/out/do_gory/common_ax.png> <../../velma/prz
-erobione_testy/out/do_gory/common_ay.png> <../../velma/przerobione_testy/out/do
-_gory/common_az.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_pod
-noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_gory/xz_ate
-_plot_podnoszenie_miekki_komp_brak.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[46 <../../velma/przerobione_testy/out/do_gory/common_ax.png> <../../velma/prze
+robione_testy/out/do_gory/common_ay.png> <../../velma/przerobione_testy/out/do_
+gory/common_az.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podn
+oszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_
+plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-piwo.png, id=1021, 462.528pt x 346.896pt>
+piwo.png, id=1075, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
@@ -1581,7 +2566,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
 podnoszenie_miekki_komp_piwo.png  used on input line 467.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_komp_
-wiertarka.png, id=1022, 462.528pt x 346.896pt>
+wiertarka.png, id=1076, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_
 komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_podnoszenie_miekki_k
@@ -1589,12 +2574,19 @@ omp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_gory/xz_ate_plot_
 podnoszenie_miekki_komp_wiertarka.png  used on input line 471.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [43 <../../velma/przerobione_testy/out/do_gory/common_rotx.png> <../../velma/p
-rzerobione_testy/out/do_gory/common_roty.png> <../../velma/przerobione_testy/ou
-t/do_gory/common_rotz.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_pl
-ot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_gory
-/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/do_dolu/common_ax.png, id=1044, 462.528pt x 
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <../../velma/przerobione_testy/out/do_gory/common_rotx.png> <../../velma/pr
+zerobione_testy/out/do_gory/common_roty.png> <../../velma/przerobione_testy/out
+/do_gory/common_rotz.png> <../../velma/przerobione_testy/out/do_gory/xz_ate_plo
+t_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_gory/
+xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+<../../velma/przerobione_testy/out/do_dolu/common_ax.png, id=1097, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_ax.png Graphic file (typ
 e png)
@@ -1602,7 +2594,7 @@ e png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_ax.pn
 g  used on input line 528.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_ay.png, id=1045, 462.528pt x 
+<../../velma/przerobione_testy/out/do_dolu/common_ay.png, id=1098, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_ay.png Graphic file (typ
 e png)
@@ -1610,7 +2602,7 @@ e png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_ay.pn
 g  used on input line 533.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_az.png, id=1046, 462.528pt x 
+<../../velma/przerobione_testy/out/do_dolu/common_az.png, id=1099, 462.528pt x 
 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_az.png Graphic file (typ
 e png)
@@ -1619,7 +2611,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_az.pn
 g  used on input line 538.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_bez_b
-rak.png, id=1047, 462.528pt x 346.896pt>
+rak.png, id=1100, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_b
@@ -1628,7 +2620,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
 podnoszenie_miekki_bez_brak.png  used on input line 549.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-brak.png, id=1048, 462.528pt x 346.896pt>
+brak.png, id=1101, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
@@ -1636,7 +2628,7 @@ omp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
 podnoszenie_miekki_komp_brak.png  used on input line 553.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_rotx.png, id=1049, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_rotx.png, id=1102, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_rotx.png Graphic file (t
 ype png)
@@ -1644,7 +2636,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_rotx.
 png  used on input line 563.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_roty.png, id=1050, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_roty.png, id=1103, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_roty.png Graphic file (t
 ype png)
@@ -1652,7 +2644,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/common_roty.
 png  used on input line 568.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_dolu/common_rotz.png, id=1051, 462.528pt 
+<../../velma/przerobione_testy/out/do_dolu/common_rotz.png, id=1104, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/common_rotz.png Graphic file (t
 ype png)
@@ -1663,13 +2655,20 @@ png  used on input line 573.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <../../velma/przerobione_testy/out/do_dolu/common_ax.png> <../../velma/prz
-erobione_testy/out/do_dolu/common_ay.png> <../../velma/przerobione_testy/out/do
-_dolu/common_az.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_pod
-noszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate
-_plot_podnoszenie_miekki_komp_brak.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[48 <../../velma/przerobione_testy/out/do_dolu/common_ax.png> <../../velma/prze
+robione_testy/out/do_dolu/common_ay.png> <../../velma/przerobione_testy/out/do_
+dolu/common_az.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podn
+oszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_
+plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-piwo.png, id=1068, 462.528pt x 346.896pt>
+piwo.png, id=1121, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
@@ -1678,7 +2677,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
 podnoszenie_miekki_komp_piwo.png  used on input line 586.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_komp_
-wiertarka.png, id=1069, 462.528pt x 346.896pt>
+wiertarka.png, id=1122, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_
 komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_podnoszenie_miekki_k
@@ -1686,7 +2685,7 @@ omp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_dolu/xz_ate_plot_
 podnoszenie_miekki_komp_wiertarka.png  used on input line 590.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_ax.png, id=1074, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_ax.png, id=1127, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_ax.png Graphic file (t
 ype png)
@@ -1694,7 +2693,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_ax.
 png  used on input line 647.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_ay.png, id=1075, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_ay.png, id=1128, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_ay.png Graphic file (t
 ype png)
@@ -1702,7 +2701,7 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_ay.
 png  used on input line 652.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_az.png, id=1076, 462.528pt 
+<../../velma/przerobione_testy/out/do_przodu/common_az.png, id=1129, 462.528pt 
 x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_az.png Graphic file (t
 ype png)
@@ -1710,13 +2709,20 @@ ype png)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_az.
 png  used on input line 657.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [45 <../../velma/przerobione_testy/out/do_dolu/common_rotx.png> <../../velma/p
-rzerobione_testy/out/do_dolu/common_roty.png> <../../velma/przerobione_testy/ou
-t/do_dolu/common_rotz.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_pl
-ot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_dolu
-/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[49 <../../velma/przerobione_testy/out/do_dolu/common_rotx.png> <../../velma/pr
+zerobione_testy/out/do_dolu/common_roty.png> <../../velma/przerobione_testy/out
+/do_dolu/common_rotz.png> <../../velma/przerobione_testy/out/do_dolu/xz_ate_plo
+t_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/do_dolu/
+xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_bez
-_brak.png, id=1094, 462.528pt x 346.896pt>
+_brak.png, id=1147, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_bez_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
@@ -1725,7 +2731,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
 t_podnoszenie_miekki_bez_brak.png  used on input line 667.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_brak.png, id=1095, 462.528pt x 346.896pt>
+p_brak.png, id=1148, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
@@ -1733,7 +2739,7 @@ _komp_brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
 t_podnoszenie_miekki_komp_brak.png  used on input line 671.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_rotx.png, id=1096, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_rotx.png, id=1149, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_rotx.png Graphic file 
 (type png)
@@ -1741,7 +2747,7 @@ File: ../../velma/przerobione_testy/out/do_przodu/common_rotx.png Graphic file
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_rot
 x.png  used on input line 682.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_roty.png, id=1097, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_roty.png, id=1150, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_roty.png Graphic file 
 (type png)
@@ -1749,7 +2755,7 @@ File: ../../velma/przerobione_testy/out/do_przodu/common_roty.png Graphic file
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/common_rot
 y.png  used on input line 687.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/do_przodu/common_rotz.png, id=1098, 462.528p
+<../../velma/przerobione_testy/out/do_przodu/common_rotz.png, id=1151, 462.528p
 t x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/common_rotz.png Graphic file 
 (type png)
@@ -1760,13 +2766,20 @@ z.png  used on input line 692.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <../../velma/przerobione_testy/out/do_przodu/common_ax.png> <../../velma/p
-rzerobione_testy/out/do_przodu/common_ay.png> <../../velma/przerobione_testy/ou
-t/do_przodu/common_az.png> <../../velma/przerobione_testy/out/do_przodu/xz_ate_
-plot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_prz
-odu/xz_ate_plot_podnoszenie_miekki_komp_brak.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[50 <../../velma/przerobione_testy/out/do_przodu/common_ax.png> <../../velma/pr
+zerobione_testy/out/do_przodu/common_ay.png> <../../velma/przerobione_testy/out
+/do_przodu/common_az.png> <../../velma/przerobione_testy/out/do_przodu/xz_ate_p
+lot_podnoszenie_miekki_bez_brak.png> <../../velma/przerobione_testy/out/do_przo
+du/xz_ate_plot_podnoszenie_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_piwo.png, id=1115, 462.528pt x 346.896pt>
+p_piwo.png, id=1168, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
@@ -1775,7 +2788,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
 t_podnoszenie_miekki_komp_piwo.png  used on input line 705.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki_kom
-p_wiertarka.png, id=1116, 462.528pt x 346.896pt>
+p_wiertarka.png, id=1169, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekk
 i_komp_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/do_przodu/xz_ate_plot_podnoszenie_miekki
@@ -1783,12 +2796,19 @@ _komp_wiertarka.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/do_przodu/xz_ate_plo
 t_podnoszenie_miekki_komp_wiertarka.png  used on input line 709.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
- [47 <../../velma/przerobione_testy/out/do_przodu/common_rotx.png> <../../velma
-/przerobione_testy/out/do_przodu/common_roty.png> <../../velma/przerobione_test
-y/out/do_przodu/common_rotz.png> <../../velma/przerobione_testy/out/do_przodu/x
-z_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out
-/do_przodu/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
-<../../velma/przerobione_testy/out/obrt/common_ax.png, id=1137, 462.528pt x 346
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[51 <../../velma/przerobione_testy/out/do_przodu/common_rotx.png> <../../velma/
+przerobione_testy/out/do_przodu/common_roty.png> <../../velma/przerobione_testy
+/out/do_przodu/common_rotz.png> <../../velma/przerobione_testy/out/do_przodu/xz
+_ate_plot_podnoszenie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/
+do_przodu/xz_ate_plot_podnoszenie_miekki_komp_wiertarka.png>]
+<../../velma/przerobione_testy/out/obrt/common_ax.png, id=1190, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_ax.png Graphic file (type p
 ng)
@@ -1796,7 +2816,7 @@ ng)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_ax.png  
 used on input line 766.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_ay.png, id=1138, 462.528pt x 346
+<../../velma/przerobione_testy/out/obrt/common_ay.png, id=1191, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_ay.png Graphic file (type p
 ng)
@@ -1804,7 +2824,7 @@ ng)
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_ay.png  
 used on input line 771.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_az.png, id=1139, 462.528pt x 346
+<../../velma/przerobione_testy/out/obrt/common_az.png, id=1192, 462.528pt x 346
 .896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_az.png Graphic file (type p
 ng)
@@ -1813,7 +2833,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_az.png
 used on input line 777.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=1140, 462.528pt x 346.896pt>
+.png, id=1193, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_bez_
@@ -1822,7 +2842,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
 noszenie_miekki_bez_brak.png  used on input line 788.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=1141, 462.528pt x 346.896pt>
+k.png, id=1194, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
@@ -1830,7 +2850,7 @@ _brak.png>
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
 noszenie_miekki_komp_brak.png  used on input line 792.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_rotx.png, id=1142, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_rotx.png, id=1195, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_rotx.png Graphic file (type
  png)
@@ -1838,7 +2858,7 @@ File: ../../velma/przerobione_testy/out/obrt/common_rotx.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_rotx.png
   used on input line 802.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_roty.png, id=1143, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_roty.png, id=1196, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_roty.png Graphic file (type
  png)
@@ -1846,7 +2866,7 @@ File: ../../velma/przerobione_testy/out/obrt/common_roty.png Graphic file (type
 Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_roty.png
   used on input line 807.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
-<../../velma/przerobione_testy/out/obrt/common_rotz.png, id=1144, 462.528pt x 3
+<../../velma/przerobione_testy/out/obrt/common_rotz.png, id=1197, 462.528pt x 3
 46.896pt>
 File: ../../velma/przerobione_testy/out/obrt/common_rotz.png Graphic file (type
  png)
@@ -1857,13 +2877,20 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/common_rotz.png
 
 Underfull \vbox (badness 1178) has occurred while \output is active []
 
- [48 <../../velma/przerobione_testy/out/obrt/common_ax.png> <../../velma/przero
-bione_testy/out/obrt/common_ay.png> <../../velma/przerobione_testy/out/obrt/com
-mon_az.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_mie
-kki_bez_brak.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszen
-ie_miekki_komp_brak.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[52 <../../velma/przerobione_testy/out/obrt/common_ax.png> <../../velma/przerob
+ione_testy/out/obrt/common_ay.png> <../../velma/przerobione_testy/out/obrt/comm
+on_az.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miek
+ki_bez_brak.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszeni
+e_miekki_komp_brak.png>]
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=1165, 462.528pt x 346.896pt>
+o.png, id=1218, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
@@ -1872,7 +2899,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
 noszenie_miekki_komp_piwo.png  used on input line 827.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=1166, 462.528pt x 346.896pt>
+rtarka.png, id=1219, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszenie_miekki_komp
@@ -1881,7 +2908,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
 noszenie_miekki_komp_wiertarka.png  used on input line 831.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez_brak
-.png, id=1167, 462.528pt x 346.896pt>
+.png, id=1220, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez
 _brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez_
@@ -1890,7 +2917,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
 noszenie_miekki_bez_brak.png  used on input line 841.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_bra
-k.png, id=1168, 462.528pt x 346.896pt>
+k.png, id=1221, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_brak.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
@@ -1901,13 +2928,20 @@ noszenie_miekki_komp_brak.png  used on input line 845.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49 <../../velma/przerobione_testy/out/obrt/common_rotx.png> <../../velma/prze
-robione_testy/out/obrt/common_roty.png> <../../velma/przerobione_testy/out/obrt
-/common_rotz.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszen
-ie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_po
-dnoszenie_miekki_komp_wiertarka.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[53 <../../velma/przerobione_testy/out/obrt/common_rotx.png> <../../velma/przer
+obione_testy/out/obrt/common_roty.png> <../../velma/przerobione_testy/out/obrt/
+common_rotz.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_podnoszeni
+e_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xz_ate_plot_pod
+noszenie_miekki_komp_wiertarka.png>]
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_piw
-o.png, id=1184, 462.528pt x 346.896pt>
+o.png, id=1236, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_piwo.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
@@ -1916,7 +2950,7 @@ Package pdftex.def Info: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
 noszenie_miekki_komp_piwo.png  used on input line 854.
 (pdftex.def)             Requested size: 192.0548pt x 144.04384pt.
 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp_wie
-rtarka.png, id=1185, 462.528pt x 346.896pt>
+rtarka.png, id=1237, 462.528pt x 346.896pt>
 File: ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_kom
 p_wiertarka.png Graphic file (type png)
 <use ../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_komp
@@ -1941,25 +2975,60 @@ noszenie_miekki_komp_wiertarka.png  used on input line 886.
 
 Underfull \vbox (badness 4792) has occurred while \output is active []
 
- [50 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez
-_brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miek
-ki_komp_brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszen
-ie_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_po
-dnoszenie_miekki_komp_wiertarka.png>]
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[54 <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekki_bez_
+brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszenie_miekk
+i_komp_brak.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_podnoszeni
+e_miekki_komp_piwo.png> <../../velma/przerobione_testy/out/obrt/xy_ate_plot_pod
+noszenie_miekki_komp_wiertarka.png>]
 Overfull \hbox (3.64734pt too wide) in paragraph at lines 904--922
 [][] 
  []
 
-) [51]
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[55]
 \openout2 = `text/podsumowanie.aux'.
 
- (./text/podsumowanie.tex [52
+ (./text/podsumowanie.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[56
 
 
 
 ]
 Rozdzia\l  7.
-) [53] (./main.bbl [54
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[57] (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[58
 
 
 ]
@@ -1980,40 +3049,100 @@ Underfull \hbox (badness 1924) in paragraph at lines 40--46
  / science / article / pii /
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 100--106
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
 \T1/cmr/m/n/12 en . wikipedia . org / w / index . php ? title = Impedance % 20c
 ontrol & oldid = 904943924$[],
  []
 
-[56]) [57] [58
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[60])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[61]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[62
 
 ] (./main.lof
 
-LaTeX Warning: Citation `bib:Zielinski:2014_kkr_relacje-twiki' on page 59 undef
+LaTeX Warning: Citation `bib:Zielinski:2014_kkr_relacje-twiki' on page 63 undef
 ined on input line 5.
 
-[59])
-\tf@lof=\write5
-\openout5 = `main.lof'.
 
- [60] (./main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 147.
- [61
+[63])
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 147.
- (./main.aux (./text/streszczenie.aux)
-(./text/wstep.aux) (./text/przeglad_literatury.aux) (./text/opis_narzedzi.aux)
-(./text/algorytmy.aux) (./text/implementacja_systemu.aux)
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[64]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[65]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[66
+
+] (./main.lot)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[67]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ (./main.aux (./text/streszczenie.aux) (./text/wstep.aux)
+(./text/przeglad_literatury.aux) (./text/opis_narzedzi.aux)
+(./text/implementacja_systemu.aux) (./text/algorytmy.aux)
 (./text/dzialanie_systemu.aux) (./text/podsumowanie.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 147.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 147.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 006B666B0CB2F0A7386928075CC5E96C;2206.
+(rerunfilecheck)             Checksum: 5009E33C0B3437E811DD62D43FB7EA3D;2392.
 
 
 LaTeX Warning: There were undefined references.
@@ -2021,39 +3150,40 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 147.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 12995 strings out of 492623
- 211164 string characters out of 6135669
- 486690 words of memory out of 5000000
- 16262 multiletter control sequences out of 15000+600000
- 25461 words of font info for 73 fonts, out of 8000000 for 9000
+ 25494 strings out of 492982
+ 495042 string characters out of 6134895
+ 600959 words of memory out of 5000000
+ 28127 multiletter control sequences out of 15000+600000
+ 26991 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,18n,48p,1101b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
-exmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/euler/eusb10.pfb></usr/share/texmf-dist/fonts/type
-1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-sup
-er/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
-></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/te
-xmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf-dist/fonts/
-type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200
-.pfb>
-Output written on main.pdf (61 pages, 17883206 bytes).
+ 55i,18n,67p,1163b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/euler/eusb10.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (67 pages, 17971677 bytes).
 PDF statistics:
- 1461 PDF objects out of 1728 (max. 8388607)
- 1084 compressed objects within 11 object streams
- 268 named destinations out of 1000 (max. 500000)
- 766 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1535 PDF objects out of 1728 (max. 8388607)
+ 1148 compressed objects within 12 object streams
+ 285 named destinations out of 1000 (max. 500000)
+ 804 words of extra memory for PDF output out of 10000 (max. 10000000)
 

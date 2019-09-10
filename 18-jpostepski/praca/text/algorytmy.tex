@@ -3,16 +3,20 @@
 % !TeX spellcheck = pl_PL
 
 \chapter{Specyfikacja systemu \label{chap:specyfikacja_systemu}}
-Sterowanie impedancyjne w~przestrzeni operacyjnej zastosowane w~robocie Velma kompensuje jedynie masę członów własnych. Gdy manipulator chwyci narzędzie powstaje znaczny uchyb, który nie jest kompensowany. W~przypadku chwycenia przedmiotu o~dużej masie, ramię robota jest wręcz unieruchomione. Istnieje potrzeba skonstruowania i~implementacji algorytm kompensacji siły grawitacji narzędzia o~nieznanych parametrach. 
+Sterowanie impedancyjne w~przestrzeni operacyjnej zastosowane w~robocie Velma kompensuje jedynie masę członów własnych. Gdy manipulator chwyci narzędzie powstaje znaczny uchyb, który nie jest kompensowany. W~przypadku chwycenia przedmiotu o~dużej masie, ramię robota jest wręcz unieruchomione. Potrzebne jest gotowe narzędzie rozwiązujące opisany problem w sprawny i szybki sposób. Trzeba zmodyfikować podsystem \textit{velma\_core\_cs} w celu implementacji algorytmu pozwalającego na skompensowanie masy chwytanego narzędzia. 
+
+Implementacja rozwiązania z sekcji \ref{chap:rozw_model} rodzi sporo problemów. W praktyce trudne jest zbudowanie odpowiedniego zadania optymalizacji, które zagwarantuje na tyle dobry model, że grawitacja będzie odpowiednio kompensowana. Dodatkowo optymalizacja obliczana jest na tyle wolno, że nie ma możliwości umieszczenia estymatora tego modelu jako jeden z komponentów podsystemu sterowania \textit{velma\_core\_cs}. Komponent musiałby zostać umieszczony w nowym agencie, który pracuje z mniejszą niż cały system częstotliwością i komunikuje się z systemem robota za pośrednictwem interfejsu ROSa. W początkowej fazie, gdy przedmiot zostanie chwycony najczęściej ramiona robota zostają nieruchome, bo grawitacja chwyconego narzędzia nie jest kompensowana. Wtedy estymacja modelu jest wyjątkowo niedokładna. W początkowej fazie należałoby stosować uproszczony model tylko po to żeby robot podniósł przedmiot. Dopiero po kilku ruchach, gdy zadanie optymalizacji zostanie poprawnie rozwiązane, można wprowadzić właściwy model z użyciem narzędzi logiki rozmytej.
+
+Wspomniane wady były podstawą decyzji o implementacji rozwiązania z sekcji \ref{chap:rozw_pid}. Główną wadą jest niemożność wyekstrahowania danych dotyczących narzędzia które chwyta robot. Kolejną wadą może być lekkie usztywnienie stawów. Nie powinno mieć dużego znaczenia z dwóch powodów. W sterowaniu impedancyjnym w przestrzeni operacyjnej wirtualna sprężyna jest zawieszona pomiędzy chwytakiem a punktem zadanym, a nie w konkretnych stawach robota. Do tego zakładamy niskie współczynniki członu całkującego.
+
 
 \section{Wymagania}
-Wymagania są narzucone przez system środowiska badawczego.
+Konkretne wymagania są podyktowane środowiskiem badawczym oraz potrzebami Zespołu Programowania Robotów i Systemów Rozpoznających. 
 \begin{itemize}
-	\item Do działania systemu wymagane jest ramię robotyczne sterowane prawem sterowania impedancyjnego w~przestrzeni kartezjańskiej
 	\item System dostarcza gotowe komponenty potrzebne do pracy ramienia, w~szczególności: generatora trajektorii, interpolatora oraz wyznaczania kinematyki prostej 
 	\item System pozyskuje dane o~otoczeniu na podstawie odczytów z~czujników położenia stawów.
-	\item System samodzielnie kompensuje siłę grawitacji związaną z~masą wszystkich członów robota
-	\item Parametry chwytanego obiektu związane z~masą i inercją nie są znane i~mogą być zmienne w~czasie
+	\item System samodzielnie kompensuje siłę grawitacji związaną z~masą wszystkich członów robota.
+	\item Parametry chwytanego obiektu związane z~masą i inercją nie są znane i~mogą być zmienne w~czasie.
 \end{itemize}
 
 \section{Założenia}

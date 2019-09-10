@@ -49,6 +49,7 @@ gdzie:
 \end{itemize}
 
 \subsection{Sterowanie w~przestrzeni konfiguracyjnej}
+\label{chap:jakobian}
 W rzeczywistym ramieniu robotycznym zadajemy momenty na poszczególne stawy robota. Opisane w~podrozdziale \ref{sec:impedancyjne} prawo sterowania opisuje przestrzeń operacyjną $\boldsymbol{\mathcal{F}}$.  Wartości wektora momentów $\boldsymbol{\tau}$ można uzyskać z~jakobianu $\boldsymbol{J}$:
 
 \begin{equation}
@@ -56,7 +57,8 @@ W rzeczywistym ramieniu robotycznym zadajemy momenty na poszczególne stawy robo
 \end{equation}
 
 \section{Sterowanie PID}
-PID (ang. Proportional Integral Derivative) \cite{bib:pidTito}, \cite{bib:pidMimo} jest popularnym prawem sterowania automatycznego. Podstawowym celem algorytmu jest minimalizacja uchybu. Uchyb statyczny jest minimalizowany za wszelką cenę nawet jeśli miałoby to spowodować uszkodzenia. Uchyby dynamiczne nie są już tak dobrze kompensowane.
+\label{chap:key}
+Regulator PID (ang. Proportional Integral Derivative) \cite{bib:pidTito}, \cite{bib:pidMimo} jest popularnym prawem sterowania automatycznego. Podstawowym celem algorytmu jest minimalizacja uchybu. Uchyb statyczny jest minimalizowany za wszelką cenę nawet jeśli miałoby to spowodować uszkodzenia. Uchyby dynamiczne nie są już tak dobrze kompensowane.
 
 Człon proporcjonalny algorytmu pozwala na wzmocnienie uchybu i~w ten sposób odjęcie go od sygnału sterującego. Człon całkujący algorytmu sumuje przeszłe błędy i~odejmuje od sterowania ich sumę. Człon różniczkujący wzmacnia sygnał sterujący w~gdy wartość błędu zmienia się w~celu przyspieszenia regulacji.
 \subsection{Przypadek prosty}
@@ -75,7 +77,7 @@ gdzie:
 
 
 \subsection{Przypadek wielowymiarowy}
-Rozpatrując wektor siły uogólnionej możemy założyć, że prawo sterowania rozpatruje każdą z~wartości wektora niezależnie. Prawo sterowania można zapisać w~postaci:
+Rozpatrując wektor siły uogólnionej możemy założyć w uproszczeniu, że prawo sterowania rozpatruje każdą z~wartości wektora niezależnie. Prawo sterowania można zapisać w~postaci:
 \begin{equation}
 \boldsymbol{\mathcal{F}} = \boldsymbol{P}\boldsymbol{e_x} +\int_{0}^{t}  \boldsymbol{I}\boldsymbol{e_x}dt + \boldsymbol{D}\dot{\boldsymbol{e_x}}
 \end{equation}
@@ -87,9 +89,10 @@ gdzie:
 \end{itemize}
 
 \section{Estymacja siły uogólnionej w~końcówce}
+\label{chap:estymacja}
 Dla ramienia robotycznego możemy opisać siły występujące w~samym ramieniu zgodnie ze wzorem:
 \begin{equation}
-\boldsymbol{\mathcal{F}_m}(\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{q}, \dot{\boldsymbol{q}}) = \boldsymbol{\Lambda}(\boldsymbol{q})\boldsymbol{\ddot{x}} + \boldsymbol{\mu}(\boldsymbol{x}, \boldsymbol{\dot{x}}) + \boldsymbol{\gamma}(\boldsymbol{q}) + \boldsymbol{\eta}(\boldsymbol{q}, \boldsymbol{\dot{q}}) + \boldsymbol{\mathcal{F}_{ext}}
+\boldsymbol{\mathcal{F}_m} = \boldsymbol{\mathcal{F}_m}(\boldsymbol{x}, \dot{\boldsymbol{x}}, \ddot{\boldsymbol{x}}, \boldsymbol{q}, \dot{\boldsymbol{q}}) = \boldsymbol{\Lambda}(\boldsymbol{q})\boldsymbol{\ddot{x}} + \boldsymbol{\mu}(\boldsymbol{x}, \boldsymbol{\dot{x}}) + \boldsymbol{\gamma}(\boldsymbol{q}) + \boldsymbol{\eta}(\boldsymbol{q}, \boldsymbol{\dot{q}}) + \boldsymbol{\mathcal{F}_{ext}}
 \label{eq:ramie}
 \end{equation}
 
