@@ -44,7 +44,7 @@ with open(file_cmd) as cmd_fh:
 
 
 import shlex, subprocess
-
+exit();
 args1 = ['./evaluate_ate.py', '--mode', mode, f'--plot', f'{file_cmd_move.replace("cmd", "ate_plot").replace("txt", "png")}', '--save_associations', file_cmd_move.replace('cmd', 'associations'), '--verbose', f'--first_file', f'{file_cmd_move}', f'--second_file', f'{file_tool_move}']
 args2 = ['./evaluate_rpe.py', f'--plot', f'{file_cmd_move.replace("cmd", "rpe_plot").replace("txt", "png")}', '--fixed_delta', '--verbose', f'--first_file', f'{file_cmd_move}', f'--second_file', f'{file_tool_move}']
 for args in [args1, args2]:

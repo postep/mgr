@@ -19,19 +19,21 @@
 \BOOKMARK [2][-]{subsection.3.3.3}{FABRIC}{section.3.3}% 19
 \BOOKMARK [1][-]{section.3.4}{Symulator robota}{chapter.3}% 20
 \BOOKMARK [0][-]{chapter.4}{Algorytm kompensacji grawitacji}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Rozwiazanie oparte na regulatorze PID}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Rozwiazanie oparte na estymacji modelu robota}{chapter.4}% 23
-\BOOKMARK [0][-]{chapter.5}{Specyfikacja systemu }{}% 24
-\BOOKMARK [1][-]{section.5.1}{Wymagania}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.2}{Za\233ozenia}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.3}{Przypadki uzycia}{chapter.5}% 27
-\BOOKMARK [0][-]{chapter.6}{Dzia\233anie systemu}{}% 28
-\BOOKMARK [1][-]{section.6.1}{Podnoszenie przedmiotu}{chapter.6}% 29
-\BOOKMARK [1][-]{section.6.2}{Ruch \363semkowy}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.3}{Ruch w bok}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.4}{Ruch do g\363ry}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.5}{Ruch do do\233u}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.6}{Ruch do przodu}{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.7}{Obr\363t konc\363wki}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.8}{Wnioski}{chapter.6}% 36
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 37
+\BOOKMARK [1][-]{section.4.1}{Analiza wymagan}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.1.1}{Przypadki uzycia}{section.4.1}% 23
+\BOOKMARK [2][-]{subsection.4.1.2}{Za\233ozenia}{section.4.1}% 24
+\BOOKMARK [2][-]{subsection.4.1.3}{Wymagania}{section.4.1}% 25
+\BOOKMARK [1][-]{section.4.2}{Rozwiazanie oparte na regulatorze PID}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.3}{Rozwiazanie oparte na estymacji modelu robota}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.4}{Wyb\363r rozwiazania}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{Implementacja systemu }{}% 29
+\BOOKMARK [0][-]{chapter.6}{Dzia\233anie systemu}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Podnoszenie przedmiotu}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Ruch \363semkowy}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.3}{Ruch w bok}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.4}{Ruch do g\363ry}{chapter.6}% 34
+\BOOKMARK [1][-]{section.6.5}{Ruch do do\233u}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.6}{Ruch do przodu}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.7}{Obr\363t konc\363wki}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.8}{Wnioski}{chapter.6}% 38
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 39

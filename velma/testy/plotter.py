@@ -16,7 +16,6 @@ class FileData:
             i = 0
             self.data = []
             while line:
-                
                 line_args = line.split(' ')
                 line_args[-1] = line_args[-1][:-1]
 
@@ -67,15 +66,15 @@ def quaternion_to_euler(x, y, z, w):
 
 def plot_traj(ax,traj,style,color,label,mode, timestep = None):
     """
-    Plot a trajectory using matplotlib. 
-    
+    Plot a trajectory using matplotlib.
+
     Input:
     ax -- the plot
     traj -- trajectory (3xn)
     style -- line style
     color -- line color
     label -- plot legend
-    
+
     """
     x = []
     y = []
@@ -92,7 +91,7 @@ def plot_traj(ax,traj,style,color,label,mode, timestep = None):
         if mode == 'yz':
             x.append(co[1+1])
             y.append(co[2+1])
-            
+
         if mode == 'rotx':
             x.append(i)
             y.append(rotX)
@@ -113,9 +112,9 @@ def plot_traj(ax,traj,style,color,label,mode, timestep = None):
             x.append(i)
             y.append(co[3])
         i += timestep
-            
+
     ax.plot(x,y,style,color=color,label=label)
-            
+
 
 if __name__=="__main__":
     os.chdir("../przerobione_testy")
@@ -130,7 +129,7 @@ if __name__=="__main__":
         os.mkdir(f'out/{str(sys.argv[3])}')
     except:
         pass
-    
+
     for x in range(int(len(file_desc)/3)):
         file_arg_no = 3*x
         timestamp_arg_no = 3*x + 1
@@ -144,7 +143,7 @@ if __name__=="__main__":
 
         first_timestamp = timestamp
         last_timestamp = timestamp + offset
-        
+
         file_cmd_move = f'out/{str(sys.argv[3])}/{file_cmd}'
         file_tool_move = f'out/{str(sys.argv[3])}/{file_tool}'
 
@@ -197,8 +196,8 @@ if __name__=="__main__":
             plot_traj(ax,tool.data,'-',color_list[i], f"traj_{tool.plot_name}", mode, 1/100.0*ratio)
             i += 1
 
-        
-        ax.legend(loc='lower right', fancybox=True, framealpha=0.5)  
+
+        ax.legend(loc='lower right', fancybox=True, framealpha=0.5)
 
         if mode == 'xy':
             ax.set_xlabel('x [m]')
@@ -233,7 +232,7 @@ if __name__=="__main__":
         plot_name = f'out/{str(sys.argv[3])}/common_{mode}.png'
         print(plot_name)
         plt.savefig(plot_name,dpi=300)
-        
+
 
     import sys, os, subprocess
 
