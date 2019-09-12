@@ -5,13 +5,13 @@ A level-1 auxiliary file: text/streszczenie.aux
 A level-1 auxiliary file: text/wstep.aux
 A level-1 auxiliary file: text/przeglad_literatury.aux
 A level-1 auxiliary file: text/opis_narzedzi.aux
-A level-1 auxiliary file: text/implementacja_systemu.aux
 A level-1 auxiliary file: text/algorytmy.aux
+A level-1 auxiliary file: text/implementacja_systemu.aux
 A level-1 auxiliary file: text/dzialanie_systemu.aux
 A level-1 auxiliary file: text/podsumowanie.aux
 The style file: plplain.bst
 Database file #1: bibliography.bib
-Repeated entry---line 265 of file bibliography.bib
+Repeated entry---line 270 of file bibliography.bib
  : @misc{bib:impedance
  :                    ,
 I'm skipping whatever remains of this entry
@@ -24,6 +24,7 @@ Warning--to sort, need author or key in bib:ROS
 Warning--to sort, need author or key in bib:Orocos
 Warning--to sort, need author or key in bib:Gazebo
 Warning--to sort, need author or key in bib:dart
+Warning--to sort, need author or key in bib:evaluate_ape
 Warning--empty booktitle in bib:kuka
 Warning--empty year in bib:kuka
 Warning--empty booktitle in bib:horn
@@ -31,45 +32,45 @@ Warning--empty year in bib:horn
 Warning--empty booktitle in bib:lpcBase
 Warning--empty year in bib:lpcBase
 Warning--empty journal in bib:agent2
-You've used 27 entries,
+You've used 29 entries,
             2129 wiz_defined-function locations,
-            677 strings with 9338 characters,
-and the built_in function-call counts, 9399 in all, are:
-= -- 936
-> -- 353
+            685 strings with 9665 characters,
+and the built_in function-call counts, 9773 in all, are:
+= -- 972
+> -- 361
 < -- 16
-+ -- 142
-- -- 114
-* -- 560
-:= -- 1343
-add.period$ -- 83
-call.type$ -- 27
-change.case$ -- 135
++ -- 146
+- -- 116
+* -- 571
+:= -- 1396
+add.period$ -- 89
+call.type$ -- 29
+change.case$ -- 142
 chr.to.int$ -- 0
-cite$ -- 42
-duplicate$ -- 401
-empty$ -- 853
-format.name$ -- 114
-if$ -- 2144
+cite$ -- 45
+duplicate$ -- 415
+empty$ -- 898
+format.name$ -- 116
+if$ -- 2231
 int.to.chr$ -- 0
-int.to.str$ -- 27
+int.to.str$ -- 29
 missing$ -- 17
-newline$ -- 134
-num.names$ -- 46
-pop$ -- 254
+newline$ -- 144
+num.names$ -- 48
+pop$ -- 273
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 113
 quote$ -- 0
-skip$ -- 348
+skip$ -- 360
 stack$ -- 0
-substring$ -- 540
-swap$ -- 145
+substring$ -- 550
+swap$ -- 147
 text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 15
-while$ -- 73
-width$ -- 29
-write$ -- 275
+type$ -- 116
+warning$ -- 16
+while$ -- 75
+width$ -- 31
+write$ -- 294
 (There was 1 error message)

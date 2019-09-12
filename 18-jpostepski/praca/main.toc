@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Orocos}{25}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}FABRIC}{25}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}Symulator robota}{26}{section.3.4}
-\contentsline {chapter}{\numberline {4}Algorytm kompensacji grawitacji}{27}{chapter.4}
+\contentsline {chapter}{\numberline {4}Specyfikacja systmu kompensacji grawitacji}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Analiza wymaga\IeC {\'n}}{28}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Przypadki u\IeC {\.z}ycia}{28}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Za\IeC {\l }o\IeC {\.z}enia}{29}{subsection.4.1.2}
@@ -28,13 +28,19 @@
 \contentsline {section}{\numberline {4.3}Rozwi\IeC {\k a}zanie oparte na estymacji modelu robota}{31}{section.4.3}
 \contentsline {section}{\numberline {4.4}Wyb\IeC {\'o}r rozwi\IeC {\k a}zania}{33}{section.4.4}
 \contentsline {chapter}{\numberline {5}Implementacja systemu }{35}{chapter.5}
-\contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{38}{section.6.1}
-\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{41}{section.6.2}
-\contentsline {section}{\numberline {6.3}Ruch w~bok}{44}{section.6.3}
-\contentsline {section}{\numberline {6.4}Ruch do g\IeC {\'o}ry}{45}{section.6.4}
-\contentsline {section}{\numberline {6.5}Ruch do do\IeC {\l }u}{47}{section.6.5}
-\contentsline {section}{\numberline {6.6}Ruch do przodu}{49}{section.6.6}
-\contentsline {section}{\numberline {6.7}Obr\IeC {\'o}t ko\IeC {\'n}c\IeC {\'o}wki}{51}{section.6.7}
-\contentsline {section}{\numberline {6.8}Wnioski}{55}{section.6.8}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{57}{chapter.7}
+\contentsline {section}{\numberline {5.1}Prawo sterowania}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}Parametry cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego}{36}{section.5.2}
+\contentsline {section}{\numberline {5.3}Rejestracja trajektorii}{36}{section.5.3}
+\contentsline {section}{\numberline {5.4}Generowanie wykres\IeC {\'o}w}{37}{section.5.4}
+\contentsline {section}{\numberline {5.5}Opis \IeC {\'s}wiata testowego}{37}{section.5.5}
+\contentsline {section}{\numberline {5.6}Algorytm eksperymentu}{37}{section.5.6}
+\contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{41}{section.6.1}
+\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{44}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ruch w~bok}{47}{section.6.3}
+\contentsline {section}{\numberline {6.4}Ruch do g\IeC {\'o}ry}{50}{section.6.4}
+\contentsline {section}{\numberline {6.5}Ruch do do\IeC {\l }u}{52}{section.6.5}
+\contentsline {section}{\numberline {6.6}Ruch do przodu}{55}{section.6.6}
+\contentsline {section}{\numberline {6.7}Obr\IeC {\'o}t ko\IeC {\'n}c\IeC {\'o}wki}{57}{section.6.7}
+\contentsline {section}{\numberline {6.8}Wnioski}{60}{section.6.8}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{63}{chapter.7}

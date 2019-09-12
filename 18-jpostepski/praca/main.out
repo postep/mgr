@@ -18,7 +18,7 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Orocos}{section.3.3}% 18
 \BOOKMARK [2][-]{subsection.3.3.3}{FABRIC}{section.3.3}% 19
 \BOOKMARK [1][-]{section.3.4}{Symulator robota}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Algorytm kompensacji grawitacji}{}% 21
+\BOOKMARK [0][-]{chapter.4}{Specyfikacja systmu kompensacji grawitacji}{}% 21
 \BOOKMARK [1][-]{section.4.1}{Analiza wymagan}{chapter.4}% 22
 \BOOKMARK [2][-]{subsection.4.1.1}{Przypadki uzycia}{section.4.1}% 23
 \BOOKMARK [2][-]{subsection.4.1.2}{Za\233ozenia}{section.4.1}% 24
@@ -27,13 +27,19 @@
 \BOOKMARK [1][-]{section.4.3}{Rozwiazanie oparte na estymacji modelu robota}{chapter.4}% 27
 \BOOKMARK [1][-]{section.4.4}{Wyb\363r rozwiazania}{chapter.4}% 28
 \BOOKMARK [0][-]{chapter.5}{Implementacja systemu }{}% 29
-\BOOKMARK [0][-]{chapter.6}{Dzia\233anie systemu}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Podnoszenie przedmiotu}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.2}{Ruch \363semkowy}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.3}{Ruch w bok}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.4}{Ruch do g\363ry}{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.5}{Ruch do do\233u}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.6}{Ruch do przodu}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.7}{Obr\363t konc\363wki}{chapter.6}% 37
-\BOOKMARK [1][-]{section.6.8}{Wnioski}{chapter.6}% 38
-\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 39
+\BOOKMARK [1][-]{section.5.1}{Prawo sterowania}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Parametry cz\233onu ca\233kujacego}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.3}{Rejestracja trajektorii}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.4}{Generowanie wykres\363w}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.5}{Opis swiata testowego}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.6}{Algorytm eksperymentu}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{Dzia\233anie systemu}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Podnoszenie przedmiotu}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Ruch \363semkowy}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Ruch w bok}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.4}{Ruch do g\363ry}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.5}{Ruch do do\233u}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.6}{Ruch do przodu}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.7}{Obr\363t konc\363wki}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.8}{Wnioski}{chapter.6}% 44
+\BOOKMARK [0][-]{chapter.7}{Podsumowanie}{}% 45

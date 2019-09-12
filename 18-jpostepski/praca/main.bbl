@@ -36,6 +36,10 @@ Oficjalna strona systemu {ROS}.
   {R}ozpoznających.
 \newblock \url{https://www.robotyka.ia.pw.edu.pl/}.
 
+\bibitem{bib:evaluate_ape}
+Useful tools for the rgb-d benchmark.
+\newblock \url{https://vision.in.tum.de/data/datasets/rgbd-dataset/tools}.
+
 \bibitem{bib:gravity2}
 Loredana~Zollo Alessandro De~Luca, BrunoSiciliano.
 \newblock {PD control with on-line gravity compensation for robots with elastic
@@ -123,6 +127,14 @@ Wikipedia.
   \url{http://en.wikipedia.org/w/index.php?title=Impedance\%20control&oldid=904943924},
   2019.
 \newblock [Online; accessed 05-September-2019].
+
+\bibitem{wiki:PID_controller}
+Wikipedia.
+\newblock {PID controller} --- {W}ikipedia{,} the free encyclopedia.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=PID\%20controller&oldid=913750967},
+  2019.
+\newblock [Online; accessed 11-September-2019].
 
 \bibitem{bib:velmaKorp}
 Tomasz Winiarski,  Konrad Banachowicz.

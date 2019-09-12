@@ -2,7 +2,7 @@
 % !TEX encoding = utf8
 % !TeX spellcheck = pl_PL
 
-\chapter{Algorytm kompensacji grawitacji\label{chap:implementacja_systemu}}
+\chapter{Specyfikacja systmu kompensacji grawitacji\label{chap:implementacja_systemu}}
 W tym rozdziale zostanie przeprowadzona dyskusja na temat wyboru odpowiedniego rozwiązania które zostanie potem zaimplementowane. Ramiona robota muszą uginać się w trakcie kolizji z otoczeniem. To założenie jest podstawową motywacją do zastosowania prawa sterowania impedancyjengo opisanego w sekcji \ref{sec:impedancyjne}. Każdy staw robota posiada jeden silnik oraz enkoder i czujnik momentu obrotowego. Z odczytów pozycji i momentu może korzystać prawo sterowania, czyli algorytm wyliczający momenty obrotowe zadawane silnikom. Wyliczanie pozycji końcówki następuje poprzez jakobian. W sterowaniu impedancyjnym momenty zadawane są w taki sposób, że ramię robota zachowuje się jak zawieszone na niewidocznych sprężynach. Algorytm sterowania w przestrzeni kartezjańskiej działa tak, że jeden z jej końców jest przytwierdzony w punkcie zadanym przez użytkownika a drugi koniec do chwytaka. 
 
 Punkty zadane są wyznaczane przez interpolator trajektorii na podstawie rozkazów użytkownika. Interpolator ma za zadanie rozłożyć ruch zadany przez użytkownika w czasie. Skokowa zmiana pozycji zadanej do pozycji wskazanej przez użytkownika spowodowała by oscylacje w stawach i zadanie dużych momentów obrotowych stawom.
@@ -77,6 +77,7 @@ Opadanie ramion można interpretować jako błąd pomiędzy pozycją zadaną p
 Niektóre człony są takie same w~zaprezentowanych prawach sterowania. W~impedancyjnym prawie sterowania nie ma członu całkującego i~został on skopiowany z~algorytmu PID. W~rezultacie nowe prawo sterowania jest postaci (rys. \ref{fig:pid_schemat}):
 
 \begin{equation}
+\label{eq:prawo_ster}
 \boldsymbol{\mathcal{F}} = \boldsymbol{K_x}\boldsymbol{e_x} + \boldsymbol{D_x}\dot{\boldsymbol{e_x}} + \int_{0}^{t}  \boldsymbol{I_x}\boldsymbol{e_x}dt
 \end{equation}
 
