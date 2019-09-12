@@ -16,7 +16,7 @@ gdzie:
 \end{itemize}
 
 \section{Sterowanie impedancyjne}
-Prawo sterowania impedancyjnego \cite{bib:impedance}, \cite{wiki:Impedance_control} w~przestrzeni operacyjnej sprawia, że chwytak robota zachowuje się jak przytwierdzony do układu ze sprężyną i~amortyzatorem, gdzie drugi koniec tego układu jest pozycją zadaną. Pojawienie się nieprzewidzianych sił zewnętrznych powoduje, że uchyb pozycji nie jest minimalizowany za wszelką cenę. Przy kontakcie z~otoczeniem stawy robota są w~pewnym stopniu sprężyste i~miękkie. W~konsekwencji robot ugina się przed otaczającym go środowiskiem a~w szczególności w~chwili zderzenia z~nieprzewidzianą przeszkodą. 
+Prawo sterowania impedancyjnego \cite{bib:impedance}, \cite{wiki:Impedance_control} w~przestrzeni operacyjnej sprawia, że chwytak robota zachowuje się jak przytwierdzony do układu ze sprężyną i~amortyzatorem, gdzie drugi koniec tego układu jest pozycją zadaną. Pojawienie się nieprzewidzianych sił zewnętrznych powoduje, że uchyb pozycji nie jest minimalizowany za wszelką cenę. Przy kontakcie z~otoczeniem stawy robota są w~pewnym stopniu sprężyste i~miękkie. W~konsekwencji robot ugina się przed otaczającym go środowiskiem. Ma to zazwyczaj miejsce w~chwili zderzenia z~nieprzewidzianą przeszkodą. 
 
 \subsection{Przypadek prosty}
 W najprostszym przypadku możemy więc opisać takie prawo jako układ: 
@@ -60,7 +60,7 @@ W rzeczywistym ramieniu robotycznym zadajemy momenty na poszczególne stawy robo
 \label{chap:key}
 Regulator PID (ang. Proportional Integral Derivative) \cite{bib:pidTito}, \cite{bib:pidMimo} jest popularnym prawem sterowania automatycznego. Podstawowym celem algorytmu jest minimalizacja uchybu. Uchyb statyczny jest minimalizowany za wszelką cenę nawet jeśli miałoby to spowodować uszkodzenia. Uchyby dynamiczne nie są już tak dobrze kompensowane.
 
-Człon proporcjonalny algorytmu pozwala na wzmocnienie uchybu i~w ten sposób odjęcie go od sygnału sterującego. Człon całkujący algorytmu sumuje przeszłe błędy i~odejmuje od sterowania ich sumę. Człon różniczkujący wzmacnia sygnał sterujący w~gdy wartość błędu zmienia się w~celu przyspieszenia regulacji.
+Człon proporcjonalny algorytmu pozwala na wzmocnienie uchybu i~w~ten sposób odjęcie go od sygnału sterującego. Człon całkujący algorytmu sumuje przeszłe błędy i~odejmuje od sterowania ich sumę. Człon różniczkujący wzmacnia sygnał sterujący w~gdy wartość błędu zmienia się w~celu przyspieszenia regulacji.
 \subsection{Przypadek prosty}
 W jednowymiarowym przypadku prawo sterowania ma postać:
 \begin{equation}
@@ -77,7 +77,7 @@ gdzie:
 
 
 \subsection{Przypadek wielowymiarowy}
-Rozpatrując wektor siły uogólnionej możemy założyć w uproszczeniu, że prawo sterowania rozpatruje każdą z~wartości wektora niezależnie. Prawo sterowania można zapisać w~postaci:
+Rozpatrując wektor siły uogólnionej możemy założyć w~uproszczeniu, że prawo sterowania rozpatruje każdą z~wartości wektora niezależnie. Prawo sterowania można zapisać w~postaci:
 \begin{equation}
 \boldsymbol{\mathcal{F}} = \boldsymbol{P}\boldsymbol{e_x} +\int_{0}^{t}  \boldsymbol{I}\boldsymbol{e_x}dt + \boldsymbol{D}\dot{\boldsymbol{e_x}}
 \end{equation}
@@ -135,20 +135,15 @@ RMSE(\boldsymbol{E}_{1..n}) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}||\boldsymbol{E}_i|
 
 \begin{figure}
 	\centering
-		\includegraphics[width=.45\textwidth]{../../velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_bez_brak.png}
+		\includegraphics[width=.45\textwidth]{./velma/przerobione_testy/out/osemka/yz_ate_plot_podnoszenie_miekki_bez_brak.png}
 		\caption{Rysunek przedstawia rzut APE w~dwóch wymiarach. Czarną i~niebieską linią oznaczono zadaną i osiąganą trajektorię. Linie czerwone łączą odpowiednie punkty na obydwu trajektoriach i~obrazują błąd pomiędzy nimi.}
 		\label{fig:przykl_ape}
 \end{figure}
 
 % \subsection{Jakość kontaktu z~otoczeniem \label{chap:ocenakonaktu}}
 
-% Największą zaletą sterowania impendancyjnego jest ugięcie ramienia robota w~momencie kolizji ze środowiskiem. Ocena jakości tej cechy może być opisana jako odchylenie pozycji stawów $\boldsymbol{q}_i$ w~stosunku do ustalonej pozycji sprzed kolizji $\boldsymbol{q}$ w~chwili $i$.
+% Największą zaletą sterowania impedancyjnego jest ugięcie ramienia robota w~momencie kolizji ze środowiskiem. Ocena jakości tej cechy może być opisana jako odchylenie pozycji stawów $\boldsymbol{q}_i$ w~stosunku do ustalonej pozycji sprzed kolizji $\boldsymbol{q}$ w~chwili $i$.
 
-
-Błąd całkowity jest wyliczany jako błąd średnio-kwadratowy:
-\begin{equation}
-RMSE(\boldsymbol{R}_{1..n}) = \sqrt{\frac{1}{n}\sum_{i=1}^{n}||\boldsymbol{q_d}-\boldsymbol{q}_i||^2}
-\end{equation}.
 
 \section{Teoria agenta upostaciowionego}
 Agentem możemy nazwać jednostkę, która jest: zdolna do komunikowania się ze środowiskiem, zdolna do monitorowania swego otoczenia i~podejmowania autonomicznych decyzji. Taka definicja gwarantuje spełnienie wielu cech, których oczekujemy od nowoczesnych systemów robotycznych. Z~definicji agenty są w~stanie samodzielnie reagować na zmiany zachodzące w~środowisku w~sposób inteligentny. Rozszerzeniem teorii agentowej jest teoria agenta upostaciowionego \cite{bib:agent1} \cite{bib:agent2}. Agent upostaciowiony cechuje się tym czym zwykły agent oraz posiada fizyczne ciało. Agenty oraz podsystemy mogą komunikować się poprzez bufory.
@@ -168,6 +163,6 @@ W podejściu komponentowym wspomnianej teorii podsystemy składają się z~kompo
 \begin{figure}
 	\centering
 	\includegraphics[width=.6\textwidth]{images/agent_structure.pdf}
-	\caption{Rysunek przedstawia schemat budowy agenta upostaciowionego \cite{bib:Zielinski:2014_kkr_relacje-twiki}. Typ podsystemu oznaczany jest dużą literą. Podsystemy i~bufory posiadają prawy dolny indeks. Typ podsystemu jest oznaczany lewym dolnym indeksem.  Typ buforu jest oznaczany lewym dolnym indeksem ($x$ - wejściowy, $y$ - wyjściowy).}
+	\caption{Rysunek przedstawia schemat budowy agenta upostaciowionego \cite{Zielinski:2014_kkr_relacje-twiki}. Typ podsystemu oznaczany jest dużą literą. Podsystemy i~bufory posiadają prawy dolny indeks. Typ podsystemu jest oznaczany lewym dolnym indeksem.  Typ buforu jest oznaczany lewym dolnym indeksem ($x$ - wejściowy, $y$ - wyjściowy).}
 	\label{fig:upostaciowiony}
 \end{figure}

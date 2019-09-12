@@ -4,7 +4,7 @@
 
 \chapter{Środowisko badawcze\label{chap:srodowisko}}
 	\section{Budowa ogólna}
-	Środowiskiem badawczym jest robot usługowy Velma (rys. \ref{fig:velma}) \cite{bib:velma2}, \cite{velma}. Został zaprojektowany i~wykonany przez Zespół Programowania Robotów i~Systemów Rozpoznających\cite{bib:robotyka}. Do obrotowego korpusu przytwierdzono dwa ramiona robotyczne Kuka LWR-4+\cite{bib:kukaPage} \cite{bib:kuka}. Mają siedem stopni swobody i~udzwig 7 kg. Na ich końcach znajdują się chwytaki Barretta\cite{bib:barrett}  oraz nadgarstkowe czujniki FTS (ang. Force Torque Sensor). Głowa robota umieszczona jest na dedykowanej konstrukcji która za pomocą dwóch silników elektrycznych pozwala na zginianie i~obrót głowy\cite{bib:velmaLeb} \cite{bib:velmaKorp}. Robot wyposażony jest w~czujnik wizyjny Microsoft Kinect oraz dwie kamery połączone w~stereoparę. Do głowy zamocowano mikrofon. Podzespoły robota są połączone z~komputerem sterującym przy pomocy magistral czasu rzeczywistego
+	Środowiskiem badawczym jest robot usługowy Velma (rys. \ref{fig:velma}) \cite{bib:velma2}, \cite{velma}. Został zaprojektowany i~wykonany przez Zespół Programowania Robotów i~Systemów Rozpoznających\cite{bib:robotyka}. Do obrotowego korpusu przytwierdzono dwa ramiona robotyczne Kuka LWR-4+\cite{bib:kukaPage} \cite{bib:kuka}. Mają siedem stopni swobody i~udźwig 7 kg. Na ich końcach znajdują się chwytaki Barretta\cite{bib:barrett}  oraz nadgarstkowe czujniki FTS (ang. Force Torque Sensor). Głowa robota umieszczona jest na dedykowanej konstrukcji która za pomocą dwóch silników elektrycznych pozwala na zginanie i~obrót głowy\cite{bib:velmaLeb} \cite{bib:velmaKorp}. Robot wyposażony jest w~czujnik wizyjny Microsoft Kinect oraz dwie kamery połączone w~stereoparę. Do głowy zamocowano mikrofon. Podzespoły robota są połączone z~komputerem sterującym przy pomocy magistral czasu rzeczywistego
 	
 	System sterowania o~twardych ograniczeniach czasowych pracuje z~częstotliwością 500 Hz. Struktura oprogramowania została stworzona w~oparciu o~teorię agentową. Oprogramowanie robota pisane jest przy wykorzystaniu struktury ramowej FABRIC. Programy nadzoruje system Linux z~nakładką Linux-RT. Dostępny jest symulator robota stworzony w~przy wykorzystaniu Gazebo i~silnika fizyki DART. 
 	
@@ -54,7 +54,7 @@ Podsystem \textit{velma\_core\_cs} agenta \textit{velma\_core} wylicza prawa ste
 	\item \textbf{Publikacja wektorów pozycji} - 
 	Komponent \textit{TfPublisher} wysyła do użytkownika za pomocą ROSa położenie i~obrót istotnych dla działania systemu miejsc robota takich jak chwytaki czy środek ciężkości korpusu. 
 	\item \textbf{Pozycje stawów} - 
-	Odczyt pozycji stawów jest zależny od trybu pracy oprogramowania. Jeśli używamy trybu obsługi rzeczywistego sprzętu to za odczyt pozycji są odpowiedzialne podsystemy \textit{velma\_core\_re\_lwr\_r} i~\textit{velma\_core\_re\_lwr\_l} oraz podsystem \textit{velma\_ec\_driver} które posiadają pojedyncze komponenty służące do komunikacji z~fizycznymi sterownikami magistral. W~trybie symulatora emulacją tych trzech podsystemów zajmuje się podsystem \textit{velma\_sim\_gazebo}, który jako symulator nie jest podzielony na konkretne podsystemy.
+	Odczyt pozycji stawów jest zależny od trybu pracy oprogramowania. Jeśli używamy trybu obsługi rzeczywistego sprzętu to za odczyt pozycji są odpowiedzialne podsystemy \textit{velma\_core\_re\_lwr\_r} i~\textit{velma\_core\_re\_lwr\_l} oraz podsystem \textit{velma\_ec\_driver}, które posiadają pojedyncze komponenty służące do komunikacji z~fizycznymi sterownikami magistral. W~trybie symulatora emulacją tych trzech podsystemów zajmuje się podsystem \textit{velma\_sim\_gazebo}, który jako symulator nie jest podzielony na konkretne podsystemy.
 	\item \textbf{Zadawanie momentów} - 
 	Zadawanie momentów obrotowych w~stawach następuje w~analogiczny do odczytywania pozycji sposób.
 	\item \textbf{Kinematyka prosta} - 
@@ -68,10 +68,10 @@ Podsystem \textit{velma\_core\_cs} agenta \textit{velma\_core} wylicza prawa ste
 
 	\section{Pakiety oprogramowania}
 	\subsection{ROS}
-	Struktura ramowa ROS (Robot Operating System)\cite{bib:ROS} zapewnia biblioteki usprawniające pisanie programów dla robotyki w~C++ i~Pythonie. Pozwala na komunikację pomiędzy programami na zasadzie tematów oraz na zasadzie usług. Posiada gotowe funkcje wspomagające obliczenia kinematykę i~wizualizujące pracę robota. Pakiet daje możliwość akwizycji danych. Podstawowymi narzędziami w~pakiecie są:
+	Struktura ramowa ROS (Robot Operating System)\cite{bib:ROS} zapewnia biblioteki usprawniające pisanie programów dla robotyki w~C++ i~Pythonie. Pozwala na komunikację pomiędzy programami na zasadzie tematów oraz na zasadzie usług. Posiada gotowe funkcje wspomagające obliczenie kinematyki oraz wizualizujące ważne parametry pracy robota. Kolejnym narzędziem jest \textit{rviz}, który wizualizuje stawy robota wraz z układami współrzędnych. Pakiet daje możliwość akwizycji danych. Podstawowymi narzędziami w~pakiecie są:
 	\begin{itemize}
 		\item \textbf{Węzły} - Programy pisane w~C++ lub Pythonie spełniające zdefiniowaną w~sytemie funkcję.
-		\item \textbf{Serwisy} - Usługi udostępniane przez węzły pozwalające na komunikację w~architekturze zapytanie odpowiedź. Każdy program może udostępniać wiele serwisów. Służą do wywoływania zdalnych procedur.
+		\item \textbf{Serwisy} - Usługi udostępniane przez węzły pozwalające na komunikację w~architekturze zapytanie-odpowiedź. Każdy program może udostępniać wiele serwisów. Służą do wywoływania zdalnych procedur.
 		\item \textbf{Akcje} - Usługi podobne do serwisów lecz nieblokujące wykonywania węzła będącego serwerem.
 		\item \textbf{Tematy} - Usługi udostępniane przez węzły pozwalające na asynchroniczną komunikację. Każdy program może udostępniać i~pobierać wiele tematów. Służą do aktualizowania bieżącego stanu całego systemu.
 		\item \textbf{Zarządca} - Odpowiada za komunikację i~nadzoruje pracę innych narzędzi pakietu.
@@ -99,6 +99,6 @@ Podsystem \textit{velma\_core\_cs} agenta \textit{velma\_core} wylicza prawa ste
 		\label{fig:gazebo}
 	\end{figure}
 
-	Oryginalny kod Gazebo został przystosowany do pakietu oprogramowania DART (ang. Dynamic Animation and Robotics Toolkit) \cite{bib:dart} symulującego fizykę zdefiniowanego świata. Pakiet DART został wybrany przez Zespół Programowania Robotów i~Systemów Rozpoznających ponieważ po jego zastosowaniu został wyeliminowany problem narastających oscylacji członów robota w~trakcie symulacji. W~przeciwieństwie do wielu symulatorów fizyki DART daje dostęp do wielu przydatnych informacji takich jak jakobian bądź macierz inercji przedmiotów Zastosowano w~w nim algorytm LCP (ang. Linear Complementarity Problem), \cite{bib:lpcBase} który sprowadza model fizyczny świata do zestawu równań kwadratowych. DART symuluje działanie wielu sił w~tym siły Koriolisa i~tarcia dynamicznego. Dzięki temu możliwe jest zaawansowane wykrywanie kolizji. 
+	Oryginalny kod Gazebo został przystosowany do pakietu oprogramowania DART (ang. Dynamic Animation and Robotics Toolkit) \cite{bib:dart} symulującego fizykę zdefiniowanego świata. Pakiet DART został wybrany przez Zespół Programowania Robotów i~Systemów Rozpoznających ponieważ po jego zastosowaniu został wyeliminowany problem narastających oscylacji członów robota w~trakcie symulacji. W~przeciwieństwie do wielu symulatorów fizyki DART daje dostęp do wielu przydatnych informacji takich jak jakobian bądź macierz inercji przedmiotów Zastosowano w~w nim algorytm LCP (ang. Linear Complementarity Problem), \cite{bib:lpcBase} który sprowadza model fizyczny świata do zestawu równań kwadratowych. DART symuluje działanie wielu sił w~tym siły Coriolisa i~tarcia dynamicznego. Dzięki temu możliwe jest zaawansowane wykrywanie kolizji. 
 	
 	

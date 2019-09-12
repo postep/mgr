@@ -15,7 +15,6 @@ Repeated entry---line 270 of file bibliography.bib
  : @misc{bib:impedance
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "bib:Zielinski:2014_kkr_relacje-twiki"
 Warning--to sort, need author or key in bib:velma2
 Warning--to sort, need author or key in bib:robotyka
 Warning--to sort, need author or key in bib:kukaPage
@@ -32,45 +31,46 @@ Warning--empty year in bib:horn
 Warning--empty booktitle in bib:lpcBase
 Warning--empty year in bib:lpcBase
 Warning--empty journal in bib:agent2
-You've used 29 entries,
+Warning--can't use both volume and number fields in Zielinski:2014_kkr_relacje-twiki
+You've used 30 entries,
             2129 wiz_defined-function locations,
-            685 strings with 9665 characters,
-and the built_in function-call counts, 9773 in all, are:
-= -- 972
-> -- 361
-< -- 16
-+ -- 146
-- -- 116
-* -- 571
-:= -- 1396
-add.period$ -- 89
-call.type$ -- 29
-change.case$ -- 142
+            691 strings with 9857 characters,
+and the built_in function-call counts, 10287 in all, are:
+= -- 1022
+> -- 382
+< -- 18
++ -- 153
+- -- 122
+* -- 607
+:= -- 1469
+add.period$ -- 93
+call.type$ -- 30
+change.case$ -- 147
 chr.to.int$ -- 0
-cite$ -- 45
-duplicate$ -- 415
-empty$ -- 898
-format.name$ -- 116
-if$ -- 2231
+cite$ -- 47
+duplicate$ -- 438
+empty$ -- 940
+format.name$ -- 122
+if$ -- 2350
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 17
-newline$ -- 144
-num.names$ -- 48
-pop$ -- 273
+int.to.str$ -- 30
+missing$ -- 18
+newline$ -- 150
+num.names$ -- 52
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 113
+purify$ -- 117
 quote$ -- 0
-skip$ -- 360
+skip$ -- 383
 stack$ -- 0
-substring$ -- 550
-swap$ -- 147
-text.length$ -- 16
+substring$ -- 583
+swap$ -- 160
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
-warning$ -- 16
-while$ -- 75
-width$ -- 31
-write$ -- 294
+type$ -- 120
+warning$ -- 17
+while$ -- 80
+width$ -- 32
+write$ -- 308
 (There was 1 error message)

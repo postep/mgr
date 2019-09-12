@@ -235,6 +235,6 @@ if __name__=="__main__":
         if args.mode == 'yz':
             ax.set_xlabel('y [m]')
             ax.set_ylabel('z [m]')
-
-        plt.savefig(args.plot,dpi=300)
+        plt.rcParams.update({'font.size': 12})
+        plt.savefig(args.plot,dpi=300, bbox_inches='tight')
         

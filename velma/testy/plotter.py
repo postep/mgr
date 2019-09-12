@@ -231,7 +231,8 @@ if __name__=="__main__":
 
         plot_name = f'out/{str(sys.argv[3])}/common_{mode}.png'
         print(plot_name)
-        plt.savefig(plot_name,dpi=300)
+        plt.rcParams.update({'font.size': 12})
+        plt.savefig(plot_name,dpi=300, bbox_inches='tight')
 
 
     import sys, os, subprocess

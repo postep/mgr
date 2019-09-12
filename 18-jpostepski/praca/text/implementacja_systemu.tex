@@ -3,10 +3,10 @@
 % !TeX spellcheck = pl_PL
 
 \chapter{Implementacja systemu \label{chap:specyfikacja_systemu}}
-W celu rozwiązania problemu opisanego w pracy dokonano szeregu modyfikacji w systemie oprogramowania robota Velma. Zmodyfikowano prawo sterowania impedancyjengo, tak aby dodać człon całkujący. Dodano możliwość konfiguracji nowych parametrów prawa sterowania związanych z członem całkującym. Stworzono środowisko pozwalające na śledzenie oraz wizualizację wymaganych trajektorii chwytaka.
+W celu rozwiązania problemu opisanego w~pracy dokonano szeregu modyfikacji w~systemie oprogramowania robota Velma. Zmodyfikowano prawo sterowania impedancyjnego, tak aby dodać człon całkujący. Dodano możliwość konfiguracji nowych parametrów prawa sterowania związanych z~członem całkującym. Stworzono środowisko pozwalające na śledzenie oraz wizualizację wymaganych trajektorii chwytaka.
 
 \section{Prawo sterowania}
-Modyfikacja prawa sterowania została wykonana w komponencie \textit{cart\_imp} znajdującym się w podsystemie \textit{velma\_core\_cs}. Ponieważ mamy do czynienia z systemem z dyskretnym czasem nie jest możliwe bezpośrednie zaimplementowanie wzoru \ref{eq:prawo_ster}. Człony związane z impedancyjnym prawem sterowania były już zaimplementowane. Do implementacji członu całkującego skorzystano z dyskretnej wersji regulatora PID \cite{wiki:PID_controller} dla przypadku jednowymiarowego w chwili $k$ jest postaci:
+Modyfikacja prawa sterowania została wykonana w~komponencie \textit{cart\_imp} znajdującym się w podsystemie \textit{velma\_core\_cs}. Ponieważ mamy do czynienia z~systemem z~dyskretnym czasem nie jest możliwe bezpośrednie zaimplementowanie wzoru \ref{eq:prawo_ster}. Człony związane z~impedancyjnym prawem sterowania były już zaimplementowane. Do implementacji członu całkującego skorzystano z~dyskretnej wersji regulatora PID \cite{wiki:PID_controller} dla przypadku jednowymiarowego w~chwili $k$ jest postaci:
 \begin{equation}
 \label{eq:dysk}
 u(k) = u(k-1) + P[(1 + \frac{\Delta}{T_i} + \frac{T_d}{\Delta})e(k) + (-1-\frac{2T_d}{\Delta})e(k-1) + \frac{T_d}{\Delta}e(k-2)]
@@ -21,8 +21,8 @@ T_d = D/P
 
 gdzie:
 \begin{itemize}
-	\item $u(k)$ to sterowanie w chwili $k$.
-	\item $e(k)$ to uchyb w chwili $k$.
+	\item $u(k)$ to sterowanie w~chwili $k$.
+	\item $e(k)$ to uchyb w~chwili $k$.
 	\item $\Delta$ to czas jednego kroku symulacji, dla systemu robota Velma ma wartość $\frac{1}{500}$~s.
 	\item $P$ to parametr członu proporcjonalnego.
 	\item $I$ to parametr członu całkującego.
@@ -34,33 +34,33 @@ Dla naszych potrzeb istotny jest tylko człon całkujący więc równanie \ref{e
 	u(k) = u(k-1) + e(k)+\frac{\Delta e(k)}{T_i} - e(k-1) -\frac{2T_de(k-1)}{\Delta} 
 \end{equation}
 
-Następnie wzór \ref{eq:dysk_cal} jest rozszerzany do postaci sześciowymiarowego wektora poprzez zastosowanie w każdym wierszu tego wektora. Taki wektor można łatwo dodać do istniejącego prawa sterowania w przestrzeni operacyjnej robota.
+Następnie wzór \ref{eq:dysk_cal} jest rozszerzany do postaci sześciowymiarowego wektora poprzez zastosowanie w~każdym wierszu tego wektora. Taki wektor można łatwo dodać do istniejącego prawa sterowania w~przestrzeni operacyjnej robota.
 
 \section{Parametry członu całkującego}
-W celu umożliwienia konfiguracji parametrów członu całkującego został zmodyfikowany interfejs \textit{VelmaInterface}. Do ruchu ramieniem w przestrzeni operacyjnej służy funkcja \textit{moveCartImpRight()}. Jej nowy nagłówek został rozszerzony o parametr \textit{gcomp} który ma być listą opisującą przekątną macierzy członu całkowania. Opisane parametry są przekazywane przez system akcji ROSa do agenta \textit{velma\_task\_cs\_ros\_interface}. Odpowiedzialny za to jest komponent \textit{CartImpActionRight}, który został odpowiednio zmodyfikowany w ramach pracy. Komponent przyjmuje na zmodyfikowaną w ramach pracy wiadomość \textit{RightImpAction}. 
+W celu umożliwienia konfiguracji parametrów członu całkującego został zmodyfikowany interfejs \textit{VelmaInterface}. Do ruchu ramieniem w~przestrzeni operacyjnej służy funkcja \textit{moveCartImpRight()}. Jej nowy nagłówek został rozszerzony o~parametr \textit{gcomp} który ma być listą opisującą przekątną macierzy członu całkowania. Opisane parametry są przekazywane przez system akcji ROSa do agenta \textit{velma\_task\_cs\_ros\_interface}. Odpowiedzialny za to jest komponent \textit{CartImpActionRight}, który został odpowiednio zmodyfikowany w~ramach pracy. Komponent przyjmuje na zmodyfikowaną w ramach pracy wiadomość \textit{RightImpAction}. 
  
 \section{Rejestracja trajektorii}
-Ocena jakości algorytmu sterowania następuje poprzez porównanie odpowiednich trajektorii. W celu wydobycia trajektorii określonych przez wektory siły uogólnionej zmodyfikowano komponent \textit{TfPublisher} z podsystemu \textit{velma\_task\_cs\_ros\_interface} w taki sposób, żeby udostępnił pozycję zadaną, generowaną przez interpolator trajektorii, w odpowiednim temacie ROS o nazwie \textit{right\_arm\_cmd}. W podobny sposób udostępniona jest pozycja osiągnięta w danym momencie przez robota w temacie \textit{right\_arm\_tool}. Za pomocą pomocniczego programu \textit{writer.py} pisanego w Pythonie pozycje są odbierane w trakcie działania systemu i zapisywane wraz ze znacznikiem czasu.
+Ocena jakości algorytmu sterowania następuje poprzez porównanie odpowiednich trajektorii. W~celu wydobycia trajektorii określonych przez wektory siły uogólnionej zmodyfikowano komponent \textit{TfPublisher} z~podsystemu \textit{velma\_task\_cs\_ros\_interface} w~taki sposób, żeby udostępnił pozycję zadaną, generowaną przez interpolator trajektorii, w~odpowiednim temacie ROS o~nazwie \textit{right\_arm\_cmd}. W~podobny sposób udostępniona jest pozycja osiągnięta w~danym momencie przez robota w~temacie \textit{right\_arm\_tool}. Za pomocą pomocniczego programu \textit{writer.py} pisanego w~Pythonie pozycje są odbierane w~trakcie działania systemu i~zapisywane wraz ze znacznikiem czasu.
 
 
 \section{Generowanie wykresów}
-Zapisane pliki z danymi są przetwarzane przez napisany program \texttt{plotter.py} zaimplementowany w Pythonie. Jego zadaniem jest generowanie obrazów pozwalających na porównanie zapisanych w plikach trajektorii oraz wyliczeń związanych z oceną jakości trajektorii na podstawie metryki APE. Program tworzy przebiegi w zależności od czasu dla konkretnych osi oraz kątów wielu trajektorii. Ma też możliwość generowania dwuwymiarowych rzutów metryki APE przez wywołanie zewnętrznego skryptu \cite{bib:evaluate_ape}. Program \textit{plotter.py} może porównywać dowolną liczbę trajktorii. Pliki które podlegają obliczeniom są podawane w argumentach programu.
+Zapisane pliki z~danymi są przetwarzane przez napisany program \texttt{plotter.py} zaimplementowany w~Pythonie. Jego zadaniem jest generowanie obrazów pozwalających na porównanie zapisanych w~plikach trajektorii oraz wyliczeń związanych z~oceną jakości trajektorii na podstawie metryki APE. Program tworzy przebiegi w~zależności od czasu dla konkretnych osi oraz kątów wielu trajektorii. Ma też możliwość generowania dwuwymiarowych rzutów metryki APE przez wywołanie zewnętrznego skryptu \cite{bib:evaluate_ape}. Program \textit{plotter.py} może porównywać dowolną liczbę trajektorii Pliki które podlegają obliczeniom są podawane w~argumentach programu.
 
 
 \section{Opis świata testowego}
-Stworzono nowe pliki \textit{can\_world.world} oraz \textit{drill\_world.world} które są opisem świata używanym przez symulator świata Gazebo. Pliki są strukturami typu XML które zawierają opis i umiejscowienie w świecie konkretnych przedmiotów. Obydwa pliki opisują świat z robotem Velma oraz znajdującym się obok niego stole. Na stole położone są przedmioty testowe czyli puszka oraz wiertarka.
+Stworzono nowe pliki \textit{can\_world.world} oraz \textit{drill\_world.world} które są opisem świata używanym przez symulator świata Gazebo. Pliki są strukturami typu XML które zawierają opis i~umiejscowienie w~świecie konkretnych przedmiotów. Obydwa pliki opisują świat z~robotem Velma oraz znajdującym się obok niego stole. Na stole położone są przedmioty testowe czyli puszka oraz wiertarka.
 
 \section{Algorytm eksperymentu}
-Do testowania modyfikacji systemu stworzono program \textit{test\_script.py}, który wykorzystuje interfejs \textit{VelmaInterface} i określa ruchy, które ma wykonać robot w trakcie testów. Program wykonuje poniższe czynności:
+Do testowania modyfikacji systemu stworzono program \textit{test\_script.py}, który wykorzystuje interfejs \textit{VelmaInterface} i~określa ruchy, które ma wykonać robot w~trakcie testów. Program wykonuje poniższe czynności:
 \begin{enumerate}
-	\item Inicjalizacja systemu poprzez inicjalizację obiektów potrzebnych do komunikacji z ROSem.
-	\item Ułożenie robota w odgórnie zdefiniowanej pozycji startowej.
-	\item Ruch ramienia do pozycji w której może chwycić przedmiot.
+	\item Inicjalizacja systemu poprzez inicjalizację obiektów potrzebnych do komunikacji z~ROSem.
+	\item Ułożenie robota w~odgórnie zdefiniowanej pozycji startowej.
+	\item Ruch ramienia do pozycji w~której może chwycić przedmiot.
 	\item Chwycenie przedmiotu poprzez zaciśnięcie chwytaka.
 	\item Ruch ramienia do pozycji rozpoczęcia następnego testu.
 	\item Wykonanie chwytakiem ruchu ósemkowego.
-	\item Wykonanie chwytakiem ruchu do góry i spowrotem.
-	\item Wykonanie chwytakiem ruchu w bok i spowrotem.
-	\item Wykonanie chwytakiem ruchu do przodu i spowrotem.
+	\item Wykonanie chwytakiem ruchu do góry i~z powrotem.
+	\item Wykonanie chwytakiem ruchu w~bok i~z powrotem.
+	\item Wykonanie chwytakiem ruchu do przodu i~z powrotem.
 	\item Wykonanie chwytakiem obrotu. 
 \end{enumerate}

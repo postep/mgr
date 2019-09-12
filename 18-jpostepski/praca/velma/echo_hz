@@ -1,0 +1,18 @@
+subscribed to [/velma_task_cs_ros_interface/st]
+average rate: 97.510
+	min: 0.000s max: 0.048s std dev: 0.01756s window: 95
+average rate: 94.608
+	min: 0.000s max: 0.048s std dev: 0.01804s window: 187
+average rate: 93.919
+	min: 0.000s max: 0.048s std dev: 0.01804s window: 279
+average rate: 95.154
+	min: 0.000s max: 0.048s std dev: 0.01807s window: 378
+average rate: 95.382
+	min: 0.000s max: 0.048s std dev: 0.01816s window: 476
+average rate: 96.289
+	min: 0.000s max: 0.048s std dev: 0.01811s window: 577
+average rate: 96.677
+	min: 0.000s max: 0.048s std dev: 0.01811s window: 676
+average rate: 96.110
+	min: 0.000s max: 0.048s std dev: 0.01818s window: 767
+no new messages
