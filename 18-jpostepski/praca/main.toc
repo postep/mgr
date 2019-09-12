@@ -1,46 +1,46 @@
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{13}{chapter.1}
-\contentsline {chapter}{\numberline {2}Podstawy teoretyczne}{15}{chapter.2}
-\contentsline {section}{\numberline {2.1}Sterowanie impedancyjne}{15}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Przypadek prosty}{15}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Prawo sterowania}{16}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Sterowanie w~przestrzeni konfiguracyjnej}{16}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}Sterowanie PID}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Przypadek prosty}{17}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Przypadek wielowymiarowy}{17}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Estymacja si\IeC {\l }y uog\IeC {\'o}lnionej w~ko\IeC {\'n}c\IeC {\'o}wce}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Jako\IeC {\'s}\IeC {\'c} sterowania}{18}{section.2.4}
-\contentsline {section}{\numberline {2.5}Teoria agenta upostaciowionego}{19}{section.2.5}
-\contentsline {chapter}{\numberline {3}\IeC {\'S}rodowisko badawcze}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Budowa og\IeC {\'o}lna}{21}{section.3.1}
-\contentsline {section}{\numberline {3.2}Agenty}{21}{section.3.2}
-\contentsline {section}{\numberline {3.3}Pakiety oprogramowania}{24}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}ROS}{24}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Orocos}{25}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}FABRIC}{26}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Symulator robota}{26}{section.3.4}
-\contentsline {chapter}{\numberline {4}Specyfikacja systmu kompensacji grawitacji}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analiza wymaga\IeC {\'n}}{30}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Przypadki u\IeC {\.z}ycia}{30}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Za\IeC {\l }o\IeC {\.z}enia}{31}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Wymagania}{32}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Rozwi\IeC {\k a}zanie oparte na regulatorze PID}{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}Rozwi\IeC {\k a}zanie oparte na estymacji modelu robota}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}Wyb\IeC {\'o}r rozwi\IeC {\k a}zania}{35}{section.4.4}
-\contentsline {chapter}{\numberline {5}Implementacja systemu }{37}{chapter.5}
-\contentsline {section}{\numberline {5.1}Prawo sterowania}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Parametry cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego}{38}{section.5.2}
-\contentsline {section}{\numberline {5.3}Rejestracja trajektorii}{38}{section.5.3}
-\contentsline {section}{\numberline {5.4}Generowanie wykres\IeC {\'o}w}{39}{section.5.4}
-\contentsline {section}{\numberline {5.5}Opis \IeC {\'s}wiata testowego}{39}{section.5.5}
-\contentsline {section}{\numberline {5.6}Algorytm eksperymentu}{39}{section.5.6}
-\contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{41}{chapter.6}
-\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{46}{section.6.2}
-\contentsline {section}{\numberline {6.3}Ruch w~bok}{49}{section.6.3}
-\contentsline {section}{\numberline {6.4}Ruch do g\IeC {\'o}ry}{52}{section.6.4}
-\contentsline {section}{\numberline {6.5}Ruch do do\IeC {\l }u}{54}{section.6.5}
-\contentsline {section}{\numberline {6.6}Ruch do przodu}{57}{section.6.6}
-\contentsline {section}{\numberline {6.7}Obr\IeC {\'o}t ko\IeC {\'n}c\IeC {\'o}wki}{59}{section.6.7}
-\contentsline {section}{\numberline {6.8}Wnioski}{62}{section.6.8}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{63}{chapter.7}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{13}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Podstawy teoretyczne}{15}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Sterowanie impedancyjne}{15}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}Przypadek prosty}{15}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Prawo sterowania}{16}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Sterowanie w~przestrzeni konfiguracyjnej}{16}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}Sterowanie PID}{16}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Przypadek prosty}{17}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Przypadek wielowymiarowy}{17}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}Estymacja si\IeC {\l }y uog\IeC {\'o}lnionej w~ko\IeC {\'n}c\IeC {\'o}wce}{17}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Jako\IeC {\'s}\IeC {\'c} sterowania}{18}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Teoria agenta upostaciowionego}{19}{section.2.5}% 
+\contentsline {chapter}{\numberline {3}\IeC {\'S}rodowisko badawcze}{21}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Budowa og\IeC {\'o}lna}{21}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Agenty}{21}{section.3.2}% 
+\contentsline {section}{\numberline {3.3}Pakiety oprogramowania}{24}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}ROS}{24}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Orocos}{25}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}FABRIC}{26}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}Symulator robota}{26}{section.3.4}% 
+\contentsline {chapter}{\numberline {4}Specyfikacja systemu kompensacji grawitacji}{29}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Analiza wymaga\IeC {\'n}}{30}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Przypadki u\IeC {\.z}ycia}{30}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Za\IeC {\l }o\IeC {\.z}enia}{31}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Wymagania}{32}{subsection.4.1.3}% 
+\contentsline {section}{\numberline {4.2}Rozwi\IeC {\k a}zanie oparte na regulatorze PID}{32}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Rozwi\IeC {\k a}zanie oparte na estymacji modelu robota}{33}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Wyb\IeC {\'o}r rozwi\IeC {\k a}zania}{35}{section.4.4}% 
+\contentsline {chapter}{\numberline {5}Implementacja systemu }{37}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Prawo sterowania}{37}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Parametry cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego}{38}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Rejestracja trajektorii}{38}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Generowanie wykres\IeC {\'o}w}{39}{section.5.4}% 
+\contentsline {section}{\numberline {5.5}Opis \IeC {\'s}wiata testowego}{39}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Algorytm eksperymentu}{39}{section.5.6}% 
+\contentsline {chapter}{\numberline {6}Dzia\IeC {\l }anie systemu}{41}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Podnoszenie przedmiotu}{43}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Ruch \IeC {\'o}semkowy}{46}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Ruch w~bok}{49}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Ruch do g\IeC {\'o}ry}{52}{section.6.4}% 
+\contentsline {section}{\numberline {6.5}Ruch do do\IeC {\l }u}{54}{section.6.5}% 
+\contentsline {section}{\numberline {6.6}Ruch do przodu}{57}{section.6.6}% 
+\contentsline {section}{\numberline {6.7}Obr\IeC {\'o}t ko\IeC {\'n}c\IeC {\'o}wki}{59}{section.6.7}% 
+\contentsline {section}{\numberline {6.8}Wnioski}{62}{section.6.8}% 
+\contentsline {chapter}{\numberline {7}Podsumowanie}{63}{chapter.7}% 

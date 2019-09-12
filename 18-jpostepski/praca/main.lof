@@ -1,73 +1,73 @@
 \babel@toc {polish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Rysunek przedstawia rzut APE w~dw\IeC {\'o}ch wymiarach. Czarn\IeC {\k a} i~niebiesk\IeC {\k a}\IeC {\nobreakspace }lini\IeC {\k a}\IeC {\nobreakspace }oznaczono zadan\IeC {\k a}\IeC {\nobreakspace }i osi\IeC {\k a}gan\IeC {\k a}\IeC {\nobreakspace }trajektori\IeC {\k e}. Linie czerwone \IeC {\l }\IeC {\k a}cz\IeC {\k a} odpowiednie punkty na obydwu trajektoriach i~obrazuj\IeC {\k a}\IeC {\nobreakspace }b\IeC {\l }\IeC {\k a}d pomi\IeC {\k e}dzy nimi.\relax }}{19}{figure.caption.2}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Rysunek przedstawia schemat budowy agenta upostaciowionego \cite {Zielinski:2014_kkr_relacje-twiki}. Typ podsystemu oznaczany jest du\IeC {\.z}\IeC {\k a} liter\IeC {\k a}. Podsystemy i~bufory posiadaj\IeC {\k a}\IeC {\nobreakspace }prawy dolny indeks. Typ podsystemu jest oznaczany lewym dolnym indeksem. Typ buforu jest oznaczany lewym dolnym indeksem ($x$ - wej\IeC {\'s}ciowy, $y$ - wyj\IeC {\'s}ciowy).\relax }}{20}{figure.caption.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Rysunek przedstawia rzut APE w~dw\IeC {\'o}ch wymiarach. Czarn\IeC {\k a} i~niebiesk\IeC {\k a}\IeC {\nobreakspace }lini\IeC {\k a}\IeC {\nobreakspace }oznaczono zadan\IeC {\k a}\IeC {\nobreakspace }i osi\IeC {\k a}gan\IeC {\k a}\IeC {\nobreakspace }trajektori\IeC {\k e}. Linie czerwone \IeC {\l }\IeC {\k a}cz\IeC {\k a} odpowiednie punkty na obydwu trajektoriach i~obrazuj\IeC {\k a}\IeC {\nobreakspace }b\IeC {\l }\IeC {\k a}d pomi\IeC {\k e}dzy nimi.\relax }}{19}{figure.caption.2}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Rysunek przedstawia schemat budowy agenta upostaciowionego \cite {Zielinski:2014_kkr_relacje-twiki}. Typ podsystemu oznaczany jest du\IeC {\.z}\IeC {\k a} liter\IeC {\k a}. Podsystemy i~bufory posiadaj\IeC {\k a}\IeC {\nobreakspace }prawy dolny indeks. Typ podsystemu jest oznaczany lewym dolnym indeksem. Typ buforu jest oznaczany lewym dolnym indeksem ($x$ - wej\IeC {\'s}ciowy, $y$ - wyj\IeC {\'s}ciowy).\relax }}{20}{figure.caption.3}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Robot us\IeC {\l }ugowy Velma\relax }}{22}{figure.caption.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Zdj\IeC {\k e}cie robota}}}{22}{figure.caption.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Uk\IeC {\l }ady wsp\IeC {\'o}\IeC {\l }rz\IeC {\k e}dnych staw\IeC {\'o}w. Najni\IeC {\.z}szy uk\IeC {\l }ad wsp\IeC {\'o}\IeC {\l }rz\IeC {\k e}dnych obrazuje przyj\IeC {\k e}ty uk\IeC {\l }ad odniesienia dla ca\IeC {\l }ego systemu. Osie $X$, $Y$ i~$Z$ oznaczone s\IeC {\k a} odpowienio kolorem czerwonym zielonym i~niebieskim\cite {bib:velma2}.}}}{22}{figure.caption.4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Pogl\IeC {\k a}dowy i~uproszczony schemat agent\IeC {\'o}w robota Velma zawieraj\IeC {\k a}cy tak\IeC {\.z}e nieopisywane cz\IeC {\k e}\IeC {\'s}ci systemu odpowiedzialne za nadz\IeC {\'o}r Kinecta\cite {bib:velma2}.\relax }}{23}{figure.caption.5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tryb pracy ze sprz\IeC {\k e}tem}}}{23}{figure.caption.5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tryb symulacji}}}{23}{figure.caption.5}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Robot Velma w~trakcie manipulacji. Symulacja w~\IeC {\'s}rodowisku Gazebo.\relax }}{26}{figure.caption.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Robot us\IeC {\l }ugowy Velma\relax }}{22}{figure.caption.4}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Zdj\IeC {\k e}cie robota}}}{22}{figure.caption.4}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Uk\IeC {\l }ady wsp\IeC {\'o}\IeC {\l }rz\IeC {\k e}dnych staw\IeC {\'o}w. Najni\IeC {\.z}szy uk\IeC {\l }ad wsp\IeC {\'o}\IeC {\l }rz\IeC {\k e}dnych obrazuje przyj\IeC {\k e}ty uk\IeC {\l }ad odniesienia dla ca\IeC {\l }ego systemu. Osie $X$, $Y$ i~$Z$ oznaczone s\IeC {\k a} odpowienio kolorem czerwonym zielonym i~niebieskim\cite {bib:velma2}.}}}{22}{figure.caption.4}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pogl\IeC {\k a}dowy i~uproszczony schemat agent\IeC {\'o}w robota Velma zawieraj\IeC {\k a}cy tak\IeC {\.z}e nieopisywane cz\IeC {\k e}\IeC {\'s}ci systemu odpowiedzialne za nadz\IeC {\'o}r Kinecta\cite {bib:velma2}.\relax }}{23}{figure.caption.5}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tryb pracy ze sprz\IeC {\k e}tem}}}{23}{figure.caption.5}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Tryb symulacji}}}{23}{figure.caption.5}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Robot Velma w~trakcie manipulacji. Symulacja w~\IeC {\'s}rodowisku Gazebo.\relax }}{26}{figure.caption.6}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagram aktywno\IeC {\'s}ci pokazuj\IeC {\k a}cy przebieg sterowania ramieniem robota.\relax }}{30}{figure.caption.7}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia robota z~uwzgl\IeC {\k e}dnieniem algorytmu kompensacji grawitacji\relax }}{31}{figure.caption.8}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Schemat nowego prawa sterowania. W~pierwszej fazie wyliczany jest algorytm z~cz\IeC {\l }onem ca\IeC {\l }kuj\IeC {\k a}cym a~nast\IeC {\k e}pnie transformowany do przestrzeni staw\IeC {\'o}w przez jakobian. \relax }}{33}{figure.caption.9}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram aktywno\IeC {\'s}ci pokazuj\IeC {\k a}cy przebieg sterowania ramieniem robota z~aktualizacj\IeC {\k a} modelu.\relax }}{34}{figure.caption.10}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagram aktywno\IeC {\'s}ci pokazuj\IeC {\k a}cy przebieg sterowania ramieniem robota.\relax }}{30}{figure.caption.7}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia robota z~uwzgl\IeC {\k e}dnieniem algorytmu kompensacji grawitacji\relax }}{31}{figure.caption.8}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Schemat nowego prawa sterowania. W~pierwszej fazie wyliczany jest algorytm z~cz\IeC {\l }onem ca\IeC {\l }kuj\IeC {\k a}cym a~nast\IeC {\k e}pnie transformowany do przestrzeni staw\IeC {\'o}w przez jakobian. \relax }}{33}{figure.caption.9}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagram aktywno\IeC {\'s}ci pokazuj\IeC {\k a}cy przebieg sterowania ramieniem robota z~aktualizacj\IeC {\k a} modelu.\relax }}{34}{figure.caption.10}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii z~r\IeC {\'o}\IeC {\.z}nymi parametrami cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego.\relax }}{42}{figure.caption.11}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie parametr\IeC {\'o}w cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego jako k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{43}{figure.caption.12}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{44}{figure.caption.13}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{44}{figure.caption.14}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {O\IeC {\'s} $X$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {O\IeC {\'s} $Y$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {O\IeC {\'s} $Z$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {K\IeC {\k a}t osi $X$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {K\IeC {\k a}t osi $Y$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {K\IeC {\k a}t osi $Z$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {O\IeC {\'s} $X$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {O\IeC {\'s} $Y$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {O\IeC {\'s} $Z$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Za\IeC {\l }\IeC {\k a}czony algorytm kompnesacji}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {K\IeC {\k a}t osi $X$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {K\IeC {\k a}t osi $Y$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {K\IeC {\k a}t osi $Z$}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z~chwycona puszka}}}{45}{figure.caption.16}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z~chwycona wiertarka}}}{45}{figure.caption.16}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{45}{figure.caption.15}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{46}{figure.caption.17}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{46}{figure.caption.18}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{47}{figure.caption.19}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{47}{figure.caption.20}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{48}{figure.caption.21}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{48}{figure.caption.22}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{49}{figure.caption.23}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{49}{figure.caption.24}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{50}{figure.caption.25}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{50}{figure.caption.26}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{51}{figure.caption.27}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{51}{figure.caption.28}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{52}{figure.caption.29}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{53}{figure.caption.30}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{53}{figure.caption.31}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{54}{figure.caption.32}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{55}{figure.caption.33}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{55}{figure.caption.34}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii kat\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{56}{figure.caption.35}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{56}{figure.caption.36}
-\contentsline {figure}{\numberline {6.27}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{57}{figure.caption.37}
-\contentsline {figure}{\numberline {6.28}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{57}{figure.caption.38}
-\contentsline {figure}{\numberline {6.29}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii kat\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{58}{figure.caption.39}
-\contentsline {figure}{\numberline {6.30}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{58}{figure.caption.40}
-\contentsline {figure}{\numberline {6.31}{\ignorespaces Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{59}{figure.caption.41}
-\contentsline {figure}{\numberline {6.32}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{60}{figure.caption.42}
-\contentsline {figure}{\numberline {6.33}{\ignorespaces Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{60}{figure.caption.43}
-\contentsline {figure}{\numberline {6.34}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{61}{figure.caption.44}
-\contentsline {figure}{\numberline {6.35}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Y$\relax }}{61}{figure.caption.45}
-\contentsline {figure}{\numberline {6.36}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Y$\relax }}{61}{figure.caption.46}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii z~r\IeC {\'o}\IeC {\.z}nymi parametrami cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego.\relax }}{42}{figure.caption.11}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie parametr\IeC {\'o}w cz\IeC {\l }onu ca\IeC {\l }kuj\IeC {\k a}cego jako k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{43}{figure.caption.12}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{44}{figure.caption.13}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{44}{figure.caption.14}% 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {O\IeC {\'s} $X$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {O\IeC {\'s} $Y$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {O\IeC {\'s} $Z$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {K\IeC {\k a}t osi $X$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {K\IeC {\k a}t osi $Y$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {K\IeC {\k a}t osi $Z$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {O\IeC {\'s} $X$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {O\IeC {\'s} $Y$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {O\IeC {\'s} $Z$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Brak algorytmu kompensacji}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Za\IeC {\l }\IeC {\k a}czony algorytm kompnesacji}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {K\IeC {\k a}t osi $X$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {K\IeC {\k a}t osi $Y$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {K\IeC {\k a}t osi $Z$}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Trajektoria z~chwycona puszka}}}{45}{figure.caption.16}% 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Trajektoria z~chwycona wiertarka}}}{45}{figure.caption.16}% 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{45}{figure.caption.15}% 
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{46}{figure.caption.17}% 
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Podnoszenie przedmiotu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{46}{figure.caption.18}% 
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{47}{figure.caption.19}% 
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{47}{figure.caption.20}% 
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{48}{figure.caption.21}% 
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{48}{figure.caption.22}% 
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{49}{figure.caption.23}% 
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Ruch \IeC {\'o}semkowy. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{49}{figure.caption.24}% 
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{50}{figure.caption.25}% 
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{50}{figure.caption.26}% 
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{51}{figure.caption.27}% 
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Ruch w~bok. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $Y$ i~$Z$\relax }}{51}{figure.caption.28}% 
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{52}{figure.caption.29}% 
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{53}{figure.caption.30}% 
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{53}{figure.caption.31}% 
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Ruch do g\IeC {\'o}ry. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{54}{figure.caption.32}% 
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{55}{figure.caption.33}% 
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{55}{figure.caption.34}% 
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Ruch do do\IeC {\l }u. Por\IeC {\'o}wnanie trajektorii kat\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{56}{figure.caption.35}% 
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{56}{figure.caption.36}% 
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{57}{figure.caption.37}% 
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{57}{figure.caption.38}% 
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii kat\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{58}{figure.caption.39}% 
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Ruch do przodu. Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{58}{figure.caption.40}% 
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Por\IeC {\'o}wnanie trajektorii pozycji w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{59}{figure.caption.41}% 
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{60}{figure.caption.42}% 
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Por\IeC {\'o}wnanie trajektorii k\IeC {\k a}t\IeC {\'o}w w~notacji Eulera w~zale\IeC {\.z}no\IeC {\'s}ci od czasu.\relax }}{60}{figure.caption.43}% 
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Z$\relax }}{61}{figure.caption.44}% 
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Y$\relax }}{61}{figure.caption.45}% 
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Por\IeC {\'o}wnanie trajektorii chwytaka w~osiach $X$ i~$Y$\relax }}{61}{figure.caption.46}% 
 \addvspace {10\p@ }
